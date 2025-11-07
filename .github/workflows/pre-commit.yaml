@@ -1,0 +1,246 @@
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2025 The Linux Foundation
+
+---
+name: Pre-commit Checks
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches:
+      - main
+      - develop
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  quick-checks:
+    name: Quick Validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@95d9a5d08a4e57e534c0b8c44a23f7a3cff84e3f # v2.13.2
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@858567871c9ba88a1bd86d6c33d8bcd1e0d24f3d # v7.1.2
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: uv sync --all-extras
+
+      - name: Run smoke tests
+        timeout-minutes: 2
+        run: |
+          uv run pytest tests/ \
+            -v \
+            -m smoke \
+            --tb=line \
+            --no-cov \
+            --timeout=30 \
+            -x
+        continue-on-error: false
+
+      - name: Validate Python syntax
+        run: |
+          python -m py_compile src/**/*.py tests/**/*.py
+        continue-on-error: true
+
+      - name: Check for common issues
+        run: |
+          # Check for debugging statements
+          ! grep -r "import pdb" src/ tests/ || echo "⚠️ Found pdb imports"
+          ! grep -r "breakpoint()" src/ tests/ || echo "⚠️ Found breakpoint() calls"
+          ! grep -r "print(" src/ | grep -v "# noqa" || echo "⚠️ Found print statements in src/"
+
+      - name: Verify test markers
+        run: |
+          uv run pytest --markers | grep -E "smoke|unit|integration|property|regression|performance|benchmark"
+
+  fast-tests:
+    name: Fast Test Suite
+    needs: quick-checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@95d9a5d08a4e57e534c0b8c44a23f7a3cff84e3f # v2.13.2
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@858567871c9ba88a1bd86d6c33d8bcd1e0d24f3d # v7.1.2
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: uv sync --all-extras
+
+      - name: Run unit tests (fast)
+        timeout-minutes: 5
+        run: |
+          uv run pytest tests/unit/ \
+            -v \
+            --tb=short \
+            --no-cov \
+            --timeout=60 \
+            -x
+        continue-on-error: false
+
+      - name: Run performance threshold tests
+        timeout-minutes: 3
+        run: |
+          PYTHONPATH=. pytest tests/performance/test_thresholds.py \
+            -v \
+            --tb=line \
+            --no-cov \
+            --timeout=30
+        continue-on-error: true
+
+  lint-and-format:
+    name: Linting and Formatting
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@95d9a5d08a4e57e534c0b8c44a23f7a3cff84e3f # v2.13.2
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: '3.11'
+
+      - name: Install linting tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install black isort flake8 pylint
+
+      - name: Check formatting with black
+        run: |
+          black --check src/ tests/
+        continue-on-error: true
+
+      - name: Check import sorting
+        run: |
+          isort --check-only src/ tests/
+        continue-on-error: true
+
+      - name: Run flake8
+        run: |
+          flake8 src/ tests/ --max-line-length=120 --statistics
+        continue-on-error: true
+
+  security-scan:
+    name: Security Scanning
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@95d9a5d08a4e57e534c0b8c44a23f7a3cff84e3f # v2.13.2
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: '3.11'
+
+      - name: Install security tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install bandit safety
+
+      - name: Run bandit security scan
+        run: |
+          bandit -r src/ -f json -o bandit-report.json
+        continue-on-error: true
+
+      - name: Check dependencies
+        run: |
+          safety check --json
+        continue-on-error: true
+
+      - name: Upload security reports
+        if: always()
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        with:
+          name: security-reports
+          path: |
+            bandit-report.json
+          retention-days: 7
+
+  pr-comment:
+    name: PR Summary
+    needs:
+      - quick-checks
+      - fast-tests
+      - lint-and-format
+      - security-scan
+    if: github.event_name == 'pull_request' && always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    
+    steps:
+      - name: Generate PR comment
+        uses: actions/github-script@ed59741e841120dd8e79189bd448bfb98239a2c7 # v8.0.0
+        with:
+          script: |
+            const summary = `## Pre-commit Check Results
+            
+            | Check | Status |
+            |-------|--------|
+            | Quick Validation | ${{ needs.quick-checks.result }} |
+            | Fast Tests | ${{ needs.fast-tests.result }} |
+            | Linting & Formatting | ${{ needs.lint-and-format.result }} |
+            | Security Scan | ${{ needs.security-scan.result }} |
+            
+            ### Next Steps
+            
+            ${needs.quick-checks.result === 'success' && needs.fast-tests.result === 'success' 
+              ? '✅ All pre-commit checks passed! Ready for review.' 
+              : '⚠️ Some checks failed. Please review the logs.'}
+            
+            Full test suite will run on merge to main.
+            `;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: summary
+            });

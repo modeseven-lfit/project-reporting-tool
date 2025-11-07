@@ -1,0 +1,528 @@
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2025 The Linux Foundation
+
+---
+name: Tests
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'pyproject.toml'
+      - 'pytest.ini'
+      - '.github/workflows/tests.yaml'
+  pull_request:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'pyproject.toml'
+      - 'pytest.ini'
+      - '.github/workflows/tests.yaml'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
+jobs:
+  # Quick smoke tests - run first to fail fast
+  smoke-tests:
+    name: Smoke Tests (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      fail-fast: true
+      matrix:
+        python-version: ['3.10', '3.11', '3.12', '3.13']
+    
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@95d9a5d08a4e57e534c0b8c44a23f7a3cff84e3f # v2.13.2
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@858567871c9ba88a1bd86d6c33d8bcd1e0d24f3d # v7.1.2
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: uv sync --all-extras
+
+      - name: Run smoke tests
+        timeout-minutes: 3
+        run: |
+          uv run pytest tests/ \
+            -n auto \
+            -v \
+            -m smoke \
+            --tb=short \
+            --no-cov \
+            --timeout=30
+
+  # Unit tests with coverage
+  unit-tests:
+    name: Unit Tests (Python ${{ matrix.python-version }})
+    needs: smoke-tests
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.11', '3.12', '3.13']
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        exclude:
+          # Run full matrix only on main branch
+          - os: macos-latest
+          - os: windows-latest
+    
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@95d9a5d08a4e57e534c0b8c44a23f7a3cff84e3f # v2.13.2
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@858567871c9ba88a1bd86d6c33d8bcd1e0d24f3d # v7.1.2
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: uv sync --all-extras
+
+      - name: Run unit tests
+        timeout-minutes: 10
+        run: |
+          uv run pytest tests/unit/ \
+            -n auto \
+            -v \
+            -m unit \
+            --cov=src \
+            --cov-report=xml \
+            --cov-report=html \
+            --cov-report=term-missing \
+            --cov-branch \
+            --tb=short \
+            --timeout=60
+
+      - name: Upload coverage reports
+        if: matrix.python-version == '3.11' && matrix.os == 'ubuntu-latest'
+        uses: codecov/codecov-action@5a10915ce1a99ff86979e4ad1e451b2946945d2c # v5.5.1
+        with:
+          files: ./coverage.xml
+          flags: unit
+          name: unit-tests-${{ matrix.python-version }}
+
+      - name: Upload coverage artifacts
+        if: always()
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        with:
+          name: coverage-unit-${{ matrix.os }}-${{ matrix.python-version }}
+          path: |
+            coverage.xml
+            htmlcov/
+          retention-days: 7
+
+  # Integration tests
+  integration-tests:
+    name: Integration Tests
+    needs: smoke-tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@95d9a5d08a4e57e534c0b8c44a23f7a3cff84e3f # v2.13.2
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@858567871c9ba88a1bd86d6c33d8bcd1e0d24f3d # v7.1.2
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: uv sync --all-extras
+
+      - name: Run integration tests
+        timeout-minutes: 15
+        run: |
+          uv run pytest tests/integration/ \
+            -n auto \
+            -v \
+            -m integration \
+            --cov=src \
+            --cov-report=xml \
+            --cov-append \
+            --tb=short \
+            --timeout=120
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@5a10915ce1a99ff86979e4ad1e451b2946945d2c # v5.5.1
+        with:
+          files: ./coverage.xml
+          flags: integration
+          name: integration-tests
+
+  # Property-based tests
+  property-tests:
+    name: Property-Based Tests
+    needs: smoke-tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@95d9a5d08a4e57e534c0b8c44a23f7a3cff84e3f # v2.13.2
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@858567871c9ba88a1bd86d6c33d8bcd1e0d24f3d # v7.1.2
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: uv sync --all-extras
+
+      - name: Run property-based tests
+        timeout-minutes: 10
+        env:
+          HYPOTHESIS_PROFILE: ci
+        run: |
+          uv run pytest tests/property/ \
+            -n auto \
+            -v \
+            -m property \
+            --cov=src \
+            --cov-report=xml \
+            --tb=short \
+            --timeout=180
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@5a10915ce1a99ff86979e4ad1e451b2946945d2c # v5.5.1
+        with:
+          files: ./coverage.xml
+          flags: property
+          name: property-tests
+
+      - name: Upload hypothesis examples
+        if: always()
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        with:
+          name: hypothesis-examples
+          path: .hypothesis/
+          retention-days: 7
+
+  # Regression tests
+  regression-tests:
+    name: Regression Tests
+    needs: smoke-tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@95d9a5d08a4e57e534c0b8c44a23f7a3cff84e3f # v2.13.2
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@858567871c9ba88a1bd86d6c33d8bcd1e0d24f3d # v7.1.2
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: uv sync --all-extras
+
+      - name: Run regression tests
+        timeout-minutes: 5
+        run: |
+          uv run pytest tests/regression/ \
+            -n auto \
+            -v \
+            -m regression \
+            --cov=src \
+            --cov-report=xml \
+            --tb=short \
+            --timeout=60
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@5a10915ce1a99ff86979e4ad1e451b2946945d2c # v5.5.1
+        with:
+          files: ./coverage.xml
+          flags: regression
+          name: regression-tests
+
+      - name: Upload snapshots
+        if: failure()
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        with:
+          name: regression-snapshots
+          path: tests/regression/__snapshots__/
+          retention-days: 7
+
+  # Performance threshold tests
+  performance-tests:
+    name: Performance Tests
+    needs: smoke-tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@95d9a5d08a4e57e534c0b8c44a23f7a3cff84e3f # v2.13.2
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@858567871c9ba88a1bd86d6c33d8bcd1e0d24f3d # v7.1.2
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: uv sync --all-extras
+
+      - name: Run performance threshold tests
+        timeout-minutes: 5
+        run: |
+          uv run pytest tests/performance/test_thresholds.py \
+            -n auto \
+            -v \
+            -m performance \
+            --tb=short \
+            --no-cov \
+            --timeout=60
+
+      - name: Run performance benchmarks
+        timeout-minutes: 3
+        run: |
+          uv run pytest tests/performance/test_benchmarks.py \
+            -v \
+            -m benchmark \
+            --benchmark-only \
+            --benchmark-disable-gc \
+            --benchmark-warmup=on \
+            --benchmark-save=ci-${{ github.run_number }} \
+            --benchmark-compare-fail=mean:10% \
+            --benchmark-columns=min,max,mean,median,stddev \
+            --no-cov
+        continue-on-error: true
+        # Note: Benchmarks automatically disable when xdist is present,
+        # so this runs sequentially even if xdist is installed
+
+      - name: Upload benchmark results
+        if: always()
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        with:
+          name: benchmark-results
+          path: .benchmarks/
+          retention-days: 30
+
+  # Code quality checks
+  code-quality:
+    name: Code Quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@95d9a5d08a4e57e534c0b8c44a23f7a3cff84e3f # v2.13.2
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@858567871c9ba88a1bd86d6c33d8bcd1e0d24f3d # v7.1.2
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: uv sync --all-extras
+
+      - name: Run black
+        run: |
+          uv run black --check --diff src/ tests/
+        continue-on-error: true
+
+      - name: Run isort
+        run: |
+          uv run isort --check-only --diff src/ tests/
+        continue-on-error: true
+
+      - name: Run flake8
+        run: |
+          uv run flake8 src/ tests/ --max-line-length=120 --extend-ignore=E203,W503
+        continue-on-error: true
+
+      - name: Run pylint
+        run: |
+          uv run pylint src/ --max-line-length=120 --disable=C0114,C0115,C0116
+        continue-on-error: true
+
+      - name: Run mypy
+        run: |
+          uv run mypy src/ --ignore-missing-imports --no-strict-optional
+        continue-on-error: true
+
+  # Test summary and coverage report
+  test-summary:
+    name: Test Summary
+    needs:
+      - unit-tests
+      - integration-tests
+      - property-tests
+      - regression-tests
+      - performance-tests
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@95d9a5d08a4e57e534c0b8c44a23f7a3cff84e3f # v2.13.2
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: Download all coverage artifacts
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
+        with:
+          pattern: coverage-*
+          path: ./coverage-reports/
+          merge-multiple: true
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: '3.11'
+
+      - name: Generate combined coverage report
+        run: |
+          pip install coverage
+          # Combine coverage files if multiple exist
+          if [ -d "coverage-reports" ]; then
+            cd coverage-reports
+            coverage combine --keep coverage.xml || true
+            coverage report --format=markdown > ../coverage-summary.md || true
+            coverage html -d ../htmlcov-combined || true
+          fi
+
+      - name: Generate test summary
+        if: always()
+        run: |
+          cat > test-summary.md << 'EOF'
+          # Test Execution Summary
+          
+          ## Results
+          
+          | Test Suite | Status |
+          |------------|--------|
+          | Smoke Tests | ${{ needs.smoke-tests.result }} |
+          | Unit Tests | ${{ needs.unit-tests.result }} |
+          | Integration Tests | ${{ needs.integration-tests.result }} |
+          | Property Tests | ${{ needs.property-tests.result }} |
+          | Regression Tests | ${{ needs.regression-tests.result }} |
+          | Performance Tests | ${{ needs.performance-tests.result }} |
+          
+          ## Coverage
+          
+          See coverage-summary.md for details.
+          
+          ## Workflow
+          
+          - Run ID: ${{ github.run_id }}
+          - Run Number: ${{ github.run_number }}
+          - Triggered by: ${{ github.event_name }}
+          - Branch: ${{ github.ref_name }}
+          - Commit: ${{ github.sha }}
+          EOF
+
+      - name: Upload combined coverage
+        if: always()
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        with:
+          name: coverage-combined
+          path: |
+            coverage-summary.md
+            htmlcov-combined/
+            test-summary.md
+          retention-days: 30
+
+      - name: Comment PR with results
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@ed59741e841120dd8e79189bd448bfb98239a2c7 # v8.0.0
+        with:
+          script: |
+            const fs = require('fs');
+            let summary = '# Test Results\n\n';
+            
+            if (fs.existsSync('test-summary.md')) {
+              summary += fs.readFileSync('test-summary.md', 'utf8');
+            }
+            
+            if (fs.existsSync('coverage-summary.md')) {
+              summary += '\n\n' + fs.readFileSync('coverage-summary.md', 'utf8');
+            }
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: summary
+            });
