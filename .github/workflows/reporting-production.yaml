@@ -1,0 +1,552 @@
+---
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2025 The Linux Foundation
+
+name: "📊 Production Reports"
+
+# yamllint disable-line rule:truthy
+on:
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: 'Enable debug output'
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    # Run every Monday at 7:00 AM UTC
+    - cron: "0 7 * * 1"
+
+concurrency:
+  group: production-reports
+  cancel-in-progress: false  # Don't cancel production runs
+
+permissions: {}
+
+jobs:
+  verify:
+    name: "Verify Configuration"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 5
+    outputs:
+      matrix: ${{ steps.parse-projects.outputs.matrix }}
+      run_timestamp: ${{ steps.metadata.outputs.timestamp }}
+      run_id: ${{ steps.metadata.outputs.run_id }}
+    steps:
+      # Harden the runner used by this workflow
+      # yamllint disable-line rule:line-length
+      - uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
+        with:
+          egress-policy: "audit"
+
+      - name: "Checkout repository"
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: "Generate run metadata"
+        id: metadata
+        shell: bash
+        run: |
+          timestamp=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          echo "timestamp=$timestamp" >> "$GITHUB_OUTPUT"
+          echo "run_id=${{ github.run_id }}" >> "$GITHUB_OUTPUT"
+
+          {
+            echo "## 📊 Production Report Generation"
+            echo ""
+            echo "**Started:** $timestamp"
+            echo "**Run ID:** ${{ github.run_id }}"
+            echo "**Trigger:** ${{ github.event_name }}"
+            echo ""
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: "Verify PROJECTS_JSON variable"
+        shell: bash
+        run: |
+          if [ -z "${{ vars.PROJECTS_JSON }}" ]; then
+            echo "::error::PROJECTS_JSON variable is not set"
+            exit 1
+          fi
+
+          echo "✅ PROJECTS_JSON variable exists"
+
+      - name: "Validate required secrets"
+        shell: bash
+        env:
+          CLASSIC_READ_ONLY_PAT_TOKEN: >-
+            ${{ secrets.CLASSIC_READ_ONLY_PAT_TOKEN }}
+          LF_GERRIT_INFO_MASTER_SSH_KEY: >-
+            ${{ secrets.LF_GERRIT_INFO_MASTER_SSH_KEY }}
+        run: |
+          validation_failed=false
+
+          echo "🔐 Validating required secrets..."
+
+          # Check CLASSIC_READ_ONLY_PAT_TOKEN
+          if [ -z "$CLASSIC_READ_ONLY_PAT_TOKEN" ]; then
+            echo "::error::CLASSIC_READ_ONLY_PAT_TOKEN secret is not set"
+            echo "❌ CLASSIC_READ_ONLY_PAT_TOKEN: MISSING"
+            validation_failed=true
+          else
+            echo "✅ CLASSIC_READ_ONLY_PAT_TOKEN: Present"
+          fi
+
+          # Check LF_GERRIT_INFO_MASTER_SSH_KEY (warning only)
+          if [ -z "$LF_GERRIT_INFO_MASTER_SSH_KEY" ]; then
+            echo "::warning::LF_GERRIT_INFO_MASTER_SSH_KEY secret not set"
+            echo "⚠️  LF_GERRIT_INFO_MASTER_SSH_KEY: MISSING (HTTPS fallback)"
+          else
+            echo "✅ LF_GERRIT_INFO_MASTER_SSH_KEY: Present"
+          fi
+
+          # Write summary
+          {
+            echo "### 🔐 Secrets Validation"
+            echo ""
+            if [ -n "$CLASSIC_READ_ONLY_PAT_TOKEN" ]; then
+              echo "- ✅ **CLASSIC_READ_ONLY_PAT_TOKEN:** Present"
+            else
+              echo "- ❌ **CLASSIC_READ_ONLY_PAT_TOKEN:** MISSING"
+            fi
+
+            if [ -n "$LF_GERRIT_INFO_MASTER_SSH_KEY" ]; then
+              echo "- ✅ **LF_GERRIT_INFO_MASTER_SSH_KEY:** Present"
+            else
+              echo "- ⚠️ **LF_GERRIT_INFO_MASTER_SSH_KEY:** MISSING"
+            fi
+            echo ""
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ "$validation_failed" = true ]; then
+            echo "::error::Secret validation failed"
+            exit 1
+          fi
+
+          echo "✅ All required secrets validated"
+
+      - name: "Parse and validate PROJECTS_JSON"
+        id: parse-projects
+        shell: bash
+        run: |
+          projects_json='${{ vars.PROJECTS_JSON }}'
+
+          # Validate JSON syntax
+          if ! echo "$projects_json" | jq . > /dev/null 2>&1; then
+            echo "::error::PROJECTS_JSON contains invalid JSON"
+            exit 1
+          fi
+
+          # Validate structure
+          if ! echo "$projects_json" | jq -e 'type == "array"' > /dev/null; then
+            echo "::error::PROJECTS_JSON must be an array"
+            exit 1
+          fi
+
+          # Validate required fields
+          if ! echo "$projects_json" | \
+            jq -e 'all(.project and .gerrit)' > /dev/null; then
+            echo "::error::Each project must have 'project' and 'gerrit'"
+            exit 1
+          fi
+
+          project_count=$(echo "$projects_json" | jq '. | length')
+          echo "✅ Found $project_count project(s) to process"
+
+          # Create matrix
+          matrix=$(echo "$projects_json" | jq -c '{include: .}')
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
+
+          {
+            echo "### Projects to Process"
+            echo ""
+            echo "**Total projects:** $project_count"
+            echo ""
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "$projects_json" | \
+            jq -r '.[] | "- **\(.project):** `\(.gerrit)`"' >> \
+            "$GITHUB_STEP_SUMMARY"
+
+  analyze:
+    name: "${{ matrix.project }}"
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.verify.outputs.matrix) }}
+    steps:
+      # Harden the runner
+      # yamllint disable-line rule:line-length
+      - uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
+        with:
+          egress-policy: "audit"
+
+      - name: "Checkout repository"
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: "Clone Gerrit repositories for ${{ matrix.project }}"
+        # yamllint disable-line rule:line-length
+        uses: lfreleng-actions/gerrit-clone-action@80b7e603ec8497cc00346d5dec9fae0f346b0548 # v0.1.9
+        id: clone
+        with:
+          host: ${{ matrix.gerrit }}
+          path-prefix: "./${{ matrix.gerrit }}"
+          skip-archived: "true"
+          threads: "4"
+          clone-timeout: "600"
+          retry-attempts: "5"
+          retry-base-delay: "3.0"
+          retry-max-delay: "60.0"
+          use-https: "true"
+          move-conflicting: "true"
+
+      - name: "Set up SSH key for info-master"
+        shell: bash
+        env:
+          SSH_KEY: ${{ secrets.LF_GERRIT_INFO_MASTER_SSH_KEY }}
+        run: |
+          if [ -z "$SSH_KEY" ]; then
+            echo "::warning::SSH key not set, will use HTTPS"
+            echo "SSH_AVAILABLE=false" >> "$GITHUB_ENV"
+          else
+            echo "🔑 Configuring SSH key"
+            mkdir -p ~/.ssh
+            chmod 700 ~/.ssh
+
+            echo "$SSH_KEY" > ~/.ssh/gerrit_info_master
+            chmod 600 ~/.ssh/gerrit_info_master
+
+            cat >> ~/.ssh/config <<EOF
+          Host gerrit.linuxfoundation.org
+            HostName gerrit.linuxfoundation.org
+            User modesevenindustrialsolutions
+            Port 29418
+            IdentityFile ~/.ssh/gerrit_info_master
+            StrictHostKeyChecking no
+            UserKnownHostsFile /dev/null
+          EOF
+            chmod 600 ~/.ssh/config
+
+            echo "✅ SSH configured"
+            echo "SSH_AVAILABLE=true" >> "$GITHUB_ENV"
+          fi
+
+      - name: "Clone info-master repository"
+        shell: bash
+        run: |
+          echo "🔗 Cloning info-master repository"
+
+          ssh_url="ssh://modesevenindustrialsolutions@"
+          ssh_url="${ssh_url}gerrit.linuxfoundation.org:29418/"
+          ssh_url="${ssh_url}releng/info-master"
+          https_url="https://gerrit.linuxfoundation.org/infra/"
+          https_url="${https_url}releng/info-master"
+
+          if [ "${SSH_AVAILABLE:-false}" = "true" ]; then
+            echo "Attempting SSH clone..."
+            if git clone "$ssh_url" ./info-master; then
+              echo "✅ Cloned via SSH"
+            else
+              echo "::warning::SSH failed, trying HTTPS"
+              git clone "$https_url" ./info-master
+              echo "✅ Cloned via HTTPS"
+            fi
+          else
+            echo "Using HTTPS clone..."
+            git clone "$https_url" ./info-master
+            echo "✅ Cloned via HTTPS"
+          fi
+
+          echo "📂 Info-master contents:"
+          find ./info-master -maxdepth 2 -type f -name "*.yaml" | head -5
+
+      - name: "Install uv"
+        # yamllint disable-line rule:line-length
+        uses: astral-sh/setup-uv@85856786d1ce8acfbcc2f13a5f3fbd6b938f9f41 # v7.1.2
+
+      - name: "Set up Python"
+        # yamllint disable-line rule:line-length
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: "3.11"
+
+      - name: "Install dependencies"
+        shell: bash
+        run: uv sync --all-extras
+
+      - name: "Generate reports for ${{ matrix.project }}"
+        shell: bash
+        env:
+          JENKINS_HOST: ${{ matrix.jenkins }}
+          CLASSIC_READ_ONLY_PAT_TOKEN:
+            ${{ secrets.CLASSIC_READ_ONLY_PAT_TOKEN }}
+          GITHUB_ORG: ${{ matrix.github }}
+          SSH_AVAILABLE: ${{ env.SSH_AVAILABLE }}
+        run: |
+          project="${{ matrix.project }}"
+          echo "📊 Generating reports for $project"
+
+          if [ -n "$JENKINS_HOST" ]; then
+            echo "🔧 Jenkins: $JENKINS_HOST"
+          else
+            echo "ℹ️ Jenkins integration disabled"
+          fi
+
+          if [ -n "$CLASSIC_READ_ONLY_PAT_TOKEN" ]; then
+            echo "🔧 GitHub API integration enabled"
+          else
+            echo "⚠️ GitHub API integration disabled"
+          fi
+
+          uv run reporting-tool generate \
+            --project "$project" \
+            --repos-path "./${{ matrix.gerrit }}" \
+            --config-dir "./configuration" \
+            --output-dir "./reports" \
+            --verbose
+
+          echo "✅ Reports generated for $project"
+
+      - name: "Create report metadata"
+        shell: bash
+        run: |
+          project="${{ matrix.project }}"
+          report_dir="./reports/$project"
+
+          if [ ! -d "$report_dir" ]; then
+            echo "::error::Report directory not found: $report_dir"
+            exit 1
+          fi
+
+          # Create metadata file
+          cat > "$report_dir/metadata.json" <<EOF
+          {
+            "project": "$project",
+            "gerrit_server": "${{ matrix.gerrit }}",
+            "jenkins_server": "${{ matrix.jenkins }}",
+            "github_org": "${{ matrix.github }}",
+            "generated_at": "${{ needs.verify.outputs.run_timestamp }}",
+            "workflow_run_id": "${{ github.run_id }}",
+            "workflow_run_number": "${{ github.run_number }}",
+            "workflow_run_attempt": "${{ github.run_attempt }}",
+            "git_sha": "${{ github.sha }}",
+            "git_ref": "${{ github.ref }}",
+            "environment": "production"
+          }
+          EOF
+
+          echo "✅ Metadata created"
+
+      - name: "Upload raw data artifacts"
+        if: always()
+        # yamllint disable-line rule:line-length
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        with:
+          name: raw-data-${{ matrix.project }}
+          path: |
+            ./reports/${{ matrix.project }}/report_raw.json
+            ./reports/${{ matrix.project }}/config_resolved.json
+            ./reports/${{ matrix.project }}/metadata.json
+          retention-days: 90
+          if-no-files-found: error
+          compression-level: 9
+
+      - name: "Upload report artifacts"
+        if: always()
+        # yamllint disable-line rule:line-length
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        with:
+          name: reports-${{ matrix.project }}
+          path: ./reports/${{ matrix.project }}/
+          retention-days: 90
+          if-no-files-found: error
+          compression-level: 6
+
+      - name: "Upload clone manifest"
+        if: always()
+        # yamllint disable-line rule:line-length
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        with:
+          name: clone-manifest-${{ matrix.project }}
+          path: "./${{ matrix.gerrit }}/clone-manifest.json"
+          retention-days: 90
+          if-no-files-found: warn
+
+      - name: "Upload clone log"
+        if: always()
+        # yamllint disable-line rule:line-length
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        with:
+          name: clone-log-${{ matrix.project }}
+          path: "./${{ matrix.gerrit }}.log"
+          retention-days: 90
+          if-no-files-found: warn
+
+  publish:
+    name: "Publish to GitHub Pages"
+    needs: [verify, analyze]
+    if: always() && needs.verify.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    timeout-minutes: 20
+    steps:
+      # Harden the runner
+      # yamllint disable-line rule:line-length
+      - uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
+        with:
+          egress-policy: "audit"
+
+      - name: "Checkout repository"
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          ref: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "Download all report artifacts"
+        # yamllint disable-line rule:line-length
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
+        with:
+          pattern: reports-*
+          path: ./downloaded-reports
+        continue-on-error: true
+
+      - name: "Prepare production reports directory"
+        shell: bash
+        run: |
+          echo "📦 Preparing production reports"
+
+          # Create production directory if it doesn't exist
+          mkdir -p production
+
+          # Process each downloaded report
+          report_count=0
+          for artifact_dir in ./downloaded-reports/reports-*
+          do
+            if [ ! -d "$artifact_dir" ]; then
+              continue
+            fi
+
+            project_name=$(basename "$artifact_dir" | \
+              sed 's/^reports-//')
+            slug=$(echo "$project_name" | \
+              tr '[:upper:]' '[:lower:]' | \
+              sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//')
+
+            echo "Processing: $project_name -> $slug"
+
+            target_dir="production/$slug"
+            mkdir -p "$target_dir"
+
+            # Copy all report files
+            if [ -f "$artifact_dir/report.html" ]; then
+              cp "$artifact_dir/report.html" "$target_dir/"
+            fi
+
+            if [ -f "$artifact_dir/report_raw.json" ]; then
+              cp "$artifact_dir/report_raw.json" "$target_dir/"
+            fi
+
+            if [ -f "$artifact_dir/report.md" ]; then
+              cp "$artifact_dir/report.md" "$target_dir/"
+            fi
+
+            if [ -f "$artifact_dir/metadata.json" ]; then
+              cp "$artifact_dir/metadata.json" "$target_dir/"
+            fi
+
+            report_count=$((report_count + 1))
+            echo "  ✅ Prepared $project_name"
+          done
+
+          echo "REPORT_COUNT=$report_count" >> "$GITHUB_ENV"
+          echo "✅ Prepared $report_count project report(s)"
+
+      - name: "Generate index page"
+        shell: bash
+        run: |
+          bash .github/scripts/generate-index.sh production
+
+      - name: "Commit and push changes"
+        shell: bash
+        run: |
+          git config user.name "lf-releng-reports-bot"
+          git config user.email "lf-releng+reports-bot@linuxfoundation.org"
+
+          git add production/
+          git add index.html || true
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          cat > /tmp/commit-msg.txt <<EOF
+          chore: update production reports (run ${{ github.run_id }})
+
+          Generated: ${{ needs.verify.outputs.run_timestamp }}
+          Reports: ${{ env.REPORT_COUNT }} project(s)
+          Run: ${{ github.run_id }}
+          EOF
+
+          git commit -F /tmp/commit-msg.txt
+          git push origin gh-pages
+
+          echo "✅ Published to GitHub Pages"
+
+          {
+            echo "## 📤 Reports Published"
+            echo ""
+            echo "**Reports published:** ${{ env.REPORT_COUNT }}"
+            echo "**Branch:** gh-pages"
+            echo "**Path:** production/"
+            echo ""
+            echo "### 🌐 View Reports"
+            echo ""
+            echo "Reports will be available at:"
+            owner="${{ github.repository_owner }}"
+            repo="${{ github.event.repository.name }}"
+            echo "https://${owner}.github.io/${repo}/"
+            echo ""
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  summary:
+    name: "Generate Summary"
+    needs: [verify, analyze, publish]
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 10
+    steps:
+      # Harden the runner
+      # yamllint disable-line rule:line-length
+      - uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
+        with:
+          egress-policy: "audit"
+
+      - name: "Generate workflow summary"
+        shell: bash
+        run: |
+          {
+            echo "## 📊 Production Report Generation Complete"
+            echo ""
+            echo "**Completed:** $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "**Status:** ${{ needs.publish.result }}"
+            echo ""
+            echo "### Job Results"
+            echo ""
+            echo "- **Verify:** ${{ needs.verify.result }}"
+            echo "- **Analyze:** ${{ needs.analyze.result }}"
+            echo "- **Publish:** ${{ needs.publish.result }}"
+            echo ""
+          } >> "$GITHUB_STEP_SUMMARY"
