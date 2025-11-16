@@ -61,6 +61,46 @@ def safe_git_command(
         return False, str(e)
 
 
+def parse_git_iso_date(date_str: str) -> datetime.datetime:
+    """
+    Parse git's --date=iso format into a datetime object.
+    
+    Git ISO format: "2013-03-25 16:50:06 +0100"
+    Python fromisoformat expects: "2013-03-25T16:50:06+01:00"
+    
+    Args:
+        date_str: Date string from git in ISO format
+        
+    Returns:
+        datetime object with timezone information
+        
+    Raises:
+        ValueError: If the date string cannot be parsed
+    """
+    # Replace first space with 'T' to separate date and time
+    date_str = date_str.replace(" ", "T", 1)
+    
+    # Handle timezone offset: convert "+0100" to "+01:00"
+    if "+" in date_str or date_str.count("-") > 2:
+        # Split at the timezone offset
+        if "+" in date_str:
+            parts = date_str.rsplit("+", 1)
+            tz_sign = "+"
+        else:
+            # Find the last '-' which is the timezone indicator
+            # (date already has 2 dashes, so count > 2 means timezone)
+            parts = date_str.rsplit("-", 1)
+            tz_sign = "-"
+        
+        if len(parts) == 2 and len(parts[1]) == 4:
+            # Format timezone: "0100" -> "01:00"
+            tz_offset = parts[1]
+            formatted_tz = f"{tz_offset[:2]}:{tz_offset[2:]}"
+            date_str = f"{parts[0]}{tz_sign}{formatted_tz}"
+    
+    return datetime.datetime.fromisoformat(date_str)
+
+
 class GitDataCollector:
     """Handles Git repository analysis and metric collection.
 
@@ -901,14 +941,12 @@ class GitDataCollector:
                 # Parse commit header: hash|date|author_name|author_email|subject
                 parts = line.split("|", 4)
                 try:
-                    commit_date = datetime.datetime.fromisoformat(
-                        parts[1].replace(" ", "T")
-                    )
+                    commit_date = parse_git_iso_date(parts[1])
                     if commit_date.tzinfo is None:
                         commit_date = commit_date.replace(tzinfo=datetime.timezone.utc)
-                except (ValueError, IndexError):
+                except (ValueError, IndexError) as e:
                     self.logger.warning(
-                        f"Invalid date format in {repo_name}: {parts[1] if len(parts) > 1 else 'unknown'}"
+                        f"Invalid date format in {repo_name}: {parts[1] if len(parts) > 1 else 'unknown'} - {e}"
                     )
                     continue
 
@@ -1033,9 +1071,7 @@ class GitDataCollector:
 
             if success and output.strip():
                 try:
-                    last_commit_date = datetime.datetime.fromisoformat(
-                        output.strip().replace(" ", "T")
-                    )
+                    last_commit_date = parse_git_iso_date(output.strip())
                     if last_commit_date.tzinfo is None:
                         last_commit_date = last_commit_date.replace(
                             tzinfo=datetime.timezone.utc
