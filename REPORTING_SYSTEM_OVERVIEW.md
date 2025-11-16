@@ -140,7 +140,7 @@ docs/
    - Parses project list into matrix for parallel execution
 
 2. **Analyze Jobs** (Parallel, one per project)
-   - Clones all Gerrit repositories (non-archived only)
+   - Clones all Gerrit repositories (excluding archived repositories)
    - Clones info-master repository for committer data
    - Queries Jenkins API for job status
    - Queries GitHub API for workflow status
@@ -191,7 +191,7 @@ https://<owner>.github.io/<repo>/production/<project-slug>/report.html
 
 **Resource Optimization:**
 
-- Processes **first 2 projects only** to conserve CI resources
+- Processes **first 2 projects** to conserve CI resources
 - Uses shorter timeouts (60 min vs 90 min)
 - Lower artifact retention (30 days vs 90 days)
 
@@ -200,7 +200,7 @@ https://<owner>.github.io/<repo>/production/<project-slug>/report.html
 1. **Verify Job**
    - Same as production, but limits to 2 projects
 
-2. **Analyze Jobs** (Parallel, first 2 projects only)
+2. **Analyze Jobs** (Parallel, first 2 projects)
    - Same process as production
    - Adds PR context to metadata
 

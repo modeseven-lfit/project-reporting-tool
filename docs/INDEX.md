@@ -68,6 +68,11 @@ New to the tool? Begin with these essentials:
   - INFO.yaml reports
   - Performance tuning
   - Advanced options
+- [Configuration Merging](CONFIGURATION_MERGING.md) - How project configs inherit and override defaults
+  - Deep merge behavior
+  - Minimal configuration files
+  - Override patterns
+  - Real-world examples
 
 ### 📊 Features
 
@@ -129,6 +134,7 @@ New to the tool? Begin with these essentials:
 - **First time using the tool?** → [Getting Started](GETTING_STARTED.md)
 - **Command syntax?** → [Commands](COMMANDS.md)
 - **Configuration options?** → [Configuration](CONFIGURATION.md)
+- **Minimal project configs?** → [Configuration Merging](CONFIGURATION_MERGING.md)
 - **GitHub token setup?** → [Configuration > GitHub API](CONFIGURATION.md#github-api-authentication)
 - **INFO.yaml reports?** → [Usage Examples > INFO.yaml](USAGE_EXAMPLES.md#infoyaml-reports)
 - **Common problems?** → [Troubleshooting](TROUBLESHOOTING.md)
@@ -217,13 +223,14 @@ All documentation follows these standards:
 
 ## 🗂️ Complete File List
 
-### User Documentation (6 files)
+### User Documentation (7 files)
 
 ```text
 GETTING_STARTED.md      - Installation and first report
 COMMANDS.md             - Command-line reference
 FAQ.md                  - Frequently asked questions
 CONFIGURATION.md        - Configuration reference
+CONFIGURATION_MERGING.md - Configuration inheritance and overrides
 USAGE_EXAMPLES.md       - Real-world usage patterns
 TROUBLESHOOTING.md      - Problem solving guide
 ```
@@ -250,14 +257,14 @@ TESTING.md              - Test suite documentation
 INDEX.md                - This file
 ```
 
-**Total:** 13 core documentation files
+**Total:** 14 core documentation files
 
 ---
 
 ## 📊 Documentation Statistics
 
-- **Total Files:** 13 (streamlined from 48)
-- **User Guides:** 6 essential guides
+- **Total Files:** 14 (streamlined from 48)
+- **User Guides:** 7 essential guides
 - **Advanced Topics:** 4 specialized guides
 - **Developer Docs:** 2 technical guides
 - **Total Lines:** ~15,000 (reduced from 29,000)

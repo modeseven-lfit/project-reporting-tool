@@ -70,7 +70,8 @@ repos:
     hooks:
       - id: write-good
         files: "\\.(rst|md|markdown|mdown|mkdn)$"
-        exclude: "^(docs/|tests/|src/.*/README\\.md$|examples/|SETUP\\.md$)"
+        # yamllint disable-line rule:line-length
+        exclude: "^(docs/|tests/|src/.*/README\\.md$|examples/|SETUP\\.md$|REPORTING_SYSTEM_OVERVIEW\\.md$|configuration/README\\.md$|CONFIGURATION_OVERRIDE_SUMMARY\\.md$|docs/CONFIGURATION_MERGING\\.md$)"
 
   - repo: https://github.com/shellcheck-py/shellcheck-py
     rev: 745eface02aef23e168a8afb6b5737818efbea95  # frozen: v0.11.0.1

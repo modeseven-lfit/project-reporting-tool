@@ -50,7 +50,7 @@ Generates HTML index pages for GitHub Pages.
 **Output:**
 
 - `<report_dir>/index.html` - Project listing page
-- `index.html` - Root landing page (production only)
+- `index.html` - Root landing page (for production environment)
 
 ---
 
@@ -138,7 +138,7 @@ All scripts require:
 
 - Bash shell (tested on Linux and macOS)
 - Standard Unix utilities: `jq`, `curl`, `git`, `find`, `date`
-- GitHub CLI or token for API access (download-artifacts.sh only)
+- GitHub CLI or token for API access (required for download-artifacts.sh)
 
 ### Installation
 

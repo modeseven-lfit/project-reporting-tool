@@ -3,10 +3,10 @@ Upstream-Name: reporting-tool
 Upstream-Contact: The Linux Foundation
 Source: https://github.com/lfit/reporting-tool
 
-Files: tests/regression/snapshots/**
+Files: tests/regression/snapshots/** tests/regression/__snapshots__/*.ambr
 Copyright: 2025 The Linux Foundation
 License: Apache-2.0
-Comment: Test snapshot data files
+Comment: Test snapshot data files - syrupy requires version marker as first line
 
 Files: src/config/schema.json src/themes/*/config.json .markdownlint.json
 Copyright: 2025 The Linux Foundation

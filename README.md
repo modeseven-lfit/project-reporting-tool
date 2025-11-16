@@ -50,6 +50,7 @@ reporting-tool generate \
 ### ⚙️ Setup & Configuration
 
 - **[Configuration Guide](docs/CONFIGURATION.md)** - All configuration options (GitHub API, INFO.yaml, performance)
+- **[Configuration Merging](docs/CONFIGURATION_MERGING.md)** - How project configs inherit and override defaults
 - **[Deployment Guide](docs/DEPLOYMENT.md)** - Production deployment and operations
 - **[CI/CD Integration](docs/CI_CD_INTEGRATION.md)** - GitHub Actions, GitLab CI, and automation
 
@@ -88,7 +89,9 @@ uv run reporting-tool generate --project my-project --repos-path ./repos
 pip install .
 
 # Run the tool
-reporting-tool generate --project my-project --repos-path ./repos
+# Note: repos-path should match the directory created by gerrit-clone-action
+# which defaults to the Gerrit server hostname (e.g., ./gerrit.o-ran-sc.org)
+reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org
 ```
 
 **→ [Detailed Setup Instructions](SETUP.md)**
@@ -99,11 +102,14 @@ reporting-tool generate --project my-project --repos-path ./repos
 
 | Use Case | Command |
 |----------|---------|
-| **Basic report** | `reporting-tool generate --project my-project --repos-path ./repos` |
-| **With caching** | `reporting-tool generate --project my-project --repos-path ./repos --cache --workers 8` |
-| **Check config** | `reporting-tool generate --project my-project --repos-path ./repos --dry-run` |
+| **Basic report (O-RAN-SC)** | `reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org` |
+| **Basic report (ONAP)** | `reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org` |
+| **With caching** | `reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org --cache --workers 8` |
+| **Check config** | `reporting-tool generate --project O-RAN-SC --repos-path ./gerrit.o-ran-sc.org --dry-run` |
 | **List features** | `reporting-tool list-features` |
 | **Get help** | `reporting-tool --help` |
+
+> **Note:** The `--repos-path` should point to the directory created by `gerrit-clone-action`, which uses the Gerrit server hostname as the directory name (e.g., `./gerrit.o-ran-sc.org` for O-RAN-SC, `./gerrit.onap.org` for ONAP).
 
 **→ [More Examples](docs/USAGE_EXAMPLES.md)**
 

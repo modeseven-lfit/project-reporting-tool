@@ -4,9 +4,12 @@
 ---
 project: test-project
 time_windows:
-    reporting_window_days: 365
-    recent_activity_days: 90
-    active_contributor_days: 90
+    reporting_window:
+        days: 365
+    recent_activity:
+        days: 90
+    active_contributor:
+        days: 90
 output:
     directory: output
     formats:

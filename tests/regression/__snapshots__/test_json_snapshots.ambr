@@ -1,6 +1,3 @@
-# SPDX-License-Identifier: Apache-2.0
-# SPDX-FileCopyrightText: 2025 The Linux Foundation
-
 # serializer version: 1
 # name: TestAuthorMetricsSnapshots.test_author_metrics_basic_snapshot[author_basic]
   '''

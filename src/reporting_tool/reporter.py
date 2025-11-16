@@ -502,9 +502,9 @@ class RepositoryReporter:
 
         # Default time windows if not specified
         default_windows = {
-            "last_30_days": 30,
-            "last_90_days": 90,
-            "last_365_days": 365,
+            "last_30": 30,
+            "last_90": 90,
+            "last_365": 365,
             "last_3_years": 1095,
         }
 

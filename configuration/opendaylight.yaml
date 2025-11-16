@@ -1,0 +1,15 @@
+---
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2025 The Linux Foundation
+
+# OpenDaylight Project Configuration
+# Only defines values that differ from default.yaml
+
+# Project identifier
+project: OpenDaylight
+
+# Activity thresholds - customized for OpenDaylight's release cycle
+activity_thresholds:
+  current_days: 183      # ✅ Current: ~6 months (365/2)
+  active_days: 548       # ☑️ Active: ~18 months (183-548 days)
+  # 🛑 Inactive: no commits in 548+ days

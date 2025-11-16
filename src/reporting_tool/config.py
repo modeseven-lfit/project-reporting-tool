@@ -76,59 +76,67 @@ def load_yaml_config(config_path: Path) -> Dict[str, Any]:
         raise ConfigurationError(f"Error loading configuration file {config_path}: {e}")
 
 
+
+
+
 def load_configuration(
     project: str,
     config_dir: Optional[Path] = None,
-    template_config: Optional[str] = None
+    default_config_name: Optional[str] = None
 ) -> Dict[str, Any]:
     """
     Load and merge configuration files.
 
-    Loads template configuration and project-specific configuration,
+    Loads default configuration (default.yaml) and project-specific configuration,
     then merges them with project config taking precedence.
+
+    If no project-specific configuration exists, uses the default configuration.
+    This allows the tool to work out-of-the-box for most projects without
+    requiring custom configuration files.
 
     Args:
         project: Project name
-        config_dir: Directory containing configuration files
-        template_config: Template configuration file name (default: template.config)
+        config_dir: Directory containing configuration files (default: configuration)
+        default_config_name: Default configuration file name (default: default.yaml)
 
     Returns:
         Merged configuration dictionary
-
-    Raises:
-        ConfigurationError: If configuration cannot be loaded
     """
     if config_dir is None:
-        config_dir = Path("config")
+        config_dir = Path("configuration")
 
-    if template_config is None:
-        template_config = "template.config"
+    if default_config_name is None:
+        default_config_name = "default.yaml"
 
-    # Load template configuration
-    template_path = config_dir / template_config
-    if not template_path.exists():
-        logger.warning(f"Template configuration not found: {template_path}")
-        template = {}
+    # Load default configuration
+    default_path = config_dir / default_config_name
+    if not default_path.exists():
+        logger.warning(f"Default configuration not found: {default_path}")
+        default_config = {}
     else:
-        template = load_yaml_config(template_path)
-        logger.debug(f"Loaded template configuration from {template_path}")
+        default_config = load_yaml_config(default_path)
+        logger.debug(f"Loaded default configuration from {default_path}")
 
-    # Load project configuration
+    # Load project-specific configuration (optional)
     project_path = config_dir / f"{project}.yaml"
     if not project_path.exists():
         # Try .config extension for backward compatibility
         project_path = config_dir / f"{project}.config"
 
     if not project_path.exists():
-        raise ConfigurationError(
-            f"Project configuration not found: {config_dir}/{project}.yaml or {project}.config"
+        # No project-specific config found, use defaults
+        logger.info(
+            f"No project-specific configuration found for '{project}' in {config_dir}, "
+            f"using defaults from {default_config_name}"
         )
+        merged_config = default_config.copy()
+    else:
+        # Load and merge project-specific configuration
+        project_config = load_yaml_config(project_path)
+        logger.debug(f"Loaded project configuration from {project_path}")
 
-    project_config = load_yaml_config(project_path)
-    logger.debug(f"Loaded project configuration from {project_path}")
-
-    # Merge configurations
-    merged_config = deep_merge_dicts(template, project_config)
+        # Merge: default config <- project config (project overrides defaults)
+        merged_config = deep_merge_dicts(default_config, project_config)
 
     # Ensure project name is set
     merged_config['project'] = project
@@ -157,6 +165,10 @@ def setup_time_windows(config: Dict[str, Any]) -> Dict[str, datetime]:
     Converts time window configurations (e.g., "90d", "1y") into
     actual datetime objects for filtering.
 
+    Supports two formats:
+    - Simple: time_windows: {last_30: 30}
+    - Dictionary: time_windows: {last_30: {days: 30}}
+
     Args:
         config: Configuration dictionary with time_windows section
 
@@ -169,17 +181,23 @@ def setup_time_windows(config: Dict[str, Any]) -> Dict[str, datetime]:
     if 'time_windows' not in config:
         logger.warning("No time_windows defined in configuration, using defaults")
         return {
-            '30d': now - timedelta(days=30),
-            '90d': now - timedelta(days=90),
-            '1y': now - timedelta(days=365),
+            'last_30': now - timedelta(days=30),
+            'last_90': now - timedelta(days=90),
+            'last_365': now - timedelta(days=365),
         }
 
     for window_name, window_config in config['time_windows'].items():
-        if 'days' in window_config:
+        # Support both simple integer format and dictionary format
+        if isinstance(window_config, int):
+            # Simple format: last_30: 30
+            days = window_config
+            time_windows[window_name] = now - timedelta(days=days)
+        elif isinstance(window_config, dict) and 'days' in window_config:
+            # Dictionary format: last_30: {days: 30}
             days = window_config['days']
             time_windows[window_name] = now - timedelta(days=days)
         else:
-            logger.warning(f"Time window '{window_name}' missing 'days' field, skipping")
+            logger.warning(f"Time window '{window_name}' invalid format, skipping")
 
     return time_windows
 
