@@ -21,17 +21,20 @@ The `local-testing.sh` script automates the following workflow:
 ### Required Software
 
 - **uv** - Package manager and tool runner
+
   ```bash
   curl -LsSf https://astral.sh/uv/install.sh | sh
   ```
 
 - **git** - Git version control system
+
   ```bash
   # Usually pre-installed on most systems
   git --version
   ```
 
 - **jq** - JSON parser for project metadata
+
   ```bash
   brew install jq  # macOS
   sudo apt-get install jq  # Debian/Ubuntu
@@ -42,6 +45,7 @@ The `local-testing.sh` script automates the following workflow:
 The script requires SSH access to clone the info-master repository from `gerrit.linuxfoundation.org`.
 
 **Option 1: Use existing SSH key (recommended)**
+
 ```bash
 # Copy your Gerrit SSH key to the expected location
 cp ~/.ssh/id_rsa ~/.ssh/gerrit.linuxfoundation.org
@@ -50,11 +54,13 @@ ln -s ~/.ssh/id_rsa ~/.ssh/gerrit.linuxfoundation.org
 ```
 
 **Option 2: Set environment variable (CI/CD mode)**
+
 ```bash
 export LF_GERRIT_INFO_MASTER_SSH_KEY="$(cat ~/.ssh/id_rsa)"
 ```
 
 The script will automatically:
+
 - Check for `LF_GERRIT_INFO_MASTER_SSH_KEY` environment variable first
 - Fall back to `~/.ssh/gerrit.linuxfoundation.org` if not set
 - Exit with error if neither is found
@@ -67,6 +73,7 @@ Ensure you have sufficient disk space in `/tmp`:
 - **OpenDaylight**: ~10-20 GB (varies based on number of active repositories)
 
 Check available space:
+
 ```bash
 df -h /tmp
 ```
@@ -76,6 +83,7 @@ df -h /tmp
 By default, reports only use **local git data**. To include GitHub workflow status, Gerrit metadata, and Jenkins CI/CD information, you need to configure API access.
 
 **Quick setup:**
+
 ```bash
 export GITHUB_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxx"
 ```
@@ -83,8 +91,9 @@ export GITHUB_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxx"
 **📖 See [API_ACCESS.md](API_ACCESS.md) for complete API configuration guide**
 
 Without API tokens, reports will be very fast (~10-20 seconds) but will **NOT** include:
+
 - ✗ GitHub workflow status
-- ✗ Gerrit repository metadata  
+- ✗ Gerrit repository metadata
 - ✗ Jenkins CI/CD information
 
 With API tokens, reports take longer (~5-10 minutes) but include complete data.
@@ -111,7 +120,8 @@ The script will:
 9. 📊 Generate OpenDaylight report to `/tmp/reports/Opendaylight`
 10. 📋 Display summary of results
 
-**Notes:** 
+**Notes:**
+
 - The script uses project metadata from `projects.json` to configure Gerrit/Jenkins hosts automatically
 - SSH key is required for info-master access (see SSH Key Configuration above)
 - The script preserves existing cloned repositories to save time on subsequent runs
@@ -175,6 +185,7 @@ The script uses `projects.json` to configure project-specific settings:
 ```
 
 To add more projects, edit `testing/projects.json` with:
+
 - `project` - Project name
 - `gerrit` - Gerrit server hostname
 - `jenkins` - Jenkins server hostname (optional)
@@ -265,16 +276,19 @@ jq '.' /tmp/reports/OpenDaylight/report_raw.json | less
 If you see "❌ SSH key not found":
 
 1. **Copy your SSH key to the expected location**:
+
    ```bash
    cp ~/.ssh/id_rsa ~/.ssh/gerrit.linuxfoundation.org
    ```
 
 2. **Or set environment variable**:
+
    ```bash
    export LF_GERRIT_INFO_MASTER_SSH_KEY="$(cat ~/.ssh/id_rsa)"
    ```
 
 3. **Test SSH access**:
+
    ```bash
    ssh -p 29418 gerrit.linuxfoundation.org gerrit version
    ```
@@ -284,18 +298,21 @@ If you see "❌ SSH key not found":
 If cloning fails:
 
 1. **Check network connectivity**:
+
    ```bash
    ping gerrit.onap.org
    ping git.opendaylight.org
    ```
 
 2. **Verify server accessibility**:
+
    ```bash
    curl -I https://gerrit.onap.org
    curl -I https://git.opendaylight.org
    ```
 
 3. **Check disk space**:
+
    ```bash
    df -h /tmp
    ```
@@ -307,12 +324,14 @@ If cloning fails:
 If report generation fails:
 
 1. **Verify repositories were cloned**:
+
    ```bash
    ls -la /tmp/gerrit.onap.org/
    ls -la /tmp/git.opendaylight.org/
    ```
 
 2. **Check for valid git repositories**:
+
    ```bash
    find /tmp/gerrit.onap.org -name ".git" -type d | head -5
    ```
@@ -320,6 +339,7 @@ If report generation fails:
 3. **Run with verbose output** - Already enabled in the script
 
 4. **Check the reporting-tool dependencies**:
+
    ```bash
    cd reporting-tool
    uv sync
@@ -330,6 +350,7 @@ If report generation fails:
 If you run out of disk space:
 
 1. **Clean up previous test runs**:
+
    ```bash
    rm -rf /tmp/gerrit.onap.org
    rm -rf /tmp/git.opendaylight.org
@@ -337,6 +358,7 @@ If you run out of disk space:
    ```
 
 2. **Use a different directory** with more space:
+
    ```bash
    # Edit local-testing.sh
    CLONE_BASE_DIR="/path/to/larger/disk"
@@ -344,6 +366,7 @@ If you run out of disk space:
    ```
 
 3. **Clone with shallow depth** (edit the script):
+
    ```bash
    uvx gerrit-clone \
        --depth 1 \
@@ -439,18 +462,20 @@ rm -rf /tmp/git.opendaylight.org
 The script currently processes ONAP and Opendaylight by default. To test other projects:
 
 1. **Edit `local-testing.sh`** and modify the projects array:
+
    ```bash
    # Change this line in the main() function:
    local projects=("ONAP" "Opendaylight" "O-RAN-SC" "AGL")
    ```
 
 2. **Or test specific projects manually**:
+
    ```bash
    # Clone O-RAN-SC
    uvx gerrit-clone clone \
        --host gerrit.o-ran-sc.org \
        --path-prefix /tmp/gerrit.o-ran-sc.org
-   
+
    # Generate report
    cd reporting-tool
    uv run reporting-tool generate \
@@ -489,21 +514,25 @@ uv run reporting-tool generate \
 ## Performance Tips
 
 1. **Increase threads** for faster cloning (if network allows):
+
    ```bash
    --threads 8
    ```
 
 2. **Use shallow clones** for faster initial clone:
+
    ```bash
    --depth 1
    ```
 
 3. **Enable caching** for repeated report generation:
+
    ```bash
    --cache
    ```
 
 4. **Increase workers** for faster report generation:
+
    ```bash
    --workers 8
    ```

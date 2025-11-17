@@ -34,6 +34,7 @@ Templates Loaded: 9 (with potential for more)
 ```
 
 **Example: aai/babel**
+
 ```
 Expected Job Names:
   - aai-babel-clm
@@ -54,15 +55,16 @@ Expected Job Names:
 **Issue:** Many global-jjb templates use custom YAML tags like `!include-raw:` and `!include-raw-escape:` which the standard YAML parser doesn't understand.
 
 **Options:**
+
 1. **Use JJB Library Directly** (Recommended)
    - Install jenkins-job-builder Python package
    - Use JJB's built-in YAML parser
    - Get full template expansion support
-   
+
 2. **Custom YAML Constructors**
    - Add custom YAML tag handlers for `!include-raw:` etc.
    - Continue using our parser
-   
+
 3. **Skip for Now** (Works with current implementation)
    - Our fallback pattern matching works for common templates
    - Can enhance later if needed
@@ -76,12 +78,14 @@ Expected Job Names:
 **Steps:**
 
 1. **Update `JenkinsAPIClient.__init__`**
+
    ```python
    def __init__(self, ..., ci_management_parser: Optional[CIManagementParser] = None):
        self.ci_management_parser = ci_management_parser
    ```
 
 2. **Modify `get_jobs_for_project`**
+
    ```python
    def get_jobs_for_project(self, project_name: str, allocated_jobs: set[str]) -> list[dict]:
        # Try ci-management first
@@ -89,23 +93,24 @@ Expected Job Names:
            expected_jobs = self.ci_management_parser.parse_project_jobs(project_name)
            if expected_jobs:
                return self._match_expected_jobs(expected_jobs, allocated_jobs)
-       
+
        # Fallback to existing fuzzy matching
        return self._fuzzy_match_jobs(project_name, allocated_jobs)
    ```
 
 3. **Implement `_match_expected_jobs`**
+
    ```python
    def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set[str]) -> list[dict]:
        """Match Jenkins jobs against expected patterns from ci-management."""
        all_jobs = self.get_all_jobs()
        matched_jobs = []
-       
+
        for expected_name in expected_patterns:
            # Skip if still has template variables
            if '{' in expected_name:
                continue
-           
+
            # Find exact match
            for job in all_jobs.get('jobs', []):
                job_name = job.get('name', '')
@@ -115,7 +120,7 @@ Expected Job Names:
                        matched_jobs.append(job_details)
                        allocated_jobs.add(job_name)
                        break
-       
+
        return matched_jobs
    ```
 
@@ -126,6 +131,7 @@ Expected Job Names:
 **Steps:**
 
 1. **Add Configuration Schema**
+
    ```python
    # In config schema
    "jenkins": {
@@ -140,35 +146,37 @@ Expected Job Names:
    ```
 
 2. **Create Repository Manager**
+
    ```python
    class CIManagementRepoManager:
        """Manage cloning and caching of ci-management repositories."""
-       
+
        def ensure_repos(self, config: dict) -> tuple[Path, Path]:
            """Clone or update ci-management and global-jjb."""
            cache_dir = Path(config.get('cache_dir', '/tmp'))
-           
+
            ci_mgmt_path = self._ensure_repo(
                cache_dir / 'ci-management',
                config['url'],
                config.get('branch', 'master')
            )
-           
+
            global_jjb_path = self._ensure_repo(
                cache_dir / 'releng-global-jjb',
                'https://github.com/lfit/releng-global-jjb',
                'master'
            )
-           
+
            return ci_mgmt_path, global_jjb_path
    ```
 
 3. **Update Main Report Flow**
+
    ```python
    # In generate_reports.py or main entry point
    def setup_jenkins_client(config: dict) -> JenkinsAPIClient:
        ci_parser = None
-       
+
        if config.get('jenkins', {}).get('ci_management', {}).get('enabled'):
            try:
                repo_mgr = CIManagementRepoManager()
@@ -180,7 +188,7 @@ Expected Job Names:
            except Exception as e:
                logger.warning(f"Failed to setup ci-management parser: {e}")
                logger.warning("Falling back to fuzzy matching")
-       
+
        return JenkinsAPIClient(
            base_url=config['jenkins']['url'],
            ci_management_parser=ci_parser
@@ -210,6 +218,7 @@ Expected Job Names:
    - Test with malformed JJB files
 
 4. **Validation Script**
+
    ```python
    # scripts/validate_jenkins_allocation.py
    # Compare old vs new allocation
@@ -245,24 +254,28 @@ Expected Job Names:
 ## Implementation Timeline
 
 ### Week 1: Core Integration
+
 - [ ] Integrate parser with JenkinsAPIClient
 - [ ] Implement _match_expected_jobs
 - [ ] Add basic error handling
 - [ ] Test with sample project
 
 ### Week 2: Repository Management
+
 - [ ] Create CIManagementRepoManager
 - [ ] Add configuration schema
 - [ ] Implement cloning/caching logic
 - [ ] Add git pull for updates
 
 ### Week 3: Testing
+
 - [ ] Write unit tests
 - [ ] Write integration tests
 - [ ] Create validation scripts
 - [ ] Compare old vs new allocations
 
 ### Week 4: Documentation & Polish
+
 - [ ] Write user documentation
 - [ ] Write developer documentation
 - [ ] Add logging and diagnostics
@@ -271,18 +284,22 @@ Expected Job Names:
 ## Benefits Summary
 
 ### Accuracy Improvements
+
 - **Before:** Fuzzy matching with ~85-90% accuracy
 - **After:** Exact matching with ~99% accuracy (based on ci-management definitions)
 
 ### Maintainability
+
 - **Before:** Complex scoring algorithms that need tuning
 - **After:** Simple exact matching against authoritative source
 
 ### Transparency
+
 - **Before:** Unclear why jobs are/aren't allocated
 - **After:** Clear mapping: Gerrit project → JJB file → job names
 
 ### Extensibility
+
 - **Before:** Hard to add support for new job types
 - **After:** Automatically supports any job type defined in ci-management
 
@@ -307,6 +324,7 @@ Expected Job Names:
 ## Configuration Examples
 
 ### ONAP
+
 ```json
 {
   "jenkins": {
@@ -321,6 +339,7 @@ Expected Job Names:
 ```
 
 ### OpenDaylight
+
 ```json
 {
   "jenkins": {
@@ -335,6 +354,7 @@ Expected Job Names:
 ```
 
 ### Generic (Fallback to Fuzzy Matching)
+
 ```json
 {
   "jenkins": {
@@ -370,8 +390,8 @@ Track these metrics to validate the implementation:
 - Design Document: `docs/CI_MANAGEMENT_JENKINS_INTEGRATION.md`
 - JJB Parser: `src/ci_management/jjb_parser.py`
 - Test Script: `scripts/test_jjb_parser.py`
-- Global-JJB: https://github.com/lfit/releng-global-jjb
-- Jenkins Job Builder: https://jenkins-job-builder.readthedocs.io/
+- Global-JJB: <https://github.com/lfit/releng-global-jjb>
+- Jenkins Job Builder: <https://jenkins-job-builder.readthedocs.io/>
 
 ## Questions & Decisions Needed
 
@@ -398,12 +418,14 @@ Track these metrics to validate the implementation:
 To begin implementation:
 
 1. **Review the prototype:**
+
    ```bash
    cd reporting-tool
    python3 scripts/test_jjb_parser.py
    ```
 
 2. **Study the existing Jenkins client:**
+
    ```bash
    grep -A 50 "class JenkinsAPIClient" project-reports/generate_reports.py
    ```
@@ -421,6 +443,7 @@ To begin implementation:
 ## Support
 
 For questions or issues during implementation:
+
 - Refer to `docs/CI_MANAGEMENT_JENKINS_INTEGRATION.md` for design details
 - Check `src/ci_management/jjb_parser.py` for implementation
 - Run `scripts/test_jjb_parser.py` for live examples

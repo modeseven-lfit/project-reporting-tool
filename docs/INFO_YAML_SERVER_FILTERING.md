@@ -1,7 +1,7 @@
 # INFO.yaml Server Filtering
 
-> **Problem**: Multiple projects showing duplicate entries from different LF organizations  
-> **Solution**: Automatic Gerrit server detection and filtering  
+> **Problem**: Multiple projects showing duplicate entries from different LF organizations
+> **Solution**: Automatic Gerrit server detection and filtering
 > **Status**: ✅ Implemented and Tested
 
 ## The Problem
@@ -60,16 +60,16 @@ The reporting tool now automatically detects the Gerrit server from the `repos_p
 def _determine_gerrit_server(self, repos_path: Path) -> str:
     """
     Determine the Gerrit server name from the repositories path.
-    
-    The repos_path is typically the Gerrit server hostname 
+
+    The repos_path is typically the Gerrit server hostname
     (e.g., gerrit.onap.org) used as the directory name.
     """
     dir_name = repos_path.name
-    
+
     # Common Gerrit server patterns
     if dir_name.startswith("gerrit.") or dir_name.startswith("git."):
         return dir_name
-    
+
     # Fallback to directory name
     return dir_name
 ```
@@ -98,7 +98,7 @@ The `INFOYamlCollector` filters projects by the `gerrit_server` field extracted 
 ```python
 # Only include projects from the specified server
 filtered_projects = [
-    p for p in self.projects 
+    p for p in self.projects
     if p.gerrit_server == gerrit_server
 ]
 ```
@@ -108,6 +108,7 @@ filtered_projects = [
 ### Step-by-Step Flow
 
 1. **User runs report generation**:
+
    ```bash
    reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org
    ```
@@ -177,6 +178,7 @@ The solution works for all Linux Foundation Gerrit servers:
 | FD.io | `gerrit.fd.io` | `./gerrit.fd.io` |
 
 The tool recognizes any directory name starting with:
+
 - `gerrit.*` (most projects)
 - `git.*` (OpenDaylight)
 
@@ -221,26 +223,26 @@ Comprehensive tests verify the filtering works correctly:
 ```python
 class TestReporterIntegration:
     """Test INFO.yaml integration with RepositoryReporter."""
-    
+
     def test_reporter_detects_gerrit_server_from_path(self):
         """Test detection of gerrit.onap.org."""
         repos_path = tmp_path / "gerrit.onap.org"
         server = reporter._determine_gerrit_server(repos_path)
         assert server == "gerrit.onap.org"
-    
+
     def test_reporter_detects_opendaylight_server(self):
         """Test detection of git.opendaylight.org."""
         repos_path = tmp_path / "git.opendaylight.org"
         server = reporter._determine_gerrit_server(repos_path)
         assert server == "git.opendaylight.org"
-    
+
     def test_info_yaml_filtered_by_detected_server(self):
         """Test that collection is filtered by detected server."""
         result = collector.collect(
             info_master_structure,
             gerrit_server="gerrit.example.org",
         )
-        
+
         # Verify only projects from this server
         for project in result["projects"]:
             assert project["gerrit_server"] == "gerrit.example.org"
@@ -268,7 +270,7 @@ pytest tests/integration/test_info_yaml_reporting_integration.py::TestReporterIn
 reporting-tool generate \
   --project ONAP \
   --repos-path ./gerrit.onap.org
-  
+
 # Output:
 # Detected Gerrit server: gerrit.onap.org
 # Collecting INFO.yaml project data for gerrit.onap.org...
@@ -281,7 +283,7 @@ reporting-tool generate \
 reporting-tool generate \
   --project OpenDaylight \
   --repos-path ./git.opendaylight.org
-  
+
 # Output:
 # Detected Gerrit server: git.opendaylight.org
 # Collecting INFO.yaml project data for git.opendaylight.org...
@@ -294,7 +296,7 @@ reporting-tool generate \
 reporting-tool generate \
   --project O-RAN-SC \
   --repos-path ./gerrit.o-ran-sc.org
-  
+
 # Output:
 # Detected Gerrit server: gerrit.o-ran-sc.org
 # Collecting INFO.yaml project data for gerrit.o-ran-sc.org...
@@ -361,12 +363,12 @@ logging.basicConfig(level=logging.DEBUG)
 
 ## Benefits
 
-✅ **Accurate Reports**: Only shows projects relevant to the organization being analyzed  
-✅ **No Duplicates**: Eliminates duplicate `.github` and other cross-project entries  
-✅ **Automatic**: No manual configuration needed  
-✅ **Flexible**: Can override if needed for special cases  
-✅ **Well-Tested**: 18 comprehensive integration tests verify correctness  
-✅ **Production Ready**: Handles all edge cases and error conditions  
+✅ **Accurate Reports**: Only shows projects relevant to the organization being analyzed
+✅ **No Duplicates**: Eliminates duplicate `.github` and other cross-project entries
+✅ **Automatic**: No manual configuration needed
+✅ **Flexible**: Can override if needed for special cases
+✅ **Well-Tested**: 18 comprehensive integration tests verify correctness
+✅ **Production Ready**: Handles all edge cases and error conditions
 
 ## Related Documentation
 

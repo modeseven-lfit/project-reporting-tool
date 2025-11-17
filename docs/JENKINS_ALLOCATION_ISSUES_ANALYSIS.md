@@ -12,6 +12,7 @@ The local testing revealed Jenkins job allocation issues that demonstrate **exac
 ### ONAP Results (Good Example)
 
 **Statistics:**
+
 ```
 Total jobs: 1630
 Allocated: 1614
@@ -20,6 +21,7 @@ Allocation rate: 99.02%
 ```
 
 **Unallocated Project Jobs (8):**
+
 1. `offline-installer-master-docker-downloader-tox-verify`
 2. `offline-installer-master-py-lint`
 3. `offline-installer-master-review`
@@ -30,6 +32,7 @@ Allocation rate: 99.02%
 8. `usecases-pnf-sw-upgrade-master-verify-csit-pnf-sw-upgrade`
 
 **Why These Failed:**
+
 - Projects likely named differently in Gerrit (e.g., `integration/offline-installer` vs job prefix `offline-installer`)
 - CSIT (continuous system integration test) jobs may not follow standard naming
 - Test-specific jobs that don't match standard patterns
@@ -39,6 +42,7 @@ Allocation rate: 99.02%
 ### OpenDaylight Results (Problem Example)
 
 **Statistics:**
+
 ```
 Total jobs: 866
 Allocated: 403
@@ -47,6 +51,7 @@ Allocation rate: 46.54%
 ```
 
 **Common Patterns in Unallocated Jobs:**
+
 - `openflowplugin-*`: 99 jobs
 - `netconf-*`: 66 jobs
 - `lispflowmapping-*`: 45 jobs
@@ -80,6 +85,7 @@ Allocation rate: 46.54%
 ### Problem 1: Strict Prefix Matching
 
 Current code requires exact prefix match:
+
 ```python
 if job_name_lower.startswith(project_job_name_lower + "-"):
     score += 500
@@ -88,14 +94,16 @@ else:
 ```
 
 **Example Failures:**
+
 - Job: `netconf-csit-1node-callhome-only-scandium`
-- Project: `netconf` 
+- Project: `netconf`
 - ✅ Prefix matches BUT...
 - ❌ May not map to the right sub-project (netconf has multiple repos)
 
 ### Problem 2: Multi-Stream Support
 
 Jobs exist for multiple streams:
+
 ```
 - netconf-maven-verify-8.0.x-mvn39-openjdk21
 - netconf-maven-verify-9.0.x-mvn39-openjdk21
@@ -103,6 +111,7 @@ Jobs exist for multiple streams:
 ```
 
 Fuzzy matching may:
+
 - Only catch `master` branch
 - Miss versioned branches (8.0.x, 9.0.x)
 - Score them all the same (ambiguous allocation)
@@ -110,11 +119,13 @@ Fuzzy matching may:
 ### Problem 3: Test Job Variations
 
 CSIT jobs have complex naming:
+
 ```
 openflowplugin-csit-3node-clustering-perf-bulkomatic-only-scandium
 ```
 
 This has:
+
 - Project: `openflowplugin`
 - Test type: `csit`
 - Topology: `3node`
@@ -123,6 +134,7 @@ This has:
 - Stream: `scandium`
 
 Fuzzy matching can't determine if this belongs to:
+
 - `openflowplugin` (main project)
 - `openflowplugin/clustering` (if it exists)
 - `openflowplugin/test` (if it exists)
@@ -132,6 +144,7 @@ Fuzzy matching can't determine if this belongs to:
 ### Example: OpenDaylight Netconf
 
 **JJB Definition** (ci-management/jjb/netconf/netconf.yaml):
+
 ```yaml
 - project:
     name: netconf
@@ -153,6 +166,7 @@ Fuzzy matching can't determine if this belongs to:
 ```
 
 **Generated Jobs (Authoritative):**
+
 ```
 ✅ netconf-maven-verify-8.0.x-mvn39-openjdk21
 ✅ netconf-maven-verify-9.0.x-mvn39-openjdk21
@@ -167,6 +181,7 @@ Fuzzy matching can't determine if this belongs to:
 ### Example: CSIT Jobs
 
 **JJB Definition:**
+
 ```yaml
 - project:
     name: openflowplugin-csit
@@ -187,6 +202,7 @@ Fuzzy matching can't determine if this belongs to:
 ```
 
 **Generated Jobs:**
+
 ```
 ✅ openflowplugin-csit-1node-flow-services-all-scandium
 ✅ openflowplugin-csit-1node-clustering-only-scandium
@@ -217,11 +233,13 @@ Fuzzy matching can't determine if this belongs to:
 ### Without CI-Management (Current State)
 
 **ONAP:**
+
 - ✅ 99% allocation works well enough for production
 - ⚠️ Still missing 8 jobs (could be important)
 - ⚠️ No guarantee of continued accuracy
 
 **OpenDaylight:**
+
 - ❌ 47% allocation is NOT production-ready
 - ❌ Missing 429 jobs - massive blind spot
 - ❌ Reports are incomplete and misleading
@@ -229,11 +247,13 @@ Fuzzy matching can't determine if this belongs to:
 ### With CI-Management (Expected Results)
 
 **ONAP:**
+
 - ✅ 99.5%+ allocation (fix the 8 edge cases)
 - ✅ Authoritative mapping
 - ✅ Automatic updates for new job types
 
 **OpenDaylight:**
+
 - ✅ 99%+ allocation (from 47%!)
 - ✅ All streams correctly mapped
 - ✅ All CSIT jobs correctly mapped
@@ -243,7 +263,7 @@ Fuzzy matching can't determine if this belongs to:
 
 ### Immediate Actions
 
-1. **For ONAP:** 
+1. **For ONAP:**
    - Current fuzzy matching is acceptable for production
    - Document the 8 unallocated jobs as known issues
    - Plan CI-Management integration for 100% accuracy
@@ -263,6 +283,7 @@ Fuzzy matching can't determine if this belongs to:
 4. **Week 4:** Deploy to production
 
 **Expected Results:**
+
 - ONAP: 99% → 99.5%+ (minor improvement)
 - OpenDaylight: 47% → 99%+ (**52 percentage point improvement!**)
 
@@ -271,6 +292,7 @@ Fuzzy matching can't determine if this belongs to:
 ### Fuzzy Matching Limitations
 
 **Current Algorithm:**
+
 ```python
 def _calculate_job_match_score(self, job_name, project_job_name, project_name):
     # Strict prefix matching only
@@ -283,6 +305,7 @@ def _calculate_job_match_score(self, job_name, project_job_name, project_name):
 ```
 
 **Problems:**
+
 - No understanding of release streams
 - No understanding of test job patterns
 - No understanding of version branches
@@ -291,19 +314,21 @@ def _calculate_job_match_score(self, job_name, project_job_name, project_name):
 ### CI-Management Solution
 
 **Algorithm:**
+
 ```python
 def get_jobs_from_ci_management(self, project_name):
     # 1. Find JJB file for project
     jjb_file = parser.find_jjb_file(project_name)
-    
+
     # 2. Parse job definitions
     job_defs = parser.parse_project_jobs(project_name)
-    
+
     # 3. Exact match against Jenkins
     return exact_match(job_defs, jenkins_jobs)
 ```
 
 **Benefits:**
+
 - ✅ 100% accurate job names
 - ✅ All streams included
 - ✅ All job types covered
@@ -314,6 +339,7 @@ def get_jobs_from_ci_management(self, project_name):
 ### ONAP Unallocated Jobs Deep Dive
 
 **Pattern: offline-installer**
+
 ```
 Jobs:
 - offline-installer-master-docker-downloader-tox-verify
@@ -327,6 +353,7 @@ Fix: CI-Management would have exact mapping
 ```
 
 **Pattern: usecases**
+
 ```
 Jobs:
 - usecases-config-over-netconf-master-csit-config-over-netconf
@@ -342,6 +369,7 @@ Fix: CI-Management defines exact test job patterns
 ### OpenDaylight Unallocated Jobs Sample
 
 **High-Impact Missing Jobs:**
+
 ```
 netconf (66 jobs):
 - netconf-csit-1node-callhome-only-scandium (3 streams × test types)
@@ -371,7 +399,7 @@ The testing results provide **empirical evidence** for why CI-Management integra
 
 ---
 
-**Test Date:** November 16, 2024  
-**Test Command:** `./local-testing.sh`  
-**Results:** ONAP 99.02%, OpenDaylight 46.54%  
+**Test Date:** November 16, 2024
+**Test Command:** `./local-testing.sh`
+**Results:** ONAP 99.02%, OpenDaylight 46.54%
 **Action Required:** Implement CI-Management integration for production deployment

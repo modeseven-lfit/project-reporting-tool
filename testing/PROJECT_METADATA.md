@@ -10,8 +10,9 @@ This document explains the project metadata system and SSH key handling in the l
 ## Overview
 
 The testing script now uses a centralized project metadata file (`projects.json`) to automatically configure:
+
 - Gerrit server hostnames
-- Jenkins server hostnames  
+- Jenkins server hostnames
 - GitHub organization names
 
 This eliminates hardcoded server URLs and makes it easy to test multiple Linux Foundation projects.
@@ -96,7 +97,7 @@ load_project_metadata() {
         log_error "Project metadata file not found: ${PROJECTS_JSON}"
         exit 1
     fi
-    
+
     # Check if jq is available
     if ! command -v jq &> /dev/null; then
         log_error "jq is not installed"
@@ -113,12 +114,13 @@ The script queries project metadata using `jq`:
 get_project_info() {
     local project_name="$1"
     local field="$2"
-    
+
     jq -r ".[] | select(.project == \"${project_name}\") | .${field} // empty" "${PROJECTS_JSON}"
 }
 ```
 
 **Example usage:**
+
 ```bash
 gerrit_host=$(get_project_info "ONAP" "gerrit")
 # Returns: "gerrit.onap.org"
@@ -145,6 +147,7 @@ export GITHUB_ORG="${github_org}"
 ```
 
 These environment variables are then used by the reporting tool to:
+
 - Connect to Gerrit API for repository metadata
 - Connect to Jenkins API for CI/CD information
 - Derive GitHub URLs for workflow status
@@ -160,11 +163,13 @@ The reporting tool needs SSH access to clone the `info-master` repository from `
 The script checks for SSH keys in this order:
 
 1. **Environment variable** (CI/CD mode):
+
    ```bash
    LF_GERRIT_INFO_MASTER_SSH_KEY
    ```
 
 2. **Local file** (development mode):
+
    ```bash
    ~/.ssh/gerrit.linuxfoundation.org
    ```
@@ -217,6 +222,7 @@ ssh -p 29418 gerrit.linuxfoundation.org gerrit version
 ```
 
 Expected output:
+
 ```
 gerrit version 3.x.x
 ```
@@ -242,6 +248,7 @@ Example:
 To add a new project to the metadata:
 
 1. **Edit `projects.json`**:
+
    ```json
    {
      "project": "My-Project",
@@ -252,17 +259,20 @@ To add a new project to the metadata:
    ```
 
 2. **Update the test script** to include the new project:
+
    ```bash
    # In local-testing.sh main() function:
    local projects=("ONAP" "Opendaylight" "My-Project")
    ```
 
 3. **Run the test script**:
+
    ```bash
    ./local-testing.sh
    ```
 
 The script will automatically:
+
 - Clone repositories from the Gerrit server
 - Configure API access to Gerrit and Jenkins
 - Generate reports with proper API integration
@@ -285,6 +295,7 @@ clone_opendaylight() {
 ```
 
 **Problems:**
+
 - Duplicate code for each project
 - Hard to add new projects
 - Server URLs scattered throughout script
@@ -296,7 +307,7 @@ clone_opendaylight() {
 clone_project() {
     local project_name="$1"
     local gerrit_host="$2"
-    
+
     uvx gerrit-clone clone --host "${gerrit_host}" ...
 }
 
@@ -308,6 +319,7 @@ done
 ```
 
 **Benefits:**
+
 - ✅ Single function handles all projects
 - ✅ Easy to add new projects (edit JSON only)
 - ✅ Centralized configuration
@@ -354,22 +366,25 @@ The project may not be in `projects.json`. Add it:
 ### SSH Key Not Working
 
 1. **Check key exists**:
+
    ```bash
    ls -la ~/.ssh/gerrit.linuxfoundation.org
    ```
 
 2. **Check permissions**:
+
    ```bash
    chmod 600 ~/.ssh/gerrit.linuxfoundation.org
    ```
 
 3. **Test SSH connection**:
+
    ```bash
    ssh -vvv -p 29418 gerrit.linuxfoundation.org gerrit version
    ```
 
 4. **Verify public key is in Gerrit**:
-   - Go to https://gerrit.linuxfoundation.org/
+   - Go to <https://gerrit.linuxfoundation.org/>
    - Settings → SSH Keys
    - Add your public key if missing
 

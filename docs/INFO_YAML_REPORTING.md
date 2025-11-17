@@ -26,6 +26,7 @@ The INFO.yaml reporting feature provides visibility into project organization an
 5. **Rendering** comprehensive reports with activity color-coding
 
 This feature helps organizations track:
+
 - Active vs. inactive projects
 - Committer activity patterns
 - Project lifecycle distribution
@@ -71,10 +72,10 @@ Enable INFO.yaml collection in your configuration file:
 info_yaml:
   # Enable INFO.yaml committer report generation
   enabled: true
-  
+
   # Clone URL for info-master repository
   clone_url: "https://gerrit.linuxfoundation.org/infra/releng/info-master"
-  
+
   # Exclude archived projects from report
   disable_archived_reports: true
 ```
@@ -84,31 +85,31 @@ info_yaml:
 ```yaml
 info_yaml:
   enabled: true
-  
+
   # Activity window thresholds (in days)
   activity_windows:
     current: 365   # Green - commits within last year
     active: 1095   # Orange - commits within last 3 years
     # Anything beyond 'active' is marked as inactive (red)
-  
+
   # URL validation settings
   validate_urls: true        # Validate issue tracker URLs
   url_timeout: 10.0          # Timeout for URL checks (seconds)
   url_retries: 2             # Number of retry attempts
-  
+
   # Filtering options
   disable_archived_reports: true        # Exclude archived projects
   filter_by_gerrit_server: null         # Override auto-detected server (optional)
-  
+
   # Caching (improves performance on repeated runs)
   cache_parsed_data: true
   cache_ttl: 3600           # Cache lifetime in seconds
 ```
 
-**Note**: The reporting tool automatically detects the Gerrit server from the 
-`repos_path` directory name (e.g., `gerrit.onap.org`, `git.opendaylight.org`) 
-and filters INFO.yaml data to only include projects from that server. This 
-prevents cross-project contamination when generating reports for specific 
+**Note**: The reporting tool automatically detects the Gerrit server from the
+`repos_path` directory name (e.g., `gerrit.onap.org`, `git.opendaylight.org`)
+and filters INFO.yaml data to only include projects from that server. This
+prevents cross-project contamination when generating reports for specific
 organizations.
 
 ### Local Development Configuration
@@ -118,10 +119,10 @@ For local development/testing, you can point to a local info-master clone:
 ```yaml
 info_yaml:
   enabled: true
-  
+
   # Use local path instead of cloning
   local_path: "testing/info-master"
-  
+
   # Disable URL validation for faster testing
   validate_urls: false
 ```
@@ -212,10 +213,10 @@ info-master/
 └── ...
 ```
 
-**Important**: Each Gerrit server has its own subdirectory in info-master. The 
-reporting tool automatically filters to the relevant server based on the 
-`repos_path` directory name to prevent cross-contamination. For example, when 
-analyzing `gerrit.onap.org` repositories, only INFO.yaml files from the 
+**Important**: Each Gerrit server has its own subdirectory in info-master. The
+reporting tool automatically filters to the relevant server based on the
+`repos_path` directory name to prevent cross-contamination. For example, when
+analyzing `gerrit.onap.org` repositories, only INFO.yaml files from the
 `gerrit.onap.org/` subdirectory are included.
 
 ## Report Output
@@ -227,7 +228,7 @@ analyzing `gerrit.onap.org` repositories, only INFO.yaml files from the
 ```markdown
 ## 📋 Committer INFO.yaml Report
 
-This report shows project information from INFO.yaml files, including lifecycle state, 
+This report shows project information from INFO.yaml files, including lifecycle state,
 project leads, and committer activity status.
 
 | Project | Creation Date | Lifecycle State | Project Lead | Committers |
@@ -274,6 +275,7 @@ Activity status is determined at the **project level**, not per-committer:
 4. This approach reflects overall project health
 
 Example:
+
 - Project has 3 repos: last commits at 30, 45, and 200 days ago
 - Project activity = 30 days (most recent)
 - All committers colored **green** (current)
@@ -452,12 +454,14 @@ output_path.write_text(full_report)
 **Symptom**: `total_projects: 0`
 
 **Possible Causes**:
+
 - info-master repository not cloned
 - Incorrect path to info-master
 - Wrong Gerrit server detected (check repos_path directory name)
 - All projects filtered out (check `disable_archived_reports`)
 
 **Solutions**:
+
 ```python
 # Verify path
 print(f"INFO master path: {collector.info_master_path}")
@@ -486,11 +490,13 @@ config["info_yaml"]["disable_archived_reports"] = False
 **Symptom**: All committers are gray (unknown status)
 
 **Possible Causes**:
+
 - Git metrics not provided to `collect()`
 - Project names don't match repository names
 - No matching repositories found
 
 **Solutions**:
+
 ```python
 # Check if Git metrics were provided
 result = collector.collect(info_master_path, git_metrics=git_metrics)
@@ -509,12 +515,14 @@ for project in result['projects']:
 **Symptom**: Projects showing red with broken link indicators
 
 **Possible Causes**:
+
 - Issue tracker URLs are actually broken
 - Network connectivity issues
 - Timeout too short
 - SSL certificate issues
 
 **Solutions**:
+
 ```python
 # Increase timeout
 config["info_yaml"]["url_timeout"] = 30.0
@@ -536,6 +544,7 @@ collector.clear_url_cache()
 **Symptom**: Collection takes a long time
 
 **Solutions**:
+
 ```python
 # Enable caching
 config["info_yaml"]["cache_parsed_data"] = True
@@ -594,14 +603,14 @@ class INFOYamlCollector(BaseCollector):
     ) -> Dict[str, Any]:
         """
         Collect INFO.yaml data from info-master.
-        
+
         Args:
             source: Path to info-master repository
             **kwargs:
                 - gerrit_server: Filter by specific server
                 - include_archived: Include archived projects
                 - git_metrics: Git metrics for enrichment
-        
+
         Returns:
             {
                 "projects": List of project dicts,
@@ -625,29 +634,29 @@ class InfoYamlRenderer:
     ) -> str:
         """
         Render committer report as Markdown.
-        
+
         Args:
             projects: List of ProjectInfo objects
             group_by_server: Group projects by Gerrit server
-        
+
         Returns:
             Markdown-formatted report
         """
-    
+
     def render_lifecycle_summary_markdown(
         self,
         projects: List[ProjectInfo]
     ) -> str:
         """
         Render lifecycle state summary.
-        
+
         Args:
             projects: List of ProjectInfo objects
-        
+
         Returns:
             Markdown-formatted summary table
         """
-    
+
     def render_full_report_markdown(
         self,
         projects: List[ProjectInfo],
@@ -655,13 +664,13 @@ class InfoYamlRenderer:
     ) -> str:
         """
         Render complete INFO.yaml report.
-        
+
         Includes committer report and lifecycle summary.
-        
+
         Args:
             projects: List of ProjectInfo objects
             group_by_server: Group projects by server
-        
+
         Returns:
             Complete Markdown report
         """
@@ -707,16 +716,16 @@ class LifecycleSummary:
 
 ### How It Works
 
-The reporting tool automatically detects the Gerrit server from the `repos_path` 
+The reporting tool automatically detects the Gerrit server from the `repos_path`
 directory name and filters INFO.yaml data accordingly:
 
-1. **Server Detection**: When you run with `--repos-path ./gerrit.onap.org`, 
+1. **Server Detection**: When you run with `--repos-path ./gerrit.onap.org`,
    the tool extracts `gerrit.onap.org` as the server name
 
-2. **info-master Filtering**: Only INFO.yaml files from the 
+2. **info-master Filtering**: Only INFO.yaml files from the
    `info-master/gerrit.onap.org/` subdirectory are collected
 
-3. **Result**: The report shows only ONAP projects, not OpenDaylight or other 
+3. **Result**: The report shows only ONAP projects, not OpenDaylight or other
    LF projects
 
 ### Example
@@ -735,6 +744,7 @@ reporting-tool generate --project ONAP --repos-path ./gerrit.onap.org
 ### Supported Server Patterns
 
 The tool recognizes these directory name patterns:
+
 - `gerrit.*` (e.g., gerrit.onap.org, gerrit.o-ran-sc.org)
 - `git.*` (e.g., git.opendaylight.org)
 
@@ -766,6 +776,7 @@ result = collector.collect(
 ## Support
 
 For issues or questions:
+
 1. Check existing documentation
 2. Review test cases in `tests/integration/test_info_yaml_reporting_integration.py`
 3. Enable debug logging

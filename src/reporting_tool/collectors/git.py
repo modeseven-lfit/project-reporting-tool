@@ -64,22 +64,22 @@ def safe_git_command(
 def parse_git_iso_date(date_str: str) -> datetime.datetime:
     """
     Parse git's --date=iso format into a datetime object.
-    
+
     Git ISO format: "2013-03-25 16:50:06 +0100"
     Python fromisoformat expects: "2013-03-25T16:50:06+01:00"
-    
+
     Args:
         date_str: Date string from git in ISO format
-        
+
     Returns:
         datetime object with timezone information
-        
+
     Raises:
         ValueError: If the date string cannot be parsed
     """
     # Replace first space with 'T' to separate date and time
     date_str = date_str.replace(" ", "T", 1)
-    
+
     # Handle timezone offset: convert "+0100" to "+01:00"
     if "+" in date_str or date_str.count("-") > 2:
         # Split at the timezone offset
@@ -91,13 +91,13 @@ def parse_git_iso_date(date_str: str) -> datetime.datetime:
             # (date already has 2 dashes, so count > 2 means timezone)
             parts = date_str.rsplit("-", 1)
             tz_sign = "-"
-        
+
         if len(parts) == 2 and len(parts[1]) == 4:
             # Format timezone: "0100" -> "01:00"
             tz_offset = parts[1]
             formatted_tz = f"{tz_offset[:2]}:{tz_offset[2:]}"
             date_str = f"{parts[0]}{tz_sign}{formatted_tz}"
-    
+
     return datetime.datetime.fromisoformat(date_str)
 
 
@@ -174,12 +174,12 @@ class GitDataCollector:
                 if not jjb_config:
                     # Check top-level config for jjb_attribution (or legacy ci_management)
                     jjb_config = self.config.get("jjb_attribution") or self.config.get("ci_management")
-                
+
                 # Get Gerrit host for auto-deriving ci-management URL
                 gerrit_host = gerrit_config.get("host") if gerrit_config.get("enabled", False) else None
-                
+
                 self.jenkins_client = JenkinsAPIClient(
-                    jenkins_host, 
+                    jenkins_host,
                     timeout,
                     jjb_config=jjb_config,
                     gerrit_host=gerrit_host
@@ -206,12 +206,12 @@ class GitDataCollector:
                     if not jjb_config:
                         # Check top-level config for jjb_attribution (or legacy ci_management)
                         jjb_config = self.config.get("jjb_attribution") or self.config.get("ci_management")
-                    
+
                     # Get Gerrit host for auto-deriving ci-management URL
                     gerrit_host = gerrit_config.get("host") if gerrit_config.get("enabled", False) else None
-                    
+
                     self.jenkins_client = JenkinsAPIClient(
-                        host, 
+                        host,
                         timeout,
                         jjb_config=jjb_config,
                         gerrit_host=gerrit_host

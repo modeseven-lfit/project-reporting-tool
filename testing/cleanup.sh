@@ -34,17 +34,17 @@ cleanup_all() {
     log_info "Cleanup Script for Test Repositories"
     log_info "=========================================="
     echo ""
-    
+
     # List of directories to clean
     DIRS_TO_CLEAN=(
         "/tmp/gerrit.onap.org"
         "/tmp/git.opendaylight.org"
         "/tmp/reports"
     )
-    
+
     # Also clean up any git repositories directly in /tmp (from the failed run)
     log_info "Checking for git repositories in /tmp..."
-    
+
     # Count repositories to clean
     count=0
     for dir in "${DIRS_TO_CLEAN[@]}"; do
@@ -52,7 +52,7 @@ cleanup_all() {
             ((count++))
         fi
     done
-    
+
     # Find any .git directories directly in /tmp (excluding system directories)
     while IFS= read -r git_dir; do
         repo_dir=$(dirname "$git_dir")
@@ -65,12 +65,12 @@ cleanup_all() {
             fi
         fi
     done < <(find /tmp -maxdepth 2 -name ".git" -type d 2>/dev/null)
-    
+
     if [ $count -eq 0 ]; then
         log_success "No test repositories found to clean up"
         exit 0
     fi
-    
+
     log_warning "Found $count directories to clean up:"
     for dir in "${DIRS_TO_CLEAN[@]}"; do
         if [ -d "$dir" ]; then
@@ -79,19 +79,19 @@ cleanup_all() {
         fi
     done
     echo ""
-    
+
     # Ask for confirmation
     read -p "Are you sure you want to delete these directories? (y/N) " -n 1 -r
     echo ""
-    
+
     if [[ ! $REPLY =~ ^[Yy]$ ]]; then
         log_info "Cleanup cancelled"
         exit 0
     fi
-    
+
     echo ""
     log_info "Starting cleanup..."
-    
+
     # Remove directories
     removed=0
     for dir in "${DIRS_TO_CLEAN[@]}"; do
@@ -104,7 +104,7 @@ cleanup_all() {
             fi
         fi
     done
-    
+
     echo ""
     log_success "Cleanup complete! Removed $removed directories"
 }

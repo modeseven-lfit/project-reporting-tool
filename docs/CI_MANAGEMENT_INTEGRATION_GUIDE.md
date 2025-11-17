@@ -129,7 +129,7 @@ class JenkinsAPIClient:
         self.api_base_path = None
         self._jobs_cache: dict[str, Any] = {}
         self._cache_populated = False
-        
+
         # CI-Management integration
         self.ci_management_parser = ci_management_parser
 
@@ -138,7 +138,7 @@ class JenkinsAPIClient:
     ) -> list[dict[str, Any]]:
         """Get jobs related to a specific Gerrit project with duplicate prevention."""
         logging.debug(f"Looking for Jenkins jobs for project: {project_name}")
-        
+
         # Try ci-management first if available
         if self.ci_management_parser:
             try:
@@ -158,7 +158,7 @@ class JenkinsAPIClient:
                     f"Error using ci-management for {project_name}: {e}, "
                     "falling back to fuzzy matching"
                 )
-        
+
         # Fallback to fuzzy matching
         return self._get_jobs_fuzzy_matching(project_name, allocated_jobs)
 
@@ -168,19 +168,19 @@ class JenkinsAPIClient:
         """Get jobs using ci-management definitions."""
         # Get expected job names from ci-management
         expected_job_names = self.ci_management_parser.parse_project_jobs(project_name)
-        
+
         if not expected_job_names:
             return []
-        
+
         # Filter out names with unresolved template variables
         expected_job_names = [
             name for name in expected_job_names if '{' not in name
         ]
-        
+
         logging.debug(
             f"Found {len(expected_job_names)} expected job names for {project_name}"
         )
-        
+
         # Match against actual Jenkins jobs
         return self._match_expected_jobs(expected_job_names, allocated_jobs, project_name)
 
@@ -190,18 +190,18 @@ class JenkinsAPIClient:
         """Match Jenkins jobs against expected names from ci-management."""
         all_jobs = self.get_all_jobs()
         matched_jobs = []
-        
+
         if "jobs" not in all_jobs:
             return matched_jobs
-        
+
         # Create a lookup for fast matching
         jenkins_jobs = {job.get("name", ""): job for job in all_jobs["jobs"]}
-        
+
         for expected_name in expected_names:
             # Skip already allocated
             if expected_name in allocated_jobs:
                 continue
-            
+
             # Exact match
             if expected_name in jenkins_jobs:
                 job_details = self.get_job_details(expected_name)
@@ -212,7 +212,7 @@ class JenkinsAPIClient:
                         f"Allocated Jenkins job '{expected_name}' to project "
                         f"'{project_name}' (ci-management exact match)"
                     )
-        
+
         return matched_jobs
 
     def _get_jobs_fuzzy_matching(
@@ -222,9 +222,9 @@ class JenkinsAPIClient:
         # This is the existing implementation
         all_jobs = self.get_all_jobs()
         project_jobs: list[dict[str, Any]] = []
-        
+
         # ... rest of existing fuzzy matching code ...
-        
+
         return project_jobs
 ```
 
@@ -237,42 +237,42 @@ def setup_ci_management_parser(config: dict) -> Optional['CIManagementParser']:
     """Setup CI-Management parser if configured."""
     if not CI_MANAGEMENT_AVAILABLE:
         return None
-    
+
     # Check if enabled
     ci_config = config.get("jenkins", {}).get("ci_management", {})
     if not ci_config.get("enabled", False):
         logging.info("CI-Management integration disabled in config")
         return None
-    
+
     # Get configuration
     ci_mgmt_url = ci_config.get("url")
     if not ci_mgmt_url:
         logging.warning("CI-Management URL not configured")
         return None
-    
+
     branch = ci_config.get("branch", "master")
     cache_dir = Path(ci_config.get("cache_dir", "/tmp"))
-    
+
     try:
         # Clone/update repositories
         logging.info("Setting up CI-Management repositories...")
         repo_mgr = CIManagementRepoManager(cache_dir)
         ci_mgmt_path, global_jjb_path = repo_mgr.ensure_repos(ci_mgmt_url, branch)
-        
+
         # Initialize parser
         logging.info("Initializing CI-Management parser...")
         parser = CIManagementParser(ci_mgmt_path, global_jjb_path)
         parser.load_templates()
-        
+
         # Log summary
         summary = parser.get_project_summary()
         logging.info(
             f"CI-Management ready: {summary['gerrit_projects']} projects, "
             f"{summary['total_jobs']} jobs, {summary['templates_loaded']} templates"
         )
-        
+
         return parser
-        
+
     except Exception as e:
         logging.error(f"Failed to setup CI-Management: {e}")
         logging.warning("Falling back to fuzzy matching")
@@ -282,17 +282,17 @@ def setup_ci_management_parser(config: dict) -> Optional['CIManagementParser']:
 # In main report generation function
 def generate_report(config):
     """Generate report with CI-Management support."""
-    
+
     # Setup CI-Management parser
     ci_parser = setup_ci_management_parser(config)
-    
+
     # Create Jenkins client with parser
     if config.get("jenkins", {}).get("url"):
         jenkins_client = JenkinsAPIClient(
             base_url=config["jenkins"]["url"],
             ci_management_parser=ci_parser,
         )
-    
+
     # ... rest of report generation ...
 ```
 
@@ -340,6 +340,7 @@ Add to your project configuration file (e.g., `configs/onap.json`):
 ### Project-Specific Examples
 
 #### ONAP
+
 ```json
 {
   "jenkins": {
@@ -353,6 +354,7 @@ Add to your project configuration file (e.g., `configs/onap.json`):
 ```
 
 #### OpenDaylight
+
 ```json
 {
   "jenkins": {
@@ -366,6 +368,7 @@ Add to your project configuration file (e.g., `configs/onap.json`):
 ```
 
 #### Disable (Use Fuzzy Matching)
+
 ```json
 {
   "jenkins": {
@@ -389,6 +392,7 @@ python3 scripts/test_jjb_parser.py
 ```
 
 Expected output:
+
 ```
 ================================================================================
 Initializing CI-Management Parser
@@ -484,6 +488,7 @@ if only_ci:
 **Error:** `ImportError: No module named 'ci_management'`
 
 **Solution:**
+
 ```python
 # Ensure path is correct
 sys.path.insert(0, str(Path(__file__).parent / "src"))
@@ -494,6 +499,7 @@ sys.path.insert(0, str(Path(__file__).parent / "src"))
 **Error:** `Failed to clone repository`
 
 **Solutions:**
+
 1. Check network connectivity
 2. Verify Git is installed: `which git`
 3. Check repository URL is correct
@@ -502,11 +508,13 @@ sys.path.insert(0, str(Path(__file__).parent / "src"))
 ### Issue: No jobs found for project
 
 **Possible causes:**
+
 1. Project doesn't have JJB file yet
 2. JJB file uses different naming convention
 3. Project field in YAML doesn't match Gerrit project name
 
 **Debug:**
+
 ```python
 # Check if JJB file exists
 jjb_file = parser.find_jjb_file("aai/babel")
@@ -632,4 +640,4 @@ For issues or questions:
 - **Implementation Plan:** `docs/CI_MANAGEMENT_IMPLEMENTATION_PLAN.md`
 - **Comparison:** `docs/JENKINS_ALLOCATION_COMPARISON.md`
 - **Module README:** `src/ci_management/README.md`
-- **JJB Documentation:** https://jenkins-job-builder.readthedocs.io/
+- **JJB Documentation:** <https://jenkins-job-builder.readthedocs.io/>

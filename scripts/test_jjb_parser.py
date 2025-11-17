@@ -13,10 +13,12 @@ import logging
 import sys
 from pathlib import Path
 
+
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from ci_management.jjb_parser import CIManagementParser
+
 
 # Configure logging
 logging.basicConfig(
@@ -36,12 +38,16 @@ def main():
     # Check if repos exist
     if not ci_management_path.exists():
         logger.error(f"CI-Management not found at {ci_management_path}")
-        logger.error("Please clone: git clone https://gerrit.onap.org/r/ci-management /tmp/ci-management")
+        logger.error(
+            "Please clone: git clone https://gerrit.onap.org/r/ci-management /tmp/ci-management"
+        )
         return 1
 
     if not global_jjb_path.exists():
         logger.error(f"Global-JJB not found at {global_jjb_path}")
-        logger.error("Please clone: git clone https://github.com/lfit/releng-global-jjb /tmp/releng-global-jjb")
+        logger.error(
+            "Please clone: git clone https://github.com/lfit/releng-global-jjb /tmp/releng-global-jjb"
+        )
         return 1
 
     # Initialize parser
@@ -108,9 +114,7 @@ def main():
         project_job_counts[gerrit_project] = job_count
 
     # Sort by job count
-    sorted_projects = sorted(
-        project_job_counts.items(), key=lambda x: x[1], reverse=True
-    )
+    sorted_projects = sorted(project_job_counts.items(), key=lambda x: x[1], reverse=True)
 
     logger.info("\nTop 10 projects by job count:")
     for i, (project, count) in enumerate(sorted_projects[:10], 1):
@@ -125,7 +129,7 @@ def main():
     jjb_file = parser.find_jjb_file(project)
     if jjb_file:
         logger.info(f"\nJJB File: {jjb_file}")
-        
+
         # Get the parsed projects
         if project in parser._project_cache:
             jjb_projects = parser._project_cache[project]

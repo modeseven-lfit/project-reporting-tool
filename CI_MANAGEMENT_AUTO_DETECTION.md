@@ -53,9 +53,11 @@ jenkins:
 
 1. **Extract Gerrit Host** from project configuration
 2. **Construct ci-management URL** using standard pattern:
+
    ```
    https://{gerrit_host}/r/ci-management
    ```
+
 3. **Clone and Initialize** the repository automatically
 
 ### Example URL Derivation
@@ -72,7 +74,7 @@ jenkins:
 
 ### 🎯 Zero Configuration
 
-**Before:** 8-10 lines of ci_management config per project  
+**Before:** 8-10 lines of ci_management config per project
 **After:** 0 lines - it's automatic!
 
 ### ✅ Enabled by Default
@@ -88,6 +90,7 @@ ci_management:
 ### 🔧 Smart Fallback
 
 If auto-derivation fails:
+
 1. Logs a helpful warning
 2. Automatically falls back to fuzzy matching
 3. Reports still generate successfully
@@ -158,6 +161,7 @@ python reporting-tool/scripts/validate_ci_management.py onap
 ```
 
 Expected output:
+
 ```
 ✅ CI-Management configuration is valid
    URL: https://gerrit.onap.org/r/ci-management (auto-derived)
@@ -176,7 +180,7 @@ Expected output:
 def _initialize_ci_management(self, config, gerrit_host=None):
     # Get ci-management URL
     ci_mgmt_url = config.get("url")
-    
+
     if not ci_mgmt_url:
         if gerrit_host:
             # Auto-derive from Gerrit host
@@ -185,7 +189,7 @@ def _initialize_ci_management(self, config, gerrit_host=None):
         else:
             logger.warning("Cannot auto-derive - Gerrit host unknown")
             return
-    
+
     # Continue with initialization...
 ```
 
@@ -278,6 +282,7 @@ gerrit:
 ```
 
 **Behavior:**
+
 - Cannot auto-derive URL
 - Logs warning: "Gerrit host unknown"
 - Falls back to fuzzy matching gracefully
