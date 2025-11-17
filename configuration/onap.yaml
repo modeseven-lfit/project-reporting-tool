@@ -5,9 +5,13 @@
 # =============================================================================
 # ONAP Project Configuration
 # =============================================================================
-# Project-specific configuration for ONAP (Open Network Automation Platform)
-# This configuration enables CI-Management integration for accurate Jenkins
-# job allocation.
+# Minimal project-specific configuration for ONAP.
+# Most settings are auto-derived from the Gerrit host or use sensible defaults.
+#
+# Auto-derived settings:
+#   - github_org: "onap" (from gerrit.host)
+#   - info_yaml.clone_url: standard LF location
+#   - jjb_attribution.url: https://gerrit.onap.org/r/ci-management
 # =============================================================================
 
 project: onap
@@ -16,17 +20,14 @@ project: onap
 # Gerrit API Integration
 # =============================================================================
 gerrit:
-  enabled: true
   host: "gerrit.onap.org"
-  base_url: ""  # Will auto-discover
-  timeout: 30.0
 
 # =============================================================================
 # Jenkins API Integration
 # =============================================================================
 jenkins:
-  enabled: true
   host: "jenkins.onap.org"
+<<<<<<< HEAD
   timeout: 30.0
 
 # =============================================================================
@@ -58,11 +59,14 @@ info_yaml:
   enabled: true
   clone_url: "https://gerrit.linuxfoundation.org/infra/releng/info-master"
   exclude_archived: true
+=======
+>>>>>>> f63997e (Fix: Resolve sed error in GitHub Pages index generation)
 
 # =============================================================================
 # Performance Settings
 # =============================================================================
 performance:
+<<<<<<< HEAD
   max_workers: 8
   cache: true
 
@@ -97,3 +101,6 @@ time_windows:
 activity_thresholds:
   current_days: 365
   active_days: 1095
+=======
+  cache: true
+>>>>>>> f63997e (Fix: Resolve sed error in GitHub Pages index generation)
