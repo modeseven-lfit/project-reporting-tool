@@ -391,6 +391,10 @@ class JenkinsAPIClient(BaseAPIClient):
         self.logger.debug(f"Using JJB Attribution for project: {project_name}")
 
         # Get expected job names from ci-management
+        if self.jjb_attribution is None:
+            self.logger.warning("JJB Attribution not available")
+            return []
+
         expected_jobs = self.jjb_attribution.parse_project_jobs(project_name)
 
         # Filter out unresolved template variables

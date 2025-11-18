@@ -12,7 +12,7 @@ import logging
 import subprocess
 import time
 from pathlib import Path
-from typing import Optional, Tuple
+from typing import Any, Optional, Tuple
 
 logger = logging.getLogger(__name__)
 

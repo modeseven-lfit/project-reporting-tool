@@ -150,8 +150,6 @@ check_api_configuration() {
     log_info "Checking API configuration..."
 
     local has_github_token=false
-    local has_gerrit_config=false
-    local has_jenkins_config=false
 
     # Check for GitHub token
     if [ -n "${GITHUB_TOKEN:-}" ]; then
