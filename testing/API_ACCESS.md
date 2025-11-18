@@ -24,6 +24,7 @@ By default, the tool only uses local git data and INFO.yaml files. To get workfl
 Look for these indicators in the output:
 
 ### ✅ APIs Are Working
+
 ```
 [INFO] Fetching workflow status from GitHub API...
 [INFO] Connected to Gerrit API at https://gerrit.onap.org
@@ -31,6 +32,7 @@ Look for these indicators in the output:
 ```
 
 ### ❌ APIs Are NOT Working
+
 ```
 [INFO] Discovered 179 git repositories
 [INFO] Aggregated 1532 unique authors across repositories
@@ -42,12 +44,14 @@ If you only see git analysis and no API calls, the APIs are disabled or not conf
 ## Why Your Reports Were Fast
 
 If your reports generated in ~10-20 seconds for hundreds of repositories:
+
 - ✅ Only local git analysis was performed
 - ❌ No GitHub API calls were made
 - ❌ No Gerrit API calls were made
 - ❌ No Jenkins API calls were made
 
 With full API access enabled, reports take significantly longer (several minutes) because the tool:
+
 - Queries GitHub for workflow status on each repository
 - Queries Gerrit for repository metadata
 - Queries Jenkins for CI/CD job information
@@ -80,6 +84,7 @@ cd reporting-tool/testing
 Create configuration files for each project:
 
 **`configuration/onap.yaml`:**
+
 ```yaml
 ---
 project: ONAP
@@ -105,6 +110,7 @@ jenkins:
 ```
 
 **`configuration/opendaylight.yaml`:**
+
 ```yaml
 ---
 project: OpenDaylight
@@ -146,7 +152,7 @@ uv run reporting-tool generate \
 
 ### GitHub Personal Access Token
 
-1. Go to https://github.com/settings/tokens
+1. Go to <https://github.com/settings/tokens>
 2. Click "Generate new token" → "Generate new token (classic)"
 3. Select scopes:
    - `repo` (for private repos) or `public_repo` (for public only)
@@ -155,21 +161,25 @@ uv run reporting-tool generate \
 5. Copy the token (starts with `ghp_`)
 
 **For local testing:**
+
 ```bash
 export GITHUB_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxx"
 ```
 
 **Rate limits:**
+
 - Without token: 60 requests/hour
 - With token: 5,000 requests/hour
 
 ### Gerrit Access
 
 Gerrit API is typically open for read access on public servers. No authentication needed for:
+
 - `gerrit.onap.org`
 - `git.opendaylight.org`
 
 If authentication is required:
+
 ```bash
 export GERRIT_USERNAME="your-username"
 export GERRIT_PASSWORD="your-password"
@@ -178,10 +188,12 @@ export GERRIT_PASSWORD="your-password"
 ### Jenkins Access
 
 Jenkins API is typically open for read access on public servers. No authentication needed for:
+
 - `jenkins.onap.org`
 - `jenkins.opendaylight.org`
 
 If authentication is required:
+
 ```bash
 export JENKINS_USERNAME="your-username"
 export JENKINS_API_TOKEN="your-api-token"
@@ -241,6 +253,7 @@ cd reporting-tool/testing
 ## What Data Each API Provides
 
 ### GitHub API
+
 - ✅ Workflow status (passing/failing)
 - ✅ Last workflow run timestamp
 - ✅ Branch protection rules
@@ -248,11 +261,13 @@ cd reporting-tool/testing
 - ✅ Issue/PR counts (if enabled)
 
 **Impact on report:**
+
 - Workflow status columns populated
 - More accurate "CI/CD" feature detection
 - GitHub-specific metrics
 
 ### Gerrit API
+
 - ✅ Project metadata
 - ✅ Repository state (active/read-only/hidden)
 - ✅ Parent project information
@@ -260,11 +275,13 @@ cd reporting-tool/testing
 - ✅ Access controls
 
 **Impact on report:**
+
 - More accurate repository status
 - Better project hierarchy information
 - Gerrit-specific metadata
 
 ### Jenkins API
+
 - ✅ Job status
 - ✅ Build history
 - ✅ Last successful build
@@ -272,6 +289,7 @@ cd reporting-tool/testing
 - ✅ Job configuration
 
 **Impact on report:**
+
 - Jenkins CI/CD status
 - Build health indicators
 - Integration with Gerrit reviews
@@ -283,6 +301,7 @@ cd reporting-tool/testing
 **Cause:** APIs are disabled in configuration or no tokens provided
 
 **Solution:**
+
 1. Check that `extensions.github_api.enabled: true` in config
 2. Set `GITHUB_TOKEN` environment variable
 3. Verify token has correct permissions
@@ -292,6 +311,7 @@ cd reporting-tool/testing
 **Cause:** Too many API calls without authentication
 
 **Solution:**
+
 1. Set `GITHUB_TOKEN` for 5000 req/hour limit
 2. Enable caching: `--cache` flag
 3. Reduce number of repositories being analyzed
@@ -301,9 +321,11 @@ cd reporting-tool/testing
 **Cause:** API server unreachable or firewall blocking
 
 **Solution:**
+
 1. Verify server URL is correct
 2. Check network connectivity
 3. Try increasing timeout in configuration:
+
    ```yaml
    gerrit:
      timeout: 60.0
@@ -319,6 +341,7 @@ cd reporting-tool/testing
 **Cause:** API calls failing silently or returning no data
 
 **Solution:**
+
 1. Run with `--verbose` flag to see detailed logs
 2. Check API responses manually with `curl`
 3. Verify repository names match between Gerrit/GitHub
@@ -333,12 +356,14 @@ With all APIs enabled:
 | OpenDaylight | 39 | ~7 sec | ~2-3 min | 15-25x slower |
 
 **Why the difference?**
+
 - Each repository may require multiple API calls
 - Network latency for API requests
 - Rate limiting delays
 - API server response times
 
 **Optimization tips:**
+
 - Enable caching with `--cache` flag
 - Use more workers with `--workers 8`
 - Run during off-peak hours for public APIs

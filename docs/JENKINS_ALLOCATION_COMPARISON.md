@@ -33,6 +33,7 @@ Uses the authoritative source (ci-management JJB files) to map jobs to projects.
 | **Overall Accuracy** | 85-90% | 99% |
 
 **Example Issues with Fuzzy Matching:**
+
 ```
 Project: sdc
 Job: sdc-tosca-parser-maven-verify-master
@@ -44,6 +45,7 @@ CI-Management Result: ✅ Correctly allocated to sdc-tosca-parser project
 ### 2. Complexity
 
 #### Fuzzy Matching Code
+
 ```python
 def _calculate_job_match_score(self, job_name: str, project_job_name: str, project_name: str) -> int:
     """
@@ -94,20 +96,22 @@ def _calculate_job_match_score(self, job_name: str, project_job_name: str, proje
 
     return score
 ```
+
 **Complexity:** ~70 lines, multiple scoring heuristics, requires tuning
 
 #### CI-Management Code
+
 ```python
 def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set[str]) -> list[dict]:
     """Match Jenkins jobs against expected patterns from ci-management."""
     all_jobs = self.get_all_jobs()
     matched_jobs = []
-    
+
     for expected_name in expected_patterns:
         # Skip if still has template variables
         if '{' in expected_name:
             continue
-        
+
         # Find exact match
         for job in all_jobs.get('jobs', []):
             job_name = job.get('name', '')
@@ -117,9 +121,10 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
                     matched_jobs.append(job_details)
                     allocated_jobs.add(job_name)
                     break
-    
+
     return matched_jobs
 ```
+
 **Complexity:** ~15 lines, simple exact matching, no tuning needed
 
 ### 3. Maintainability
@@ -148,6 +153,7 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
 #### Supporting New Job Types
 
 **Fuzzy Matching:**
+
 1. Analyze new job naming pattern
 2. Update scoring algorithm
 3. Test against all existing jobs
@@ -155,6 +161,7 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
 5. ~2-4 hours of work
 
 **CI-Management:**
+
 1. Job automatically appears in JJB definitions
 2. Parser handles it automatically
 3. Zero code changes needed
@@ -166,6 +173,7 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
 #### Debugging: "Why wasn't this job allocated?"
 
 **Fuzzy Matching Process:**
+
 1. Check if job name contains project name
 2. Calculate match score
 3. Compare against other candidates
@@ -174,6 +182,7 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
 6. Often unclear why score was too low
 
 **CI-Management Process:**
+
 1. Check if project has JJB file
 2. Check if job template is defined
 3. Check if job name matches expanded template
@@ -185,6 +194,7 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
 #### Example 1: aai/babel
 
 **Fuzzy Matching Results:**
+
 ```
 ✅ aai-babel-maven-verify-master-mvn36-openjdk17
 ✅ aai-babel-maven-merge-master-mvn36-openjdk17
@@ -193,9 +203,11 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
 ❓ aai-babel-sonar (might miss due to no stream suffix)
 ❓ aai-babel-clm (might miss due to no stream suffix)
 ```
+
 **Accuracy:** ~70% (4-6 out of 7 jobs)
 
 **CI-Management Results:**
+
 ```
 ✅ aai-babel-maven-verify-master-mvn36-openjdk17
 ✅ aai-babel-maven-merge-master-mvn36-openjdk17
@@ -205,11 +217,13 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
 ✅ aai-babel-clm
 ✅ aai-babel-gerrit-release-jobs (if expanded)
 ```
+
 **Accuracy:** 100% (7 out of 7 jobs)
 
 #### Example 2: ccsdk/apps (Multi-Stream)
 
 **Fuzzy Matching Results:**
+
 ```
 ✅ ccsdk-apps-maven-verify-master-mvn39-openjdk21
 ✅ ccsdk-apps-maven-verify-paris-mvn39-openjdk21
@@ -217,14 +231,17 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
 ❓ ccsdk-apps-maven-verify-newdelhi-mvn38-openjdk17 (might miss)
 ... (similar for merge, stage, docker-stage)
 ```
+
 **Accuracy:** ~60% (12 out of 20 jobs)
 
 **CI-Management Results:**
+
 ```
 ✅ All 20 jobs correctly identified across 4 streams (master, paris, oslo, newdelhi)
 ✅ Correctly handles different Java/Maven versions per stream
 ✅ Correctly includes sonar and clm jobs
 ```
+
 **Accuracy:** 100% (20 out of 20 jobs)
 
 #### Example 3: Edge Case - Nested Projects
@@ -232,12 +249,14 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
 **Project:** `dcaegen2/collectors/hv-ves`
 
 **Fuzzy Matching:**
+
 - Looks for jobs starting with `dcaegen2-collectors-hv-ves-`
 - Might match jobs for parent `dcaegen2/collectors`
 - Risk of double allocation or misallocation
 **Accuracy:** ~70%
 
 **CI-Management:**
+
 - Directly reads JJB file for exact project
 - No ambiguity
 - Correct allocation every time
@@ -248,9 +267,11 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
 ## Migration Impact
 
 ### Breaking Changes
+
 **None.** The new approach is fully backward compatible with fallback to fuzzy matching.
 
 ### Configuration Changes
+
 ```json
 // Add to existing jenkins config
 {
@@ -266,6 +287,7 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
 ```
 
 ### User Impact
+
 - More accurate job counts in reports
 - Better project-to-job mappings
 - Slightly longer first run (due to git clone)
@@ -297,12 +319,15 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
 ## Recommendations
 
 ### For New Deployments
+
 **Use CI-Management approach** - Superior accuracy and easier maintenance outweigh minimal setup cost.
 
 ### For Existing Deployments
+
 **Migrate to CI-Management** - The 10-15% accuracy improvement is worth the migration effort.
 
 ### For Projects Without ci-management
+
 **Keep Fuzzy Matching** - Automatic fallback ensures continued functionality.
 
 ---
@@ -325,6 +350,7 @@ def _match_expected_jobs(self, expected_patterns: list[str], allocated_jobs: set
 ## Conclusion
 
 The ci-management based approach provides:
+
 - **Better accuracy** (99% vs 85-90%)
 - **Simpler code** (15 LOC vs 70 LOC)
 - **Easier maintenance** (no heuristic tuning)
@@ -340,6 +366,7 @@ The only tradeoff is a one-time 10-second setup cost for git cloning, which is n
 ## Appendix: Sample Output Comparison
 
 ### Before (Fuzzy Matching)
+
 ```
 Project: aai/babel
 Jenkins Jobs: 5 found
@@ -348,11 +375,12 @@ Jenkins Jobs: 5 found
   - aai-babel-maven-stage-master-mvn36-openjdk17
   - aai-babel-maven-docker-stage-master
   - aai-babel-maven-sonar (possibly missed)
-  
+
 Missing: aai-babel-clm, aai-babel-gerrit-release-jobs
 ```
 
 ### After (CI-Management)
+
 ```
 Project: aai/babel
 Jenkins Jobs: 7 found (from ci-management/jjb/aai/aai-babel.yaml)

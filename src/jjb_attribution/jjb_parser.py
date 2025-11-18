@@ -22,26 +22,26 @@ logger = logging.getLogger(__name__)
 def _jjb_tag_constructor(loader, node):
     """
     Constructor for JJB-specific YAML tags.
-    
+
     Jenkins Job Builder uses custom YAML tags like !include-raw-escape: and !j2:
     for including shell scripts and Jinja2 templates. These tags cause warnings
     when parsed with standard yaml.safe_load() because they're not recognized.
-    
+
     This constructor handles these tags gracefully by returning their values as-is.
     We don't need to process these tags for job name extraction - we only need
     the job-template definitions and project configurations.
-    
+
     Supported tags:
     - !include-raw: - Include raw shell script
     - !include-raw-escape: - Include shell script with escaping
     - !include: - Generic include
     - !j2: - Jinja2 template processing
     - !j2-yaml: - Jinja2 with YAML output
-    
+
     Args:
         loader: YAML loader instance
         node: YAML node to construct
-        
+
     Returns:
         Constructed value based on node type
     """
@@ -132,9 +132,9 @@ class JJBAttribution:
         """
         Load JJB templates and job-groups from both global-jjb and ci-management.
 
-        Parses all YAML files in global-jjb and ci-management to extract job-template 
+        Parses all YAML files in global-jjb and ci-management to extract job-template
         definitions and job-group definitions for accurate job expansion.
-        
+
         Templates from ci-management override those from global-jjb if they have the same name.
         """
         logger.info("Loading JJB templates and job-groups...")
@@ -200,13 +200,13 @@ class JJBAttribution:
                         elif template_name:
                             self._templates[template_name] = template
                             logger.debug(f"Loaded template by name: {template_name}")
-                    
+
                     # Load job-group definitions
                     elif "job-group" in item:
                         job_group = item["job-group"]
                         group_name = job_group.get("name")
                         jobs_list = job_group.get("jobs", [])
-                        
+
                         if group_name and jobs_list:
                             # Store the list of job templates in this group
                             self._job_groups[group_name] = jobs_list
@@ -398,7 +398,7 @@ class JJBAttribution:
                 if isinstance(job_item, str):
                     # Check if this is a job-group reference
                     expanded_jobs = self._expand_job_group(job_item, project_name, project_block)
-                    
+
                     if expanded_jobs:
                         # This was a job-group, add all expanded jobs
                         for expanded_template in expanded_jobs:
@@ -426,7 +426,7 @@ class JJBAttribution:
 
                         # Check if this is a job-group reference
                         expanded_jobs = self._expand_job_group(template_name, project_name, merged_params)
-                        
+
                         if expanded_jobs:
                             # This was a job-group, add all expanded jobs
                             for expanded_template in expanded_jobs:
@@ -465,23 +465,23 @@ class JJBAttribution:
     def _expand_job_group(self, job_name: str, project_name: str, params: dict[str, Any]) -> list[str]:
         """
         Expand a job-group reference to its component job templates.
-        
+
         Job groups in JJB are defined like:
         - job-group:
             name: "{project-name}-gerrit-docker-jobs"
             jobs:
               - gerrit-docker-verify
               - gerrit-docker-merge
-        
+
         When a project references "{project-name}-gerrit-docker-jobs", we need to:
         1. Check if the job_name (with template variables) matches a job-group name
         2. Return the list of job templates in that group
-        
+
         Args:
             job_name: Job name that might be a job-group reference (e.g., "{project-name}-gerrit-docker-jobs")
             project_name: Project name to substitute into the pattern
             params: Parameters for variable substitution
-            
+
         Returns:
             List of job template names if this is a job-group, empty list otherwise
         """
@@ -490,7 +490,7 @@ class JJBAttribution:
         if job_name in self._job_groups:
             logger.debug(f"Expanding job-group: {job_name} -> {self._job_groups[job_name]}")
             return self._job_groups[job_name]
-        
+
         # Not a job-group
         return []
 
@@ -555,11 +555,11 @@ class JJBAttribution:
 
         for var in variables:
             value = params.get(var, f"{{{var}}}")  # Keep placeholder if not found
-            
+
             # Skip list/dict values - they need stream expansion
             if isinstance(value, (list, dict)):
                 continue
-                
+
             if isinstance(value, str):
                 result = result.replace(f"{{{var}}}", value)
             elif isinstance(value, (int, float, bool)):

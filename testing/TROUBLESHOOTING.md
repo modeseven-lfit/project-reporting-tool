@@ -5,6 +5,7 @@
 ### 1. jq Parsing Errors
 
 **Symptoms:**
+
 ```
 jq: parse error: Unfinished string at EOF at line 2, column 0
 jq: parse error: Invalid numeric literal at line 1, column 10
@@ -14,6 +15,7 @@ jq: parse error: Invalid numeric literal at line 1, column 10
 These errors typically occur when using `for` loops with `jq` output that contains special characters or when shell word splitting breaks JSON strings.
 
 **Bad Pattern:**
+
 ```bash
 for project_data in $(jq -c '.[]' "${PROJECTS_JSON}"); do
     local project=$(echo "$project_data" | jq -r '.project')
@@ -21,6 +23,7 @@ done
 ```
 
 **Good Pattern:**
+
 ```bash
 jq -c '.[]' "${PROJECTS_JSON}" 2>/dev/null | while IFS= read -r project_data; do
     local project=$(echo "$project_data" | jq -r '.project // "Unknown"' 2>/dev/null)
@@ -28,6 +31,7 @@ done
 ```
 
 **Why it works:**
+
 - Uses `while read` instead of `for` loop to avoid word splitting
 - `IFS=` prevents internal field separator issues
 - `-r` flag for raw output
@@ -39,37 +43,43 @@ done
 ### 2. Missing SSH Key
 
 **Symptoms:**
+
 ```
 [ERROR] SSH key not found at /Users/username/.ssh/gerrit.linuxfoundation.org
 [ERROR] Please ensure your SSH key is properly configured
 ```
 
 **Solution:**
+
 1. Check if the environment variable is set:
+
    ```bash
    echo $LF_GERRIT_INFO_MASTER_SSH_KEY
    ```
 
 2. If not set, ensure your SSH key exists:
+
    ```bash
    ls -la ~/.ssh/gerrit.linuxfoundation.org
    ```
 
 3. Generate a new key if needed:
+
    ```bash
    ssh-keygen -t ed25519 -f ~/.ssh/gerrit.linuxfoundation.org -C "your.email@example.com"
    ```
 
 4. Add the public key to your Gerrit account at:
-   - ONAP: https://gerrit.onap.org/r/settings/#SSHKeys
-   - OpenDaylight: https://git.opendaylight.org/gerrit/settings/#SSHKeys
-   - O-RAN-SC: https://gerrit.o-ran-sc.org/r/settings/#SSHKeys
+   - ONAP: <https://gerrit.onap.org/r/settings/#SSHKeys>
+   - OpenDaylight: <https://git.opendaylight.org/gerrit/settings/#SSHKeys>
+   - O-RAN-SC: <https://gerrit.o-ran-sc.org/r/settings/#SSHKeys>
 
 ---
 
 ### 3. API Access Not Configured
 
 **Symptoms:**
+
 ```
 [WARNING] ==========================================
 [WARNING] ⚠️  NO API INTEGRATIONS CONFIGURED
@@ -78,6 +88,7 @@ done
 
 **Impact:**
 Reports will only use local git data and will NOT include:
+
 - GitHub workflow status
 - Gerrit metadata
 - Jenkins CI/CD information
@@ -86,6 +97,7 @@ Reports will only use local git data and will NOT include:
 See [API_ACCESS.md](./API_ACCESS.md) for detailed setup instructions.
 
 Quick setup:
+
 ```bash
 export GITHUB_TOKEN="ghp_your_token_here"
 export GERRIT_USERNAME="your-username"
@@ -99,6 +111,7 @@ export JENKINS_TOKEN="your-api-token"
 ### 4. Jenkins Job Allocation Warnings
 
 **Symptoms:**
+
 ```
 [ERROR] CRITICAL: Jenkins job allocation issues detected:
 [ERROR]   - CRITICAL ERROR: Found 8 unallocated project Jenkins jobs
@@ -106,11 +119,13 @@ export JENKINS_TOKEN="your-api-token"
 
 **Explanation:**
 This is a **WARNING**, not an error. The reporting tool tries to match Jenkins jobs to git repositories using naming patterns. Some jobs cannot be automatically matched because they:
+
 - Use non-standard naming conventions
 - Are infrastructure/system jobs (not project-specific)
 - Belong to archived or renamed projects
 
 **Impact:**
+
 - Reports will still generate successfully
 - Unallocated jobs are listed for manual review
 - The tool provides suggestions for which projects they might belong to
@@ -123,6 +138,7 @@ Review the suggestions in the output and update project metadata if needed. This
 ### 5. Repository Has No Commits
 
 **Symptoms:**
+
 ```
 [INFO] Repositories with NO commits: 34
 [INFO] Sample repositories with NO commits:
@@ -131,6 +147,7 @@ Review the suggestions in the output and update project metadata if needed. This
 
 **Explanation:**
 Some repositories may be:
+
 - Newly created and empty
 - Archived with no history
 - Submodules or references to external repos
@@ -146,21 +163,26 @@ This is informational only. No action required unless you expect these repositor
 ### 6. Report Generation is Slow
 
 **Symptoms:**
+
 - Takes several minutes to generate reports
 - Many HTTP requests logged
 
 **Causes:**
+
 1. **API calls enabled:** Fetching data from GitHub, Gerrit, and Jenkins APIs
 2. **Large number of repositories:** More repos = more time
 3. **Network latency:** API response times vary
 
 **Solutions:**
+
 1. **Disable API access for faster local testing:**
+
    ```bash
    unset GITHUB_TOKEN GERRIT_USERNAME GERRIT_PASSWORD JENKINS_USER JENKINS_TOKEN
    ```
 
 2. **Use cached clones:** The script skips re-cloning if directories exist
+
    ```bash
    # Clones are cached at:
    /tmp/gerrit.onap.org
@@ -174,33 +196,40 @@ This is informational only. No action required unless you expect these repositor
 ### 7. Permission Denied Errors
 
 **Symptoms:**
+
 ```
 Permission denied (publickey).
 fatal: Could not read from remote repository.
 ```
 
 **Causes:**
+
 - SSH key not configured correctly
 - SSH key not added to Gerrit
 - Wrong SSH key being used
 
 **Solution:**
+
 1. Test SSH connection:
+
    ```bash
    ssh -T gerrit.onap.org -p 29418
    ```
 
 2. Check SSH config:
+
    ```bash
    cat ~/.ssh/config
    ```
 
 3. Verify SSH agent has the key:
+
    ```bash
    ssh-add -l
    ```
 
 4. Add key to SSH agent:
+
    ```bash
    ssh-add ~/.ssh/gerrit.linuxfoundation.org
    ```
@@ -210,6 +239,7 @@ fatal: Could not read from remote repository.
 ### 8. Command Not Found Errors
 
 **Symptoms:**
+
 ```
 uvx: command not found
 jq: command not found
@@ -219,6 +249,7 @@ jq: command not found
 Install missing dependencies:
 
 **macOS:**
+
 ```bash
 # Install uv (for uvx)
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -231,6 +262,7 @@ uvx gerrit-clone --help
 ```
 
 **Linux (Debian/Ubuntu):**
+
 ```bash
 # Install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -256,26 +288,28 @@ If you encounter issues not covered here:
    - [README.md](../README.md) - Main documentation
 
 3. **Common debugging steps:**
+
    ```bash
    # Verify Python environment
    python --version
-   
+
    # Verify dependencies
    command -v jq
    command -v uvx
-   
+
    # Check environment variables
    env | grep -E "(GITHUB|GERRIT|JENKINS)"
-   
+
    # Test with minimal config
    ./local-testing.sh 2>&1 | tee testing.log
    ```
 
 4. **Clean slate:** If all else fails, start fresh:
+
    ```bash
    # Remove cached data
    rm -rf /tmp/gerrit.onap.org /tmp/git.opendaylight.org /tmp/reports
-   
+
    # Run script again
    ./local-testing.sh
    ```
@@ -295,6 +329,7 @@ If you encounter issues not covered here:
 ## Report Issues
 
 Found a bug or have a question? Please:
+
 - Check this troubleshooting guide first
 - Review existing documentation
 - Search for similar issues

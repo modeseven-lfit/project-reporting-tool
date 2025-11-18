@@ -67,8 +67,8 @@ reporting-tool generate --project my-project --repos-path ./repos \
 ```yaml
 generate_report:
   script:
-    - reporting-tool generate 
-        --project my-project 
+    - reporting-tool generate
+        --project my-project
         --repos-path ./repos
         --github-token-env CI_GITHUB_TOKEN
   variables:
@@ -106,8 +106,8 @@ Keep existing secret name and specify `--github-token-env CLASSIC_READ_ONLY_PAT_
 
 ## Benefits
 
-✅ Standards compliance with GitHub conventions  
-✅ Flexible for various CI/CD platforms  
-✅ No breaking changes to existing workflows  
-✅ Improved developer experience  
+✅ Standards compliance with GitHub conventions
+✅ Flexible for various CI/CD platforms
+✅ No breaking changes to existing workflows
+✅ Improved developer experience
 ✅ Better security practices (no hardcoded variable names)

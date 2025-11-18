@@ -64,8 +64,8 @@ reporting-tool generate --project ONAP --repos-path ./repos
 generate_report:
   script:
     - export MY_GITHUB_TOKEN="${CI_GITHUB_TOKEN}"
-    - reporting-tool generate 
-        --project my-project 
+    - reporting-tool generate
+        --project my-project
         --repos-path ./repos
         --github-token-env MY_GITHUB_TOKEN
 ```
@@ -75,6 +75,7 @@ generate_report:
 The tool looks for the GitHub token in the following order:
 
 1. **Explicit token in config file** (highest priority)
+
    ```yaml
    extensions:
      github_api:
@@ -82,6 +83,7 @@ The tool looks for the GitHub token in the following order:
    ```
 
 2. **Environment variable** (specified via `--github-token-env` or default `GITHUB_TOKEN`)
+
    ```bash
    export GITHUB_TOKEN="ghp_env_token"
    ```
@@ -138,17 +140,20 @@ Fine-grained tokens are scoped to a single organization, but the reporting tool 
 ```
 
 **Solutions**:
+
 1. Verify the environment variable is set:
+
    ```bash
    echo $GITHUB_TOKEN
    ```
 
 2. If using a custom variable name, ensure `--github-token-env` matches:
+
    ```bash
    # Wrong - variable is CUSTOM_TOKEN but flag says GITHUB_TOKEN
    export CUSTOM_TOKEN="ghp_xxx"
    reporting-tool generate --project test --repos-path ./repos
-   
+
    # Correct - flag matches variable name
    export CUSTOM_TOKEN="ghp_xxx"
    reporting-tool generate --project test --repos-path ./repos \
@@ -160,6 +165,7 @@ Fine-grained tokens are scoped to a single organization, but the reporting tool 
 **Symptom**: 403 or 401 errors when querying GitHub API
 
 **Solutions**:
+
 1. Verify token has required scopes (`repo:status`, `actions:read`)
 2. Check token hasn't expired
 3. Ensure token has access to the organizations/repositories you're querying
@@ -169,6 +175,7 @@ Fine-grained tokens are scoped to a single organization, but the reporting tool 
 **Symptom**: Workflow status shows as "unknown" or grey in reports
 
 **Solutions**:
+
 1. Verify GitHub token is set correctly
 2. Check that you're using a Classic PAT (not fine-grained)
 3. Confirm the token has `actions:read` scope

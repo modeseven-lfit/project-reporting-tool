@@ -151,7 +151,7 @@ class RepositoryReporter:
             self.logger.warning(
                 "Info-master repository not available - continuing without it"
             )
-        
+
         # Store info_master_path for INFO.yaml collection
         self._info_master_path = info_master_path
 
@@ -367,24 +367,24 @@ class RepositoryReporter:
     def _determine_gerrit_server(self, repos_path: Path) -> str:
         """
         Determine the Gerrit server name from the repositories path.
-        
+
         The repos_path is typically the Gerrit server hostname (e.g., gerrit.onap.org)
         or contains it as the directory name.
-        
+
         Args:
             repos_path: Path to the repositories directory
-        
+
         Returns:
             Gerrit server name (e.g., "gerrit.onap.org", "git.opendaylight.org")
         """
         # Check if the directory name itself is a Gerrit server
         dir_name = repos_path.name
-        
+
         # Common Gerrit server patterns
         if dir_name.startswith("gerrit.") or dir_name.startswith("git."):
             self.logger.debug(f"Gerrit server determined from directory name: {dir_name}")
             return dir_name
-        
+
         # Check if there's a gerrit configuration or .gitreview file
         # that might indicate the server
         gitreview_path = repos_path / ".gitreview"
@@ -398,7 +398,7 @@ class RepositoryReporter:
                             return server
             except Exception as e:
                 self.logger.debug(f"Could not read .gitreview: {e}")
-        
+
         # Fallback: use the directory name
         self.logger.warning(
             f"Could not determine Gerrit server from {repos_path}, using directory name: {dir_name}"
@@ -600,7 +600,7 @@ class RepositoryReporter:
             else:
                 self.logger.warning(f"Time window '{window_name}' has invalid format, skipping")
                 continue
-                
+
             start_date = now - timedelta(days=days)
             windows[window_name] = {
                 "days": days,

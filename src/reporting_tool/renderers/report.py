@@ -923,21 +923,21 @@ class ReportRenderer:
     def _generate_info_yaml_section(self, data: dict[str, Any]) -> str:
         """Generate INFO.yaml committer report section."""
         info_yaml_data = data.get("info_yaml", {})
-        
+
         if not info_yaml_data:
             return ""
-        
+
         # Check for errors first (before checking project count)
         if "error" in info_yaml_data:
             sections = ["## 📋 Committer INFO.yaml Report"]
             sections.append("")
             sections.append(f"⚠️ **Error collecting INFO.yaml data:** {info_yaml_data['error']}")
             return "\n".join(sections)
-        
+
         # Now check if we have projects
         if info_yaml_data.get("total_projects", 0) == 0:
             return ""
-        
+
         # Convert project dictionaries back to ProjectInfo objects
         projects = []
         for project_dict in info_yaml_data.get("projects", []):
@@ -946,10 +946,10 @@ class ReportRenderer:
             except Exception as e:
                 self.logger.warning(f"Failed to parse project data: {e}")
                 continue
-        
+
         if not projects:
             return ""
-        
+
         # Use the InfoYamlRenderer to generate the report
         return self.info_yaml_renderer.render_full_report_markdown(projects)
 

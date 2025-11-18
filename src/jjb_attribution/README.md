@@ -125,6 +125,7 @@ python3 scripts/test_jjb_parser.py
 ```
 
 This will:
+
 - Clone necessary repositories (if not present)
 - Load JJB templates
 - Parse sample projects
@@ -185,7 +186,7 @@ def get_jobs_for_project(self, project_name, allocated_jobs):
     if self.ci_management_parser:
         expected_jobs = self.ci_management_parser.parse_project_jobs(project_name)
         return self._match_expected_jobs(expected_jobs, allocated_jobs)
-    
+
     # Fallback to fuzzy matching
     return self._fuzzy_match_jobs(project_name, allocated_jobs)
 ```
@@ -213,6 +214,7 @@ Same as parent project.
 ## Support
 
 For issues or questions:
+
 1. Check the design documentation
 2. Run the test script for examples
 3. Review the comparison document

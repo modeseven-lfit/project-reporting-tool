@@ -25,6 +25,7 @@ The CI-Management integration has been **successfully implemented** and is now r
 - ✅ Comprehensive logging for debugging
 
 **Key Features:**
+
 - **Automatic URL derivation** from Gerrit host - zero config needed!
 - Automatic initialization from configuration
 - Try CI-Management first, fallback to fuzzy matching
@@ -42,6 +43,7 @@ The CI-Management integration has been **successfully implemented** and is now r
 - ✅ Comprehensive inline documentation
 
 **Configuration Options:**
+
 ```yaml
 ci_management:
   enabled: true           # ✅ Enabled by default!
@@ -54,11 +56,13 @@ ci_management:
 ### 3. Project-Specific Configurations ✅
 
 **File: `reporting-tool/configuration/onap.yaml`**
+
 - ✅ Complete ONAP configuration
 - ✅ **No CI-Management config needed** - auto-derived from Gerrit
 - ✅ All required integrations configured
 
 **File: `reporting-tool/configuration/opendaylight.yaml`**
+
 - ✅ Updated with CI-Management configuration
 - ✅ Explicit URL override for non-standard location (releng/builder)
 - ✅ Critical for OpenDaylight (47% → 99% improvement)
@@ -73,6 +77,7 @@ ci_management:
 - ✅ Works with both environment and config-based Jenkins
 
 **Changes Made:**
+
 - Extract ci_management config from project configuration
 - Extract Gerrit host from configuration
 - Pass both to JenkinsAPIClient constructor
@@ -103,6 +108,7 @@ ci_management:
 - ✅ Sample project testing
 
 **Validation Steps:**
+
 1. Check module availability
 2. Load project configuration
 3. Validate Jenkins configuration
@@ -247,6 +253,7 @@ get_jobs_for_project(project_name)
 ### Real-World Example: OpenDaylight
 
 **Before CI-Management (Fuzzy Matching):**
+
 - Found: ~550 jobs
 - Accuracy: 47%
 - Reason: Multi-stream jobs confuse fuzzy matching
@@ -254,6 +261,7 @@ get_jobs_for_project(project_name)
   - Complex nested project structures
 
 **After CI-Management:**
+
 - Found: ~1,150 jobs
 - Accuracy: 99%+
 - Reason: JJB definitions are the source of truth
@@ -267,6 +275,7 @@ get_jobs_for_project(project_name)
 ### CI-Management Parser
 
 **Capabilities:**
+
 - ✅ Parse JJB YAML files
 - ✅ Resolve job templates with variables
 - ✅ Handle multi-stream configurations
@@ -275,12 +284,14 @@ get_jobs_for_project(project_name)
 - ✅ Cache repository data (24h default)
 
 **Performance:**
+
 - Initialization: ~15-30 seconds (first run)
 - Subsequent runs: ~5-15 seconds (cached)
 - Per-project lookup: ~100-200ms
 - Memory footprint: ~15-30 MB
 
 **Supported Patterns:**
+
 ```yaml
 # Simple template
 jobs:
@@ -307,6 +318,7 @@ CI-Management **automatically falls back** to fuzzy matching in these cases:
 5. **No resolved jobs** (all job names have unresolved variables)
 
 **Fallback is graceful and logged:**
+
 ```
 WARNING - CI-Management lookup failed for <project>: <error>. Falling back to fuzzy matching.
 INFO - Fuzzy matching: Found 3 Jenkins jobs for project <project>
@@ -371,6 +383,7 @@ INFO - Fuzzy matching: Found 3 Jenkins jobs for project <project>
 ### Automated Testing
 
 The existing test suite covers:
+
 - ✅ CI-Management parser (133 tests in `tests/unit/ci_management/`)
 - ✅ JenkinsAPIClient basic functionality
 - ✅ Configuration loading
@@ -380,11 +393,13 @@ The existing test suite covers:
 Before production deployment, test with:
 
 1. **Run validation script:**
+
    ```bash
    python reporting-tool/scripts/validate_ci_management.py onap
    ```
 
 2. **Generate test report:**
+
    ```bash
    reporting-tool generate --project onap --repos-path ./test-repos
    ```
@@ -513,11 +528,13 @@ ci_management:
 ### Immediate Actions
 
 1. **Test with ONAP** (expected: 99% → 99.5%)
+
    ```bash
    python reporting-tool/scripts/validate_ci_management.py onap
    ```
 
 2. **Test with OpenDaylight** (expected: 47% → 99%)
+
    ```bash
    python reporting-tool/scripts/validate_ci_management.py opendaylight
    ```
@@ -571,11 +588,13 @@ ci_management:
    - Config: `configuration/default.yaml` (inline comments)
 
 2. **Run validation:**
+
    ```bash
    python scripts/validate_ci_management.py <project>
    ```
 
 3. **Enable debug logging:**
+
    ```yaml
    logging:
      level: "DEBUG"
@@ -590,9 +609,10 @@ ci_management:
 
 ## Summary
 
-The CI-Management integration is **complete, tested, and ready for production use**. 
+The CI-Management integration is **complete, tested, and ready for production use**.
 
 **What You Get:**
+
 - ✅ 99%+ Jenkins job allocation accuracy
 - ✅ **Automatic URL derivation** - zero config needed!
 - ✅ **Enabled by default** - works out of the box
@@ -603,6 +623,7 @@ The CI-Management integration is **complete, tested, and ready for production us
 - ✅ Zero breaking changes
 
 **How to Use:**
+
 1. Configure Gerrit and Jenkins (you already do this!)
 2. CI-Management automatically enables and derives URL
 3. Generate reports normally
@@ -614,10 +635,10 @@ The CI-Management integration is **complete, tested, and ready for production us
 
 ## Credits
 
-**Implementation Date:** December 2024  
-**Integration Status:** ✅ Production Ready  
-**Documentation:** Complete  
-**Testing:** Validated  
+**Implementation Date:** December 2024
+**Integration Status:** ✅ Production Ready
+**Documentation:** Complete
+**Testing:** Validated
 
 ---
 

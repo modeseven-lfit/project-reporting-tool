@@ -32,6 +32,7 @@ different purposes:
 organizations.
 
 **Environment Variable Names**:
+
 - **Default**: `GITHUB_TOKEN` (recommended for most users)
 - **CI/Legacy**: `CLASSIC_READ_ONLY_PAT_TOKEN` (used in existing CI workflows)
 - **Custom**: Can be configured via `--github-token-env` CLI option

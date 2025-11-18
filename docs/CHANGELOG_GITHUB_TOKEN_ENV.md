@@ -1,6 +1,7 @@
 # Changelog: GitHub Token Environment Variable Configuration
 
 ## Version: 2.0.0 (Feature Enhancement)
+
 **Date**: January 2025
 
 ---
@@ -12,10 +13,12 @@ The reporting tool now supports configurable GitHub token environment variable n
 ## What Changed
 
 ### Default Behavior (New)
+
 - **Default environment variable**: `GITHUB_TOKEN` (was: hardcoded `CLASSIC_READ_ONLY_PAT_TOKEN`)
 - The tool now reads from `GITHUB_TOKEN` by default, aligning with common GitHub conventions
 
 ### New CLI Option
+
 ```bash
 --github-token-env VAR_NAME
 ```
@@ -25,6 +28,7 @@ Allows users to specify which environment variable contains their GitHub Persona
 ## Migration Guide
 
 ### For Local Development (No Action Required)
+
 If you already use `GITHUB_TOKEN`, no changes needed:
 
 ```bash
@@ -35,21 +39,25 @@ reporting-tool generate --project my-project --repos-path ./repos
 ### For CI/CD Environments (Choose One Option)
 
 #### Option 1: Rename Secret (Recommended)
+
 Update your CI/CD secrets from `CLASSIC_READ_ONLY_PAT_TOKEN` to `GITHUB_TOKEN`
 
 **Before:**
+
 ```yaml
 env:
   CLASSIC_READ_ONLY_PAT_TOKEN: ${{ secrets.CLASSIC_READ_ONLY_PAT_TOKEN }}
 ```
 
 **After:**
+
 ```yaml
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 #### Option 2: Use CLI Flag (No Secret Changes)
+
 Keep using `CLASSIC_READ_ONLY_PAT_TOKEN` and specify it explicitly:
 
 ```bash
@@ -60,6 +68,7 @@ reporting-tool generate \
 ```
 
 **In GitHub Actions:**
+
 ```yaml
 - name: Generate Report
   run: |
@@ -136,12 +145,14 @@ reporting-tool generate \
 ## Examples
 
 ### Local Development
+
 ```bash
 export GITHUB_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxx"
 reporting-tool generate --project ONAP --repos-path ./repos
 ```
 
 ### GitHub Actions (New Style)
+
 ```yaml
 - name: Generate Report
   run: reporting-tool generate --project ONAP --repos-path ./repos
@@ -150,6 +161,7 @@ reporting-tool generate --project ONAP --repos-path ./repos
 ```
 
 ### GitHub Actions (Legacy Compatible)
+
 ```yaml
 - name: Generate Report
   run: |
@@ -162,6 +174,7 @@ reporting-tool generate --project ONAP --repos-path ./repos
 ```
 
 ### Custom Variable
+
 ```bash
 export MY_CUSTOM_GH_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxx"
 reporting-tool generate \
@@ -185,6 +198,7 @@ tests/test_github_token_env.py::TestBackwardCompatibility - 2 tests
 The tool looks for tokens in this order (highest to lowest priority):
 
 1. **Explicit token in config file**
+
    ```yaml
    extensions:
      github_api:
@@ -192,6 +206,7 @@ The tool looks for tokens in this order (highest to lowest priority):
    ```
 
 2. **Environment variable** (specified via `--github-token-env` or default)
+
    ```bash
    export GITHUB_TOKEN="ghp_env_token"
    ```

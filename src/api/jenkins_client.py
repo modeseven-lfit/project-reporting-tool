@@ -80,7 +80,7 @@ class JenkinsAPIClient(BaseAPIClient):
         # JJB Attribution integration
         self.jjb_attribution: Optional[Any] = None
         self.jjb_attribution_enabled = False
-        
+
         if jjb_config and jjb_config.get("enabled", True):
             self._initialize_jjb_attribution(jjb_config, gerrit_host)
 
@@ -90,15 +90,15 @@ class JenkinsAPIClient(BaseAPIClient):
         self._discover_api_base_path()
 
     def _initialize_jjb_attribution(
-        self, 
+        self,
         config: Dict[str, Any],
         gerrit_host: Optional[str] = None
     ) -> None:
         """
         Initialize JJB Attribution for authoritative job allocation.
-        
+
         Automatically derives ci-management URL from Gerrit host if not explicitly provided.
-        
+
         Args:
             config: JJB Attribution configuration dictionary
             gerrit_host: Gerrit hostname for auto-deriving ci-management URL
@@ -109,14 +109,14 @@ class JenkinsAPIClient(BaseAPIClient):
                 "Falling back to fuzzy matching."
             )
             return
-        
+
         try:
             self.logger.debug("Initializing JJB Attribution...")
-            
+
             # Setup repository manager
             cache_dir = Path(config.get("cache_dir", "/tmp"))
             repo_mgr = JJBRepoManager(cache_dir)
-            
+
             # Get ci-management URL (auto-derive from Gerrit host if not provided)
             ci_mgmt_url = config.get("url")
             if not ci_mgmt_url:
@@ -132,14 +132,14 @@ class JenkinsAPIClient(BaseAPIClient):
                         "Falling back to fuzzy matching."
                     )
                     return
-            
+
             branch = config.get("branch", "master")
             ci_mgmt_path, global_jjb_path = repo_mgr.ensure_repos(ci_mgmt_url, branch)
-            
+
             # Initialize parser
             self.jjb_attribution = JJBAttribution(ci_mgmt_path, global_jjb_path)
             self.jjb_attribution.load_templates()
-            
+
             # Get summary
             summary = self.jjb_attribution.get_project_summary()
             self.logger.info(
@@ -147,7 +147,7 @@ class JenkinsAPIClient(BaseAPIClient):
                 f"{summary['total_jobs']} jobs from ci-management"
             )
             self.jjb_attribution_enabled = True
-            
+
         except Exception as e:
             self.logger.warning(
                 f"Failed to initialize JJB Attribution: {e}. "
@@ -286,7 +286,7 @@ class JenkinsAPIClient(BaseAPIClient):
         """
         Get jobs related to a specific Gerrit project with duplicate prevention.
 
-        Uses hybrid approach combining JJB Attribution (authoritative) and fuzzy 
+        Uses hybrid approach combining JJB Attribution (authoritative) and fuzzy
         matching (fallback) to maximize job attribution coverage.
 
         Strategy:
@@ -309,10 +309,10 @@ class JenkinsAPIClient(BaseAPIClient):
             >>> print(f"Found {len(jobs)} jobs")
         """
         self.logger.debug(f"Looking for Jenkins jobs for project: {project_name}")
-        
+
         all_jobs = []
         job_names_found = set()  # Track to avoid duplicates
-        
+
         # Try JJB Attribution first if enabled
         jjb_jobs = []
         if self.jjb_attribution_enabled and self.jjb_attribution:
@@ -323,7 +323,7 @@ class JenkinsAPIClient(BaseAPIClient):
                     if job_name and job_name not in job_names_found:
                         all_jobs.append(job)
                         job_names_found.add(job_name)
-                
+
                 if jjb_jobs:
                     self.logger.debug(
                         f"JJB Attribution found {len(jjb_jobs)} jobs for {project_name}"
@@ -333,12 +333,12 @@ class JenkinsAPIClient(BaseAPIClient):
                     f"JJB Attribution lookup failed for {project_name}: {e}. "
                     f"Will rely on fuzzy matching only."
                 )
-        
+
         # Always try fuzzy matching to catch legacy/manual jobs not in JJB
         # This is especially important for projects with mixed job sources
         try:
             fuzzy_jobs = self._get_jobs_via_fuzzy_matching(project_name, allocated_jobs)
-            
+
             # Add fuzzy matches that aren't already found via JJB
             fuzzy_added = 0
             for job in fuzzy_jobs:
@@ -347,7 +347,7 @@ class JenkinsAPIClient(BaseAPIClient):
                     all_jobs.append(job)
                     job_names_found.add(job_name)
                     fuzzy_added += 1
-            
+
             if fuzzy_added > 0:
                 self.logger.debug(
                     f"Fuzzy matching added {fuzzy_added} additional jobs for {project_name} "
@@ -357,7 +357,7 @@ class JenkinsAPIClient(BaseAPIClient):
             self.logger.warning(
                 f"Fuzzy matching failed for {project_name}: {e}"
             )
-        
+
         # Log summary of hybrid approach
         if all_jobs:
             sources = []
@@ -365,12 +365,12 @@ class JenkinsAPIClient(BaseAPIClient):
                 sources.append(f"{len(jjb_jobs)} JJB")
             if len(all_jobs) > len(jjb_jobs):
                 sources.append(f"{len(all_jobs) - len(jjb_jobs)} fuzzy")
-            
+
             self.logger.debug(
                 f"Hybrid matching for {project_name}: {len(all_jobs)} jobs "
                 f"({', '.join(sources)})"
             )
-        
+
         return all_jobs
 
     def _get_jobs_via_jjb_attribution(
@@ -380,32 +380,32 @@ class JenkinsAPIClient(BaseAPIClient):
     ) -> List[Dict[str, Any]]:
         """
         Get jobs using JJB Attribution authoritative definitions.
-        
+
         Args:
             project_name: Name of the Gerrit project
             allocated_jobs: Set of job names already allocated
-            
+
         Returns:
             List of job detail dictionaries
         """
         self.logger.debug(f"Using JJB Attribution for project: {project_name}")
-        
+
         # Get expected job names from ci-management
         expected_jobs = self.jjb_attribution.parse_project_jobs(project_name)
-        
+
         # Filter out unresolved template variables
         resolved_jobs = [j for j in expected_jobs if '{' not in j]
-        
+
         if not resolved_jobs:
             self.logger.debug(
                 f"No resolved jobs found in JJB for {project_name}"
             )
             return []
-        
+
         self.logger.debug(
             f"JJB expects {len(resolved_jobs)} jobs for {project_name}"
         )
-        
+
         # Get all Jenkins jobs
         all_jobs = self.get_all_jobs()
         if "jobs" not in all_jobs:
@@ -413,14 +413,14 @@ class JenkinsAPIClient(BaseAPIClient):
                 f"No 'jobs' key found in Jenkins API response for {project_name}"
             )
             return []
-        
+
         # Build a lookup map of available Jenkins jobs
         jenkins_jobs_map = {job.get("name", ""): job for job in all_jobs["jobs"]}
-        
+
         # Match expected jobs against actual Jenkins jobs
         project_jobs: List[Dict[str, Any]] = []
         matched_count = 0
-        
+
         for expected_job in resolved_jobs:
             # Skip if already allocated
             if expected_job in allocated_jobs:
@@ -428,7 +428,7 @@ class JenkinsAPIClient(BaseAPIClient):
                     f"Skipping already allocated job: {expected_job}"
                 )
                 continue
-            
+
             # Check if job exists in Jenkins
             if expected_job in jenkins_jobs_map:
                 # Get detailed job info
@@ -449,13 +449,13 @@ class JenkinsAPIClient(BaseAPIClient):
                 self.logger.debug(
                     f"Job '{expected_job}' defined in JJB but not found in Jenkins"
                 )
-        
+
         accuracy = (matched_count / len(resolved_jobs) * 100) if resolved_jobs else 0
         self.logger.debug(
             f"JJB: {matched_count}/{len(resolved_jobs)} jobs "
             f"({accuracy:.1f}%) for {project_name}"
         )
-        
+
         return project_jobs
 
     def _get_jobs_via_fuzzy_matching(
@@ -465,16 +465,16 @@ class JenkinsAPIClient(BaseAPIClient):
     ) -> List[Dict[str, Any]]:
         """
         Get jobs using fuzzy matching algorithm (fallback method).
-        
+
         Args:
             project_name: Name of the Gerrit project
             allocated_jobs: Set of job names already allocated
-            
+
         Returns:
             List of job detail dictionaries
         """
         self.logger.debug(f"Using fuzzy matching for project: {project_name}")
-        
+
         all_jobs = self.get_all_jobs()
         project_jobs: List[Dict[str, Any]] = []
 
