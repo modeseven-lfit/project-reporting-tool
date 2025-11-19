@@ -349,7 +349,7 @@ The migration is considered successful when:
 
 ## 📞 Support Contacts
 
-- **Technical Issues:** [GitHub Issues](https://github.com/lf-it/reporting-tool/issues)
+- **Technical Issues:** [GitHub Issues](https://github.com/modeseven-lfit/reporting-tool/issues)
 - **Questions:** Check [GITHUB_PAGES_SETUP.md](GITHUB_PAGES_SETUP.md)
 - **Emergency Rollback:** Follow rollback plan above
 

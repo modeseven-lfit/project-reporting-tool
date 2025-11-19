@@ -195,7 +195,7 @@ reports/
 ## 🤝 Support
 
 - **Documentation**: [Complete Index](docs/INDEX.md)
-- **Issues**: [GitHub Issues](https://github.com/lf-it/reporting-tool/issues)
+- **Issues**: [GitHub Issues](https://github.com/modeseven-lfit/reporting-tool/issues)
 - **Changelog**: [CHANGELOG.md](CHANGELOG.md)
 
 ---

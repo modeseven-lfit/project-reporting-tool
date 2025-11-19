@@ -424,7 +424,7 @@ reporting-tool generate \
 
 - [FAQ](FAQ.md) - Frequently asked questions
 - [Troubleshooting Guide](TROUBLESHOOTING.md) - Common issues
-- [GitHub Issues](https://github.com/lf-it/reporting-tool/issues) - Report bugs
+- [GitHub Issues](https://github.com/modeseven-lfit/reporting-tool/issues) - Report bugs
 
 ---
 
