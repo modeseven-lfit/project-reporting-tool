@@ -56,7 +56,7 @@ cat > "$REPORT_DIR/index.html" <<'HTMLEOF'
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TITLE_PLACEHOLDER - Linux Foundation Reports</title>
+  <title>PAGE_TITLE_PLACEHOLDER - Linux Foundation Reports</title>
   <style>
     * {
       margin: 0;
@@ -260,12 +260,12 @@ cat > "$REPORT_DIR/index.html" <<'HTMLEOF'
 <body>
   <div class="container">
     <header>
-      <h1>📊 TITLE_PLACEHOLDER</h1>
-      <p class="subtitle">SUBTITLE_PLACEHOLDER</p>
+      <h1>📊 PAGE_TITLE_PLACEHOLDER</h1>
+      <p class="subtitle">PAGE_SUBTITLE_PLACEHOLDER</p>
       <div class="meta">
         <div class="meta-item">
           <span class="meta-icon">🕐</span>
-          <span>Generated: TIMESTAMP_PLACEHOLDER</span>
+          <span>Generated: GENERATED_TIMESTAMP_PLACEHOLDER</span>
         </div>
         <div class="meta-item">
           <span class="meta-icon">🏢</span>
@@ -356,12 +356,26 @@ fi
 # Get current timestamp
 CURRENT_TIME=$(date -u +"%Y-%m-%d %H:%M UTC")
 
-# Replace placeholders - use a temp file for complex HTML replacement
-sed "s|TITLE_PLACEHOLDER|$PAGE_TITLE|g" "$REPORT_DIR/index.html" | \
-sed "s|SUBTITLE_PLACEHOLDER|$PAGE_SUBTITLE|g" | \
-sed "s|TIMESTAMP_PLACEHOLDER|$CURRENT_TIME|g" | \
-sed "s|ENVIRONMENT_BADGE_PLACEHOLDER|$ENV_BADGE|g" | \
-sed "s|REPORT_COUNT_PLACEHOLDER|$report_count|g" > "$REPORT_DIR/index.html.tmp"
+# Create a safe temporary file
+TMP_FILE=$(mktemp)
+TMP_FILE2=$(mktemp)
+
+# Copy the template to temp file
+cp "$REPORT_DIR/index.html" "$TMP_FILE"
+
+# Replace placeholders one at a time with proper escaping
+# Escape special characters that could break sed
+PAGE_TITLE_ESC=$(printf '%s' "$PAGE_TITLE" | sed 's/[&/\]/\\&/g; s/|/\\|/g')
+PAGE_SUBTITLE_ESC=$(printf '%s' "$PAGE_SUBTITLE" | sed 's/[&/\]/\\&/g; s/|/\\|/g')
+CURRENT_TIME_ESC=$(printf '%s' "$CURRENT_TIME" | sed 's/[&/\]/\\&/g; s/|/\\|/g')
+ENV_BADGE_ESC=$(printf '%s' "$ENV_BADGE" | sed 's/[&/\]/\\&/g; s/|/\\|/g')
+
+# Replace each placeholder (use unique placeholder names to avoid substring conflicts)
+sed "s|PAGE_TITLE_PLACEHOLDER|${PAGE_TITLE_ESC}|g" "$TMP_FILE" > "$TMP_FILE2"
+sed "s|PAGE_SUBTITLE_PLACEHOLDER|${PAGE_SUBTITLE_ESC}|g" "$TMP_FILE2" > "$TMP_FILE"
+sed "s|GENERATED_TIMESTAMP_PLACEHOLDER|${CURRENT_TIME_ESC}|g" "$TMP_FILE" > "$TMP_FILE2"
+sed "s|ENVIRONMENT_BADGE_PLACEHOLDER|${ENV_BADGE_ESC}|g" "$TMP_FILE2" > "$TMP_FILE"
+sed "s|REPORT_COUNT_PLACEHOLDER|${report_count}|g" "$TMP_FILE" > "$TMP_FILE2"
 
 # Replace the REPORTS_CONTENT_PLACEHOLDER using awk for better handling of multiline content
 awk -v reports="$REPORTS_HTML" '{
@@ -370,9 +384,10 @@ awk -v reports="$REPORTS_HTML" '{
   } else {
     print $0
   }
-}' "$REPORT_DIR/index.html.tmp" > "$REPORT_DIR/index.html"
+}' "$TMP_FILE2" > "$REPORT_DIR/index.html"
 
-rm "$REPORT_DIR/index.html.tmp"
+# Clean up temp files
+rm -f "$TMP_FILE" "$TMP_FILE2"
 
 echo "✅ Index page generated: $REPORT_DIR/index.html"
 
