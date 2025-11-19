@@ -30,7 +30,7 @@ else
   # Production at root: /reporting-tool/
   BASE_PATH="/${REPO_NAME}"
   PAGE_TITLE="Production Reports"
-  PAGE_SUBTITLE="Official Linux Foundation project reports"
+  PAGE_SUBTITLE="Linux Foundation Project Reports"
 fi
 
 # Find all report.html files
