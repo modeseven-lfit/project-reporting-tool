@@ -755,23 +755,10 @@ jobs:
             const repo = '${{ github.repository }}';
             const runId = '${{ github.run_id }}';
             const runUrl = `${serverUrl}/${repo}/actions/runs/${runId}`;
-            const body = `## 🔍 Report Preview Available
+            const body = `## 🔍 Preview Reports Available
 
-            Preview reports have been generated for this PR.
-
-            **Reports generated:** ${reportCount} project(s)
-            **Preview URL:** ${previewUrl}
-
-            ### 📊 View Reports
-
-            Visit the preview site to review generated reports.
-
-            > ⚠️ **Note:** Preview reports do not affect production.
-            > Only the first 2 projects are processed.
-
-            ---
-
-            Generated from workflow run: [${runId}](${runUrl})`;
+            ${previewUrl}
+            Workflow run: [${runId}](${runUrl})`;
 
             // Find existing comment
             const { data: comments } = await github.rest.issues.listComments({
@@ -782,7 +769,7 @@ jobs:
 
             const botComment = comments.find(comment =>
               comment.user.type === 'Bot' &&
-              comment.body.includes('Report Preview Available')
+              comment.body.includes('Preview Reports Available')
             );
 
             if (botComment) {
