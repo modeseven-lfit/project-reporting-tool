@@ -180,12 +180,16 @@ class GitDataCollector:
                 # Get Gerrit host for auto-deriving ci-management URL
                 gerrit_host = gerrit_config.get("host") if gerrit_config.get("enabled", False) else None
 
+                # Get HTTP fallback setting
+                allow_http_fallback = jenkins_config.get("allow_http_fallback", False)
+
                 self.jenkins_client = JenkinsAPIClient(
                     jenkins_host,
                     timeout,
                     stats=self.api_stats,
                     jjb_config=jjb_config,
-                    gerrit_host=gerrit_host
+                    gerrit_host=gerrit_host,
+                    allow_http_fallback=allow_http_fallback
                 )
                 self.logger.info(
                     f"Initialized Jenkins API client for {jenkins_host} (from environment)"
@@ -213,12 +217,16 @@ class GitDataCollector:
                     # Get Gerrit host for auto-deriving ci-management URL
                     gerrit_host = gerrit_config.get("host") if gerrit_config.get("enabled", False) else None
 
+                    # Get HTTP fallback setting
+                    allow_http_fallback = jenkins_config.get("allow_http_fallback", False)
+
                     self.jenkins_client = JenkinsAPIClient(
                         host,
                         timeout,
                         stats=self.api_stats,
                         jjb_config=jjb_config,
-                        gerrit_host=gerrit_host
+                        gerrit_host=gerrit_host,
+                        allow_http_fallback=allow_http_fallback
                     )
                     self.logger.info(
                         f"Initialized Jenkins API client for {host} (from config)"

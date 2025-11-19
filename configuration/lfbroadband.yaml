@@ -1,0 +1,47 @@
+---
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2025 The Linux Foundation
+
+# =============================================================================
+# LF Broadband Project Configuration
+# =============================================================================
+#
+# Project-specific configuration for Linux Foundation Broadband.
+# This overrides settings from default.yaml.
+#
+# This configuration enables HTTP fallback for Jenkins due to SSL
+# certificate issues with the Jenkins server.
+# =============================================================================
+
+project: lfbroadband
+
+# =============================================================================
+# Gerrit Configuration
+# =============================================================================
+gerrit:
+  enabled: true
+  host: "gerrit.lfbroadband.org"
+  base_url: "https://gerrit.lfbroadband.org"
+  timeout: 30.0
+
+# =============================================================================
+# Jenkins Configuration
+# =============================================================================
+jenkins:
+  enabled: true
+  host: "jenkins.lfbroadband.org"
+  timeout: 30.0
+
+  # Enable HTTP fallback for this Jenkins instance
+  # The Jenkins server has SSL certificate verification issues
+  # but is accessible via HTTP
+  allow_http_fallback: true
+
+# =============================================================================
+# JJB Attribution Configuration
+# =============================================================================
+jjb_attribution:
+  enabled: true
+  # ci-management URL will be auto-derived from Gerrit host
+  branch: master
+  cache_dir: /tmp

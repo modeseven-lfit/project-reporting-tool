@@ -13,11 +13,12 @@ Extracted from generate_reports.py as part of Phase 2 refactoring.
 import logging
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set
+from typing import Any
 
 import httpx
 
 from .base_client import BaseAPIClient
+
 
 # Optional JJB Attribution integration
 try:
@@ -49,9 +50,10 @@ class JenkinsAPIClient(BaseAPIClient):
         self,
         host: str,
         timeout: float = 30.0,
-        stats: Optional[Any] = None,
-        jjb_config: Optional[Dict[str, Any]] = None,
-        gerrit_host: Optional[str] = None
+        stats: Any | None = None,
+        jjb_config: dict[str, Any] | None = None,
+        gerrit_host: str | None = None,
+        allow_http_fallback: bool = False
     ):
         """
         Initialize Jenkins API client.
@@ -66,19 +68,21 @@ class JenkinsAPIClient(BaseAPIClient):
                 - cache_dir: Directory for caching repos (default: /tmp)
                 - enabled: Enable JJB Attribution (default: True if config provided)
             gerrit_host: Gerrit hostname (used to auto-derive ci-management URL)
+            allow_http_fallback: If True, fallback to HTTP if HTTPS fails due to SSL errors
         """
         self.host = host
         self.timeout = timeout
+        self.allow_http_fallback = allow_http_fallback
         self.base_url = f"https://{host}"
-        self.api_base_path: Optional[str] = None  # Will be discovered
-        self._jobs_cache: Dict[str, Any] = {}  # Cache for all jobs data
+        self.api_base_path: str | None = None  # Will be discovered
+        self._jobs_cache: dict[str, Any] = {}  # Cache for all jobs data
         self._cache_populated = False
         self.stats = stats
         self.logger = logging.getLogger(__name__)
         self.gerrit_host = gerrit_host
 
         # JJB Attribution integration
-        self.jjb_attribution: Optional[Any] = None
+        self.jjb_attribution: Any | None = None
         self.jjb_attribution_enabled = False
 
         if jjb_config and jjb_config.get("enabled", True):
@@ -86,13 +90,13 @@ class JenkinsAPIClient(BaseAPIClient):
 
         self.client = httpx.Client(timeout=timeout)
 
-        # Discover the correct API base path
+        # Discover the correct API base path (and protocol)
         self._discover_api_base_path()
 
     def _initialize_jjb_attribution(
         self,
-        config: Dict[str, Any],
-        gerrit_host: Optional[str] = None
+        config: dict[str, Any],
+        gerrit_host: str | None = None
     ) -> None:
         """
         Initialize JJB Attribution for authoritative job allocation.
@@ -175,6 +179,7 @@ class JenkinsAPIClient(BaseAPIClient):
 
         Jenkins instances can be deployed with different path prefixes.
         This method tests common patterns to find the working API endpoint.
+        If HTTPS fails and allow_http_fallback is enabled, will try HTTP.
         """
         # Common Jenkins API path patterns to try
         api_patterns = [
@@ -187,6 +192,8 @@ class JenkinsAPIClient(BaseAPIClient):
 
         self.logger.info(f"Discovering Jenkins API base path for {self.host}")
 
+        # Try HTTPS first
+        ssl_error_occurred = False
         for pattern in api_patterns:
             try:
                 test_url = f"{self.base_url}{pattern}?tree=jobs[name]"
@@ -197,7 +204,7 @@ class JenkinsAPIClient(BaseAPIClient):
                     if self.stats:
                         self.stats.record_success("jenkins")
                     try:
-                        data: Dict[str, Any] = response.json()
+                        data: dict[str, Any] = response.json()
                         if "jobs" in data and isinstance(data["jobs"], list):
                             self.api_base_path = pattern
                             job_count = len(data["jobs"])
@@ -211,17 +218,74 @@ class JenkinsAPIClient(BaseAPIClient):
                 else:
                     self.logger.debug(f"HTTP {response.status_code} for {pattern}")
 
-            except Exception as e:
-                self.logger.debug(f"Connection error testing {pattern}: {e}")
+            except httpx.ConnectError as e:
+                error_str = str(e).lower()
+                if "ssl" in error_str or "certificate" in error_str:
+                    ssl_error_occurred = True
+                    self.logger.debug(f"SSL error testing {pattern}: {e}")
+                else:
+                    self.logger.debug(f"Connection error testing {pattern}: {e}")
                 continue
+            except Exception as e:
+                self.logger.debug(f"Error testing {pattern}: {e}")
+                continue
+
+        # If HTTPS failed with SSL error and fallback is allowed, try HTTP
+        if ssl_error_occurred and self.allow_http_fallback:
+            self.logger.warning(
+                f"HTTPS certificate validation failure [{self.host}]"
+            )
+            self.logger.warning(
+                "Project configuration permits HTTP fallback (allow_http_fallback=True)"
+            )
+
+            # Switch to HTTP
+            self.base_url = f"http://{self.host}"
+            self.client = httpx.Client(timeout=self.timeout)
+
+            for pattern in api_patterns:
+                try:
+                    test_url = f"{self.base_url}{pattern}?tree=jobs[name]"
+                    self.logger.debug(f"Testing Jenkins API path via HTTP: {test_url}")
+
+                    response = self.client.get(test_url)
+                    if response.status_code == 200:
+                        if self.stats:
+                            self.stats.record_success("jenkins")
+                        try:
+                            http_data = response.json()
+                            if "jobs" in http_data and isinstance(http_data["jobs"], list):
+                                self.api_base_path = pattern
+                                job_count = len(http_data["jobs"])
+                                self.logger.info(
+                                    f"✅ HTTP fallback successful! Found working Jenkins API path: "
+                                    f"{pattern} ({job_count} jobs)"
+                                )
+                                return
+                        except Exception as e:
+                            self.logger.debug(f"Invalid JSON response from {pattern}: {e}")
+                            continue
+                    else:
+                        self.logger.debug(f"HTTP {response.status_code} for {pattern}")
+
+                except Exception as e:
+                    self.logger.debug(f"Error testing {pattern} via HTTP: {e}")
+                    continue
 
         # If no pattern worked, default to standard path
         self.api_base_path = "/api/json"
-        self.logger.warning(
-            f"Could not discover Jenkins API path for {self.host}, using default: {self.api_base_path}"
-        )
+        if ssl_error_occurred and not self.allow_http_fallback:
+            self.logger.error(
+                f"❌ Could not connect to Jenkins at {self.host} due to SSL errors. "
+                f"Consider setting 'allow_http_fallback: true' in Jenkins configuration "
+                f"if this is a trusted internal server."
+            )
+        else:
+            self.logger.warning(
+                f"Could not discover Jenkins API path for {self.host}, using default: {self.api_base_path}"
+            )
 
-    def get_all_jobs(self) -> Dict[str, Any]:
+    def get_all_jobs(self) -> dict[str, Any]:
         """
         Get all jobs from Jenkins with caching.
 
@@ -281,8 +345,8 @@ class JenkinsAPIClient(BaseAPIClient):
     def get_jobs_for_project(
         self,
         project_name: str,
-        allocated_jobs: Set[str]
-    ) -> List[Dict[str, Any]]:
+        allocated_jobs: set[str]
+    ) -> list[dict[str, Any]]:
         """
         Get jobs related to a specific Gerrit project with duplicate prevention.
 
@@ -376,8 +440,8 @@ class JenkinsAPIClient(BaseAPIClient):
     def _get_jobs_via_jjb_attribution(
         self,
         project_name: str,
-        allocated_jobs: Set[str]
-    ) -> List[Dict[str, Any]]:
+        allocated_jobs: set[str]
+    ) -> list[dict[str, Any]]:
         """
         Get jobs using JJB Attribution authoritative definitions.
 
@@ -422,7 +486,7 @@ class JenkinsAPIClient(BaseAPIClient):
         jenkins_jobs_map = {job.get("name", ""): job for job in all_jobs["jobs"]}
 
         # Match expected jobs against actual Jenkins jobs
-        project_jobs: List[Dict[str, Any]] = []
+        project_jobs: list[dict[str, Any]] = []
         matched_count = 0
 
         for expected_job in resolved_jobs:
@@ -465,8 +529,8 @@ class JenkinsAPIClient(BaseAPIClient):
     def _get_jobs_via_fuzzy_matching(
         self,
         project_name: str,
-        allocated_jobs: Set[str]
-    ) -> List[Dict[str, Any]]:
+        allocated_jobs: set[str]
+    ) -> list[dict[str, Any]]:
         """
         Get jobs using fuzzy matching algorithm (fallback method).
 
@@ -480,7 +544,7 @@ class JenkinsAPIClient(BaseAPIClient):
         self.logger.debug(f"Using fuzzy matching for project: {project_name}")
 
         all_jobs = self.get_all_jobs()
-        project_jobs: List[Dict[str, Any]] = []
+        project_jobs: list[dict[str, Any]] = []
 
         if "jobs" not in all_jobs:
             self.logger.debug(
@@ -498,7 +562,7 @@ class JenkinsAPIClient(BaseAPIClient):
         self.logger.debug(f"Checking {total_jobs} total Jenkins jobs for matches")
 
         # Collect potential matches with scoring for better matching
-        candidates: List[tuple[Dict[str, Any], int]] = []
+        candidates: list[tuple[dict[str, Any], int]] = []
 
         for job in all_jobs["jobs"]:
             job_name = job.get("name", "")
@@ -612,7 +676,7 @@ class JenkinsAPIClient(BaseAPIClient):
 
         return score
 
-    def get_job_details(self, job_name: str) -> Dict[str, Any]:
+    def get_job_details(self, job_name: str) -> dict[str, Any]:
         """
         Get detailed information about a specific job.
 
@@ -759,7 +823,7 @@ class JenkinsAPIClient(BaseAPIClient):
 
         return color_map.get(color_lower, "unknown")
 
-    def get_last_build_info(self, job_name: str) -> Dict[str, Any]:
+    def get_last_build_info(self, job_name: str) -> dict[str, Any]:
         """
         Get information about the last build of a job.
 
@@ -797,8 +861,8 @@ class JenkinsAPIClient(BaseAPIClient):
 
                 return dict(build_data)
             else:
-                return dict()
+                return {}
 
         except Exception as e:
             self.logger.debug(f"Exception fetching last build info for {job_name}: {e}")
-            return dict()
+            return {}

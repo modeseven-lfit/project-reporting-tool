@@ -199,6 +199,11 @@ jenkins:
   host: ""  # e.g., "jenkins.o-ran-sc.org"
   timeout: 30.0
 
+  # Allow fallback to HTTP if HTTPS connection fails due to SSL errors
+  # WARNING: Only enable this for internal/trusted Jenkins servers
+  # with known SSL certificate issues. This will disable SSL verification.
+  allow_http_fallback: false
+
 # =============================================================================
 # JJB Attribution
 # =============================================================================
