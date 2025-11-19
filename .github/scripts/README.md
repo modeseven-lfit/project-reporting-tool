@@ -43,7 +43,7 @@ Generates HTML index pages for GitHub Pages.
 # Generate production index
 ./generate-index.sh production
 
-# Generate PR preview index
+# Generate Preview report index
 ./generate-index.sh pr-preview/123 pr-preview
 ```text
 

@@ -579,7 +579,7 @@ if [ "$REPORT_DIR" = "production" ] && [ ! -f "index.html" ]; then
       <a href="/pr-preview/" class="link-card">
         <div class="link-icon">🔍</div>
         <div class="link-content">
-          <div class="link-title">PR Previews</div>
+          <div class="link-title">Preview Reports</div>
           <div class="link-desc">Preview reports from pull requests</div>
         </div>
       </a>

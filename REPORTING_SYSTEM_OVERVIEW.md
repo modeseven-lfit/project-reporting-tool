@@ -16,7 +16,7 @@
 We redesigned the reporting system to publish reports directly to GitHub Pages on this repository, eliminating the dependency on a separate `gerrit-reports` repository and associated authentication token. This new architecture provides:
 
 - ✅ **Simplified Authentication** - Uses built-in `GITHUB_TOKEN`, no external token needed
-- **PR Preview System** - Verify reporting code changes before merge
+- **Preview Report System** - Verify reporting code changes before merge
 - ✅ **Enhanced Artifact Retention** - 90-day retention for meta-reporting
 - ✅ **Separation of Concerns** - Production and preview workflows are independent
 - ✅ **Better Scalability** - Parallel processing with resource limits
@@ -32,7 +32,7 @@ We redesigned the reporting system to publish reports directly to GitHub Pages o
 │                     GitHub Actions Workflows                     │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                   │
-│  Production (Monday 7am UTC)          PR Preview (On PR)         │
+│  Production (Monday 7am UTC)          Preview Report (On PR)         │
 │  ┌──────────────────────┐            ┌──────────────────────┐   │
 │  │ 1. Verify Config     │            │ 1. Verify Config     │   │
 │  │ 2. Clone Gerrit (x8) │            │ 2. Clone Gerrit (x2) │   │
@@ -78,7 +78,7 @@ We redesigned the reporting system to publish reports directly to GitHub Pages o
 .github/
 ├── workflows/
 │   ├── reporting-production.yaml       # Production reports (scheduled)
-│   ├── reporting-pr-preview.yaml       # PR preview reports
+│   ├── reporting-pr-preview.yaml       # Preview report reports
 │   ├── reporting.yaml.deprecated       # Legacy workflow (inactive)
 │   └── ...                             # Other workflows
 └── scripts/
@@ -110,7 +110,7 @@ docs/
 │       ├── report_raw.json           # Complete data (for meta-reporting)
 │       ├── report.md                 # Markdown format
 │       └── metadata.json             # Generation metadata
-└── pr-preview/                       # PR previews
+└── pr-preview/                       # Preview reports
     └── <pr-number>/                  # Per-PR isolation
         ├── index.html                # Preview listing
         └── <project-slug>/
@@ -174,7 +174,7 @@ https://<owner>.github.io/<repo>/production/<project-slug>/report.html
 
 ---
 
-### 2. PR Preview Workflow
+### 2. Preview Report Workflow
 
 **File:** `.github/workflows/reporting-pr-preview.yaml`
 
@@ -342,7 +342,7 @@ https://<owner>.github.io/<repo>/production/
 
 **Scenario:** Developer modifies reporting logic and wants to verify changes
 
-**Workflow:** PR Preview (automatic)
+**Workflow:** Preview Report (automatic)
 
 **Output:** First 2 projects processed as preview
 
@@ -410,7 +410,7 @@ export GITHUB_TOKEN=ghp_...
 
 - ✅ Download artifacts for archival
 - ✅ Review gh-pages branch size
-- ✅ Clean up old PR preview directories
+- ✅ Clean up old Preview report directories
 - ✅ Rotate authentication tokens
 
 **Every 3 Months:**
@@ -455,7 +455,7 @@ export GITHUB_TOKEN=ghp_...
 
 ### Enhanced Features
 
-- ✅ **PR Previews** - Verify changes before merge (new)
+- ✅ **Preview Reports** - Verify changes before merge (new)
 - ✅ **Longer Retention** - 90 days vs 30 days
 - ✅ **Better Organization** - Separate production/preview paths
 - ✅ **Meta-Reporting Support** - Download utility for historical analysis
@@ -466,7 +466,7 @@ export GITHUB_TOKEN=ghp_...
 - ✅ **Reduced Complexity** - No cross-repo operations
 - ✅ **Better Security** - Fewer external tokens
 - ✅ **Easier Maintenance** - Single repository to manage
-- ✅ **Faster Development** - Test changes in PR previews
+- ✅ **Faster Development** - Test changes in Preview reports
 - ✅ **Better Tracking** - Comprehensive metadata
 
 ---
@@ -475,7 +475,7 @@ export GITHUB_TOKEN=ghp_...
 
 ### Short-Term (Next 3 months)
 
-- [ ] Automated cleanup of old PR previews (>30 days)
+- [ ] Automated cleanup of old Preview reports (>30 days)
 - [ ] Email notifications for report completion
 - [ ] Dashboard for meta-reporting trends
 - [ ] Report comparison tool (week-over-week)
@@ -583,7 +583,7 @@ See [GITHUB_PAGES_SETUP.md § Troubleshooting](docs/GITHUB_PAGES_SETUP.md#-troub
 
 **New Features:**
 
-- PR preview system for code validation
+- Preview report system for code validation
 - Enhanced artifact retention (90 days)
 - Automatic index page generation
 - Artifact download utility for meta-reporting

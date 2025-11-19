@@ -14,7 +14,7 @@
 
 ## 🎯 Executive Summary
 
-This guide summarizes the complete redesign of the Linux Foundation Gerrit reporting system. The new architecture eliminates external repository dependencies, simplifies authentication, and adds PR preview capabilities while maintaining all existing functionality.
+This guide summarizes the complete redesign of the Linux Foundation Gerrit reporting system. The new architecture eliminates external repository dependencies, simplifies authentication, and adds Preview report capabilities while maintaining all existing functionality.
 
 ### What Changed
 
@@ -30,14 +30,14 @@ This guide summarizes the complete redesign of the Linux Foundation Gerrit repor
 
 - Reports published to GitHub Pages on same repository
 - Uses built-in `GITHUB_TOKEN` (no external token needed)
-- Separate workflows for production and PR previews
+- Separate workflows for production and Preview reports
 - Automatic preview generation for code changes
 - 90-day artifact retention for meta-reporting
 
 ### Key Benefits
 
 1. **Simplified Operations** - One less repository, one less token
-2. **Automated Testing** - PR previews verify changes before merge
+2. **Automated Testing** - Preview reports verify changes before merge
 3. **Enhanced Data Retention** - 90-day artifacts for trend analysis
 4. **Improved Security** - Fewer external authentication points
 5. **Better Organization** - Clear separation of production and preview reports
@@ -222,7 +222,7 @@ https://<owner>.github.io/<repo>/
    - Check `report_raw.json` downloads
    - Verify all projects listed
 
-5. **Test PR Preview**
+5. **Test Preview Report**
    - Create test branch: `git checkout -b test-pr-preview`
    - Make minor change to Python file
    - Commit and push
@@ -299,7 +299,7 @@ Use this checklist to confirm successful deployment:
 ### Workflows
 
 - [ ] Production workflow exists and runs
-- [ ] PR preview workflow exists and runs
+- [ ] Preview report workflow exists and runs
 - [ ] Old workflow renamed/disabled
 - [ ] Manual trigger works
 - [ ] Scheduled trigger configured (Monday 7am UTC)
@@ -308,7 +308,7 @@ Use this checklist to confirm successful deployment:
 
 - [ ] Root index page loads
 - [ ] Production reports directory exists
-- [ ] PR preview directory exists
+- [ ] Preview report directory exists
 - [ ] Reports are accessible via HTTPS
 - [ ] Index pages display as expected
 - [ ] Report links work
@@ -320,7 +320,7 @@ Use this checklist to confirm successful deployment:
 - [ ] Clone manifests upload
 - [ ] Artifact downloads work
 
-### PR Preview System
+### Preview Report System
 
 - [ ] Workflow triggers on code changes
 - [ ] Limited to 2 projects
@@ -406,7 +406,7 @@ Track these metrics to ensure successful deployment:
 - Deployment failure
 - Permission issues
 
-### PR Preview Not Working
+### Preview Report Not Working
 
 **Symptom:** PR doesn't trigger workflow or no bot comment
 
@@ -414,7 +414,7 @@ Track these metrics to ensure successful deployment:
 
 1. Verify PR modifies correct file paths
 2. Check workflow permissions
-3. Review PR preview job logs
+3. Review Preview report job logs
 4. Verify bot has permission to comment
 5. Check gh-pages write access
 
@@ -556,7 +556,7 @@ PROJECTS_JSON='[
 
 ### Phase 2 Enhancements
 
-- Automated cleanup of old PR previews
+- Automated cleanup of old Preview reports
 - Email notifications for report completion
 - Enhanced meta-reporting dashboard
 - Week-over-week comparison tools
@@ -587,13 +587,13 @@ Production Date: _______________
 
 ## 🎉 Conclusion
 
-This redesigned reporting system provides a robust, maintainable, and scalable solution for Linux Foundation Gerrit project reporting. The elimination of external dependencies, addition of PR preview capabilities, and enhanced artifact retention position the system well for future meta-reporting and trend analysis needs.
+This redesigned reporting system provides a robust, maintainable, and scalable solution for Linux Foundation Gerrit project reporting. The elimination of external dependencies, addition of Preview report capabilities, and enhanced artifact retention position the system well for future meta-reporting and trend analysis needs.
 
 **Key Takeaways:**
 
 - ✅ Simpler architecture (1 repo vs 2)
 - ✅ Better security (fewer tokens)
-- ✅ Enhanced testing (PR previews)
+- ✅ Enhanced testing (Preview reports)
 - ✅ Improved data retention (90 days)
 - ✅ Ready for meta-reporting
 

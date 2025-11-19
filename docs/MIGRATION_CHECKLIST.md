@@ -152,19 +152,19 @@ This checklist guides you through migrating from the legacy reporting system to 
   - [ ] Check report_raw.json is accessible
   - [ ] Verify metadata.json exists
 
-### Step 6: Test PR Preview System
+### Step 6: Test Preview Report System
 
 - [ ] **6.1** Create test PR
   - [ ] Create feature branch
   - [ ] Make minor change to Python code
   - [ ] Push and create PR
 
-- [ ] **6.2** Monitor PR preview workflow
+- [ ] **6.2** Monitor Preview report workflow
   - [ ] Workflow triggers automatically
   - [ ] Limited to 2 projects
   - [ ] All jobs complete successfully
 
-- [ ] **6.3** Verify PR preview
+- [ ] **6.3** Verify Preview report
   - [ ] Bot comments on PR with preview link
   - [ ] Preview URL is accessible
   - [ ] Preview reports load correctly
@@ -220,7 +220,7 @@ This checklist guides you through migrating from the legacy reporting system to 
 - [ ] **9.1** Update main README
   - [ ] Add link to GitHub Pages reports
   - [ ] Update workflow documentation
-  - [ ] Add PR preview instructions
+  - [ ] Add Preview report instructions
 
 - [ ] **9.2** Update SETUP.md
   - [ ] Remove references to GERRIT_REPORTS_PAT_TOKEN
@@ -262,7 +262,7 @@ If critical issues arise, use this rollback procedure:
 
 - [ ] **R1** Disable new workflows
   - [ ] Rename production workflow to `.disabled`
-  - [ ] Rename PR preview workflow to `.disabled`
+  - [ ] Rename Preview report workflow to `.disabled`
   - [ ] Push changes
 
 - [ ] **R2** Re-enable legacy workflow
@@ -294,7 +294,7 @@ The migration is considered successful when:
 - [x] GitHub Pages site is live and accessible
 - [x] Production reports generate on schedule (Monday 7am UTC)
 - [x] All configured projects produce reports
-- [x] PR preview system works correctly
+- [x] Preview report system works correctly
 - [x] Artifacts are uploaded with correct retention
 - [x] No dependency on external repositories
 - [x] Stakeholders can access and use reports
@@ -331,11 +331,11 @@ The migration is considered successful when:
 3. Check workflow completed successfully
 4. Review publish job logs
 
-### PR Preview Not Working
+### Preview Report Not Working
 
 1. Verify PR modifies correct paths
 2. Check workflow permissions
-3. Review PR preview job logs
+3. Review Preview report job logs
 4. Verify gh-pages write access
 
 ### Artifacts Missing

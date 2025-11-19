@@ -21,7 +21,7 @@ The new reporting system publishes reports directly to GitHub Pages on this repo
 | **Branch** | `main` in external repo | `gh-pages` branch |
 | **Authentication** | `GERRIT_REPORTS_PAT_TOKEN` | Built-in `GITHUB_TOKEN` |
 | **Production Reports** | Pushed to external repo | `/production/` on Pages |
-| **PR Previews** | Not available | `/pr-preview/<pr-number>/` |
+| **Preview Reports** | Not available | `/pr-preview/<pr-number>/` |
 | **Workflows** | Single `reporting.yaml` | Separate production & PR workflows |
 
 ---
@@ -179,7 +179,7 @@ The `GERRIT_REPORTS_PAT_TOKEN` is no longer needed and can be deleted:
 The old `reporting.yaml` workflow has been replaced with:
 
 - **`reporting-production.yaml`** - Production reports (scheduled)
-- **`reporting-pr-preview.yaml`** - PR preview reports
+- **`reporting-pr-preview.yaml`** - Preview report reports
 
 The old workflow file has been renamed to `reporting.yaml.deprecated` and is no longer active.
 
@@ -188,7 +188,7 @@ The old workflow file has been renamed to `reporting.yaml.deprecated` and is no 
 1. Navigate to **Actions** tab
 2. You should see two new workflows:
    - 📊 Production Reports
-   - 🔍 PR Preview Reports
+   - 🔍 Preview Report Reports
 
 ---
 
@@ -218,7 +218,7 @@ The old workflow file has been renamed to `reporting.yaml.deprecated` and is no 
 https://<owner>.github.io/<repo>/production/<project-slug>/report.html
 ```text
 
-### PR Preview Workflow
+### Preview Report Workflow
 
 **File:** `.github/workflows/reporting-pr-preview.yaml`
 
@@ -273,7 +273,7 @@ https://<owner>.github.io/<repo>/
 │   │   ├── report_raw.json
 │   │   └── metadata.json
 │   └── ...
-└── pr-preview/                         # PR preview reports
+└── pr-preview/                         # Preview report reports
     ├── 123/                            # PR number
     │   ├── index.html
     │   ├── onap/
@@ -297,7 +297,7 @@ https://<owner>.github.io/<repo>/
 | Clone manifests | 90 days | Repository tracking |
 | Clone logs | 90 days | Debugging |
 
-### PR Preview Workflow
+### Preview Report Workflow
 
 | Artifact Type | Retention | Purpose |
 |--------------|-----------|---------|
@@ -327,7 +327,7 @@ To manually trigger a production report:
 https://<owner>.github.io/<repo>/production/
 ```text
 
-**PR Preview (after PR created):**
+**Preview Report (after PR created):**
 
 ```text
 https://<owner>.github.io/<repo>/pr-preview/<pr-number>/
@@ -381,7 +381,7 @@ git checkout gh-pages
 ls -la production/
 ```text
 
-### PR Previews Not Working
+### Preview Reports Not Working
 
 **Check PR Comment:**
 
@@ -489,7 +489,7 @@ If repository cloning fails:
    - Download artifacts before retention expires
    - Store externally for long-term analysis
 
-### PR Previews
+### Preview Reports
 
 1. **Limit scope**
    - Only test with 2 projects
@@ -500,7 +500,7 @@ If repository cloning fails:
    - Verify formatting and data
 
 3. **Clean up old previews**
-   - Periodically remove old PR preview directories
+   - Periodically remove old Preview report directories
    - Keep `gh-pages` branch clean
 
 ### Artifacts

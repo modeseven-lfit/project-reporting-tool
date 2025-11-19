@@ -17,7 +17,7 @@ Fast reference for common tasks and operations.
 https://<owner>.github.io/<repo>/production/
 ```text
 
-### View PR Preview
+### View Preview Report
 
 ```text
 https://<owner>.github.io/<repo>/pr-preview/<pr-number>/
@@ -71,7 +71,7 @@ https://<owner>.github.io/<repo>/pr-preview/<pr-number>/
 - **Artifacts:** 90-day retention
 - **Projects:** All configured projects
 
-### PR Preview (`reporting-pr-preview.yaml`)
+### Preview Report (`reporting-pr-preview.yaml`)
 
 - **Schedule:** On PR to reporting code
 - **Trigger:** Automatic on code changes
@@ -92,7 +92,7 @@ https://<owner>.github.io/<repo>/pr-preview/<pr-number>/
 │       ├── report_raw.json   # Raw data
 │       ├── report.md         # Markdown report
 │       └── metadata.json     # Generation metadata
-└── pr-preview/               # PR previews
+└── pr-preview/               # Preview reports
     └── <pr-number>/          # PR-specific reports
         ├── index.html
         └── <project-slug>/
@@ -144,7 +144,7 @@ git checkout main
 | `clone-manifest-<project>` | Clone tracking | 90 days |
 | `clone-log-<project>` | Clone logs | 90 days |
 
-### PR Preview Workflow
+### Preview Report Workflow
 
 | Artifact | Contents | Retention |
 |----------|----------|-----------|
@@ -181,7 +181,7 @@ ls -la production/
 echo '${{ vars.PROJECTS_JSON }}' | jq .
 ```text
 
-### PR Preview Not Working
+### Preview Report Not Working
 
 ```bash
 # Verify PR modifies correct paths:
@@ -251,7 +251,7 @@ export GITHUB_TOKEN=ghp_...
 ## 💡 Tips
 
 - ✅ Production runs Monday 7am UTC
-- ✅ PR previews use only 2 projects
+- ✅ Preview reports use only 2 projects
 - ✅ Artifacts retained 90 days (production), 30 days (preview)
 - ✅ Use download script for meta-reporting
 - ✅ Check gh-pages branch for published content

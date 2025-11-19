@@ -129,7 +129,7 @@ jobs:
             exit 1
           fi
 
-          # Limit to 2 projects for PR previews to save resources
+          # Limit to 2 projects for Preview reports to save resources
           projects_json=$(echo "$projects_json" | jq '.[0:2]')
           project_count=$(echo "$projects_json" | jq '. | length')
 
@@ -146,7 +146,7 @@ jobs:
             echo "$projects_json" | \
               jq -r '.[] | "- **\(.project):** `\(.gerrit)`"'
             echo ""
-            echo "> 💡 **Note:** First 2 projects in PR previews"
+            echo "> 💡 **Note:** First 2 projects in Preview reports"
             echo "> Full reports run on production schedule."
           } >> "$GITHUB_STEP_SUMMARY"
 
@@ -407,9 +407,9 @@ jobs:
         shell: bash
         run: |
           pr_number="${{ needs.verify.outputs.pr_number }}"
-          echo "📦 Preparing PR preview for #$pr_number"
+          echo "📦 Preparing Preview report for #$pr_number"
 
-          # Create PR preview directory
+          # Create Preview report directory
           preview_dir="pr-preview/$pr_number"
           mkdir -p "$preview_dir"
 
@@ -505,7 +505,7 @@ jobs:
           owner="${{ github.repository_owner }}"
           base_url="https://${owner}.github.io/${repo_name}"
           echo "PREVIEW_URL=${base_url}/${preview_dir}" >> "$GITHUB_ENV"
-          echo "✅ Published PR preview"
+          echo "✅ Published Preview report"
 
       - name: "Comment on pull request with links"
         # yamllint disable-line rule:line-length

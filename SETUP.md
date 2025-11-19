@@ -153,7 +153,7 @@ Scheduled to run every Monday at 7:00 AM UTC, or can be triggered manually.
 3. **publish**: Publishes reports to GitHub Pages at `/production/`
 4. **summary**: Generates workflow summary and statistics
 
-### PR Preview Workflow (`reporting-pr-preview.yaml`)
+### Preview Report Workflow (`reporting-pr-preview.yaml`)
 
 Runs automatically on pull requests that modify reporting code.
 
@@ -283,7 +283,7 @@ Key changes:
 
 - No longer requires `GERRIT_REPORTS_PAT_TOKEN`
 - Reports published to GitHub Pages on this repository
-- Separate production and PR preview workflows
+- Separate production and Preview report workflows
 - Enhanced artifact retention for meta-reporting
 
 ### Modifying Clone Behavior
