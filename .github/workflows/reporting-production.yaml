@@ -404,7 +404,22 @@ jobs:
         with:
           egress-policy: "audit"
 
-      - name: "Checkout repository"
+      - name: "Checkout main branch for scripts"
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "Copy script from main branch"
+        shell: bash
+        run: |
+          mkdir -p /tmp/main-scripts
+          cp .github/scripts/generate-index.sh /tmp/main-scripts/
+          chmod +x /tmp/main-scripts/generate-index.sh
+          echo "✅ Copied generate-index.sh from main branch"
+
+      - name: "Checkout gh-pages branch"
         # yamllint disable-line rule:line-length
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
@@ -477,7 +492,7 @@ jobs:
           touch .nojekyll
           echo "✅ Created .nojekyll file"
           
-          bash .github/scripts/generate-index.sh production
+          bash /tmp/main-scripts/generate-index.sh production
 
       - name: "Commit and push changes"
         shell: bash
