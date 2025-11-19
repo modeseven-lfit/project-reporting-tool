@@ -194,6 +194,7 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: lfreleng-actions/gerrit-clone-action@80b7e603ec8497cc00346d5dec9fae0f346b0548 # v0.1.9
         id: clone
+        continue-on-error: true
         with:
           host: ${{ matrix.gerrit }}
           path-prefix: "./${{ matrix.gerrit }}"
@@ -205,6 +206,20 @@ jobs:
           retry-max-delay: "60.0"
           use-https: "true"
           move-conflicting: "true"
+
+      - name: "Check clone status"
+        shell: bash
+        run: |
+          if [ "${{ steps.clone.outcome }}" != "success" ]; then
+            echo "::warning::Failed to clone Gerrit repositories for ${{ matrix.project }}"
+            echo "::warning::Gerrit server may be unavailable or decommissioned"
+            echo "CLONE_FAILED=true" >> "$GITHUB_ENV"
+            # Create empty directory structure so subsequent steps don't fail
+            mkdir -p "./${{ matrix.gerrit }}"
+          else
+            echo "✅ Successfully cloned Gerrit repositories"
+            echo "CLONE_FAILED=false" >> "$GITHUB_ENV"
+          fi
 
       - name: "Set up SSH key for info-master"
         shell: bash
@@ -281,6 +296,7 @@ jobs:
         run: uv sync --all-extras
 
       - name: "Generate reports for ${{ matrix.project }}"
+        if: env.CLONE_FAILED != 'true'
         shell: bash
         env:
           JENKINS_HOST: ${{ matrix.jenkins }}
@@ -311,6 +327,26 @@ jobs:
             --verbose
 
           echo "✅ Reports generated for $project"
+
+      - name: "Report skipped due to clone failure"
+        if: env.CLONE_FAILED == 'true'
+        shell: bash
+        run: |
+          project="${{ matrix.project }}"
+          echo "⚠️ Skipping report generation for $project due to Gerrit clone failure"
+          echo "::warning::Report generation skipped for $project - Gerrit server unavailable"
+          
+          # Create minimal metadata to indicate failure
+          mkdir -p "./reports/$project"
+          cat > "./reports/$project/metadata.json" <<EOF
+          {
+            "project": "$project",
+            "status": "failed",
+            "reason": "Gerrit server unavailable or decommissioned",
+            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "gerrit_host": "${{ matrix.gerrit }}"
+          }
+          EOF
 
       - name: "Create report metadata"
         shell: bash
@@ -353,7 +389,7 @@ jobs:
             ./reports/${{ matrix.project }}/config_resolved.json
             ./reports/${{ matrix.project }}/metadata.json
           retention-days: 90
-          if-no-files-found: error
+          if-no-files-found: warn
           compression-level: 9
 
       - name: "Upload report artifacts"
@@ -364,7 +400,7 @@ jobs:
           name: reports-${{ matrix.project }}
           path: ./reports/${{ matrix.project }}/
           retention-days: 90
-          if-no-files-found: error
+          if-no-files-found: warn
           compression-level: 6
 
       - name: "Upload clone manifest"

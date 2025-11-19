@@ -319,7 +319,7 @@ jobs:
             "git_ref": "$PR_HEAD_REF",
             "pr_number": ${{ github.event.pull_request.number }},
             "pr_author": "${{ github.event.pull_request.user.login }}",
-            "environment": "pr-preview"
+            "environment": "previews"
           }
           EOF
 
@@ -330,7 +330,7 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         with:
-          name: pr-preview-raw-data-${{ matrix.project }}
+          name: previews-raw-data-${{ matrix.project }}
           path: |
             ./reports/${{ matrix.project }}/report_raw.json
             ./reports/${{ matrix.project }}/config_resolved.json
@@ -344,7 +344,7 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         with:
-          name: pr-preview-reports-${{ matrix.project }}
+          name: previews-reports-${{ matrix.project }}
           path: ./reports/${{ matrix.project }}/
           retention-days: 30
           if-no-files-found: error
@@ -355,7 +355,7 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         with:
-          name: pr-preview-clone-manifest-${{ matrix.project }}
+          name: previews-clone-manifest-${{ matrix.project }}
           path: "./${{ matrix.gerrit }}/clone-manifest.json"
           retention-days: 30
           if-no-files-found: warn
@@ -399,7 +399,7 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
         with:
-          pattern: pr-preview-reports-*
+          pattern: previews-reports-*
           path: ./downloaded-reports
         continue-on-error: true
 
@@ -410,7 +410,7 @@ jobs:
           echo "📦 Preparing Preview report for #$pr_number"
 
           # Create Preview report directory
-          preview_dir="pr-preview/$pr_number"
+          preview_dir="previews/$pr_number"
           mkdir -p "$preview_dir"
 
           # Clean up old preview if it exists
@@ -420,14 +420,14 @@ jobs:
 
           # Process each downloaded report
           report_count=0
-          for artifact_dir in ./downloaded-reports/pr-preview-reports-*
+          for artifact_dir in ./downloaded-reports/previews-reports-*
           do
             if [ ! -d "$artifact_dir" ]; then
               continue
             fi
 
             project_name=$(basename "$artifact_dir" | \
-              sed 's/^pr-preview-reports-//')
+              sed 's/^previews-reports-//')
             slug=$(echo "$project_name" | tr '[:upper:]' '[:lower:]' | \
               sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//')
 
@@ -462,11 +462,11 @@ jobs:
           echo "✅ Created .nojekyll file"
 
           pr_number="${{ needs.verify.outputs.pr_number }}"
-          preview_dir="pr-preview/$pr_number"
+          preview_dir="previews/$pr_number"
 
           # Use the script from the PR branch (has latest fixes)
           bash /tmp/pr-scripts/generate-index.sh \
-            "$preview_dir" "pr-preview"
+            "$preview_dir" "previews"
 
       - name: "Commit and push preview"
         shell: bash
@@ -474,14 +474,14 @@ jobs:
           PR_TITLE: ${{ github.event.pull_request.title }}
         run: |
           pr_number="${{ needs.verify.outputs.pr_number }}"
-          preview_dir="pr-preview/$pr_number"
+          preview_dir="previews/$pr_number"
 
           git config user.name "lf-releng-reports-bot"
           git config user.email \
             "lf-releng+reports-bot@linuxfoundation.org"
 
           git add "$preview_dir"/
-          git add pr-preview/index.html || true
+          git add previews/index.html || true
           git add .nojekyll || true
 
           if git diff --cached --quiet; then

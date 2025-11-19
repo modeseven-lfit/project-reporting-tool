@@ -6,8 +6,8 @@ set -euo pipefail
 
 # Generate index.html for GitHub Pages
 # Usage: generate-index.sh <report_dir> [environment]
-#   report_dir: Directory containing reports (e.g., "production" or "pr-preview/123")
-#   environment: "production" or "pr-preview" (default: production)
+#   report_dir: Directory containing reports (e.g., "production" or "previews/123")
+#   environment: "production" or "previews" (default: production)
 
 REPORT_DIR="${1:-production}"
 ENVIRONMENT="${2:-production}"
@@ -15,7 +15,7 @@ ENVIRONMENT="${2:-production}"
 echo "📄 Generating index page for: $REPORT_DIR"
 
 # Determine the base path for links
-if [ "$ENVIRONMENT" = "pr-preview" ]; then
+if [ "$ENVIRONMENT" = "previews" ]; then
   BASE_PATH="/$REPORT_DIR"
   PAGE_TITLE="Report Preview"
   PAGE_SUBTITLE="Preview reports for changes under review"
@@ -347,7 +347,7 @@ else
 fi
 
 # Determine environment badge
-if [ "$ENVIRONMENT" = "pr-preview" ]; then
+if [ "$ENVIRONMENT" = "previews" ]; then
   ENV_BADGE="Preview Environment"
 else
   ENV_BADGE="Production Environment"
@@ -576,7 +576,7 @@ if [ "$REPORT_DIR" = "production" ] && [ ! -f "index.html" ]; then
         </div>
       </a>
 
-      <a href="/pr-preview/" class="link-card">
+      <a href="/previews/" class="link-card">
         <div class="link-icon">🔍</div>
         <div class="link-content">
           <div class="link-title">Preview Reports</div>

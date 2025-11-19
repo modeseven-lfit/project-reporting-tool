@@ -23,8 +23,8 @@ Generates HTML index pages for GitHub Pages.
 
 **Arguments:**
 
-- `report_dir`: Directory containing reports (e.g., `production` or `pr-preview/123`)
-- `environment`: `production` or `pr-preview` (default: `production`)
+- `report_dir`: Directory containing reports (e.g., `production` or `previews/123`)
+- `environment`: `production` or `previews` (default: `production`)
 
 **What it does:**
 
@@ -44,7 +44,7 @@ Generates HTML index pages for GitHub Pages.
 ./generate-index.sh production
 
 # Generate Preview report index
-./generate-index.sh pr-preview/123 pr-preview
+./generate-index.sh previews/123 previews
 ```text
 
 **Output:**

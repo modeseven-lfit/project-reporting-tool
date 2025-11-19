@@ -147,7 +147,7 @@ echo "$RUNS_JSON" | jq -c '.workflow_runs[]' | while read -r run; do
     DOWNLOAD_URL=$(echo "$artifact" | jq -r '.archive_download_url')
 
     # Only download raw-data artifacts to conserve space
-    if [[ ! "$ARTIFACT_NAME" =~ ^(raw-data-|pr-preview-raw-data-) ]]; then
+    if [[ ! "$ARTIFACT_NAME" =~ ^(raw-data-|previews-raw-data-) ]]; then
       echo "   ⏭️  Skipping: $ARTIFACT_NAME (not raw data)"
       continue
     fi
