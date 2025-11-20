@@ -3,11 +3,11 @@
   "gerrit_server": "gerrit.opnfv.org",
   "jenkins_server": "",
   "github_org": "",
-  "generated_at": "2025-11-20T16:08:42Z",
-  "workflow_run_id": "19543331856",
-  "workflow_run_number": "21",
+  "generated_at": "2025-11-20T16:32:37Z",
+  "workflow_run_id": "19544044368",
+  "workflow_run_number": "22",
   "workflow_run_attempt": "1",
-  "git_sha": "422e2bddcc40b092bad0f4edcbf90248fdd37357",
+  "git_sha": "55a789b5dbc1b1c6af2485e008931d865e6d33b0",
   "git_ref": "refs/heads/main",
   "environment": "production"
 }
