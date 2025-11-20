@@ -14,7 +14,7 @@ SPDX-FileCopyrightText: 2025 The Linux Foundation
 New to the tool? Begin with these essentials:
 
 | Document | Description | Time |
-|----------|-------------|------|
+| ------- | ------- | ------- |
 | [**Getting Started**](GETTING_STARTED.md) | Install and generate your first report | 5 min |
 | [**Commands**](COMMANDS.md) | Complete command reference | 10 min |
 | [**FAQ**](FAQ.md) | Frequently asked questions | 5 min |
@@ -26,7 +26,7 @@ New to the tool? Begin with these essentials:
 ### User Guides
 
 | Document | Description |
-|----------|-------------|
+| ------- | ------- |
 | [**Getting Started**](GETTING_STARTED.md) | Installation, setup, and first report |
 | [**Commands**](COMMANDS.md) | Complete command-line reference |
 | [**FAQ**](FAQ.md) | Common questions and answers |
@@ -37,7 +37,7 @@ New to the tool? Begin with these essentials:
 ### Advanced Topics
 
 | Document | Description |
-|----------|-------------|
+| ------- | ------- |
 | [**Performance**](PERFORMANCE.md) | Optimization, caching, and parallel processing |
 | [**CI/CD Integration**](CI_CD_INTEGRATION.md) | GitHub Actions, GitLab CI, and automation |
 | [**Deployment**](DEPLOYMENT.md) | Production deployment and operations |
@@ -46,7 +46,7 @@ New to the tool? Begin with these essentials:
 ### Developer Documentation
 
 | Document | Description |
-|----------|-------------|
+| ------- | ------- |
 | [**Developer Guide**](DEVELOPER_GUIDE.md) | Architecture, API reference, and contributing |
 | [**Testing**](TESTING.md) | Test suite documentation |
 

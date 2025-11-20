@@ -30,7 +30,7 @@ info_yaml:
 ## Activity Status Colors
 
 | Color | Status | Meaning |
-|-------|--------|---------|
+| ------- | ------- | ------- |
 | 🟢 Green | Current | Commits within last 365 days |
 | 🟠 Orange | Active | Commits between 365-1095 days |
 | 🔴 Red | Inactive | No commits in 1095+ days |
@@ -119,14 +119,14 @@ output:
 ## 📋 Committer INFO.yaml Report
 
 | Project | Creation Date | Lifecycle State | Project Lead | Committers |
-|---------|---------------|-----------------|--------------|------------|
+| ------- | ------- | ------- | ------- | ------- |
 | [aai-babel](https://jira.onap.org/projects/AAI) | 2017-07-14 | Mature | William Reehil | Manisha Aggarwal<br>James Forsyth |
 | [aai-graphadmin](https://jira.onap.org/projects/AAI) | 2018-01-25 | Mature | William Reehil | Manisha Aggarwal<br>James Forsyth |
 
 ### Lifecycle State Summary
 
 | Lifecycle State | Gerrit Project Count | Percentage |
-|----------------|---------------------|------------|
+| ------- | ------- | ------- |
 | Mature | 88 | 54.0% |
 | Incubation | 73 | 44.8% |
 | Archived | 1 | 0.6% |

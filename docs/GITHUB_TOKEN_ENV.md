@@ -244,7 +244,7 @@ env:
 ## Summary
 
 | Aspect | Details |
-|--------|---------|
+| ------- | ------- |
 | **Default Variable** | `GITHUB_TOKEN` |
 | **Legacy Variable** | `CLASSIC_READ_ONLY_PAT_TOKEN` |
 | **CLI Option** | `--github-token-env VAR_NAME` |

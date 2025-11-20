@@ -22,7 +22,7 @@ When generating reports for a specific project (e.g., ONAP), the INFO.yaml commi
 
 ```markdown
 | Project | Creation Date | Lifecycle State | Project Lead | Committers |
-|---------|---------------|-----------------|--------------|------------|
+| ------- | ------- | ------- | ------- | ------- |
 | .github | 2023-11-7 | Incubation | Anil Belur | ... |          <- OpenDaylight
 | .github | 2023-09-19 | Incubation | Eric Ball | ... |          <- O-RAN-SC
 | .github | 2023-07-12 | Incubation | Jessica Wagantall | ... |  <- ONAP
@@ -143,7 +143,7 @@ filtered_projects = [
 ## 📋 Committer INFO.yaml Report
 
 | Project | Server | Lead |
-|---------|--------|------|
+| ------- | ------- | ------- |
 | .github | git.opendaylight.org | Anil Belur |
 | .github | gerrit.o-ran-sc.org | Eric Ball |
 | .github | gerrit.onap.org | Jessica Wagantall |
@@ -160,7 +160,7 @@ filtered_projects = [
 ## 📋 Committer INFO.yaml Report
 
 | Project | Server | Lead |
-|---------|--------|------|
+| ------- | ------- | ------- |
 | .github | gerrit.onap.org | Jessica Wagantall |
 | aai     | gerrit.onap.org | William Reehil |
 | appc    | gerrit.onap.org | Daniel Hanrahan |
@@ -174,7 +174,7 @@ filtered_projects = [
 The solution works for all Linux Foundation Gerrit servers:
 
 | Organization | Server Name | Example repos_path |
-|--------------|-------------|-------------------|
+| ------- | ------- | ------- |
 | ONAP | `gerrit.onap.org` | `./gerrit.onap.org` |
 | OpenDaylight | `git.opendaylight.org` | `./git.opendaylight.org` |
 | O-RAN-SC | `gerrit.o-ran-sc.org` | `./gerrit.o-ran-sc.org` |

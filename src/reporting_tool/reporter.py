@@ -37,11 +37,7 @@ from util.zip_bundle import create_report_bundle
 from reporting_tool.config import save_resolved_config
 
 # Global API statistics (imported from main module)
-try:
-    from generate_reports import api_stats
-except ImportError:
-    # Fallback for testing or standalone usage
-    api_stats = None
+
 
 
 class RepositoryReporter:

@@ -57,7 +57,7 @@ report_data = reporter.analyze_repositories(Path('./repos'))
 ### Core Modules
 
 | Module | Purpose | Lines | Phase |
-|--------|---------|-------|-------|
+| ------- | ------- | ------- | ------- |
 | `generate_reports.py` | Entry point, CLI, config | 1,861 | Main |
 | `reporter.py` | Main orchestration | 522 | Phase 7 |
 | `collectors/git.py` | Git data collection | 1,155 | Phase 4 |
@@ -572,7 +572,7 @@ from src.reporting_tool.collectors.info_yaml.collector import InfoYamlCollector
 
 # Initialize
 collector = InfoYamlCollector(
-    source_url="https://gerrit.linuxfoundation.org/infra/info-master",
+    source_url="https://gerrit.linuxfoundation.org/infra/releng/info-master",
     source_branch="main",
     activity_windows={"current": 365, "active": 1095},
     validate_urls=True,

@@ -298,7 +298,7 @@ with PerformanceProfiler() as profiler:
 ### Rendering Targets
 
 | Operation | Target | Typical | Status |
-|-----------|--------|---------|--------|
+| ------- | ------- | ------- | ------- |
 | Markdown render | <50ms | ~12ms | ✅ Excellent |
 | HTML render | <100ms | ~16ms | ✅ Excellent |
 | Theme switch | <10ms | ~5ms | ✅ Excellent |
@@ -306,7 +306,7 @@ with PerformanceProfiler() as profiler:
 ### Concurrency Targets
 
 | Metric | Target | Typical | Status |
-|--------|--------|---------|--------|
+| ------- | ------- | ------- | ------- |
 | Concurrent renders | >50/sec | 60+/sec | ✅ Excellent |
 | Thread utilization | 70-90% | 80-85% | ✅ Optimal |
 | Queue depth | <100 | <50 | ✅ Healthy |
@@ -314,7 +314,7 @@ with PerformanceProfiler() as profiler:
 ### Memory Targets
 
 | Resource | Target | Typical | Status |
-|----------|--------|---------|--------|
+| ------- | ------- | ------- | ------- |
 | Base memory | <100MB | ~80MB | ✅ Good |
 | Per render | <5MB | ~3MB | ✅ Excellent |
 | Cache size | <50MB | ~30MB | ✅ Good |

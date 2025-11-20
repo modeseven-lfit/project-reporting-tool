@@ -38,7 +38,7 @@ The Repository Reporting System test suite supports parallel test execution usin
 ### Key Statistics
 
 | Metric | Sequential | Parallel (8 workers) | Improvement |
-|--------|-----------|---------------------|-------------|
+| ------- | ------- | ------- | ------- |
 | Total Tests | 2,368 | 2,368 | - |
 | Runtime | 1554.34s (25:54) | 1245.93s (20:45) | 19.9% faster |
 | Pass Rate | 99.07% | 99.07% | Maintained |
@@ -208,7 +208,7 @@ sys     1m22s
 ### Worker Scaling
 
 | Workers | Runtime (s) | Speedup | Efficiency |
-|---------|-------------|---------|------------|
+| ------- | ------- | ------- | ------- |
 | 1 | 1554.34 | 1.00x | 100% |
 | 2 | 1320.15 | 1.18x | 59% |
 | 4 | 1280.45 | 1.21x | 30% |
@@ -624,7 +624,7 @@ For the Repository Reporting System:
 ### Distribution Strategy Selection
 
 | Test Suite Characteristics | Recommended Strategy |
-|---------------------------|---------------------|
+| ------- | ------- |
 | Many small test files | `loadfile` (default) |
 | Few large test files | `loadscope` |
 | Tests with shared fixtures | `loadgroup` |

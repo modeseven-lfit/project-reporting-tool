@@ -16,7 +16,7 @@ The new reporting system publishes reports directly to GitHub Pages on this repo
 ### Key Changes
 
 | Aspect | Old System | New System |
-|--------|-----------|------------|
+| ------- | ------- | ------- |
 | **Deployment Target** | Separate `gerrit-reports` repo | GitHub Pages on same repo |
 | **Branch** | `main` in external repo | `gh-pages` branch |
 | **Authentication** | `GERRIT_REPORTS_PAT_TOKEN` | Built-in `GITHUB_TOKEN` |
@@ -291,7 +291,7 @@ https://<owner>.github.io/<repo>/
 ### Production Workflow
 
 | Artifact Type | Retention | Purpose |
-|--------------|-----------|---------|
+| ------- | ------- | ------- |
 | Raw data (JSON) | 90 days | Meta-reporting, trend analysis |
 | Complete reports | 90 days | Full report package |
 | Clone manifests | 90 days | Repository tracking |
@@ -300,7 +300,7 @@ https://<owner>.github.io/<repo>/
 ### Preview Report Workflow
 
 | Artifact Type | Retention | Purpose |
-|--------------|-----------|---------|
+| ------- | ------- | ------- |
 | Raw data (JSON) | 30 days | Validation |
 | Preview reports | 30 days | Review |
 | Clone manifests | 30 days | Debugging |

@@ -34,7 +34,7 @@ https://<owner>.github.io/<repo>/pr-preview/<pr-number>/
 ## 🔑 Required Secrets
 
 | Secret | Required | Purpose |
-|--------|----------|---------|
+| ------- | ------- | ------- |
 | `CLASSIC_READ_ONLY_PAT_TOKEN` | ✅ Yes | GitHub API access |
 | `LF_GERRIT_INFO_MASTER_SSH_KEY` | ⚠️ Optional | SSH clone for info-master |
 
@@ -43,7 +43,7 @@ https://<owner>.github.io/<repo>/pr-preview/<pr-number>/
 ## 📋 Required Variables
 
 | Variable | Format | Example |
-|----------|--------|---------|
+| ------- | ------- | ------- |
 | `PROJECTS_JSON` | JSON array | See below |
 
 **PROJECTS_JSON Format:**
@@ -138,7 +138,7 @@ git checkout main
 ### Production Workflow
 
 | Artifact | Contents | Retention |
-|----------|----------|-----------|
+| ------- | ------- | ------- |
 | `raw-data-<project>` | JSON data files | 90 days |
 | `reports-<project>` | All report files | 90 days |
 | `clone-manifest-<project>` | Clone tracking | 90 days |
@@ -147,7 +147,7 @@ git checkout main
 ### Preview Report Workflow
 
 | Artifact | Contents | Retention |
-|----------|----------|-----------|
+| ------- | ------- | ------- |
 | `pr-preview-raw-data-<project>` | JSON data | 30 days |
 | `pr-preview-reports-<project>` | Reports | 30 days |
 | `pr-preview-clone-manifest-<project>` | Manifests | 30 days |
@@ -232,7 +232,7 @@ export GITHUB_TOKEN=ghp_...
 ## 📞 Quick Links
 
 | Resource | Link |
-|----------|------|
+| ------- | ------- |
 | **Setup Guide** | [GITHUB_PAGES_SETUP.md](GITHUB_PAGES_SETUP.md) |
 | **Migration** | [MIGRATION_CHECKLIST.md](MIGRATION_CHECKLIST.md) |
 | **Scripts** | [.github/scripts/README.md](../.github/scripts/README.md) |

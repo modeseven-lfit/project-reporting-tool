@@ -385,7 +385,7 @@ def test_nested_operations(temp_git_repo):
 ### When to Use Each Tool
 
 | Tool | Use When |
-|------|----------|
+| ------- | ------- |
 | `assert_repository_state()` | Validating repo after operations |
 | `assert_command_success()` | Checking subprocess succeeded |
 | `assert_no_error_logs()` | Validating log output |
@@ -422,7 +422,7 @@ test_artifacts/
 ## Performance Impact
 
 | Scenario | Impact |
-|----------|--------|
+| ------- | ------- |
 | Passing tests | None (no overhead) |
 | Failing tests (assertions) | ~10-50ms for error formatting |
 | Failing tests (with artifacts) | ~100-200ms for file I/O |

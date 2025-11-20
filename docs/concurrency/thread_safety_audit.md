@@ -302,7 +302,7 @@ def _analyze_repositories_parallel(self, repo_dirs: List[Path]) -> List[Dict]:
 ## Shared State Inventory
 
 | Class/Module | Variable | Type | Thread-Safe? | Protection | Priority |
-|--------------|----------|------|--------------|------------|----------|
+| ------- | ------- | ------- | ------- | ------- | ------- |
 | `APIStatistics` | `stats` | dict | ❌ No | None | High |
 | `GerritAPIClient` | All instance vars | various | ✅ Yes | Immutable | N/A |
 | `JenkinsAPIClient` | `_jobs_cache` | dict | ⚠️ Unknown | None? | Medium |

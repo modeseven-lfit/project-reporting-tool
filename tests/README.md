@@ -197,7 +197,7 @@ pytest --cov=src --cov-report=term-missing
 Tests can be marked with categories for selective execution:
 
 | Marker | Purpose | Usage |
-|--------|---------|-------|
+| ------- | ------- | ------- |
 | `@pytest.mark.unit` | Unit test | `pytest -m unit` |
 | `@pytest.mark.integration` | Integration test | `pytest -m integration` |
 | `@pytest.mark.property` | Property-based test | `pytest -m property` |
@@ -466,7 +466,7 @@ See `tests/mocks/api_mocks.py` for complete documentation.
 ### Coverage Targets
 
 | Module Category | Target | Status |
-|----------------|--------|--------|
+| ------- | ------- | ------- |
 | Utilities | 95%+ | ✅ |
 | API Clients | 85%+ | ✅ |
 | Domain Models | 95%+ | ✅ |

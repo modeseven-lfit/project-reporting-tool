@@ -46,7 +46,7 @@ A theme defines the visual appearance of reports through:
 The system includes three professional themes:
 
 | Theme | Style | WCAG Level | Best For |
-|-------|-------|------------|----------|
+| ------- | ------- | ------- | ------- |
 | **Default** | Modern, light, professional | AA (4.8:1) | General use, presentations |
 | **Dark** | Low-light optimized | AA (7.2:1) | Night work, reduced eye strain |
 | **Minimal** | Clean, content-focused | AAA (8.5:1) | Print, documentation |

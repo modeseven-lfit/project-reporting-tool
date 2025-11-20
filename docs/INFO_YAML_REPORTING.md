@@ -237,7 +237,7 @@ This report shows project information from INFO.yaml files, including lifecycle 
 project leads, and committer activity status.
 
 | Project | Creation Date | Lifecycle State | Project Lead | Committers |
-|---------|---------------|-----------------|--------------|------------|
+| ------- | ------- | ------- | ------- | ------- |
 | [project-a](https://jira.example.org/projects/A) | 2020-01-15 | Active | <span style="color: green;" title="✅ Current - commits within last 365 days">Jane Doe</span> | <span style="color: green;" title="✅ Current - commits within last 365 days">John Smith</span><br><span style="color: green;" title="✅ Current - commits within last 365 days">Alice Johnson</span> |
 | [project-b](https://jira.example.org/projects/B) | 2022-06-01 | Incubation | <span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Bob Williams</span> | <span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Carol Davis</span> |
 | project-c | 2018-03-20 | Archived | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Frank Miller</span> | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Grace Lee</span> |
@@ -249,7 +249,7 @@ project leads, and committer activity status.
 ### Lifecycle State Summary
 
 | Lifecycle State | Gerrit Project Count | Percentage |
-|----------------|---------------------|------------|
+| ------- | ------- | ------- |
 | Active | 125 | 62.5% |
 | Incubation | 60 | 30.0% |
 | Archived | 15 | 7.5% |
@@ -264,7 +264,7 @@ project leads, and committer activity status.
 Committers and project leads are color-coded based on their most recent commit activity:
 
 | Color | Status | Criteria | Tooltip |
-|-------|--------|----------|---------|
+| ------- | ------- | ------- | ------- |
 | 🟢 Green | **Current** | Commits within last 365 days | ✅ Current - commits within last 365 days |
 | 🟠 Orange | **Active** | Commits between 365-1095 days | ☑️ Active - commits between 365-1095 days |
 | 🔴 Red | **Inactive** | No commits in 1095+ days | 🛑 Inactive - no commits in 1095+ days |

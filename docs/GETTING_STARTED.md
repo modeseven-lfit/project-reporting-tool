@@ -215,7 +215,7 @@ info_yaml:
   enabled: true
   source:
     type: "git"
-    url: "https://gerrit.linuxfoundation.org/infra/info-master"
+    url: "https://gerrit.linuxfoundation.org/infra/releng/info-master"
 ```
 
 ### Optimize Performance

@@ -1106,7 +1106,7 @@ reporting-tool generate ... -vv
 The tool uses standardized exit codes (0-4) for automation:
 
 | Code | Meaning | Common Causes | Solution |
-|------|---------|---------------|----------|
+| ------- | ------- | ------- | ------- |
 | `0` | Success | None | No action needed |
 | `1` | Error | Config errors, API failures, processing errors, unexpected exceptions | Check logs with `-vv` |
 | `2` | Partial Success | Some repositories failed, incomplete data, warnings present | Review warnings, check failed repos |
@@ -1408,7 +1408,7 @@ info_yaml:
   enabled: true  # Must be true
   source:
     type: "git"
-    url: "https://gerrit.linuxfoundation.org/infra/info-master"
+    url: "https://gerrit.linuxfoundation.org/infra/releng/info-master"
 ```
 
 ### Slow URL Validation

@@ -1334,7 +1334,7 @@ info_yaml:
   enabled: true
   source:
     type: "git"
-    url: "https://gerrit.linuxfoundation.org/infra/info-master"
+    url: "https://gerrit.linuxfoundation.org/infra/releng/info-master"
     branch: "main"
 
   filters:
@@ -1384,7 +1384,7 @@ info_yaml:
 Committers are color-coded based on Git activity:
 
 | Color | Status | Last Activity | Meaning |
-|-------|--------|---------------|---------|
+| ------- | ------- | ------- | ------- |
 | 🟢 Green | Current | 0-365 days | Active contributor |
 | 🟠 Orange | Active | 365-1095 days | Moderately active |
 | 🔴 Red | Inactive | 1095+ days | No recent activity |
@@ -1396,7 +1396,7 @@ Committers are color-coded based on Git activity:
 ## 📋 Committer INFO.yaml Report
 
 | Project | Lifecycle State | Project Lead | Committers |
-|---------|-----------------|--------------|------------|
+| ------- | ------- | ------- | ------- |
 | Project A | Active | 🟢 Alice Smith | 🟢 Bob Jones<br>🟠 Carol White |
 | Project B | Incubation | 🟠 David Brown | 🔴 Eve Davis<br>⚫ Frank Miller |
 ```
@@ -1428,7 +1428,7 @@ info_yaml:
 
 ```bash
 # One-time setup
-git clone https://gerrit.linuxfoundation.org/infra/info-master /data/info-master
+git clone https://gerrit.linuxfoundation.org/infra/releng/info-master /data/info-master
 
 # Fast subsequent runs (uses local copy)
 reporting-tool generate --project onap --config config/local.yaml
@@ -1477,7 +1477,7 @@ jobs:
 reporting-tool generate \
   --project foundation \
   --repos-path ./all-repos \
-  --info-yaml-repo https://gerrit.linuxfoundation.org/infra/info-master \
+  --info-yaml-repo https://gerrit.linuxfoundation.org/infra/releng/info-master \
   --output reports/health-dashboard
 ```
 
@@ -1601,7 +1601,7 @@ info_yaml:
 
    ```bash
    # Clone once
-   git clone https://gerrit.linuxfoundation.org/infra/info-master /tmp/info-master
+   git clone https://gerrit.linuxfoundation.org/infra/releng/info-master /tmp/info-master
 
    # Use repeatedly
    reporting-tool generate --project test --info-yaml-path /tmp/info-master

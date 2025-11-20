@@ -845,7 +845,7 @@ info_yaml:
 
   source:
     type: "git"  # or "local"
-    url: "https://gerrit.linuxfoundation.org/infra/info-master"
+    url: "https://gerrit.linuxfoundation.org/infra/releng/info-master"
     branch: "main"
 ```
 
@@ -859,7 +859,7 @@ info_yaml:
   # Data Source
   source:
     type: "git"  # "git" or "local"
-    url: "https://gerrit.linuxfoundation.org/infra/info-master"
+    url: "https://gerrit.linuxfoundation.org/infra/releng/info-master"
     branch: "main"
     local_path: null  # Use if type is "local"
     update_on_run: true  # Pull updates before processing
@@ -1046,7 +1046,7 @@ info_yaml:
 
 ```bash
 # One-time setup
-git clone https://gerrit.linuxfoundation.org/infra/info-master /data/info-master
+git clone https://gerrit.linuxfoundation.org/infra/releng/info-master /data/info-master
 
 # Fast subsequent runs
 reporting-tool generate --config config.yaml
@@ -1061,7 +1061,7 @@ Override configuration with environment variables:
 export REPORTING_TOOL_INFO_YAML_ENABLED=true
 
 # Data source
-export REPORTING_TOOL_INFO_YAML_SOURCE_URL="https://gerrit.linuxfoundation.org/infra/info-master"
+export REPORTING_TOOL_INFO_YAML_SOURCE_URL="https://gerrit.linuxfoundation.org/infra/releng/info-master"
 export REPORTING_TOOL_INFO_YAML_SOURCE_LOCAL_PATH="/data/info-master"
 
 # Performance
@@ -1097,7 +1097,7 @@ info_yaml:
   enabled: true
   source:
     type: "git"
-    url: "https://gerrit.linuxfoundation.org/infra/info-master"
+    url: "https://gerrit.linuxfoundation.org/infra/releng/info-master"
     update_on_run: true
   performance:
     async_validation: true

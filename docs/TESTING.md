@@ -649,7 +649,7 @@ tests/
 ### Overall Targets
 
 | Module | Target | Current | Status |
-|--------|--------|---------|--------|
+| ------- | ------- | ------- | ------- |
 | src/performance/ | 90% | 100% | ✅ |
 | src/util/ | 90% | 96% | ✅ |
 | src/rendering/ | 85% | 95% | ✅ |

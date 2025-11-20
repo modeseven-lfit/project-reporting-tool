@@ -438,7 +438,7 @@ Common API errors:
 A:
 
 | Code | Meaning | What to Do |
-|------|---------|------------|
+| ------- | ------- | ------- |
 | `0` | Success | Nothing - all good! |
 | `1` | Error | Check logs for config/API/processing errors |
 | `2` | Partial | Review warnings, report may be incomplete |

@@ -43,7 +43,7 @@ This eliminates hardcoded server URLs and makes it easy to test different Linux 
 ### Fields
 
 | Field | Required | Description | Example |
-|-------|----------|-------------|---------|
+| ------- | ------- | ------- | ------- |
 | `project` | Yes | Project name (used for report directory) | `"ONAP"` |
 | `gerrit` | Yes | Gerrit server hostname | `"gerrit.onap.org"` |
 | `jenkins` | No | Jenkins server hostname | `"jenkins.onap.org"` |

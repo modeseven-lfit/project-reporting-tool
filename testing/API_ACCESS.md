@@ -419,7 +419,7 @@ cd reporting-tool/testing
 With all APIs enabled:
 
 | Project | Repos | No APIs | With APIs | Difference |
-|---------|-------|---------|-----------|------------|
+| ------- | ------- | ------- | ------- | ------- |
 | ONAP | 179 | ~15 sec | ~5-10 min | 20-40x slower |
 | OpenDaylight | 39 | ~7 sec | ~2-3 min | 15-25x slower |
 

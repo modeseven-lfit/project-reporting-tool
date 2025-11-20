@@ -188,7 +188,7 @@ ls -la ./test-downloads/
 ### System Dependencies
 
 | Tool | Purpose | Check Command |
-|------|---------|---------------|
+| ------- | ------- | ------- |
 | `bash` | Shell interpreter | `bash --version` |
 | `jq` | JSON processing | `jq --version` |
 | `curl` | HTTP requests | `curl --version` |

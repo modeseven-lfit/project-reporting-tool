@@ -186,7 +186,7 @@ class APIStatistics:
 ### Shared State Inventory
 
 | Component | Shared? | Protection | Notes |
-|-----------|---------|------------|-------|
+| ------- | ------- | ------- | ------- |
 | `JenkinsAllocationContext` | ✅ Yes | Internal lock | Instance-level, not global |
 | `APIStatistics` | ✅ Yes | Internal lock | Shared across all threads |
 | Configuration | ✅ Yes | Immutable | Read-only after load |

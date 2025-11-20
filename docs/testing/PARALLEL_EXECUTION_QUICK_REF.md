@@ -81,7 +81,7 @@ pytest -n 4
 ## Worker Count Options
 
 | Option | Description | Use Case |
-|--------|-------------|----------|
+| ------- | ------- | ------- |
 | `-n auto` | Auto-detect (recommended) | CI/CD, most cases |
 | `-n 4` | Fixed 4 workers | Consistent performance |
 | `-n logical` | Use logical CPU count | Max parallelization |
@@ -160,7 +160,7 @@ def port(worker_id):
 ## Performance Metrics
 
 | Execution Mode | Runtime | Speedup |
-|---------------|---------|---------|
+| ------- | ------- | ------- |
 | Sequential | 25m 54s | 1.0x |
 | Parallel (2 workers) | 22m 0s | 1.18x |
 | Parallel (4 workers) | 21m 20s | 1.21x |
@@ -223,7 +223,7 @@ def test_memory_intensive():
 ## Known Limitations
 
 | Feature | Behavior in Parallel |
-|---------|---------------------|
+| ------- | ------- |
 | **Benchmarks** | Auto-disabled (run separately) |
 | **Random seed** | Per-worker (use --randomly-seed=X) |
 | **Session fixtures** | Created per-worker |
@@ -323,7 +323,7 @@ pytest -n auto -v | head -5
 ## Summary
 
 | Aspect | Value |
-|--------|-------|
+| ------- | ------- |
 | **Command** | `pytest -n auto` |
 | **Workers** | 8 (auto-detected) |
 | **Speedup** | 1.25x (19.9% faster) |

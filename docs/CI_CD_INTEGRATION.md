@@ -177,7 +177,7 @@ Alerting:
 ### 4. Workflow Triggers Summary
 
 | Workflow | Trigger | Frequency | Duration |
-|----------|---------|-----------|----------|
+| ------- | ------- | ------- | ------- |
 | Pre-commit | PR opened/updated | Per PR update | < 5 min |
 | Tests | Push to main/develop, PR | Per commit | < 30 min |
 | Performance | Schedule, Manual | Weekly | < 30 min |
@@ -493,7 +493,7 @@ bandit -r src/ -ll  # Low level and above
 ### Artifacts Generated
 
 | Artifact | Retention | Size | Purpose |
-|----------|-----------|------|---------|
+| ------- | ------- | ------- | ------- |
 | Coverage Reports | 7 days | ~10 MB | Coverage analysis |
 | Benchmark Results | 90 days | ~5 MB | Performance tracking |
 | Benchmark History | 365 days | ~50 MB | Long-term trends |
@@ -576,7 +576,7 @@ Example:
 ## Pre-commit Check Results
 
 | Check | Status |
-|-------|--------|
+| ------- | ------- |
 | Quick Validation | ✅ success |
 | Fast Tests | ✅ success |
 | Linting & Formatting | ⚠️ failure |
@@ -874,7 +874,7 @@ See `tests/performance/conftest.py` for complete list.
 ### B. Test Marker Reference
 
 | Marker | Purpose | Count |
-|--------|---------|-------|
+| ------- | ------- | ------- |
 | smoke | Fast validation | ~10 |
 | unit | Unit tests | ~300 |
 | integration | Integration tests | ~50 |
@@ -892,7 +892,7 @@ See `tests/performance/conftest.py` for complete list.
 ### D. Coverage Targets
 
 | Module | Target | Current |
-|--------|--------|---------|
+| ------- | ------- | ------- |
 | src/performance/ | 90% | 100% ✅ |
 | src/util/ | 90% | 96% ✅ |
 | src/rendering/ | 85% | 95% ✅ |

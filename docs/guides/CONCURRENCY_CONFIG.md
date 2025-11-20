@@ -74,7 +74,7 @@ pool = AdaptiveThreadPool(
 ### Worker Count Guidelines
 
 | System | Recommended Workers | Notes |
-|--------|-------------------|-------|
+| ------- | ------- | ------- |
 | 2 cores | 4-8 workers | Small system |
 | 4 cores | 8-16 workers | Typical laptop |
 | 8 cores | 16-32 workers | Workstation |

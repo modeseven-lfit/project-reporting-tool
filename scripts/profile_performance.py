@@ -47,17 +47,16 @@ def run_with_profiling(
 ) -> dict[str, Any]:
     """Run report generation with profiling enabled."""
     # Import here to avoid circular dependencies
-    from generate_reports import RepositoryReporter
+    import logging
+
+    from reporting_tool.reporter import RepositoryReporter
+    from reporting_tool.statistics import APIStatistics
 
     # Load config and update max_workers
     config = load_config(config_path)
     if "performance" not in config:
         config["performance"] = {}
     config["performance"]["max_workers"] = max_workers
-
-    # Create temporary config file
-    temp_config = config_path.parent / f"temp_config_workers_{max_workers}.json"
-    save_config(config, temp_config)
 
     print(f"\n{'=' * 80}")
     print(f"Profiling with max_workers={max_workers}")
@@ -73,8 +72,14 @@ def run_with_profiling(
     # Run with profiling
     profiler.enable()
     try:
-        reporter = RepositoryReporter(str(temp_config))
-        reporter.generate_all_reports()
+        # Create logger and API stats
+        logger = logging.getLogger(__name__)
+        api_stats = APIStatistics()
+
+        # Create reporter with proper dependencies
+        reporter = RepositoryReporter(config, logger, api_stats)
+        reporter.analyze_repositories(config_path.parent / "repos")
+        reporter.generate_reports()
     finally:
         profiler.disable()
 
@@ -85,10 +90,6 @@ def run_with_profiling(
     # Calculate metrics
     wall_time = end_time - start_time
     cpu_time = end_cpu - start_cpu
-
-    # Clean up temp config
-    if temp_config.exists():
-        temp_config.unlink()
 
     # Generate profile stats
     stats = pstats.Stats(profiler)
