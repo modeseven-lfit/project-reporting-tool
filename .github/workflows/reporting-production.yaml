@@ -256,10 +256,11 @@ jobs:
         shell: bash
         env:
           JENKINS_HOST: ${{ matrix.jenkins }}
-          CLASSIC_READ_ONLY_PAT_TOKEN:
-            ${{ secrets.CLASSIC_READ_ONLY_PAT_TOKEN }}
+          # yamllint disable-line rule:line-length
+          CLASSIC_READ_ONLY_PAT_TOKEN: ${{ secrets.CLASSIC_READ_ONLY_PAT_TOKEN }}
           GITHUB_ORG: ${{ matrix.github }}
           SSH_AVAILABLE: ${{ env.SSH_AVAILABLE }}
+        # yamllint disable rule:line-length
         run: |
           project="${{ matrix.project }}"
           echo "📊 Generating reports for $project"
@@ -272,6 +273,18 @@ jobs:
 
           if [ -n "$CLASSIC_READ_ONLY_PAT_TOKEN" ]; then
             echo "🔧 GitHub API integration enabled"
+            # Debug token format (show prefix only for security)
+            token_prefix="${CLASSIC_READ_ONLY_PAT_TOKEN:0:10}"
+            token_length="${#CLASSIC_READ_ONLY_PAT_TOKEN}"
+            echo "🔍 Token prefix: ${token_prefix}..."
+            echo "🔍 Token length: ${token_length} characters"
+            # Check for whitespace
+            if [[ "$CLASSIC_READ_ONLY_PAT_TOKEN" =~ [[:space:]] ]]; then
+              echo "⚠️  WARNING: Token contains whitespace characters!"
+              # Try to trim whitespace
+              export CLASSIC_READ_ONLY_PAT_TOKEN=$(echo "$CLASSIC_READ_ONLY_PAT_TOKEN" | tr -d '[:space:]')
+              echo "🔧 Token trimmed, new length: ${#CLASSIC_READ_ONLY_PAT_TOKEN}"
+            fi
           else
             echo "⚠️ GitHub API integration disabled"
           fi
@@ -284,6 +297,7 @@ jobs:
             --verbose
 
           echo "✅ Reports generated for $project"
+        # yamllint enable rule:line-length
 
       - name: "Report skipped due to clone failure"
         if: env.CLONE_FAILED == 'true'
