@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: Linux Foundation
 
-**Generated:** November 21, 2025 at 13:23 UTC
+**Generated:** November 21, 2025 at 14:09 UTC
 **Schema Version:** 1.0.0
 
 ## 📈 Global Summary
@@ -206,7 +206,7 @@
 | puppet/modules/mailman3 | 0 | +0 | 0 | 3,431 | 2016-06-30 | 🛑 |
 | releng | 0 | +0 | 0 | 625 | 2024-03-06 | ☑️ |
 | releng/ci-workshop | 0 | +0 | 0 | 1,174 | 2022-09-04 | 🛑 |
-| releng/docs-conf | 0 | +0 | 0 | 534 | 2024-06-05 | ☑️ |
+| releng/docs-conf | 0 | +0 | 0 | 535 | 2024-06-04 | ☑️ |
 | releng/license-checker | 0 | +0 | 0 | 2,729 | 2018-06-02 | 🛑 |
 | releng/nexus-upload | 0 | +0 | 0 | 540 | 2024-05-30 | ☑️ |
 | releng/pipelines | 0 | +0 | 0 | 1,201 | 2022-08-08 | 🛑 |
@@ -233,28 +233,28 @@
 | ansible/roles/python-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/system-update | None | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/docker-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
-| ansible/roles/mono-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
-| ansible/roles/lf-dev-libs | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
-| ansible/roles/packer-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
-| ansible/roles/haveged-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
 | ansible/roles/protobuf-install | None | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
+| ansible/roles/packer-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/lf-dev-libs | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/mono-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/haveged-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
 | puppet/modules/gce | ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| puppet/modules/mailman3 | ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ansible/roles | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| puppet/modules/mailman3 | ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | clav2test/ccla-only-project | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | clav2test/icla-and-ccla-project | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | lfn/process | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | releng/ci-workshop | docker | ❌ | ✅ | ❌ | ✅ | ❌ | 🛑 |
-| ansible/roles/sysstat-install | None | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | ansible/roles/shellcheck-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/sysstat-install | None | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | releng/license-checker | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | releng/docs-conf | python | ❌ | ✅ | ✅ | ✅ | ❌ | ☑️ |
 | releng/pipelines | gradle | ❌ | ✅ | ✅ | ✅ | ❌ | 🛑 |
+| releng/nexus-upload | None | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | releng | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | sandbox-info-master | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| releng/nexus-upload | None | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| releng/sigul-docker | docker | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | releng/python-one-password | python | ❌ | ✅ | ✅ | ✅ | ❌ | ☑️ |
+| releng/sigul-docker | docker | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 
 ## 🏁 Deployed CI/CD Jobs
 
