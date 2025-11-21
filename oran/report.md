@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: O-RAN-SC
 
-**Generated:** November 21, 2025 at 11:34 UTC
+**Generated:** November 21, 2025 at 11:54 UTC
 **Schema Version:** 1.0.0
 
 ## 📈 Global Summary
@@ -75,7 +75,7 @@
 | 2 | John Keeney | 134 | +1006 | 14718 | +7.5 | 21 | est.tech |
 | 3 | subhash kumar singh | 118 | +1843 | 2249 | +15.6 | 25 | samsung.com |
 | 4 | ashishj1729 | 75 | +2970 | 9002 | +39.6 | 9 | samsung.com |
-| 5 | Matthew Watkins | 73 | +558 | 804 | +7.6 | 39 | linuxfoundation.org |
+| 5 | ModeSevenIndustrialSolutions | 73 | +558 | 804 | +7.6 | 39 | linuxfoundation.org |
 | 6 | Ravi Pendurty | 72 | +215762 | 265612 | +2996.7 | 5 | highstreet-technologies.com |
 | 7 | Swaraj Kumar | 57 | +483 | 2279 | +8.5 | 9 | samsung.com |
 | 8 | rajdeep11 | 50 | +966 | 11298 | +19.3 | 8 | samsung.com |
@@ -186,11 +186,11 @@
 | 113 | Houa Yang | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
 | 114 | Irina | 0 | +0 | 0 | - | 3 | att.com |
 | 115 | Jack Lucas | 0 | +0 | 0 | - | 1 | att.com |
-| 116 | James Li | 0 | +0 | 0 | - | 5 | gmail.com |
-| 117 | James Li | 0 | +0 | 0 | - | 1 | gmail.com |
-| 118 | JiWonOck | 0 | +0 | 0 | - | 1 | gmail.com |
-| 119 | Joao F. Santos | 0 | +0 | 0 | - | 1 | vt.edu |
-| 120 | Johannes Becker | 0 | +0 | 0 | - | 1 | caur.us |
+| 116 | James Li | 0 | +0 | 0 | - | 1 | gmail.com |
+| 117 | JiWonOck | 0 | +0 | 0 | - | 1 | gmail.com |
+| 118 | Joao F. Santos | 0 | +0 | 0 | - | 1 | vt.edu |
+| 119 | Johannes Becker | 0 | +0 | 0 | - | 1 | caur.us |
+| 120 | Joseph Thaliath | 0 | +0 | 0 | - | 10 | samsung.com |
 | 121 | Juha Hyttinen | 0 | +0 | 0 | - | 8 | nokia.com |
 | 122 | Karl Koch | 0 | +0 | 0 | - | 1 | telekom.de |
 | 123 | Katri Turunen | 0 | +0 | 0 | - | 1 | nokia.com |
@@ -204,140 +204,140 @@
 | 131 | Lott, Christopher (cl778h) | 0 | +0 | 0 | - | 23 | att.com |
 | 132 | Louis Li | 0 | +0 | 0 | - | 1 | gmail.com |
 | 133 | Luis Farias | 0 | +0 | 0 | - | 1 | intel.com |
-| 134 | Lusheng Ji | 0 | +0 | 0 | - | 19 | att.com |
-| 135 | Mahesh Jethanandani | 0 | +0 | 0 | - | 5 | gmail.com |
-| 136 | Manish Goregaokar | 0 | +0 | 0 | - | 1 | gmail.com |
-| 137 | Manoop Talasila | 0 | +0 | 0 | - | 1 | att.com |
-| 138 | Marco Tallskog | 0 | +0 | 0 | - | 3 | nokia.com |
-| 139 | Markku Virtanen | 0 | +0 | 0 | - | 1 | nokia.com |
-| 140 | Matti Hiltunen | 0 | +0 | 0 | - | 3 | att.com |
-| 141 | Michael Dürre | 0 | +0 | 0 | - | 2 | highstreet-technologies.com |
-| 142 | Mohamed Abukar | 0 | +0 | 0 | - | 12 | nokia.com |
-| 143 | Mohammad Arif Belgaumkar | 0 | +0 | 0 | - | 3 | parallelwireless.com |
-| 144 | NITIN GUPTA | 0 | +0 | 0 | - | 2 | yahoo.com |
-| 145 | Nhat Anh | 0 | +0 | 0 | - | 1 | gmail.com |
-| 146 | Nicolas Hu | 0 | +0 | 0 | - | 1 | att.com |
-| 147 | PatrikBuhr | 0 | +0 | 0 | - | 11 | est.tech |
-| 148 | Peng Cao | 0 | +0 | 0 | - | 1 | intel.com |
-| 149 | Peter Szilagyi | 0 | +0 | 0 | - | 2 | nokia.com |
-| 150 | Petri Ovaska | 0 | +0 | 0 | - | 3 | nokia.com |
-| 151 | Radoslaw Chmiel | 0 | +0 | 0 | - | 1 | samsung.com |
-| 152 | Rahul Banerji | 0 | +0 | 0 | - | 5 | samsung.com |
-| 153 | RahulBanerji | 0 | +0 | 0 | - | 1 | gmail.com |
-| 154 | Rakshith Pai | 0 | +0 | 0 | - | 1 | nokia.com |
-| 155 | RehanRaza | 0 | +0 | 0 | - | 6 | est.tech |
-| 156 | Rohan Patel | 0 | +0 | 0 | - | 1 | att.com |
-| 157 | Rolf Badorek | 0 | +0 | 0 | - | 3 | nokia.com |
-| 158 | Ron Shacham | 0 | +0 | 0 | - | 7 | att.com |
-| 159 | Roni Riska | 0 | +0 | 0 | - | 8 | nokia.com |
-| 160 | Roni Riska | 0 | +0 | 0 | - | 1 | nsn-intra.net |
-| 161 | Sangama Mahesh Gunasekaran | 0 | +0 | 0 | - | 1 | nokia.com |
-| 162 | Sangeetha KR | 0 | +0 | 0 | - | 2 | hcl.com |
-| 163 | Sangwi Kang | 0 | +0 | 0 | - | 1 | ac.kr |
-| 164 | Saravanan B | 0 | +0 | 0 | - | 1 | samsung.com |
-| 165 | Sarkar, Anand (as0481) | 0 | +0 | 0 | - | 1 | att.com |
-| 166 | Satish Inakoti | 0 | +0 | 0 | - | 1 | nokia.com |
-| 167 | Seshu Kumar Mudiganti | 0 | +0 | 0 | - | 1 | windriver.com |
-| 168 | Sohyeon Kim | 0 | +0 | 0 | - | 1 | naver.com |
-| 169 | Sri ram | 0 | +0 | 0 | - | 1 | hcl.com |
-| 170 | Sridhar K. N. Rao | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 171 | Suchismita Jena | 0 | +0 | 0 | - | 2 | nokia.com |
-| 172 | Sungjin Lee | 0 | +0 | 0 | - | 3 | gmail.com |
-| 173 | Timo Tietavainen | 0 | +0 | 0 | - | 21 | nokia.com |
-| 174 | Timothy Ebido | 0 | +0 | 0 | - | 1 | samsung.com |
-| 175 | Tommy Carpenter | 0 | +0 | 0 | - | 7 | att.com |
-| 176 | Tommy Carpenter | 0 | +0 | 0 | - | 4 | att.com |
-| 177 | Tuan Nguyen | 0 | +0 | 0 | - | 3 | gmail.com |
-| 178 | Vanessa Valderrama | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 179 | Varada Varad | 0 | +0 | 0 | - | 1 | samsung.com |
-| 180 | Vidhu | 0 | +0 | 0 | - | 1 | hcl.com |
-| 181 | Xiaohua Zhang | 0 | +0 | 0 | - | 3 | chinamobile.com |
-| 182 | Xiaohua Zhang | 0 | +0 | 0 | - | 1 | windriver.com |
-| 183 | YCJict | 0 | +0 | 0 | - | 1 | ac.cn |
-| 184 | Yaki Ratz | 0 | +0 | 0 | - | 3 | att.com |
-| 185 | Yingying Wang | 0 | +0 | 0 | - | 1 | chinamobile.com |
-| 186 | YongchaoWu | 0 | +0 | 0 | - | 3 | est.tech |
-| 187 | Youhwan Seol | 0 | +0 | 0 | - | 5 | samsung.com |
-| 188 | Yueh-Huan | 0 | +0 | 0 | - | 1 | gmail.com |
-| 189 | Zhe | 0 | +0 | 0 | - | 5 | att.com |
-| 190 | Zhimin | 0 | +0 | 0 | - | 1 | intel.com |
-| 191 | aa7133@att.com | 0 | +0 | 0 | - | 1 | att.com |
-| 192 | aditverm | 0 | +0 | 0 | - | 3 | nokia.com |
-| 193 | ambrishest | 0 | +0 | 0 | - | 5 | est.tech |
-| 194 | amit.sarnath | 0 | +0 | 0 | - | 2 | hcl.com |
-| 195 | anhnghcl | 0 | +0 | 0 | - | 1 | hcl.com |
-| 196 | as761j | 0 | +0 | 0 | - | 3 | att.com |
-| 197 | barveankit | 0 | +0 | 0 | - | 1 | radisys.com |
-| 198 | bhanuchandra | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
-| 199 | cor5in | 0 | +0 | 0 | - | 2 | ac.kr |
-| 200 | cschowdam | 0 | +0 | 0 | - | 1 | commscope.com |
-| 201 | czichy | 0 | +0 | 0 | - | 37 | nokia.com |
-| 202 | d k | 0 | +0 | 0 | - | 1 | att.com |
-| 203 | dave kormann | 0 | +0 | 0 | - | 4 | att.com |
-| 204 | dhirajverma | 0 | +0 | 0 | - | 5 | nokia.com |
-| 205 | dliu5 | 0 | +0 | 0 | - | 2 | windriver.com |
-| 206 | ec472j | 0 | +0 | 0 | - | 1 | att.com |
-| 207 | ecaiyanlinux | 0 | +0 | 0 | - | 6 | est.tech |
-| 208 | ehietala | 0 | +0 | 0 | - | 1 | nokia.com |
-| 209 | elinuxhenrik | 0 | +0 | 0 | - | 18 | est.tech |
-| 210 | gautamk189 | 0 | +0 | 0 | - | 1 | hcl.com |
-| 211 | halil.cakal | 0 | +0 | 0 | - | 14 | est.tech |
-| 212 | himeshshukla | 0 | +0 | 0 | - | 2 | hcl.com |
-| 213 | hoejoo.lee | 0 | +0 | 0 | - | 6 | samsung.com |
-| 214 | hyuksun98 | 0 | +0 | 0 | - | 2 | ac.kr |
-| 215 | ib565x | 0 | +0 | 0 | - | 1 | att.com |
-| 216 | inni-iii | 0 | +0 | 0 | - | 1 | nate.com |
-| 217 | is005q | 0 | +0 | 0 | - | 5 | att.com |
-| 218 | jinwei.fan | 0 | +0 | 0 | - | 1 | samsung.com |
-| 219 | josephthaliath | 0 | +0 | 0 | - | 10 | samsung.com |
-| 220 | kalnagy | 0 | +0 | 0 | - | 2 | nokia.com |
-| 221 | kk4281@att.com | 0 | +0 | 0 | - | 1 | att.com |
-| 222 | knowpd | 0 | +0 | 0 | - | 1 | att.com |
-| 223 | ksun1 | 0 | +0 | 0 | - | 1 | windriver.com |
-| 224 | ktimoney | 0 | +0 | 0 | - | 16 | est.tech |
-| 225 | lal.harshita | 0 | +0 | 0 | - | 2 | radisys.com |
-| 226 | lj1412 | 0 | +0 | 0 | - | 1 | att.com |
-| 227 | m10802821 | 0 | +0 | 0 | - | 1 | edu.tw |
-| 228 | manoj1 | 0 | +0 | 0 | - | 5 | nokia.com |
-| 229 | maximesson | 0 | +0 | 0 | - | 3 | est.tech |
-| 230 | minhac.lee | 0 | +0 | 0 | - | 6 | samsung.com |
-| 231 | naman.gupta | 0 | +0 | 0 | - | 12 | samsung.com |
-| 232 | nitincg | 0 | +0 | 0 | - | 1 | capgemini.com |
-| 233 | nm755n | 0 | +0 | 0 | - | 3 | att.com |
-| 234 | ns019t | 0 | +0 | 0 | - | 2 | att.com |
-| 235 | pkranthi | 0 | +0 | 0 | - | 1 | nokia.com |
-| 236 | prabhukaliswamy | 0 | +0 | 0 | - | 3 | nokia.com |
-| 237 | praneeth2021 | 0 | +0 | 0 | - | 1 | gmail.com |
-| 238 | pwpmurthy | 0 | +0 | 0 | - | 2 | parallelwireless.com |
-| 239 | rajalakshmisv | 0 | +0 | 0 | - | 1 | gmail.com |
-| 240 | rangajal | 0 | +0 | 0 | - | 11 | nokia.com |
-| 241 | rh362j | 0 | +0 | 0 | - | 2 | att.com |
-| 242 | rimverma | 0 | +0 | 0 | - | 4 | nokia.com |
-| 243 | rohithrajneesh | 0 | +0 | 0 | - | 4 | est.tech |
-| 244 | ronit | 0 | +0 | 0 | - | 4 | att.com |
-| 245 | sahil-xoriant | 0 | +0 | 0 | - | 1 | xoriant.com |
-| 246 | sandeeku | 0 | +0 | 0 | - | 4 | nokia.com |
-| 247 | sandeepindia | 0 | +0 | 0 | - | 6 | hcl.com |
-| 248 | santanude | 0 | +0 | 0 | - | 3 | xoriant.com |
-| 249 | satsuu.masayuki | 0 | +0 | 0 | - | 1 | fujitsu.com |
-| 250 | sebdet | 0 | +0 | 0 | - | 2 | att.com |
-| 251 | shikha0203 | 0 | +0 | 0 | - | 1 | est.tech |
-| 252 | singh.sunil | 0 | +0 | 0 | - | 1 | hcl.com |
-| 253 | sjana | 0 | +0 | 0 | - | 2 | att.com |
-| 254 | sk13 | 0 | +0 | 0 | - | 1 | barkhauseninstitut.org |
-| 255 | smahana123 | 0 | +0 | 0 | - | 6 | samsung.com |
-| 256 | sphoorthi | 0 | +0 | 0 | - | 1 | radisys.com |
-| 257 | ss412g | 0 | +0 | 0 | - | 6 | att.com |
-| 258 | ssum21 | 0 | +0 | 0 | - | 1 | ac.kr |
-| 259 | suresh channamallu | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
-| 260 | sw94.chung | 0 | +0 | 0 | - | 3 | samsung.com |
-| 261 | tchyang | 0 | +0 | 0 | - | 2 | psu.edu |
-| 262 | tganesh2k | 0 | +0 | 0 | - | 5 | samsung.com |
-| 263 | vaishali sachdeva | 0 | +0 | 0 | - | 3 | hcl.com |
-| 264 | ves-dev | 0 | +0 | 0 | - | 1 | xoriant.com |
-| 265 | vipin | 0 | +0 | 0 | - | 2 | nokia.com |
-| 266 | vlad shkapenyuk | 0 | +0 | 0 | - | 2 | att.com |
-| 267 | wansu.yoo | 0 | +0 | 0 | - | 1 | samsung.com |
+| 134 | Mahesh Jethanandani | 0 | +0 | 0 | - | 5 | gmail.com |
+| 135 | Manish Goregaokar | 0 | +0 | 0 | - | 1 | gmail.com |
+| 136 | Manoop Talasila | 0 | +0 | 0 | - | 1 | att.com |
+| 137 | Marco Tallskog | 0 | +0 | 0 | - | 3 | nokia.com |
+| 138 | Markku Virtanen | 0 | +0 | 0 | - | 1 | nokia.com |
+| 139 | Matti Hiltunen | 0 | +0 | 0 | - | 3 | att.com |
+| 140 | Michael Dürre | 0 | +0 | 0 | - | 2 | highstreet-technologies.com |
+| 141 | Mohamed Abukar | 0 | +0 | 0 | - | 12 | nokia.com |
+| 142 | NITIN GUPTA | 0 | +0 | 0 | - | 2 | yahoo.com |
+| 143 | Nhat Anh | 0 | +0 | 0 | - | 1 | gmail.com |
+| 144 | Nicolas Hu | 0 | +0 | 0 | - | 1 | att.com |
+| 145 | PatrikBuhr | 0 | +0 | 0 | - | 11 | est.tech |
+| 146 | Peng Cao | 0 | +0 | 0 | - | 1 | intel.com |
+| 147 | Peter Szilagyi | 0 | +0 | 0 | - | 2 | nokia.com |
+| 148 | Petri Ovaska | 0 | +0 | 0 | - | 3 | nokia.com |
+| 149 | Radoslaw Chmiel | 0 | +0 | 0 | - | 1 | samsung.com |
+| 150 | Rahul Banerji | 0 | +0 | 0 | - | 5 | samsung.com |
+| 151 | RahulBanerji | 0 | +0 | 0 | - | 1 | gmail.com |
+| 152 | Rakshith Pai | 0 | +0 | 0 | - | 1 | nokia.com |
+| 153 | RehanRaza | 0 | +0 | 0 | - | 6 | est.tech |
+| 154 | Rohan Patel | 0 | +0 | 0 | - | 1 | att.com |
+| 155 | Rolf Badorek | 0 | +0 | 0 | - | 3 | nokia.com |
+| 156 | Ron Shacham | 0 | +0 | 0 | - | 7 | att.com |
+| 157 | Roni Riska | 0 | +0 | 0 | - | 8 | nokia.com |
+| 158 | Roni Riska | 0 | +0 | 0 | - | 1 | nsn-intra.net |
+| 159 | Sangama Mahesh Gunasekaran | 0 | +0 | 0 | - | 1 | nokia.com |
+| 160 | Sangeetha KR | 0 | +0 | 0 | - | 2 | hcl.com |
+| 161 | Sangwi Kang | 0 | +0 | 0 | - | 1 | ac.kr |
+| 162 | Saravanan B | 0 | +0 | 0 | - | 1 | samsung.com |
+| 163 | Sarkar, Anand (as0481) | 0 | +0 | 0 | - | 1 | att.com |
+| 164 | Satish Inakoti | 0 | +0 | 0 | - | 1 | nokia.com |
+| 165 | Seshu Kumar Mudiganti | 0 | +0 | 0 | - | 1 | windriver.com |
+| 166 | Sohyeon Kim | 0 | +0 | 0 | - | 1 | naver.com |
+| 167 | Sri ram | 0 | +0 | 0 | - | 1 | hcl.com |
+| 168 | Sridhar K. N. Rao | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 169 | Suchismita Jena | 0 | +0 | 0 | - | 2 | nokia.com |
+| 170 | Sungjin Lee | 0 | +0 | 0 | - | 3 | gmail.com |
+| 171 | Timo Tietavainen | 0 | +0 | 0 | - | 21 | nokia.com |
+| 172 | Timothy Ebido | 0 | +0 | 0 | - | 1 | samsung.com |
+| 173 | Tommy Carpenter | 0 | +0 | 0 | - | 7 | att.com |
+| 174 | Tommy Carpenter | 0 | +0 | 0 | - | 4 | att.com |
+| 175 | Tuan Nguyen | 0 | +0 | 0 | - | 3 | gmail.com |
+| 176 | Vanessa Valderrama | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 177 | Varada Varad | 0 | +0 | 0 | - | 1 | samsung.com |
+| 178 | Vidhu | 0 | +0 | 0 | - | 1 | hcl.com |
+| 179 | Xiaohua Zhang | 0 | +0 | 0 | - | 3 | chinamobile.com |
+| 180 | Xiaohua Zhang | 0 | +0 | 0 | - | 1 | windriver.com |
+| 181 | YCJict | 0 | +0 | 0 | - | 1 | ac.cn |
+| 182 | Yaki Ratz | 0 | +0 | 0 | - | 3 | att.com |
+| 183 | Yingying Wang | 0 | +0 | 0 | - | 1 | chinamobile.com |
+| 184 | YongchaoWu | 0 | +0 | 0 | - | 3 | est.tech |
+| 185 | Youhwan Seol | 0 | +0 | 0 | - | 5 | samsung.com |
+| 186 | Yueh-Huan | 0 | +0 | 0 | - | 1 | gmail.com |
+| 187 | Zhe Huang | 0 | +0 | 0 | - | 5 | att.com |
+| 188 | Zhimin | 0 | +0 | 0 | - | 1 | intel.com |
+| 189 | aa7133@att.com | 0 | +0 | 0 | - | 1 | att.com |
+| 190 | aditverm | 0 | +0 | 0 | - | 3 | nokia.com |
+| 191 | ambrishest | 0 | +0 | 0 | - | 5 | est.tech |
+| 192 | amit.sarnath | 0 | +0 | 0 | - | 2 | hcl.com |
+| 193 | anhnghcl | 0 | +0 | 0 | - | 1 | hcl.com |
+| 194 | as761j | 0 | +0 | 0 | - | 3 | att.com |
+| 195 | barveankit | 0 | +0 | 0 | - | 1 | radisys.com |
+| 196 | bhanuchandra | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
+| 197 | cor5in | 0 | +0 | 0 | - | 2 | ac.kr |
+| 198 | cschowdam | 0 | +0 | 0 | - | 1 | commscope.com |
+| 199 | czichy | 0 | +0 | 0 | - | 37 | nokia.com |
+| 200 | d k | 0 | +0 | 0 | - | 1 | att.com |
+| 201 | dave kormann | 0 | +0 | 0 | - | 4 | att.com |
+| 202 | dhirajverma | 0 | +0 | 0 | - | 5 | nokia.com |
+| 203 | dliu5 | 0 | +0 | 0 | - | 2 | windriver.com |
+| 204 | ec472j | 0 | +0 | 0 | - | 1 | att.com |
+| 205 | ecaiyanlinux | 0 | +0 | 0 | - | 6 | est.tech |
+| 206 | ehietala | 0 | +0 | 0 | - | 1 | nokia.com |
+| 207 | elinuxhenrik | 0 | +0 | 0 | - | 18 | est.tech |
+| 208 | gautamk189 | 0 | +0 | 0 | - | 1 | hcl.com |
+| 209 | halil.cakal | 0 | +0 | 0 | - | 14 | est.tech |
+| 210 | himeshshukla | 0 | +0 | 0 | - | 2 | hcl.com |
+| 211 | hoejoo.lee | 0 | +0 | 0 | - | 6 | samsung.com |
+| 212 | hyuksun98 | 0 | +0 | 0 | - | 2 | ac.kr |
+| 213 | ib565x | 0 | +0 | 0 | - | 1 | att.com |
+| 214 | inni-iii | 0 | +0 | 0 | - | 1 | nate.com |
+| 215 | is005q | 0 | +0 | 0 | - | 5 | att.com |
+| 216 | jinwei.fan | 0 | +0 | 0 | - | 1 | samsung.com |
+| 217 | kalnagy | 0 | +0 | 0 | - | 2 | nokia.com |
+| 218 | kk4281@att.com | 0 | +0 | 0 | - | 1 | att.com |
+| 219 | knowpd | 0 | +0 | 0 | - | 1 | att.com |
+| 220 | ksun1 | 0 | +0 | 0 | - | 1 | windriver.com |
+| 221 | ktimoney | 0 | +0 | 0 | - | 16 | est.tech |
+| 222 | lal.harshita | 0 | +0 | 0 | - | 2 | radisys.com |
+| 223 | lj1412 | 0 | +0 | 0 | - | 1 | att.com |
+| 224 | m10802821 | 0 | +0 | 0 | - | 1 | edu.tw |
+| 225 | mabelgaumkar1 | 0 | +0 | 0 | - | 3 | parallelwireless.com |
+| 226 | manoj1 | 0 | +0 | 0 | - | 5 | nokia.com |
+| 227 | maximesson | 0 | +0 | 0 | - | 3 | est.tech |
+| 228 | minhac.lee | 0 | +0 | 0 | - | 6 | samsung.com |
+| 229 | naman.gupta | 0 | +0 | 0 | - | 12 | samsung.com |
+| 230 | nitincg | 0 | +0 | 0 | - | 1 | capgemini.com |
+| 231 | nm755n | 0 | +0 | 0 | - | 3 | att.com |
+| 232 | ns019t | 0 | +0 | 0 | - | 2 | att.com |
+| 233 | pceicicd | 0 | +0 | 0 | - | 5 | gmail.com |
+| 234 | pkranthi | 0 | +0 | 0 | - | 1 | nokia.com |
+| 235 | prabhukaliswamy | 0 | +0 | 0 | - | 3 | nokia.com |
+| 236 | praneeth2021 | 0 | +0 | 0 | - | 1 | gmail.com |
+| 237 | pwpmurthy | 0 | +0 | 0 | - | 2 | parallelwireless.com |
+| 238 | rajalakshmisv | 0 | +0 | 0 | - | 1 | gmail.com |
+| 239 | rangajal | 0 | +0 | 0 | - | 11 | nokia.com |
+| 240 | rh362j | 0 | +0 | 0 | - | 2 | att.com |
+| 241 | rimverma | 0 | +0 | 0 | - | 4 | nokia.com |
+| 242 | rohithrajneesh | 0 | +0 | 0 | - | 4 | est.tech |
+| 243 | ronit | 0 | +0 | 0 | - | 4 | att.com |
+| 244 | sahil-xoriant | 0 | +0 | 0 | - | 1 | xoriant.com |
+| 245 | sandeeku | 0 | +0 | 0 | - | 4 | nokia.com |
+| 246 | sandeepindia | 0 | +0 | 0 | - | 6 | hcl.com |
+| 247 | santanude | 0 | +0 | 0 | - | 3 | xoriant.com |
+| 248 | satsuu.masayuki | 0 | +0 | 0 | - | 1 | fujitsu.com |
+| 249 | sebdet | 0 | +0 | 0 | - | 2 | att.com |
+| 250 | shikha0203 | 0 | +0 | 0 | - | 1 | est.tech |
+| 251 | singh.sunil | 0 | +0 | 0 | - | 1 | hcl.com |
+| 252 | sjana | 0 | +0 | 0 | - | 2 | att.com |
+| 253 | sk13 | 0 | +0 | 0 | - | 1 | barkhauseninstitut.org |
+| 254 | smahana123 | 0 | +0 | 0 | - | 6 | samsung.com |
+| 255 | sphoorthi | 0 | +0 | 0 | - | 1 | radisys.com |
+| 256 | ss412g | 0 | +0 | 0 | - | 6 | att.com |
+| 257 | ssum21 | 0 | +0 | 0 | - | 1 | ac.kr |
+| 258 | suresh channamallu | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
+| 259 | sw94.chung | 0 | +0 | 0 | - | 3 | samsung.com |
+| 260 | tchyang | 0 | +0 | 0 | - | 2 | psu.edu |
+| 261 | tganesh2k | 0 | +0 | 0 | - | 5 | samsung.com |
+| 262 | vaishali sachdeva | 0 | +0 | 0 | - | 3 | hcl.com |
+| 263 | ves-dev | 0 | +0 | 0 | - | 1 | xoriant.com |
+| 264 | vipin | 0 | +0 | 0 | - | 2 | nokia.com |
+| 265 | vlad shkapenyuk | 0 | +0 | 0 | - | 2 | att.com |
+| 266 | wansu.yoo | 0 | +0 | 0 | - | 1 | samsung.com |
+| 267 | wrider | 0 | +0 | 0 | - | 19 | att.com |
 | 268 | xuegao | 0 | +0 | 0 | - | 1 | att.com |
 | 269 | yc999.jang | 0 | +0 | 0 | - | 1 | samsung.com |
 | 270 | ychacon | 0 | +0 | 0 | - | 10 | est.tech |
@@ -359,7 +359,7 @@
 | smo/teiv | 53 | +58819 | 4 | 3 | 2025-11-18 | ✅ |
 | aiml-fw/awmf/modelmgmtservice | 52 | +2011 | 11 | 10 | 2025-11-11 | ✅ |
 | it/test | 51 | +355 | 3 | 163 | 2025-06-11 | ✅ |
-| ci-management | 50 | +213 | 12 | 73 | 2025-09-09 | ✅ |
+| ci-management | 50 | +213 | 12 | 74 | 2025-09-08 | ✅ |
 | pti/rtp | 47 | +71096 | 2 | 142 | 2025-07-02 | ✅ |
 | portal/aiml-dashboard | 41 | +158 | 8 | 29 | 2025-10-23 | ✅ |
 | aiml-fw/athp/pipeline-components | 35 | +1367 | 6 | 29 | 2025-10-23 | ✅ |
@@ -379,7 +379,7 @@
 | sim/o1-ofhmp-interfaces | 8 | +82057 | 4 | 48 | 2025-10-04 | ✅ |
 | smo/o2 | 7 | +3360 | 2 | 130 | 2025-07-14 | ✅ |
 | doc | 6 | +81 | 2 | 133 | 2025-07-11 | ✅ |
-| nonrtric/plt/rappcatalogue | 5 | +66 | 2 | 3 | 2025-11-18 | ✅ |
+| nonrtric/plt/rappcatalogue | 5 | +66 | 2 | 4 | 2025-11-17 | ✅ |
 | nonrtric/plt/dmaapadapter | 4 | +50 | 3 | 4 | 2025-11-17 | ✅ |
 | portal/nonrtric-controlpanel | 4 | +70 | 3 | 6 | 2025-11-15 | ✅ |
 | ric-plt/conflictmgr | 4 | +15 | 2 | 312 | 2025-01-13 | ✅ |
@@ -504,8 +504,8 @@
 | doc | documentation | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | nonrtric/plt/rappcatalogue | maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | nonrtric/plt/dmaapadapter | maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| portal/nonrtric-controlpanel | maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/conflictmgr | go | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| portal/nonrtric-controlpanel | maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | nonrtric/rapp/orufhrecovery | None | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/a1 | go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/alarm-go | go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
@@ -513,17 +513,17 @@
 | ric-plt/dbaas | None | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/o1 | docker | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/e2 | None | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| ric-plt/rtmgr | go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/e2mgr | None | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| ric-plt/rtmgr | go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | sim/ns3-o-ran-e2 | c_cpp | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | ric-plt/submgr | go | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | aiml-fw/apm/analysis-module | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| aiml-fw/apm/influx-wrapper | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aiml-fw/apm/monitoring-server | go | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| aiml-fw/apm/influx-wrapper | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | nonrtric/plt/dmaapmediatorproducer | go | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | nonrtric/plt/sdnca1controller | maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| nonrtric/plt/helmmanager | maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | nonrtric/rapp/healthcheck | docker | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| nonrtric/plt/helmmanager | maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | nonrtric/rapp/ransliceassurance | None | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | o-du/phy | docker | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ric-plt/ric-dep | None | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
@@ -541,50 +541,50 @@
 | scp/ric-app/ssp | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | scp/ric-app/kpimon | docker | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-plt/lib/rmr | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| com/golog | go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | com/gs-lite | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| com/golog | go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | com/log | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | com/pylog | None | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | it/dev | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| it/otf | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-app/ad-cell | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| it/otf | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-app/ccc | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| ric-app/bouncer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/hw-go | go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-app/hw-python | python | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-app/hw-rust | docker | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| ric-app/bouncer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| ric-app/hw | docker | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| ric-app/qp-aimlfw | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-app/ric-sdk-py | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ric-app/lp | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-app/kpimon-go | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| ric-app/hw | docker | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| ric-app/lp | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-app/ric-sdk-py | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| ric-app/ad | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-app/qp-aimlfw | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/alarm-cpp | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ric-app/ts | docker | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-app/qp | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-app/mc | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-app/rc | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/asn1-documents | None | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
+| ric-app/qp | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/demo1 | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ric-app/mc | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-app/ad | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/jaegeradapter | None | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-plt/ric-test | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-plt/libe2ap | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/ricctl | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ric-plt/nodeb-rnib | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/ricdms | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ric-plt/sdlpy | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/stslgo | go | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| ric-plt/sdlpy | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/streaming-protobufs | None | ❌ | ❌ | ✅ | ❌ | ❌ | 🛑 |
 | ric-plt/sdlgo | go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
 | ric-plt/tracelibcpp | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-plt/sdl | c_cpp | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
-| ric-plt/utils | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ric-plt/tracelibgo | go | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
-| ric-plt/xapp-frame | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-plt/utils | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | sim/e2-interface-data | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| ric-plt/xapp-frame-cpp | docker | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | ric-plt/xapp-frame-py | python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ric-plt/xapp-frame-cpp | docker | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | smo/pkg | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| ric-plt/xapp-frame | go | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | aiml-fw | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | sim/o1-interface | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | smo/ves | maven | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |

@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: ONAP
 
-**Generated:** November 21, 2025 at 11:35 UTC
+**Generated:** November 21, 2025 at 11:55 UTC
 **Schema Version:** 1.0.0
 
 ## 📈 Global Summary
@@ -24,7 +24,7 @@
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 |------|--------------|--------------|---------|-----|-------|----------------|---------------------|
-| 1 | est.tech | 109 | 1378 | +34442 | 261008 | +25.0 | 88 |
+| 1 | est.tech | 109 | 1376 | +34440 | 260990 | +25.0 | 88 |
 | 2 | telekom.de | 11 | 617 | +46235 | 254139 | +74.9 | 72 |
 | 3 | linuxfoundation.org | 20 | 251 | +4393 | 8931 | +17.5 | 177 |
 | 4 | techmahindra.com | 44 | 131 | +31515 | 56253 | +240.6 | 38 |
@@ -210,23 +210,23 @@
 | 62 | aravind.est | 3 | +14 | 120 | +4.7 | 6 | est.tech |
 | 63 | Andreas Seelinger | 3 | +9 | 23 | +3.0 | 3 | accenture.com |
 | 64 | Eric Ball | 3 | +4 | 12 | +1.3 | 2 | linuxfoundation.org |
-| 65 | raviteja.karumuri | 3 | +2 | 28 | +0.7 | 8 | est.tech |
-| 66 | rajesh.kumar | 2 | +912 | 952 | +456.0 | 3 | techmahindra.com |
-| 67 | PeukerL@telekom.de | 2 | +34 | 142 | +17.0 | 3 | telekom.de |
-| 68 | Viresh Navalli | 2 | +17 | 25 | +8.5 | 1 | capgemini.com |
-| 69 | Andrew Grimberg | 2 | +0 | 0 | +0.0 | 35 | linuxfoundation.org |
-| 70 | sangeeta.bellara | 1 | +2684 | 6198 | +2684.0 | 5 | t-systems.com |
-| 71 | Shalini Shivam | 1 | +1517 | 3467 | +1517.0 | 1 | techmahindra.com |
-| 72 | Ubuntu | 1 | +943 | 1089 | +943.0 | 1 | telekom.de |
-| 73 | aakansha.maltare | 1 | +512 | 512 | +512.0 | 1 | t-systems.com |
-| 74 | Ubuntu | 1 | +364 | 368 | +364.0 | 1 | telekom.de |
-| 75 | pravin.kokane@t-systems.com | 1 | +297 | 299 | +297.0 | 1 | t-systems.com |
-| 76 | dogu.akdo | 1 | +160 | 840 | +160.0 | 1 | telekom.de |
-| 77 | arkadiusz-dawid.mieszczak@t-systems.com | 1 | +69 | 6269 | +69.0 | 1 | t-systems.com |
-| 78 | A200169490 | 1 | +4 | 4 | +4.0 | 4 | t-systems.com |
-| 79 | Grzesik Michał | 1 | +1 | 27 | +1.0 | 1 | t-mobile.pl |
-| 80 | Singal, Kapil (ks220y) | 1 | +0 | 0 | +0.0 | 12 | att.com |
-| 81 | highstreetherbert | 1 | +0 | 2 | +0.0 | 9 | highstreet-technologies.com |
+| 65 | rajesh.kumar | 2 | +912 | 952 | +456.0 | 3 | techmahindra.com |
+| 66 | PeukerL@telekom.de | 2 | +34 | 142 | +17.0 | 3 | telekom.de |
+| 67 | Viresh Navalli | 2 | +17 | 25 | +8.5 | 1 | capgemini.com |
+| 68 | Andrew Grimberg | 2 | +0 | 0 | +0.0 | 35 | linuxfoundation.org |
+| 69 | sangeeta.bellara | 1 | +2684 | 6198 | +2684.0 | 5 | t-systems.com |
+| 70 | Shalini Shivam | 1 | +1517 | 3467 | +1517.0 | 1 | techmahindra.com |
+| 71 | Ubuntu | 1 | +943 | 1089 | +943.0 | 1 | telekom.de |
+| 72 | aakansha.maltare | 1 | +512 | 512 | +512.0 | 1 | t-systems.com |
+| 73 | Ubuntu | 1 | +364 | 368 | +364.0 | 1 | telekom.de |
+| 74 | pravin.kokane@t-systems.com | 1 | +297 | 299 | +297.0 | 1 | t-systems.com |
+| 75 | dogu.akdo | 1 | +160 | 840 | +160.0 | 1 | telekom.de |
+| 76 | arkadiusz-dawid.mieszczak@t-systems.com | 1 | +69 | 6269 | +69.0 | 1 | t-systems.com |
+| 77 | A200169490 | 1 | +4 | 4 | +4.0 | 4 | t-systems.com |
+| 78 | Grzesik Michał | 1 | +1 | 27 | +1.0 | 1 | t-mobile.pl |
+| 79 | Singal, Kapil (ks220y) | 1 | +0 | 0 | +0.0 | 12 | att.com |
+| 80 | highstreetherbert | 1 | +0 | 2 | +0.0 | 9 | highstreet-technologies.com |
+| 81 | raviteja.karumuri | 1 | +0 | 10 | +0.0 | 8 | est.tech |
 | 82 | KrupaNagabhushan | 1 | -44 | 44 | -44.0 | 3 | est.tech |
 | 83 | bhoopender.singh@t-systems.com | 1 | -1152 | 2528 | -1152.0 | 1 | t-systems.com |
 | 84 | A200231121 | 0 | +0 | 0 | - | 1 | t-systems.com |
@@ -247,72 +247,72 @@
 | 99 | AdrianSlavkovsky | 0 | +0 | 0 | - | 5 | orange.com |
 | 100 | Agarwal, Ruchira (ra1926) | 0 | +0 | 0 | - | 7 | att.com |
 | 101 | Agata Stanislawska | 0 | +0 | 0 | - | 1 | nokia.com |
-| 102 | Ah | 0 | +0 | 0 | - | 5 | arris.com |
-| 103 | Ahila | 0 | +0 | 0 | - | 3 | wipro.com |
-| 104 | Ahmed | 0 | +0 | 0 | - | 1 | yahoo.com |
-| 105 | Ahmed Abbas | 0 | +0 | 0 | - | 3 | orange.com |
-| 106 | Ahmed Alabulrahman | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 107 | Ahmedeldeeb50 | 0 | +0 | 0 | - | 2 | orange.com |
-| 108 | Aijana Schumann | 0 | +0 | 0 | - | 2 | highstreet-technologies.com |
-| 109 | Aimee Ukasick | 0 | +0 | 0 | - | 1 | gmail.com |
-| 110 | Akansha Dua | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 111 | Al Rotundo | 0 | +0 | 0 | - | 1 | att.com |
-| 112 | Alan Weinstock | 0 | +0 | 0 | - | 2 | att.com |
-| 113 | Aleksandr Taranov | 0 | +0 | 0 | - | 2 | telekom.com |
-| 114 | Aleksandra Maciaga | 0 | +0 | 0 | - | 6 | nokia.com |
-| 115 | Alex | 0 | +0 | 0 | - | 1 | telecomitalia.it |
-| 116 | Alex Shatov | 0 | +0 | 0 | - | 3 | att.com |
-| 117 | Alexander Mazuruk | 0 | +0 | 0 | - | 14 | samsung.com |
-| 118 | Alexey Aleynikov | 0 | +0 | 0 | - | 2 | telekom.com |
-| 119 | Alexey Sandler | 0 | +0 | 0 | - | 1 | att.com |
-| 120 | Alexis de Talhouët | 0 | +0 | 0 | - | 18 | gmail.com |
-| 121 | Alexis de Talhouët | 0 | +0 | 0 | - | 4 | bell.ca |
-| 122 | Almog Laktivi | 0 | +0 | 0 | - | 2 | att.com |
-| 123 | Amaresh Kumar | 0 | +0 | 0 | - | 2 | ibm.com |
+| 102 | Ahila | 0 | +0 | 0 | - | 3 | wipro.com |
+| 103 | Ahmed | 0 | +0 | 0 | - | 1 | yahoo.com |
+| 104 | Ahmed Abbas | 0 | +0 | 0 | - | 3 | orange.com |
+| 105 | Ahmed Alabulrahman | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 106 | Ahmedeldeeb50 | 0 | +0 | 0 | - | 2 | orange.com |
+| 107 | Aijana Schumann | 0 | +0 | 0 | - | 2 | highstreet-technologies.com |
+| 108 | Aimee Ukasick | 0 | +0 | 0 | - | 1 | gmail.com |
+| 109 | Akansha Dua | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 110 | Al Rotundo | 0 | +0 | 0 | - | 1 | att.com |
+| 111 | Alan Weinstock | 0 | +0 | 0 | - | 2 | att.com |
+| 112 | Aleksandr Taranov | 0 | +0 | 0 | - | 2 | telekom.com |
+| 113 | Aleksandra Maciaga | 0 | +0 | 0 | - | 6 | nokia.com |
+| 114 | Alex | 0 | +0 | 0 | - | 1 | telecomitalia.it |
+| 115 | Alex Shatov | 0 | +0 | 0 | - | 3 | att.com |
+| 116 | Alexander Mazuruk | 0 | +0 | 0 | - | 14 | samsung.com |
+| 117 | Alexey Aleynikov | 0 | +0 | 0 | - | 2 | telekom.com |
+| 118 | Alexey Sandler | 0 | +0 | 0 | - | 1 | att.com |
+| 119 | Alexis de Talhouët | 0 | +0 | 0 | - | 18 | gmail.com |
+| 120 | Alexis de Talhouët | 0 | +0 | 0 | - | 4 | bell.ca |
+| 121 | Almog Laktivi | 0 | +0 | 0 | - | 2 | att.com |
+| 122 | Amaresh Kumar | 0 | +0 | 0 | - | 2 | ibm.com |
+| 123 | Amichai Hemli | 0 | +0 | 0 | - | 1 | att.com |
 | 124 | Amichai Hemli | 0 | +0 | 0 | - | 1 | att.com |
-| 125 | Amichai Hemli | 0 | +0 | 0 | - | 1 | att.com |
-| 126 | Amir Skalka | 0 | +0 | 0 | - | 1 | att.com |
-| 127 | Amjath khan | 0 | +0 | 0 | - | 3 | att.com |
-| 128 | Amrita Girase | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 129 | Amy Zwarico | 0 | +0 | 0 | - | 2 | att.com |
-| 130 | Anand | 0 | +0 | 0 | - | 1 | att.com |
-| 131 | Anaël Closson | 0 | +0 | 0 | - | 16 | att.com |
-| 132 | Andrea Visnyei | 0 | +0 | 0 | - | 1 | nokia.com |
-| 133 | Andrei Kojukhov | 0 | +0 | 0 | - | 2 | gmail.com |
-| 134 | Andrei_Barcovschi | 0 | +0 | 0 | - | 3 | ericsson.com |
-| 135 | Andrew Gauld | 0 | +0 | 0 | - | 4 | att.com |
-| 136 | Andrew Gauld | 0 | +0 | 0 | - | 2 | att.com |
-| 137 | Andrew Muller | 0 | +0 | 0 | - | 1 | att.com |
-| 138 | AndrewLamb | 0 | +0 | 0 | - | 4 | est.tech |
-| 139 | Andy Mayer | 0 | +0 | 0 | - | 2 | att.com |
-| 140 | AndyWalshe | 0 | +0 | 0 | - | 5 | est.tech |
-| 141 | Aniello Paolo Malinconico | 0 | +0 | 0 | - | 2 | telecomitalia.it |
-| 142 | Anisha Kumar | 0 | +0 | 0 | - | 1 | intel.com |
-| 143 | Ankit-Huawei | 0 | +0 | 0 | - | 1 | huawei.com |
-| 144 | Annick Boghossian | 0 | +0 | 0 | - | 2 | telstra.com |
-| 145 | Arash Hekmat | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 146 | Aravindhan123 | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 147 | Areli, Fuss (af732p) | 0 | +0 | 0 | - | 6 | att.com |
-| 148 | Aria, Lalena (la505a) | 0 | +0 | 0 | - | 2 | att.com |
-| 149 | Aric Gardner | 0 | +0 | 0 | - | 14 | linuxfoundation.org |
-| 150 | Ariel Kenan | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 151 | Ariel Kenan | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 152 | Arindam Mondal | 0 | +0 | 0 | - | 11 | samsung.com |
-| 153 | Arjun M Gupta | 0 | +0 | 0 | - | 1 | fujitsu.com |
-| 154 | Arne Chrestin | 0 | +0 | 0 | - | 3 | telekom.de |
-| 155 | Arnel Pajarillo | 0 | +0 | 0 | - | 1 | att.com |
-| 156 | Artem Naluzhnyy | 0 | +0 | 0 | - | 4 | samsung.com |
-| 157 | Arthur Martella | 0 | +0 | 0 | - | 6 | att.com |
-| 158 | Arthur Martella | 0 | +0 | 0 | - | 7 | att.com |
-| 159 | Arthur Martella | 0 | +0 | 0 | - | 2 | att.com |
-| 160 | Arul.Nambi | 0 | +0 | 0 | - | 11 | amdocs.com |
-| 161 | Arun Arora | 0 | +0 | 0 | - | 3 | vmware.com |
-| 162 | Arun Gupta | 0 | +0 | 0 | - | 2 | att.com |
-| 163 | Arun S. Yerra | 0 | +0 | 0 | - | 3 | huawei.com |
-| 164 | Arundathi Patil | 0 | +0 | 0 | - | 7 | ibm.com |
-| 165 | Ashish Singh | 0 | +0 | 0 | - | 1 | gmail.com |
-| 166 | Ashoka M G | 0 | +0 | 0 | - | 1 | arris.com |
-| 167 | Ashwin Sharma | 0 | +0 | 0 | - | 3 | att.com |
+| 125 | Amir Skalka | 0 | +0 | 0 | - | 1 | att.com |
+| 126 | Amjath khan | 0 | +0 | 0 | - | 3 | att.com |
+| 127 | Amrita Girase | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 128 | Amy Zwarico | 0 | +0 | 0 | - | 2 | att.com |
+| 129 | Anand | 0 | +0 | 0 | - | 1 | att.com |
+| 130 | Anaël Closson | 0 | +0 | 0 | - | 16 | att.com |
+| 131 | Andrea Visnyei | 0 | +0 | 0 | - | 1 | nokia.com |
+| 132 | Andrei Kojukhov | 0 | +0 | 0 | - | 2 | gmail.com |
+| 133 | Andrei_Barcovschi | 0 | +0 | 0 | - | 3 | ericsson.com |
+| 134 | Andrew Gauld | 0 | +0 | 0 | - | 4 | att.com |
+| 135 | Andrew Gauld | 0 | +0 | 0 | - | 2 | att.com |
+| 136 | Andrew Muller | 0 | +0 | 0 | - | 1 | att.com |
+| 137 | AndrewLamb | 0 | +0 | 0 | - | 4 | est.tech |
+| 138 | Andy Mayer | 0 | +0 | 0 | - | 2 | att.com |
+| 139 | AndyWalshe | 0 | +0 | 0 | - | 5 | est.tech |
+| 140 | Aniello Paolo Malinconico | 0 | +0 | 0 | - | 2 | telecomitalia.it |
+| 141 | Anisha Kumar | 0 | +0 | 0 | - | 1 | intel.com |
+| 142 | Ankit-Huawei | 0 | +0 | 0 | - | 1 | huawei.com |
+| 143 | Annick Boghossian | 0 | +0 | 0 | - | 2 | telstra.com |
+| 144 | Arash Hekmat | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 145 | Aravindhan123 | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 146 | Areli, Fuss (af732p) | 0 | +0 | 0 | - | 6 | att.com |
+| 147 | Aria, Lalena (la505a) | 0 | +0 | 0 | - | 2 | att.com |
+| 148 | Aric Gardner | 0 | +0 | 0 | - | 14 | linuxfoundation.org |
+| 149 | Ariel Kenan | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 150 | Ariel Kenan | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 151 | Arindam Mondal | 0 | +0 | 0 | - | 11 | samsung.com |
+| 152 | Arjun M Gupta | 0 | +0 | 0 | - | 1 | fujitsu.com |
+| 153 | Arne Chrestin | 0 | +0 | 0 | - | 3 | telekom.de |
+| 154 | Arnel Pajarillo | 0 | +0 | 0 | - | 1 | att.com |
+| 155 | Artem Naluzhnyy | 0 | +0 | 0 | - | 4 | samsung.com |
+| 156 | Arthur Martella | 0 | +0 | 0 | - | 6 | att.com |
+| 157 | Arthur Martella | 0 | +0 | 0 | - | 7 | att.com |
+| 158 | Arthur Martella | 0 | +0 | 0 | - | 2 | att.com |
+| 159 | Arul.Nambi | 0 | +0 | 0 | - | 11 | amdocs.com |
+| 160 | Arun Arora | 0 | +0 | 0 | - | 3 | vmware.com |
+| 161 | Arun Gupta | 0 | +0 | 0 | - | 2 | att.com |
+| 162 | Arun S. Yerra | 0 | +0 | 0 | - | 3 | huawei.com |
+| 163 | Arundathi Patil | 0 | +0 | 0 | - | 7 | ibm.com |
+| 164 | Ashish Singh | 0 | +0 | 0 | - | 1 | gmail.com |
+| 165 | Ashoka M G | 0 | +0 | 0 | - | 1 | arris.com |
+| 166 | Ashwin Sharma | 0 | +0 | 0 | - | 3 | att.com |
+| 167 | Ashwini | 0 | +0 | 0 | - | 5 | arris.com |
 | 168 | Assaf, Shay (sa726r) | 0 | +0 | 0 | - | 2 | att.com |
 | 169 | Atif Husain | 0 | +0 | 0 | - | 2 | telstra.com |
 | 170 | Attaranasl, Salma (sa669h) | 0 | +0 | 0 | - | 3 | amdocs.com |
@@ -341,8 +341,8 @@
 | 193 | BharathS24 | 0 | +0 | 0 | - | 1 | techmahindra.com |
 | 194 | Bhatt, Prema | 0 | +0 | 0 | - | 1 | att.com |
 | 195 | Bilal A | 0 | +0 | 0 | - | 10 | att.com |
-| 196 | Bin Hu | 0 | +0 | 0 | - | 4 | att.com |
-| 197 | Bin Hu | 0 | +0 | 0 | - | 2 | att.com |
+| 196 | Bin Hu | 0 | +0 | 0 | - | 2 | att.com |
+| 197 | Bin Hu | 0 | +0 | 0 | - | 4 | att.com |
 | 198 | Bin Lu | 0 | +0 | 0 | - | 1 | arm.com |
 | 199 | Bin Sun | 0 | +0 | 0 | - | 5 | vmware.com |
 | 200 | Bin Yang | 0 | +0 | 0 | - | 12 | windriver.com |
@@ -551,805 +551,805 @@
 | 403 | Hengye | 0 | +0 | 0 | - | 10 | est.tech |
 | 404 | Henrik Andersson | 0 | +0 | 0 | - | 8 | est.tech |
 | 405 | Henry.Sun | 0 | +0 | 0 | - | 5 | est.tech |
-| 406 | Hesam Rahimi | 0 | +0 | 0 | - | 7 | huawei.com |
-| 407 | Hong Guan | 0 | +0 | 0 | - | 4 | att.com |
-| 408 | Hong Guan | 0 | +0 | 0 | - | 2 | att.com |
-| 409 | Hong Hui Xiao | 0 | +0 | 0 | - | 3 | yeah.net |
-| 410 | Houa Yang | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 411 | Huabing Zhao | 0 | +0 | 0 | - | 8 | gmail.com |
-| 412 | HuabingZhao | 0 | +0 | 0 | - | 8 | zte.com.cn |
-| 413 | Huang Cheng | 0 | +0 | 0 | - | 3 | huawei.com |
-| 414 | Hui Deng | 0 | +0 | 0 | - | 2 | huawei.com |
-| 415 | IanHowell | 0 | +0 | 0 | - | 1 | att.com |
-| 416 | Idan Amit | 0 | +0 | 0 | - | 10 | att.com |
-| 417 | Idan Amit | 0 | +0 | 0 | - | 3 | att.com |
-| 418 | Igor D.C | 0 | +0 | 0 | - | 1 | intel.com |
-| 419 | Igor Dysko | 0 | +0 | 0 | - | 7 | orange.com |
-| 420 | Ikram Ikramullah | 0 | +0 | 0 | - | 5 | att.com |
-| 421 | Ikramullah, Ikram (fi241c) | 0 | +0 | 0 | - | 2 | att.com |
-| 422 | Ilana Paktor | 0 | +0 | 0 | - | 5 | amdocs.com |
-| 423 | Illia Halych | 0 | +0 | 0 | - | 4 | t-mobile.pl |
-| 424 | Instrumental | 0 | +0 | 0 | - | 6 | att.com |
-| 425 | Instrumental | 0 | +0 | 0 | - | 2 | gathman.org |
+| 406 | Herb Patten | 0 | +0 | 0 | - | 3 | att.com |
+| 407 | Hesam Rahimi | 0 | +0 | 0 | - | 7 | huawei.com |
+| 408 | Hong Guan | 0 | +0 | 0 | - | 4 | att.com |
+| 409 | Hong Guan | 0 | +0 | 0 | - | 2 | att.com |
+| 410 | Hong Hui Xiao | 0 | +0 | 0 | - | 3 | yeah.net |
+| 411 | Houa Yang | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 412 | Huabing Zhao | 0 | +0 | 0 | - | 8 | gmail.com |
+| 413 | HuabingZhao | 0 | +0 | 0 | - | 8 | zte.com.cn |
+| 414 | Huang Cheng | 0 | +0 | 0 | - | 3 | huawei.com |
+| 415 | Hui Deng | 0 | +0 | 0 | - | 2 | huawei.com |
+| 416 | IanHowell | 0 | +0 | 0 | - | 1 | att.com |
+| 417 | Idan Amit | 0 | +0 | 0 | - | 10 | att.com |
+| 418 | Idan Amit | 0 | +0 | 0 | - | 3 | att.com |
+| 419 | Igor D.C | 0 | +0 | 0 | - | 1 | intel.com |
+| 420 | Igor Dysko | 0 | +0 | 0 | - | 7 | orange.com |
+| 421 | Ikram Ikramullah | 0 | +0 | 0 | - | 5 | att.com |
+| 422 | Ikramullah, Ikram (fi241c) | 0 | +0 | 0 | - | 2 | att.com |
+| 423 | Ilana Paktor | 0 | +0 | 0 | - | 5 | amdocs.com |
+| 424 | Illia Halych | 0 | +0 | 0 | - | 4 | t-mobile.pl |
+| 425 | Instrumental | 0 | +0 | 0 | - | 6 | att.com |
 | 426 | Instrumental | 0 | +0 | 0 | - | 3 | gathman.org |
-| 427 | Isaac Manuel Raj | 0 | +0 | 0 | - | 5 | huawei.com |
-| 428 | Isaku Yamahata | 0 | +0 | 0 | - | 1 | intel.com |
-| 429 | Israel Lavi | 0 | +0 | 0 | - | 2 | att.com |
+| 427 | Instrumental | 0 | +0 | 0 | - | 2 | gathman.org |
+| 428 | Isaac Manuel Raj | 0 | +0 | 0 | - | 5 | huawei.com |
+| 429 | Isaku Yamahata | 0 | +0 | 0 | - | 1 | intel.com |
 | 430 | Israel Lavi | 0 | +0 | 0 | - | 1 | att.com |
-| 431 | Israel Lavi | 0 | +0 | 0 | - | 3 | att.com |
-| 432 | Itay Hassid | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 433 | Itohan | 0 | +0 | 0 | - | 4 | intel.com |
-| 434 | Ittay Stern | 0 | +0 | 0 | - | 6 | att.com |
-| 435 | Izabela Zawadzka | 0 | +0 | 0 | - | 2 | nokia.com |
-| 436 | Jack Lucas | 0 | +0 | 0 | - | 7 | att.com |
-| 437 | Jack Lucas | 0 | +0 | 0 | - | 12 | sonoris.net |
-| 438 | JakobKrieg | 0 | +0 | 0 | - | 2 | bcmsolutions.de |
-| 439 | Jakub Dominik | 0 | +0 | 0 | - | 1 | samsung.com |
-| 440 | Jakub Dudycz | 0 | +0 | 0 | - | 8 | nokia.com |
-| 441 | Jakub Dudycz | 0 | +0 | 0 | - | 1 | nokia.com |
-| 442 | Jakub Latusek | 0 | +0 | 0 | - | 2 | samsung.com |
-| 443 | Jakub Latusek | 0 | +0 | 0 | - | 1 | gmail.com |
-| 444 | Jakub Zieba | 0 | +0 | 0 | - | 3 | nokia.com |
-| 445 | James Guistwite | 0 | +0 | 0 | - | 2 | iconectiv.com |
-| 446 | James MacNider | 0 | +0 | 0 | - | 7 | amdocs.com |
-| 447 | Jamil Chawki | 0 | +0 | 0 | - | 1 | orange.com |
-| 448 | Jan Benedikt | 0 | +0 | 0 | - | 2 | samsung.com |
-| 449 | Jan Malkiewicz | 0 | +0 | 0 | - | 8 | nokia.com |
-| 450 | Jean-Yves Geury | 0 | +0 | 0 | - | 3 | nokia.com |
-| 451 | Jennie Jia | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 452 | Jeremy Phelps | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
-| 453 | Jeremy Wolf | 0 | +0 | 0 | - | 1 | att.com |
-| 454 | Jerome Doucerain | 0 | +0 | 0 | - | 5 | bell.ca |
-| 455 | Jerry Flood | 0 | +0 | 0 | - | 6 | att.com |
-| 456 | Jerry Flood | 0 | +0 | 0 | - | 5 | att.com |
-| 457 | JerzySzachniewicz | 0 | +0 | 0 | - | 7 | nokia.com |
-| 458 | Jim Hahn | 0 | +0 | 0 | - | 21 | att.com |
-| 459 | Jim Hahn | 0 | +0 | 0 | - | 1 | gmail.com |
-| 460 | Jimmy Forsyth | 0 | +0 | 0 | - | 18 | att.com |
-| 461 | Jithendra | 0 | +0 | 0 | - | 1 | wipro.com |
-| 462 | Joanna Jeremicz | 0 | +0 | 0 | - | 19 | nokia.com |
-| 463 | Joey Sullivan | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 464 | John Franey | 0 | +0 | 0 | - | 4 | att.com |
-| 465 | John McClung | 0 | +0 | 0 | - | 1 | att.com |
-| 466 | Johnson Li | 0 | +0 | 0 | - | 1 | intel.com |
-| 467 | Jonathan Platt | 0 | +0 | 0 | - | 4 | att.com |
-| 468 | Jorge Hernandez | 0 | +0 | 0 | - | 13 | att.com |
-| 469 | Joseph Chou | 0 | +0 | 0 | - | 4 | att.com |
-| 470 | Joseph O'Leary | 0 | +0 | 0 | - | 20 | est.tech |
-| 471 | JosephKeenan | 0 | +0 | 0 | - | 2 | est.tech |
-| 472 | Joshua Reich | 0 | +0 | 0 | - | 4 | att.com |
-| 473 | Joss Armstrong | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 474 | Jozsef Csongvai | 0 | +0 | 0 | - | 10 | bell.ca |
-| 475 | Juhi Arora | 0 | +0 | 0 | - | 1 | bell.ca |
-| 476 | Julien Barbot | 0 | +0 | 0 | - | 6 | barbot.org |
-| 477 | Julien Fontaine | 0 | +0 | 0 | - | 4 | bell.ca |
-| 478 | JulienBe | 0 | +0 | 0 | - | 4 | att.com |
-| 479 | JulienBe | 0 | +0 | 0 | - | 6 | att.com |
-| 480 | Jun (Nicolas) Hu | 0 | +0 | 0 | - | 3 | att.com |
-| 481 | Jun (Nicolas) Hu | 0 | +0 | 0 | - | 1 | att.com |
-| 482 | JunfengWang | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 483 | Junyi | 0 | +0 | 0 | - | 4 | foxmail.com |
-| 484 | JvD_Ericsson | 0 | +0 | 0 | - | 7 | est.tech |
-| 485 | Kai | 0 | +0 | 0 | - | 4 | chinamobile.com |
-| 486 | Kailun Qin | 0 | +0 | 0 | - | 2 | intel.com |
-| 487 | Kajur, Venkata Harish (vk250x) | 0 | +0 | 0 | - | 2 | att.com |
-| 488 | Kalkere Ramesh, Sharan | 0 | +0 | 0 | - | 2 | att.com |
-| 489 | Kalkere Ramesh, Sharan (sk720x) | 0 | +0 | 0 | - | 3 | att.com |
-| 490 | Kanagaraj Manickam | 0 | +0 | 0 | - | 6 | gmail.com |
-| 491 | Kanagaraj Manickam | 0 | +0 | 0 | - | 1 | gamil.com |
-| 492 | Kanagaraj Manickam k00365106 | 0 | +0 | 0 | - | 10 | huawei.com |
-| 493 | Kang Xi | 0 | +0 | 0 | - | 2 | huawei.com |
-| 494 | Kartik Hegde | 0 | +0 | 0 | - | 1 | techmahindra.com |
-| 495 | Katarzyna Wasiel | 0 | +0 | 0 | - | 2 | nokia.com |
-| 496 | Kate Hsuan | 0 | +0 | 0 | - | 1 | redhat.com |
-| 497 | Kate Hsuan | 0 | +0 | 0 | - | 3 | qct.io |
-| 498 | Kavitha P | 0 | +0 | 0 | - | 2 | aarnanetworks.com |
-| 499 | Kedar Ambekar | 0 | +0 | 0 | - | 2 | t-systems.com |
-| 500 | Keighron, Lori (lk2924) | 0 | +0 | 0 | - | 1 | att.com |
+| 431 | Israel Lavi | 0 | +0 | 0 | - | 2 | att.com |
+| 432 | Israel Lavi | 0 | +0 | 0 | - | 3 | att.com |
+| 433 | Itay Hassid | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 434 | Itohan | 0 | +0 | 0 | - | 4 | intel.com |
+| 435 | Ittay Stern | 0 | +0 | 0 | - | 6 | att.com |
+| 436 | Izabela Zawadzka | 0 | +0 | 0 | - | 2 | nokia.com |
+| 437 | Jack Lucas | 0 | +0 | 0 | - | 7 | att.com |
+| 438 | Jack Lucas | 0 | +0 | 0 | - | 12 | sonoris.net |
+| 439 | JakobKrieg | 0 | +0 | 0 | - | 2 | bcmsolutions.de |
+| 440 | Jakub Dominik | 0 | +0 | 0 | - | 1 | samsung.com |
+| 441 | Jakub Dudycz | 0 | +0 | 0 | - | 8 | nokia.com |
+| 442 | Jakub Dudycz | 0 | +0 | 0 | - | 1 | nokia.com |
+| 443 | Jakub Latusek | 0 | +0 | 0 | - | 2 | samsung.com |
+| 444 | Jakub Latusek | 0 | +0 | 0 | - | 1 | gmail.com |
+| 445 | Jakub Zieba | 0 | +0 | 0 | - | 3 | nokia.com |
+| 446 | James Guistwite | 0 | +0 | 0 | - | 2 | iconectiv.com |
+| 447 | James MacNider | 0 | +0 | 0 | - | 7 | amdocs.com |
+| 448 | Jamil Chawki | 0 | +0 | 0 | - | 1 | orange.com |
+| 449 | Jan Benedikt | 0 | +0 | 0 | - | 2 | samsung.com |
+| 450 | Jan Malkiewicz | 0 | +0 | 0 | - | 8 | nokia.com |
+| 451 | Jean-Yves Geury | 0 | +0 | 0 | - | 3 | nokia.com |
+| 452 | Jennie Jia | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 453 | Jeremy Phelps | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
+| 454 | Jeremy Wolf | 0 | +0 | 0 | - | 1 | att.com |
+| 455 | Jerome Doucerain | 0 | +0 | 0 | - | 5 | bell.ca |
+| 456 | Jerry Flood | 0 | +0 | 0 | - | 6 | att.com |
+| 457 | Jerry Flood | 0 | +0 | 0 | - | 5 | att.com |
+| 458 | JerzySzachniewicz | 0 | +0 | 0 | - | 7 | nokia.com |
+| 459 | Jim Hahn | 0 | +0 | 0 | - | 21 | att.com |
+| 460 | Jim Hahn | 0 | +0 | 0 | - | 1 | gmail.com |
+| 461 | Jimmy Forsyth | 0 | +0 | 0 | - | 18 | att.com |
+| 462 | Jithendra | 0 | +0 | 0 | - | 1 | wipro.com |
+| 463 | Joanna Jeremicz | 0 | +0 | 0 | - | 19 | nokia.com |
+| 464 | Joey Sullivan | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 465 | John Franey | 0 | +0 | 0 | - | 4 | att.com |
+| 466 | John McClung | 0 | +0 | 0 | - | 1 | att.com |
+| 467 | Johnson Li | 0 | +0 | 0 | - | 1 | intel.com |
+| 468 | Jonathan Platt | 0 | +0 | 0 | - | 4 | att.com |
+| 469 | Jorge Hernandez | 0 | +0 | 0 | - | 13 | att.com |
+| 470 | Joseph Chou | 0 | +0 | 0 | - | 4 | att.com |
+| 471 | Joseph O'Leary | 0 | +0 | 0 | - | 20 | est.tech |
+| 472 | JosephKeenan | 0 | +0 | 0 | - | 2 | est.tech |
+| 473 | Joshua Reich | 0 | +0 | 0 | - | 4 | att.com |
+| 474 | Joss Armstrong | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 475 | Jozsef Csongvai | 0 | +0 | 0 | - | 10 | bell.ca |
+| 476 | Juhi Arora | 0 | +0 | 0 | - | 1 | bell.ca |
+| 477 | Julien Barbot | 0 | +0 | 0 | - | 6 | barbot.org |
+| 478 | Julien Fontaine | 0 | +0 | 0 | - | 4 | bell.ca |
+| 479 | JulienBe | 0 | +0 | 0 | - | 4 | att.com |
+| 480 | JulienBe | 0 | +0 | 0 | - | 6 | att.com |
+| 481 | Jun (Nicolas) Hu | 0 | +0 | 0 | - | 3 | att.com |
+| 482 | Jun (Nicolas) Hu | 0 | +0 | 0 | - | 1 | att.com |
+| 483 | JunfengWang | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 484 | Junyi | 0 | +0 | 0 | - | 4 | foxmail.com |
+| 485 | JvD_Ericsson | 0 | +0 | 0 | - | 7 | est.tech |
+| 486 | Kai | 0 | +0 | 0 | - | 4 | chinamobile.com |
+| 487 | Kailun Qin | 0 | +0 | 0 | - | 2 | intel.com |
+| 488 | Kajur, Venkata Harish (vk250x) | 0 | +0 | 0 | - | 2 | att.com |
+| 489 | Kalkere Ramesh, Sharan | 0 | +0 | 0 | - | 2 | att.com |
+| 490 | Kalkere Ramesh, Sharan (sk720x) | 0 | +0 | 0 | - | 3 | att.com |
+| 491 | Kanagaraj Manickam | 0 | +0 | 0 | - | 6 | gmail.com |
+| 492 | Kanagaraj Manickam | 0 | +0 | 0 | - | 1 | gamil.com |
+| 493 | Kanagaraj Manickam k00365106 | 0 | +0 | 0 | - | 10 | huawei.com |
+| 494 | Kang Xi | 0 | +0 | 0 | - | 2 | huawei.com |
+| 495 | Kartik Hegde | 0 | +0 | 0 | - | 1 | techmahindra.com |
+| 496 | Katarzyna Wasiel | 0 | +0 | 0 | - | 2 | nokia.com |
+| 497 | Kate Hsuan | 0 | +0 | 0 | - | 1 | redhat.com |
+| 498 | Kate Hsuan | 0 | +0 | 0 | - | 3 | qct.io |
+| 499 | Kavitha P | 0 | +0 | 0 | - | 2 | aarnanetworks.com |
+| 500 | Kedar Ambekar | 0 | +0 | 0 | - | 2 | t-systems.com |
 | 501 | Keighron, Lori (lk2924) | 0 | +0 | 0 | - | 1 | att.com |
-| 502 | Kenny Paul | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 503 | Keong Lim | 0 | +0 | 0 | - | 9 | huawei.com |
-| 504 | Keren Joseph | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 505 | Kevin McKiou | 0 | +0 | 0 | - | 2 | att.com |
-| 506 | Kevin Scaggs | 0 | +0 | 0 | - | 2 | att.com |
-| 507 | Kiran | 0 | +0 | 0 | - | 3 | t-systems.com |
-| 508 | Kiran Kamineni | 0 | +0 | 0 | - | 10 | intel.com |
-| 509 | Kishore Reddy Dwaram | 0 | +0 | 0 | - | 1 | att.com |
-| 510 | Kishore Reddy, Gujja (kg811t) | 0 | +0 | 0 | - | 1 | att.com |
+| 502 | Keighron, Lori (lk2924) | 0 | +0 | 0 | - | 1 | att.com |
+| 503 | Kenny Paul | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 504 | Keong Lim | 0 | +0 | 0 | - | 9 | huawei.com |
+| 505 | Keren Joseph | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 506 | Kevin McKiou | 0 | +0 | 0 | - | 2 | att.com |
+| 507 | Kevin Scaggs | 0 | +0 | 0 | - | 2 | att.com |
+| 508 | Kiran | 0 | +0 | 0 | - | 3 | t-systems.com |
+| 509 | Kiran Kamineni | 0 | +0 | 0 | - | 10 | intel.com |
+| 510 | Kishore Reddy Dwaram | 0 | +0 | 0 | - | 1 | att.com |
 | 511 | Kishore Reddy, Gujja (kg811t) | 0 | +0 | 0 | - | 1 | att.com |
-| 512 | Konrad Bańka | 0 | +0 | 0 | - | 9 | samsung.com |
-| 513 | Konrad Bańka | 0 | +0 | 0 | - | 1 | gmail.com |
-| 514 | Konstantinos Kanonakis | 0 | +0 | 0 | - | 1 | huawei.com |
-| 515 | Kotagiri, Ramprasad (rp5662) | 0 | +0 | 0 | - | 1 | att.com |
-| 516 | Kotta, Shireesha (sk434m) | 0 | +0 | 0 | - | 2 | att.com |
-| 517 | Krishna | 0 | +0 | 0 | - | 2 | stl.tech |
-| 518 | Krishnakumar Jinka | 0 | +0 | 0 | - | 6 | samsung.com |
-| 519 | Krysiak Adam Gabriel | 0 | +0 | 0 | - | 8 | nokia.com |
-| 520 | Krzysztof Bijakowski | 0 | +0 | 0 | - | 1 | cloudify.co |
-| 521 | Krzysztof Bijakowski | 0 | +0 | 0 | - | 1 | gigaspaces.com |
-| 522 | Krzysztof Frukacz | 0 | +0 | 0 | - | 1 | gigaspaces.com |
-| 523 | Krzysztof Gajewski | 0 | +0 | 0 | - | 9 | nokia.com |
-| 524 | Krzysztof Kuzmicki | 0 | +0 | 0 | - | 19 | nokia.com |
-| 525 | Krzysztof Kwiecien | 0 | +0 | 0 | - | 3 | orange.com |
-| 526 | Krzysztof Opasiak | 0 | +0 | 0 | - | 23 | samsung.com |
-| 527 | Kuldip Rai | 0 | +0 | 0 | - | 1 | bell.ca |
-| 528 | Kuralamudhan Ramakrishnan | 0 | +0 | 0 | - | 2 | intel.com |
-| 529 | Kyle Stewart | 0 | +0 | 0 | - | 1 | ericsson.com |
-| 530 | LF Jenkins CI | 0 | +0 | 0 | - | 90 | linuxfoundation.org |
-| 531 | LaMont, William (wl2432) | 0 | +0 | 0 | - | 6 | att.com |
+| 512 | Kishore Reddy, Gujja (kg811t) | 0 | +0 | 0 | - | 1 | att.com |
+| 513 | Konrad Bańka | 0 | +0 | 0 | - | 9 | samsung.com |
+| 514 | Konrad Bańka | 0 | +0 | 0 | - | 1 | gmail.com |
+| 515 | Konstantinos Kanonakis | 0 | +0 | 0 | - | 1 | huawei.com |
+| 516 | Kotagiri, Ramprasad (rp5662) | 0 | +0 | 0 | - | 1 | att.com |
+| 517 | Kotta, Shireesha (sk434m) | 0 | +0 | 0 | - | 2 | att.com |
+| 518 | Krishna | 0 | +0 | 0 | - | 2 | stl.tech |
+| 519 | Krishnakumar Jinka | 0 | +0 | 0 | - | 6 | samsung.com |
+| 520 | Krysiak Adam Gabriel | 0 | +0 | 0 | - | 8 | nokia.com |
+| 521 | Krzysztof Bijakowski | 0 | +0 | 0 | - | 1 | cloudify.co |
+| 522 | Krzysztof Bijakowski | 0 | +0 | 0 | - | 1 | gigaspaces.com |
+| 523 | Krzysztof Frukacz | 0 | +0 | 0 | - | 1 | gigaspaces.com |
+| 524 | Krzysztof Gajewski | 0 | +0 | 0 | - | 9 | nokia.com |
+| 525 | Krzysztof Kuzmicki | 0 | +0 | 0 | - | 19 | nokia.com |
+| 526 | Krzysztof Kwiecien | 0 | +0 | 0 | - | 3 | orange.com |
+| 527 | Krzysztof Opasiak | 0 | +0 | 0 | - | 23 | samsung.com |
+| 528 | Kuldip Rai | 0 | +0 | 0 | - | 1 | bell.ca |
+| 529 | Kuralamudhan Ramakrishnan | 0 | +0 | 0 | - | 2 | intel.com |
+| 530 | Kyle Stewart | 0 | +0 | 0 | - | 1 | ericsson.com |
+| 531 | LF Jenkins CI | 0 | +0 | 0 | - | 90 | linuxfoundation.org |
 | 532 | LaMont, William (wl2432) | 0 | +0 | 0 | - | 4 | att.com |
-| 533 | Ladue, David (dl3158) | 0 | +0 | 0 | - | 3 | att.com |
-| 534 | Larry Sachs | 0 | +0 | 0 | - | 2 | intel.com |
-| 535 | Lasse Kaihlavirta | 0 | +0 | 0 | - | 16 | samsung.com |
-| 536 | Lathish | 0 | +0 | 0 | - | 10 | est.tech |
-| 537 | Lathishbabu Ganesan | 0 | +0 | 0 | - | 1 | ericsson.com |
-| 538 | Lee, Tian (tl5884) | 0 | +0 | 0 | - | 16 | amdocs.com |
-| 539 | Lee, Tian (tl5884) | 0 | +0 | 0 | - | 2 | att.com |
-| 540 | Leonard, Mark (ml401d) | 0 | +0 | 0 | - | 2 | att.com |
-| 541 | Leonardo Bellini | 0 | +0 | 0 | - | 2 | att.com |
-| 542 | LiZi | 0 | +0 | 0 | - | 7 | zte.com.cn |
-| 543 | LiamBurke | 0 | +0 | 0 | - | 3 | ericsson.com |
-| 544 | Liang Ding | 0 | +0 | 0 | - | 6 | intel.com |
-| 545 | Lianhao Lu | 0 | +0 | 0 | - | 8 | intel.com |
-| 546 | Liard Samuel | 0 | +0 | 0 | - | 3 | orange.com |
-| 547 | Liexiang Yue | 0 | +0 | 0 | - | 7 | chinamobile.com |
-| 548 | Lin, Jerry (jl319x) | 0 | +0 | 0 | - | 3 | att.com |
-| 549 | Lior Nachmias | 0 | +0 | 0 | - | 6 | att.com |
-| 550 | Lior Nachmias | 0 | +0 | 0 | - | 3 | att.com |
-| 551 | Lisa Revel | 0 | +0 | 0 | - | 1 | att.com |
-| 552 | Litao Gao | 0 | +0 | 0 | - | 2 | windriver.com |
-| 553 | Lo, WEI-TING(wl849v) | 0 | +0 | 0 | - | 1 | att.com |
-| 554 | Lorraine Welch | 0 | +0 | 0 | - | 4 | att.com |
-| 555 | Lott, Christopher (cl778h) | 0 | +0 | 0 | - | 1 | att.com |
-| 556 | Lovett, Trevor | 0 | +0 | 0 | - | 12 | att.com |
-| 557 | Lovett, Trevor (tl2972) | 0 | +0 | 0 | - | 2 | att.com |
-| 558 | Lucjan Bryndza | 0 | +0 | 0 | - | 6 | samsung.com |
-| 559 | Lucjan Bryndza | 0 | +0 | 0 | - | 2 | samsung.com |
-| 560 | Ludmila Schlegelova | 0 | +0 | 0 | - | 1 | telekom.com |
-| 561 | Luji7 | 0 | +0 | 0 | - | 5 | zte.com.cn |
-| 562 | Lukasz Muszkieta | 0 | +0 | 0 | - | 11 | nokia.com |
-| 563 | Lukasz Rajewski | 0 | +0 | 0 | - | 18 | orange.com |
-| 564 | Luke Gleeson | 0 | +0 | 0 | - | 3 | est.tech |
-| 565 | Luke Parker | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 566 | Lusheng Ji | 0 | +0 | 0 | - | 16 | att.com |
-| 567 | Lvbo163 | 0 | +0 | 0 | - | 6 | zte.com.cn |
-| 568 | M.Hosnidokht | 0 | +0 | 0 | - | 5 | yoppworks.com |
-| 569 | MD IRSHAD SHEIKH | 0 | +0 | 0 | - | 7 | huawei.com |
-| 570 | Maciej Lisowski | 0 | +0 | 0 | - | 3 | samsung.com |
-| 571 | Maciej Malewski | 0 | +0 | 0 | - | 7 | nokia.com |
-| 572 | Maciej Wejs | 0 | +0 | 0 | - | 4 | nokia.com |
-| 573 | Maciej Wereski | 0 | +0 | 0 | - | 2 | samsung.com |
-| 574 | Magnusen, Drew (dm741q) | 0 | +0 | 0 | - | 3 | att.com |
-| 575 | Maharajh, Robby (rx2202) | 0 | +0 | 0 | - | 4 | att.com |
-| 576 | Mahendra Raghuwanshi | 0 | +0 | 0 | - | 6 | amdocs.com |
-| 577 | Mahmoud Abdelhamid | 0 | +0 | 0 | - | 1 | orange.com |
-| 578 | Mahsa MonemMoharrer | 0 | +0 | 0 | - | 1 | gmail.com |
-| 579 | Malek | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 580 | Mamed Mamedov | 0 | +0 | 0 | - | 1 | telekom.com |
-| 581 | Mamtha | 0 | +0 | 0 | - | 1 | ibm.com |
-| 582 | Manamohan | 0 | +0 | 0 | - | 2 | techmahindra.com |
-| 583 | Mandar Sawant | 0 | +0 | 0 | - | 5 | att.com |
-| 584 | Mandeep Khinda | 0 | +0 | 0 | - | 6 | amdocs.com |
-| 585 | Mandeep Khinda | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 586 | Manish Kumar | 0 | +0 | 0 | - | 6 | gmail.com |
-| 587 | Manisha Aggarwal | 0 | +0 | 0 | - | 6 | att.com |
-| 588 | Manisha Aggarwal | 0 | +0 | 0 | - | 7 | att.com |
-| 589 | Manjeet Singh Bhatia | 0 | +0 | 0 | - | 1 | intel.com |
-| 590 | Manjunath Ranganathaiah | 0 | +0 | 0 | - | 5 | intel.com |
-| 591 | Manoj Marneni | 0 | +0 | 0 | - | 1 | att.com |
-| 592 | Manoop Talasila | 0 | +0 | 0 | - | 4 | att.com |
-| 593 | Manzon, Inna (im453s) | 0 | +0 | 0 | - | 3 | att.com |
-| 594 | Marat Salakhutdinov | 0 | +0 | 0 | - | 1 | bell.ca |
-| 595 | Marc-Alexandre Choquette | 0 | +0 | 0 | - | 2 | bell.ca |
-| 596 | Marcin Krasowski | 0 | +0 | 0 | - | 3 | samsung.com |
-| 597 | Marcin Migdal | 0 | +0 | 0 | - | 8 | nokia.com |
-| 598 | Marcin Przybysz | 0 | +0 | 0 | - | 8 | nokia.com |
-| 599 | Marcin Wilk | 0 | +0 | 0 | - | 2 | samsung.com |
-| 600 | Marco Platania | 0 | +0 | 0 | - | 12 | att.com |
-| 601 | Marcus Williams | 0 | +0 | 0 | - | 16 | intel.com |
-| 602 | Marek Wolczanski | 0 | +0 | 0 | - | 2 | cloudify.co |
-| 603 | Mariah Jacobs | 0 | +0 | 0 | - | 3 | intel.com |
-| 604 | Mariano Diaz | 0 | +0 | 0 | - | 2 | yoppworks.com |
-| 605 | Mariusz Sygnowski | 0 | +0 | 0 | - | 1 | nokia.com |
-| 606 | Mariusz Wagner | 0 | +0 | 0 | - | 5 | nokia.com |
-| 607 | Mark Tooski | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 608 | Mars Toktonaliev | 0 | +0 | 0 | - | 1 | nokia.com |
-| 609 | Martin Klozik | 0 | +0 | 0 | - | 4 | tieto.com |
-| 610 | Martin Ouimet | 0 | +0 | 0 | - | 2 | bell.ca |
-| 611 | Matej Babej | 0 | +0 | 0 | - | 2 | tieto.com |
-| 612 | Matej Klotton | 0 | +0 | 0 | - | 4 | pantheon.tech |
-| 613 | Matej Perina | 0 | +0 | 0 | - | 3 | pantheon.tech |
-| 614 | Mateusz Gołuchowski | 0 | +0 | 0 | - | 3 | nokia.com |
-| 615 | Mateusz Pilat | 0 | +0 | 0 | - | 4 | samsung.com |
-| 616 | Matt Welch | 0 | +0 | 0 | - | 1 | intel.com |
-| 617 | Matthew Davis | 0 | +0 | 0 | - | 1 | telstra.com |
-| 618 | MatthewHarffy | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 619 | Matthieu Cauffiez | 0 | +0 | 0 | - | 2 | bell.ca |
-| 620 | Matthieu Geerebaert | 0 | +0 | 0 | - | 6 | orange.com |
-| 621 | Matus Szabo | 0 | +0 | 0 | - | 2 | orange.com |
-| 622 | Max Benjamin | 0 | +0 | 0 | - | 3 | att.com |
-| 623 | May Lin | 0 | +0 | 0 | - | 1 | qct.io |
-| 624 | Mcblain, Thomas | 0 | +0 | 0 | - | 2 | att.com |
-| 625 | Mehreen Kaleem | 0 | +0 | 0 | - | 5 | fujitsu.com |
-| 626 | Mehreen Kaleem | 0 | +0 | 0 | - | 1 | wipro.com |
-| 627 | Mei Su | 0 | +0 | 0 | - | 1 | att.com |
-| 628 | Mei Su | 0 | +0 | 0 | - | 1 | email |
-| 629 | Merkel, Jeff | 0 | +0 | 0 | - | 2 | att.com |
-| 630 | Michael Arrastia | 0 | +0 | 0 | - | 5 | amdocs.com |
-| 631 | Michael Borokhovich | 0 | +0 | 0 | - | 1 | att.com |
-| 632 | Michael Hwang | 0 | +0 | 0 | - | 6 | att.com |
-| 633 | Michael Lando | 0 | +0 | 0 | - | 13 | att.com |
-| 634 | Michael Lando | 0 | +0 | 0 | - | 5 | att.com |
-| 635 | Michael Lando | 0 | +0 | 0 | - | 1 | att.com |
-| 636 | Michael Mokry | 0 | +0 | 0 | - | 6 | att.com |
-| 637 | Michael Mokry | 0 | +0 | 0 | - | 7 | att.com |
-| 638 | Michael O'Brien | 0 | +0 | 0 | - | 9 | amdocs.com |
-| 639 | Michael O'Brien | 0 | +0 | 0 | - | 4 | obrienlabs.org |
-| 640 | Michael Pruss | 0 | +0 | 0 | - | 2 | bell.ca |
-| 641 | Michael Shitrit | 0 | +0 | 0 | - | 2 | att.com |
-| 642 | MichaelMorris | 0 | +0 | 0 | - | 17 | est.tech |
-| 643 | Michal Banka | 0 | +0 | 0 | - | 17 | nokia.com |
-| 644 | Michal Chabiera | 0 | +0 | 0 | - | 3 | orange.com |
-| 645 | Michal Kabaj | 0 | +0 | 0 | - | 5 | nokia.com |
-| 646 | Michal Korman | 0 | +0 | 0 | - | 1 | nokia.com |
-| 647 | Michal Ptacek | 0 | +0 | 0 | - | 8 | samsung.com |
-| 648 | Michal Zegan | 0 | +0 | 0 | - | 2 | samsung.com |
-| 649 | Michał Grzesik | 0 | +0 | 0 | - | 1 | orange.com |
-| 650 | Mickael JEZEQUEL | 0 | +0 | 0 | - | 4 | orange.com |
-| 651 | Mike Babinski | 0 | +0 | 0 | - | 2 | att.com |
-| 652 | Mike Elliott | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 653 | Milan Verespej | 0 | +0 | 0 | - | 2 | samsung.com |
-| 654 | Milin | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 655 | Miroslav Los | 0 | +0 | 0 | - | 4 | pantheon.tech |
-| 656 | Mnushkin, Dmitry | 0 | +0 | 0 | - | 2 | att.com |
-| 657 | Mnushkin, Dmitry (dm4252) | 0 | +0 | 0 | - | 2 | att.com |
-| 658 | Modaboina, Kusumakumari (km583p) | 0 | +0 | 0 | - | 1 | att.com |
+| 533 | LaMont, William(wl2432) | 0 | +0 | 0 | - | 6 | att.com |
+| 534 | Ladue, David (dl3158) | 0 | +0 | 0 | - | 3 | att.com |
+| 535 | Larry Sachs | 0 | +0 | 0 | - | 2 | intel.com |
+| 536 | Lasse Kaihlavirta | 0 | +0 | 0 | - | 16 | samsung.com |
+| 537 | Lathish | 0 | +0 | 0 | - | 10 | est.tech |
+| 538 | Lathishbabu Ganesan | 0 | +0 | 0 | - | 1 | ericsson.com |
+| 539 | Lee, Tian (tl5884) | 0 | +0 | 0 | - | 16 | amdocs.com |
+| 540 | Lee, Tian (tl5884) | 0 | +0 | 0 | - | 2 | att.com |
+| 541 | Leonard, Mark (ml401d) | 0 | +0 | 0 | - | 2 | att.com |
+| 542 | Leonardo Bellini | 0 | +0 | 0 | - | 2 | att.com |
+| 543 | LiZi | 0 | +0 | 0 | - | 7 | zte.com.cn |
+| 544 | LiamBurke | 0 | +0 | 0 | - | 3 | ericsson.com |
+| 545 | Liang Ding | 0 | +0 | 0 | - | 6 | intel.com |
+| 546 | Lianhao Lu | 0 | +0 | 0 | - | 8 | intel.com |
+| 547 | Liard Samuel | 0 | +0 | 0 | - | 3 | orange.com |
+| 548 | Liexiang Yue | 0 | +0 | 0 | - | 7 | chinamobile.com |
+| 549 | Lin, Jerry (jl319x) | 0 | +0 | 0 | - | 3 | att.com |
+| 550 | Lior Nachmias | 0 | +0 | 0 | - | 6 | att.com |
+| 551 | Lior Nachmias | 0 | +0 | 0 | - | 3 | att.com |
+| 552 | Lisa Revel | 0 | +0 | 0 | - | 1 | att.com |
+| 553 | Litao Gao | 0 | +0 | 0 | - | 2 | windriver.com |
+| 554 | Lo, WEI-TING(wl849v) | 0 | +0 | 0 | - | 1 | att.com |
+| 555 | Lorraine Welch | 0 | +0 | 0 | - | 4 | att.com |
+| 556 | Lott, Christopher (cl778h) | 0 | +0 | 0 | - | 1 | att.com |
+| 557 | Lovett, Trevor | 0 | +0 | 0 | - | 12 | att.com |
+| 558 | Lovett, Trevor (tl2972) | 0 | +0 | 0 | - | 2 | att.com |
+| 559 | Lucjan Bryndza | 0 | +0 | 0 | - | 6 | samsung.com |
+| 560 | Lucjan Bryndza | 0 | +0 | 0 | - | 2 | samsung.com |
+| 561 | Ludmila Schlegelova | 0 | +0 | 0 | - | 1 | telekom.com |
+| 562 | Luji7 | 0 | +0 | 0 | - | 5 | zte.com.cn |
+| 563 | Lukasz Muszkieta | 0 | +0 | 0 | - | 11 | nokia.com |
+| 564 | Lukasz Rajewski | 0 | +0 | 0 | - | 18 | orange.com |
+| 565 | Luke Gleeson | 0 | +0 | 0 | - | 3 | est.tech |
+| 566 | Luke Parker | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 567 | Lusheng Ji | 0 | +0 | 0 | - | 16 | att.com |
+| 568 | Lvbo163 | 0 | +0 | 0 | - | 6 | zte.com.cn |
+| 569 | M.Hosnidokht | 0 | +0 | 0 | - | 5 | yoppworks.com |
+| 570 | MD IRSHAD SHEIKH | 0 | +0 | 0 | - | 7 | huawei.com |
+| 571 | Maciej Lisowski | 0 | +0 | 0 | - | 3 | samsung.com |
+| 572 | Maciej Malewski | 0 | +0 | 0 | - | 7 | nokia.com |
+| 573 | Maciej Wejs | 0 | +0 | 0 | - | 4 | nokia.com |
+| 574 | Maciej Wereski | 0 | +0 | 0 | - | 2 | samsung.com |
+| 575 | Magnusen, Drew (dm741q) | 0 | +0 | 0 | - | 3 | att.com |
+| 576 | Maharajh, Robby (rx2202) | 0 | +0 | 0 | - | 4 | att.com |
+| 577 | Mahendra Raghuwanshi | 0 | +0 | 0 | - | 6 | amdocs.com |
+| 578 | Mahmoud Abdelhamid | 0 | +0 | 0 | - | 1 | orange.com |
+| 579 | Mahsa MonemMoharrer | 0 | +0 | 0 | - | 1 | gmail.com |
+| 580 | Malek | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 581 | Mamed Mamedov | 0 | +0 | 0 | - | 1 | telekom.com |
+| 582 | Mamtha | 0 | +0 | 0 | - | 1 | ibm.com |
+| 583 | Manamohan | 0 | +0 | 0 | - | 2 | techmahindra.com |
+| 584 | Mandar Sawant | 0 | +0 | 0 | - | 5 | att.com |
+| 585 | Mandeep Khinda | 0 | +0 | 0 | - | 6 | amdocs.com |
+| 586 | Mandeep Khinda | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 587 | Manish Kumar | 0 | +0 | 0 | - | 6 | gmail.com |
+| 588 | Manisha Aggarwal | 0 | +0 | 0 | - | 6 | att.com |
+| 589 | Manisha Aggarwal | 0 | +0 | 0 | - | 7 | att.com |
+| 590 | Manjeet Singh Bhatia | 0 | +0 | 0 | - | 1 | intel.com |
+| 591 | Manjunath Ranganathaiah | 0 | +0 | 0 | - | 5 | intel.com |
+| 592 | Manoj Marneni | 0 | +0 | 0 | - | 1 | att.com |
+| 593 | Manoop Talasila | 0 | +0 | 0 | - | 4 | att.com |
+| 594 | Manzon, Inna (im453s) | 0 | +0 | 0 | - | 3 | att.com |
+| 595 | Marat Salakhutdinov | 0 | +0 | 0 | - | 1 | bell.ca |
+| 596 | Marc-Alexandre Choquette | 0 | +0 | 0 | - | 2 | bell.ca |
+| 597 | Marcin Krasowski | 0 | +0 | 0 | - | 3 | samsung.com |
+| 598 | Marcin Migdal | 0 | +0 | 0 | - | 8 | nokia.com |
+| 599 | Marcin Przybysz | 0 | +0 | 0 | - | 8 | nokia.com |
+| 600 | Marcin Wilk | 0 | +0 | 0 | - | 2 | samsung.com |
+| 601 | Marco Platania | 0 | +0 | 0 | - | 12 | att.com |
+| 602 | Marcus Williams | 0 | +0 | 0 | - | 16 | intel.com |
+| 603 | Marek Wolczanski | 0 | +0 | 0 | - | 2 | cloudify.co |
+| 604 | Mariah Jacobs | 0 | +0 | 0 | - | 3 | intel.com |
+| 605 | Mariano Diaz | 0 | +0 | 0 | - | 2 | yoppworks.com |
+| 606 | Mariusz Sygnowski | 0 | +0 | 0 | - | 1 | nokia.com |
+| 607 | Mariusz Wagner | 0 | +0 | 0 | - | 5 | nokia.com |
+| 608 | Mark Tooski | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 609 | Mars Toktonaliev | 0 | +0 | 0 | - | 1 | nokia.com |
+| 610 | Martin Klozik | 0 | +0 | 0 | - | 4 | tieto.com |
+| 611 | Martin Ouimet | 0 | +0 | 0 | - | 2 | bell.ca |
+| 612 | Matej Babej | 0 | +0 | 0 | - | 2 | tieto.com |
+| 613 | Matej Klotton | 0 | +0 | 0 | - | 4 | pantheon.tech |
+| 614 | Matej Perina | 0 | +0 | 0 | - | 3 | pantheon.tech |
+| 615 | Mateusz Gołuchowski | 0 | +0 | 0 | - | 3 | nokia.com |
+| 616 | Mateusz Pilat | 0 | +0 | 0 | - | 4 | samsung.com |
+| 617 | Matt Welch | 0 | +0 | 0 | - | 1 | intel.com |
+| 618 | Matthew Davis | 0 | +0 | 0 | - | 1 | telstra.com |
+| 619 | MatthewHarffy | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 620 | Matthieu Cauffiez | 0 | +0 | 0 | - | 2 | bell.ca |
+| 621 | Matthieu Geerebaert | 0 | +0 | 0 | - | 6 | orange.com |
+| 622 | Matus Szabo | 0 | +0 | 0 | - | 2 | orange.com |
+| 623 | Max Benjamin | 0 | +0 | 0 | - | 3 | att.com |
+| 624 | May Lin | 0 | +0 | 0 | - | 1 | qct.io |
+| 625 | Mcblain, Thomas | 0 | +0 | 0 | - | 2 | att.com |
+| 626 | Mehreen Kaleem | 0 | +0 | 0 | - | 5 | fujitsu.com |
+| 627 | Mehreen Kaleem | 0 | +0 | 0 | - | 1 | wipro.com |
+| 628 | Mei Su | 0 | +0 | 0 | - | 1 | att.com |
+| 629 | Mei Su | 0 | +0 | 0 | - | 1 | email |
+| 630 | Merkel, Jeff | 0 | +0 | 0 | - | 2 | att.com |
+| 631 | Michael Arrastia | 0 | +0 | 0 | - | 5 | amdocs.com |
+| 632 | Michael Borokhovich | 0 | +0 | 0 | - | 1 | att.com |
+| 633 | Michael Hwang | 0 | +0 | 0 | - | 6 | att.com |
+| 634 | Michael Lando | 0 | +0 | 0 | - | 13 | att.com |
+| 635 | Michael Lando | 0 | +0 | 0 | - | 5 | att.com |
+| 636 | Michael Lando | 0 | +0 | 0 | - | 1 | att.com |
+| 637 | Michael Mokry | 0 | +0 | 0 | - | 6 | att.com |
+| 638 | Michael Mokry | 0 | +0 | 0 | - | 7 | att.com |
+| 639 | Michael O'Brien | 0 | +0 | 0 | - | 9 | amdocs.com |
+| 640 | Michael O'Brien | 0 | +0 | 0 | - | 4 | obrienlabs.org |
+| 641 | Michael Pruss | 0 | +0 | 0 | - | 2 | bell.ca |
+| 642 | Michael Shitrit | 0 | +0 | 0 | - | 2 | att.com |
+| 643 | MichaelMorris | 0 | +0 | 0 | - | 17 | est.tech |
+| 644 | Michal Banka | 0 | +0 | 0 | - | 17 | nokia.com |
+| 645 | Michal Chabiera | 0 | +0 | 0 | - | 3 | orange.com |
+| 646 | Michal Kabaj | 0 | +0 | 0 | - | 5 | nokia.com |
+| 647 | Michal Korman | 0 | +0 | 0 | - | 1 | nokia.com |
+| 648 | Michal Ptacek | 0 | +0 | 0 | - | 8 | samsung.com |
+| 649 | Michal Zegan | 0 | +0 | 0 | - | 2 | samsung.com |
+| 650 | Michał Grzesik | 0 | +0 | 0 | - | 1 | orange.com |
+| 651 | Mickael JEZEQUEL | 0 | +0 | 0 | - | 4 | orange.com |
+| 652 | Mike Babinski | 0 | +0 | 0 | - | 2 | att.com |
+| 653 | Mike Elliott | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 654 | Milan Verespej | 0 | +0 | 0 | - | 2 | samsung.com |
+| 655 | Milin | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 656 | Miroslav Los | 0 | +0 | 0 | - | 4 | pantheon.tech |
+| 657 | Mnushkin, Dmitry | 0 | +0 | 0 | - | 2 | att.com |
+| 658 | Mnushkin, Dmitry (dm4252) | 0 | +0 | 0 | - | 2 | att.com |
 | 659 | Modaboina, Kusumakumari (km583p) | 0 | +0 | 0 | - | 1 | att.com |
-| 660 | Mohamed Waly | 0 | +0 | 0 | - | 2 | orange.com |
-| 661 | Mohammad | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
-| 662 | Mohammadreza Pasandideh | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 663 | Mohammed Naser | 0 | +0 | 0 | - | 5 | vexxhost.com |
-| 664 | Mor Dabastany | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 665 | Moshe | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 666 | Mukesh Paliwal | 0 | +0 | 0 | - | 15 | huawei.com |
-| 667 | MukeshKumar | 0 | +0 | 0 | - | 13 | est.tech |
-| 668 | Mukul | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 669 | Muller, Andrew (am8383) | 0 | +0 | 0 | - | 3 | att.com |
-| 670 | Muller, Andrew (am8383) | 0 | +0 | 0 | - | 1 | att.com |
-| 671 | Muni Mohan Kunchi | 0 | +0 | 0 | - | 1 | att.com |
-| 672 | Munir Ahmad | 0 | +0 | 0 | - | 7 | bell.ca |
-| 673 | Murali-P | 0 | +0 | 0 | - | 8 | huawei.com |
-| 674 | Muthuramalingam, Brinda Santh | 0 | +0 | 0 | - | 6 | ibm.com |
-| 675 | Muthuramalingam, Brinda Santh | 0 | +0 | 0 | - | 4 | att.com |
-| 676 | NGUYEN | 0 | +0 | 0 | - | 1 | att.com |
-| 677 | NITIN KAWA | 0 | +0 | 0 | - | 2 | huawei.com |
-| 678 | Nagendra90287 | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 679 | Nate Potter | 0 | +0 | 0 | - | 3 | intel.com |
-| 680 | Nayan Deshmukh | 0 | +0 | 0 | - | 2 | samsung.com |
-| 681 | Neal Chatterley | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 682 | Neha Jain | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 683 | Neha Sood | 0 | +0 | 0 | - | 1 | att.com |
-| 684 | Neil Derraugh | 0 | +0 | 0 | - | 4 | yoppworks.com |
-| 685 | Nekrassov, Alexei (an4828) | 0 | +0 | 0 | - | 1 | att.com |
-| 686 | Netajisu | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 687 | Nicolas Edel | 0 | +0 | 0 | - | 2 | orange.com |
-| 688 | NicolasLaplaud | 0 | +0 | 0 | - | 1 | orange.com |
-| 689 | Niharika Sharma | 0 | +0 | 0 | - | 7 | amdocs.com |
-| 690 | Niharika Sharma | 0 | +0 | 0 | - | 1 | bell.ca |
-| 691 | Nilay Ranjan | 0 | +0 | 0 | - | 2 | telstra.com |
-| 692 | NingSun | 0 | +0 | 0 | - | 1 | intel.com |
-| 693 | Niranjana | 0 | +0 | 0 | - | 11 | wipro.com |
-| 694 | Nirvan Ramjuttun | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 695 | Nishukumar | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 696 | Noemi Wagner | 0 | +0 | 0 | - | 1 | nokia.com |
-| 697 | Norm Traxler | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 698 | O'Connor, Lina (lo8949) | 0 | +0 | 0 | - | 4 | att.com |
-| 699 | O'Connor, Lina (lo8949) | 0 | +0 | 0 | - | 2 | att.com |
-| 700 | Ofir Sonsino | 0 | +0 | 0 | - | 12 | att.com |
-| 701 | Ofir Sonsino | 0 | +0 | 0 | - | 3 | att.com |
-| 702 | Ofir Sonsino | 0 | +0 | 0 | - | 4 | att.com |
-| 703 | Ojas Dubey | 0 | +0 | 0 | - | 5 | amdocs.com |
-| 704 | Oleg Beltz | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 705 | Oleg Mitsura | 0 | +0 | 0 | - | 7 | amdocs.com |
-| 706 | Oleg Mitsura | 0 | +0 | 0 | - | 1 | bell.ca |
-| 707 | Oleksandr Moliavko | 0 | +0 | 0 | - | 2 | samsung.com |
-| 708 | Olivia.Zhan | 0 | +0 | 0 | - | 2 | zte.com.cn |
-| 709 | Ondrej Frindrich | 0 | +0 | 0 | - | 3 | orange.com |
-| 710 | Ondřej Šmalec | 0 | +0 | 0 | - | 3 | samsung.com |
-| 711 | Oren  Kleks | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 712 | Ostap Batih | 0 | +0 | 0 | - | 1 | samsung.com |
-| 713 | PATRACHARI | 0 | +0 | 0 | - | 2 | att.com |
-| 714 | Paira, Saurav (sp694w) sp694w@att.com | 0 | +0 | 0 | - | 3 | att.com |
-| 715 | Pamela Dragosh | 0 | +0 | 0 | - | 21 | att.com |
-| 716 | Pamela Dragosh | 0 | +0 | 0 | - | 11 | att.com |
-| 717 | Parshad Patel | 0 | +0 | 0 | - | 15 | samsung.com |
-| 718 | Patel, Ankitkumar | 0 | +0 | 0 | - | 4 | att.com |
-| 719 | Patrick ANAT | 0 | +0 | 0 | - | 1 | orange.com |
-| 720 | Patrick Brady | 0 | +0 | 0 | - | 7 | att.com |
-| 721 | Patrick Brady | 0 | +0 | 0 | - | 4 | att.com |
-| 722 | PatrikBuhr | 0 | +0 | 0 | - | 3 | est.tech |
-| 723 | Paul Dennehy | 0 | +0 | 0 | - | 8 | ericsson.com |
-| 724 | Paul Vaduva | 0 | +0 | 0 | - | 3 | enea.com |
-| 725 | Pavel Aharoni | 0 | +0 | 0 | - | 3 | att.com |
-| 726 | Pavel Paroulek | 0 | +0 | 0 | - | 9 | orange.com |
-| 727 | Pawel | 0 | +0 | 0 | - | 21 | nokia.com |
-| 728 | Pawel Baniewski | 0 | +0 | 0 | - | 3 | nokia.com |
-| 729 | Pawel Pawlak | 0 | +0 | 0 | - | 1 | f5.com |
-| 730 | Pawel Pawlak | 0 | +0 | 0 | - | 1 | orange.com |
-| 731 | Pawel Slowikowski | 0 | +0 | 0 | - | 2 | samsung.com |
-| 732 | Pawel Wieczorek | 0 | +0 | 0 | - | 12 | samsung.com |
-| 733 | PawelSzalapski | 0 | +0 | 0 | - | 1 | nokia.com |
-| 734 | Petr Ospalý | 0 | +0 | 0 | - | 6 | samsung.com |
-| 735 | Peyton Puckett | 0 | +0 | 0 | - | 5 | att.com |
-| 736 | Peyton Puckett | 0 | +0 | 0 | - | 2 | att.com |
-| 737 | Phillip Leigh | 0 | +0 | 0 | - | 6 | amdocs.com |
-| 738 | Pierre Rioux | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 739 | Piotr Bocheński | 0 | +0 | 0 | - | 6 | nokia.com |
-| 740 | Piotr Borelowski | 0 | +0 | 0 | - | 7 | samsung.com |
-| 741 | Piotr Darosz | 0 | +0 | 0 | - | 11 | nokia.com |
-| 742 | Piotr Jaszczyk | 0 | +0 | 0 | - | 9 | nokia.com |
-| 743 | Piotr Krysiak | 0 | +0 | 0 | - | 2 | nokia.com |
-| 744 | Piotr Magalski | 0 | +0 | 0 | - | 1 | orange.com |
-| 745 | Piotr Marcinkiewicz | 0 | +0 | 0 | - | 16 | nokia.com |
-| 746 | Piotr Perzanowski | 0 | +0 | 0 | - | 1 | samsung.com |
-| 747 | Piotr Stanior | 0 | +0 | 0 | - | 2 | t-mobile.pl |
-| 748 | Piotr Wielebski | 0 | +0 | 0 | - | 12 | nokia.com |
-| 749 | Piyush Garg | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 750 | Plummer, Brittany | 0 | +0 | 0 | - | 2 | att.com |
-| 751 | Polavarapu, Chaitanya (cp8128) | 0 | +0 | 0 | - | 2 | att.com |
-| 752 | Pooja03 | 0 | +0 | 0 | - | 4 | techmahindra.com |
-| 753 | Prabhjot Singh Sethi | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
-| 754 | Prabhu Balan | 0 | +0 | 0 | - | 1 | vodafone.com |
-| 755 | Pradeep Patel | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 756 | PrakashH | 0 | +0 | 0 | - | 4 | techmahindra.com |
-| 757 | Prakhar Pandey | 0 | +0 | 0 | - | 5 | bell.ca |
-| 758 | Pramod | 0 | +0 | 0 | - | 3 | intel.com |
-| 759 | Praneta Paithankar | 0 | +0 | 0 | - | 2 | intel.com |
-| 760 | PrasadNaidu | 0 | +0 | 0 | - | 3 | techmahindra.com |
-| 761 | Prateekinlinux | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 762 | Pratik raj | 0 | +0 | 0 | - | 14 | gmail.com |
-| 763 | Prativa Dora | 0 | +0 | 0 | - | 1 | techmahindra.com |
-| 764 | Prema Bhatt | 0 | +0 | 0 | - | 1 | att.com |
+| 660 | Modaboina, Kusumakumari (km583p) | 0 | +0 | 0 | - | 1 | att.com |
+| 661 | Mohamed Waly | 0 | +0 | 0 | - | 2 | orange.com |
+| 662 | Mohammad | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
+| 663 | Mohammadreza Pasandideh | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 664 | Mohammed Naser | 0 | +0 | 0 | - | 5 | vexxhost.com |
+| 665 | Mor Dabastany | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 666 | Moshe | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 667 | Mukesh Paliwal | 0 | +0 | 0 | - | 15 | huawei.com |
+| 668 | MukeshKumar | 0 | +0 | 0 | - | 13 | est.tech |
+| 669 | Mukul | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 670 | Muller, Andrew (am8383) | 0 | +0 | 0 | - | 3 | att.com |
+| 671 | Muller, Andrew (am8383) | 0 | +0 | 0 | - | 1 | att.com |
+| 672 | Muni Mohan Kunchi | 0 | +0 | 0 | - | 1 | att.com |
+| 673 | Munir Ahmad | 0 | +0 | 0 | - | 7 | bell.ca |
+| 674 | Murali-P | 0 | +0 | 0 | - | 8 | huawei.com |
+| 675 | Muthuramalingam, Brinda Santh | 0 | +0 | 0 | - | 6 | ibm.com |
+| 676 | Muthuramalingam, Brinda Santh | 0 | +0 | 0 | - | 4 | att.com |
+| 677 | NGUYEN | 0 | +0 | 0 | - | 1 | att.com |
+| 678 | NITIN KAWA | 0 | +0 | 0 | - | 2 | huawei.com |
+| 679 | Nagendra90287 | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 680 | Nate Potter | 0 | +0 | 0 | - | 3 | intel.com |
+| 681 | Nayan Deshmukh | 0 | +0 | 0 | - | 2 | samsung.com |
+| 682 | Neal Chatterley | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 683 | Neha Jain | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 684 | Neha Sood | 0 | +0 | 0 | - | 1 | att.com |
+| 685 | Neil Derraugh | 0 | +0 | 0 | - | 4 | yoppworks.com |
+| 686 | Nekrassov, Alexei (an4828) | 0 | +0 | 0 | - | 1 | att.com |
+| 687 | Netajisu | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 688 | Nicolas Edel | 0 | +0 | 0 | - | 2 | orange.com |
+| 689 | NicolasLaplaud | 0 | +0 | 0 | - | 1 | orange.com |
+| 690 | Niharika Sharma | 0 | +0 | 0 | - | 7 | amdocs.com |
+| 691 | Niharika Sharma | 0 | +0 | 0 | - | 1 | bell.ca |
+| 692 | Nilay Ranjan | 0 | +0 | 0 | - | 2 | telstra.com |
+| 693 | NingSun | 0 | +0 | 0 | - | 1 | intel.com |
+| 694 | Niranjana | 0 | +0 | 0 | - | 11 | wipro.com |
+| 695 | Nirvan Ramjuttun | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 696 | Nishukumar | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 697 | Noemi Wagner | 0 | +0 | 0 | - | 1 | nokia.com |
+| 698 | Norm Traxler | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 699 | O'Connor, Lina (lo8949) | 0 | +0 | 0 | - | 4 | att.com |
+| 700 | O'Connor, Lina (lo8949) | 0 | +0 | 0 | - | 2 | att.com |
+| 701 | Ofir Sonsino | 0 | +0 | 0 | - | 12 | att.com |
+| 702 | Ofir Sonsino | 0 | +0 | 0 | - | 3 | att.com |
+| 703 | Ofir Sonsino | 0 | +0 | 0 | - | 4 | att.com |
+| 704 | Ojas Dubey | 0 | +0 | 0 | - | 5 | amdocs.com |
+| 705 | Oleg Beltz | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 706 | Oleg Mitsura | 0 | +0 | 0 | - | 7 | amdocs.com |
+| 707 | Oleg Mitsura | 0 | +0 | 0 | - | 1 | bell.ca |
+| 708 | Oleksandr Moliavko | 0 | +0 | 0 | - | 2 | samsung.com |
+| 709 | Olivia.Zhan | 0 | +0 | 0 | - | 2 | zte.com.cn |
+| 710 | Ondrej Frindrich | 0 | +0 | 0 | - | 3 | orange.com |
+| 711 | Ondřej Šmalec | 0 | +0 | 0 | - | 3 | samsung.com |
+| 712 | Oren  Kleks | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 713 | Ostap Batih | 0 | +0 | 0 | - | 1 | samsung.com |
+| 714 | PATRACHARI | 0 | +0 | 0 | - | 2 | att.com |
+| 715 | Paira, Saurav (sp694w) sp694w@att.com | 0 | +0 | 0 | - | 3 | att.com |
+| 716 | Pamela Dragosh | 0 | +0 | 0 | - | 21 | att.com |
+| 717 | Pamela Dragosh | 0 | +0 | 0 | - | 11 | att.com |
+| 718 | Parshad Patel | 0 | +0 | 0 | - | 15 | samsung.com |
+| 719 | Patel, Ankitkumar | 0 | +0 | 0 | - | 4 | att.com |
+| 720 | Patrick ANAT | 0 | +0 | 0 | - | 1 | orange.com |
+| 721 | Patrick Brady | 0 | +0 | 0 | - | 7 | att.com |
+| 722 | Patrick Brady | 0 | +0 | 0 | - | 4 | att.com |
+| 723 | PatrikBuhr | 0 | +0 | 0 | - | 3 | est.tech |
+| 724 | Paul Dennehy | 0 | +0 | 0 | - | 8 | ericsson.com |
+| 725 | Paul Vaduva | 0 | +0 | 0 | - | 3 | enea.com |
+| 726 | Pavel Aharoni | 0 | +0 | 0 | - | 3 | att.com |
+| 727 | Pavel Paroulek | 0 | +0 | 0 | - | 9 | orange.com |
+| 728 | Pawel | 0 | +0 | 0 | - | 21 | nokia.com |
+| 729 | Pawel Baniewski | 0 | +0 | 0 | - | 3 | nokia.com |
+| 730 | Pawel Pawlak | 0 | +0 | 0 | - | 1 | f5.com |
+| 731 | Pawel Pawlak | 0 | +0 | 0 | - | 1 | orange.com |
+| 732 | Pawel Slowikowski | 0 | +0 | 0 | - | 2 | samsung.com |
+| 733 | Pawel Wieczorek | 0 | +0 | 0 | - | 12 | samsung.com |
+| 734 | PawelSzalapski | 0 | +0 | 0 | - | 1 | nokia.com |
+| 735 | Petr Ospalý | 0 | +0 | 0 | - | 6 | samsung.com |
+| 736 | Peyton Puckett | 0 | +0 | 0 | - | 5 | att.com |
+| 737 | Peyton Puckett | 0 | +0 | 0 | - | 2 | att.com |
+| 738 | Phillip Leigh | 0 | +0 | 0 | - | 6 | amdocs.com |
+| 739 | Pierre Rioux | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 740 | Piotr Bocheński | 0 | +0 | 0 | - | 6 | nokia.com |
+| 741 | Piotr Borelowski | 0 | +0 | 0 | - | 7 | samsung.com |
+| 742 | Piotr Darosz | 0 | +0 | 0 | - | 11 | nokia.com |
+| 743 | Piotr Jaszczyk | 0 | +0 | 0 | - | 9 | nokia.com |
+| 744 | Piotr Krysiak | 0 | +0 | 0 | - | 2 | nokia.com |
+| 745 | Piotr Magalski | 0 | +0 | 0 | - | 1 | orange.com |
+| 746 | Piotr Marcinkiewicz | 0 | +0 | 0 | - | 16 | nokia.com |
+| 747 | Piotr Perzanowski | 0 | +0 | 0 | - | 1 | samsung.com |
+| 748 | Piotr Stanior | 0 | +0 | 0 | - | 2 | t-mobile.pl |
+| 749 | Piotr Wielebski | 0 | +0 | 0 | - | 12 | nokia.com |
+| 750 | Piyush Garg | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 751 | Plummer, Brittany | 0 | +0 | 0 | - | 2 | att.com |
+| 752 | Polavarapu, Chaitanya (cp8128) | 0 | +0 | 0 | - | 2 | att.com |
+| 753 | Pooja03 | 0 | +0 | 0 | - | 4 | techmahindra.com |
+| 754 | Prabhjot Singh Sethi | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
+| 755 | Prabhu Balan | 0 | +0 | 0 | - | 1 | vodafone.com |
+| 756 | Pradeep Patel | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 757 | PrakashH | 0 | +0 | 0 | - | 4 | techmahindra.com |
+| 758 | Prakhar Pandey | 0 | +0 | 0 | - | 5 | bell.ca |
+| 759 | Pramod | 0 | +0 | 0 | - | 3 | intel.com |
+| 760 | Praneta Paithankar | 0 | +0 | 0 | - | 2 | intel.com |
+| 761 | PrasadNaidu | 0 | +0 | 0 | - | 3 | techmahindra.com |
+| 762 | Prateekinlinux | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 763 | Pratik raj | 0 | +0 | 0 | - | 14 | gmail.com |
+| 764 | Prativa Dora | 0 | +0 | 0 | - | 1 | techmahindra.com |
 | 765 | Prema Bhatt | 0 | +0 | 0 | - | 1 | att.com |
-| 766 | Priyadharshini | 0 | +0 | 0 | - | 5 | wipro.com |
-| 767 | Priyanka | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 768 | PriyanshuAgarwal | 0 | +0 | 0 | - | 5 | amdocs.com |
-| 769 | Projit Roy | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
-| 770 | Prudence Au | 0 | +0 | 0 | - | 1 | bell.com |
-| 771 | Prudence Au | 0 | +0 | 0 | - | 8 | amdocs.com |
-| 772 | Przemyslaw Wasala | 0 | +0 | 0 | - | 6 | nokia.com |
-| 773 | Pérez Caparrós David, INI-ONE-MBL-MEE | 0 | +0 | 0 | - | 4 | swisscom.com |
-| 774 | Quoc-Nghia Nguyen | 0 | +0 | 0 | - | 4 | orange.com |
-| 775 | RAJU | 0 | +0 | 0 | - | 2 | att.com |
-| 776 | RPMishra | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
-| 777 | RachelF | 0 | +0 | 0 | - | 1 | att.com |
-| 778 | Rachitha Ramappa | 0 | +0 | 0 | - | 1 | att.com |
-| 779 | Rafal Wrzesniak | 0 | +0 | 0 | - | 1 | samsung.com |
-| 780 | Raghav Kataria | 0 | +0 | 0 | - | 1 | bell.ca |
-| 781 | Rahul Sharma | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 782 | Rahul Sharma (153216) | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 783 | Rahul Yadav | 0 | +0 | 0 | - | 2 | gmail.com |
-| 784 | Rahul_cool | 0 | +0 | 0 | - | 4 | huawei.com |
-| 785 | Rajamohan Raj | 0 | +0 | 0 | - | 3 | intel.com |
-| 786 | Ralph Knag | 0 | +0 | 0 | - | 1 | att.com |
-| 787 | Ralph Straubs | 0 | +0 | 0 | - | 4 | att.com |
-| 788 | Ram Koya | 0 | +0 | 0 | - | 4 | att.com |
-| 789 | Ram Krishna Verma | 0 | +0 | 0 | - | 16 | bell.ca |
-| 790 | RamaPrasad Amaranarayana (ra5425) | 0 | +0 | 0 | - | 1 | att.com |
-| 791 | Ramesh Parthasarathy | 0 | +0 | 0 | - | 5 | att.com |
-| 792 | Ramesh Parthasarathy | 0 | +0 | 0 | - | 3 | att.com |
-| 793 | Rami | 0 | +0 | 0 | - | 1 | orange.com |
-| 794 | Rashmi Pujar | 0 | +0 | 0 | - | 7 | bell.ca |
-| 795 | Rashmi Pujar | 0 | +0 | 0 | - | 12 | bell.ca |
-| 796 | Ravi Pendurty | 0 | +0 | 0 | - | 5 | highstreet-technologies.com |
-| 797 | RaviGeda | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 798 | Raviteja Cherughattu | 0 | +0 | 0 | - | 1 | att.com |
-| 799 | RehanRaza | 0 | +0 | 0 | - | 9 | est.tech |
-| 800 | Remigiusz Janeczek | 0 | +0 | 0 | - | 25 | nokia.com |
-| 801 | Rene Glover | 0 | +0 | 0 | - | 1 | att.com |
-| 802 | Rene Robert | 0 | +0 | 0 | - | 5 | orange.com |
-| 803 | Renu Kumari | 0 | +0 | 0 | - | 5 | bell.ca |
-| 804 | Reo Inoue | 0 | +0 | 0 | - | 2 | fujitsu.com |
-| 805 | Reshmasree | 0 | +0 | 0 | - | 7 | wipro.com |
-| 806 | Rich Bennett | 0 | +0 | 0 | - | 13 | att.com |
-| 807 | Rich Bennett | 0 | +0 | 0 | - | 1 | att.com |
-| 808 | Rich Tabedzki | 0 | +0 | 0 | - | 5 | att.com |
-| 809 | Rina Roi | 0 | +0 | 0 | - | 1 | att.com |
-| 810 | Rishi.Chail | 0 | +0 | 0 | - | 2 | est.tech |
-| 811 | Ritu Sood | 0 | +0 | 0 | - | 5 | intel.com |
-| 812 | Rob Daugherty | 0 | +0 | 0 | - | 9 | att.com |
-| 813 | Robby Maharajh | 0 | +0 | 0 | - | 10 | att.com |
-| 814 | Rodrigo Lima | 0 | +0 | 0 | - | 5 | yoppworks.com |
-| 815 | Roger Maitland | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 816 | Roger Maitland | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 817 | Rogers, Reneal(rr267j) | 0 | +0 | 0 | - | 2 | att.com |
-| 818 | Rokhvarg David | 0 | +0 | 0 | - | 2 | att.com |
-| 819 | Rommel Pawar | 0 | +0 | 0 | - | 4 | bell.ca |
-| 820 | Ronan Kenny | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 821 | Ronan Keogh | 0 | +0 | 0 | - | 3 | ericsson.com |
-| 822 | RossC | 0 | +0 | 0 | - | 14 | est.tech |
-| 823 | Rotundo, Al (ar3165) | 0 | +0 | 0 | - | 2 | att.com |
-| 824 | Roy, Amresh | 0 | +0 | 0 | - | 2 | att.com |
-| 825 | Ruoyu | 0 | +0 | 0 | - | 9 | intel.com |
-| 826 | Rupali Shirode | 0 | +0 | 0 | - | 1 | t-systems.com |
-| 827 | Rupinder | 0 | +0 | 0 | - | 5 | ibm.com |
-| 828 | Ruslan Kashapov | 0 | +0 | 0 | - | 2 | pantheon.tech |
-| 829 | Ruslan Kashapov | 0 | +0 | 0 | - | 1 | gmail.com |
-| 830 | Ryan Goulding | 0 | +0 | 0 | - | 2 | gmail.com |
-| 831 | Ryan Young | 0 | +0 | 0 | - | 1 | att.com |
-| 832 | SRINIVAS V | 0 | +0 | 0 | - | 2 | huawei.com |
-| 833 | SRicci | 0 | +0 | 0 | - | 1 | att.com |
-| 834 | SagarS | 0 | +0 | 0 | - | 2 | est.tech |
-| 835 | Sai Gandham | 0 | +0 | 0 | - | 6 | att.com |
-| 836 | Sai Gandham | 0 | +0 | 0 | - | 1 | gmail.com |
-| 837 | Sai Gandham | 0 | +0 | 0 | - | 1 | att.com |
-| 838 | Salichos Michail, INI-INO-ECO-HCT | 0 | +0 | 0 | - | 1 | gmail.com |
-| 839 | Sam Huang | 0 | +0 | 0 | - | 2 | yoppworks.com |
-| 840 | Sam Ollo | 0 | +0 | 0 | - | 1 | att.com |
-| 841 | Sambasiva K | 0 | +0 | 0 | - | 1 | verizon.com |
-| 842 | Samuel Kontris | 0 | +0 | 0 | - | 1 | pantheon.tech |
-| 843 | Samuel Liard | 0 | +0 | 0 | - | 7 | gmail.com |
-| 844 | Samuli Silvius | 0 | +0 | 0 | - | 7 | samsung.com |
-| 845 | Sanchez, Gabriel (gs882h) | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 846 | Sandeep J | 0 | +0 | 0 | - | 8 | ibm.com |
-| 847 | Sandeep Shah | 0 | +0 | 0 | - | 6 | gmail.com |
-| 848 | Sandeep Shah | 0 | +0 | 0 | - | 5 | techmahindra.com |
-| 849 | Sangalang, Felix | 0 | +0 | 0 | - | 2 | att.com |
-| 850 | SantoshB | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 851 | Sara Weiss | 0 | +0 | 0 | - | 1 | att.com |
-| 852 | Sarah Abouzainah | 0 | +0 | 0 | - | 2 | orange.com |
-| 853 | Sarah Abouzainah | 0 | +0 | 0 | - | 1 | sarahs-macbook-pro.local |
-| 854 | Saravanan A | 0 | +0 | 0 | - | 5 | wipro.com |
-| 855 | Saravanan, Madheswaran | 0 | +0 | 0 | - | 2 | ibm.com |
-| 856 | Saryu Shah | 0 | +0 | 0 | - | 2 | att.com |
-| 857 | Sastry Isukapalli | 0 | +0 | 0 | - | 2 | att.com |
-| 858 | Satoshi Fujii | 0 | +0 | 0 | - | 6 | fujitsu.com |
-| 859 | Satyaki Mallick | 0 | +0 | 0 | - | 2 | huawei.com |
-| 860 | Satyaki Mallick | 0 | +0 | 0 | - | 2 | gmail.com |
-| 861 | Schmalzried, Terry (ts862m) | 0 | +0 | 0 | - | 3 | att.com |
-| 862 | Scott Seabolt | 0 | +0 | 0 | - | 1 | att.com |
-| 863 | Sean Hassan | 0 | +0 | 0 | - | 1 | att.com |
-| 864 | Sebastien Premont-Tendland | 0 | +0 | 0 | - | 6 | bell.ca |
-| 865 | Serban Jora | 0 | +0 | 0 | - | 1 | att.com |
-| 866 | Serban Jora | 0 | +0 | 0 | - | 3 | att.com |
-| 867 | Serban Popescu | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 868 | Serban Popescu | 0 | +0 | 0 | - | 1 | att.com |
-| 869 | Serge Simard | 0 | +0 | 0 | - | 3 | agilitae.com |
-| 870 | Serhii Siabruk | 0 | +0 | 0 | - | 1 | jabil.com |
-| 871 | Seshu Kumar Mudiganti | 0 | +0 | 0 | - | 1 | windriver.com |
-| 872 | Seshu-Kumar-M | 0 | +0 | 0 | - | 22 | huawei.com |
-| 873 | Shaaban Ebrahim | 0 | +0 | 0 | - | 1 | gmail.com |
-| 874 | Shabanov, Marina (ms656r) | 0 | +0 | 0 | - | 2 | att.com |
-| 875 | Shailendra Borale | 0 | +0 | 0 | - | 5 | att.com |
-| 876 | Shankar Narayanan | 0 | +0 | 0 | - | 6 | att.com |
-| 877 | Shantaram Sawant | 0 | +0 | 0 | - | 2 | accenture.com |
-| 878 | Shashank Kumar Shankar | 0 | +0 | 0 | - | 8 | intel.com |
-| 879 | Shawn Severin | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 880 | Shay Weizman | 0 | +0 | 0 | - | 1 | att.com |
-| 881 | Sheshukov, Natalia (ns019t) | 0 | +0 | 0 | - | 2 | att.com |
-| 882 | ShivendraSaxena | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 883 | Shiwei Tian | 0 | +0 | 0 | - | 2 | zte.com.cn |
-| 884 | Shnaider, Marina (ms7589) | 0 | +0 | 0 | - | 2 | att.com |
-| 885 | Shobana Jothi | 0 | +0 | 0 | - | 2 | verizon.com |
-| 886 | Shubhada Ramkrishna Vaze | 0 | +0 | 0 | - | 4 | techmahindra.com |
-| 887 | ShuhaoCai | 0 | +0 | 0 | - | 1 | huawei.com |
-| 888 | Shwetank Dave | 0 | +0 | 0 | - | 6 | amdocs.com |
-| 889 | Shwetha_R | 0 | +0 | 0 | - | 1 | wipro.com |
-| 890 | Simon Hrabos | 0 | +0 | 0 | - | 4 | tieto.com |
-| 891 | Simon Hrabos | 0 | +0 | 0 | - | 1 | samsung.com |
-| 892 | Sindhuri.A | 0 | +0 | 0 | - | 4 | huawei.com |
-| 893 | Singh, Ajay (as396y) | 0 | +0 | 0 | - | 2 | att.com |
-| 894 | Singh, Rupinderjeet (rs830d) | 0 | +0 | 0 | - | 1 | att.com |
-| 895 | Singhsumalee, Pete (ps2418) | 0 | +0 | 0 | - | 2 | att.com |
-| 896 | Singla, Rajiv (rs153v) | 0 | +0 | 0 | - | 2 | att.com |
-| 897 | Sirisha Gopigiri | 0 | +0 | 0 | - | 1 | verizon.com |
-| 898 | Sirisha_Manchikanti | 0 | +0 | 0 | - | 10 | est.tech |
-| 899 | Sithara Nambiar | 0 | +0 | 0 | - | 3 | huawei.com |
-| 900 | Siva.ye | 0 | +0 | 0 | - | 3 | huawei.com |
-| 901 | Skip Wonnell | 0 | +0 | 0 | - | 2 | att.com |
-| 902 | Smokowski, Kevin (ks6305) | 0 | +0 | 0 | - | 8 | att.com |
-| 903 | Smokowski, Kevin (ks6305) | 0 | +0 | 0 | - | 2 | att.com |
-| 904 | Smokowski, Kevin (ks6305) | 0 | +0 | 0 | - | 4 | att.com |
-| 905 | Smokowski, Steve (ss835w) | 0 | +0 | 0 | - | 6 | att.com |
-| 906 | Smokowski, Steven | 0 | +0 | 0 | - | 2 | att.com |
-| 907 | Sneha Dantkale | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 908 | Snigdha Sucharita Patra | 0 | +0 | 0 | - | 1 | techmahindra.com |
-| 909 | Sofia Wallin | 0 | +0 | 0 | - | 1 | est.tech |
-| 910 | Sonali Das | 0 | +0 | 0 | - | 1 | att.com |
-| 911 | Sooriyaa | 0 | +0 | 0 | - | 2 | ibm.com |
-| 912 | Sotiropoulos, Ioannis (is948x) | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 913 | Sowmya_Narayanasetty | 0 | +0 | 0 | - | 2 | ltts.com |
-| 914 | Sreeja Gattagouni | 0 | +0 | 0 | - | 3 | techmahindra.com |
-| 915 | Sreenivasa Reddy Chinnannagari | 0 | +0 | 0 | - | 3 | techmahindra.com |
-| 916 | SrikanthNaidu | 0 | +0 | 0 | - | 2 | att.com |
-| 917 | Srinivasan Ramanathan | 0 | +0 | 0 | - | 4 | fujitsu.com |
-| 918 | Srinivasan Selvam | 0 | +0 | 0 | - | 2 | huawei.com |
-| 919 | Sripad | 0 | +0 | 0 | - | 2 | att.com |
-| 920 | Srivahni Chivukula | 0 | +0 | 0 | - | 4 | intel.com |
-| 921 | Stan Bonev | 0 | +0 | 0 | - | 5 | att.com |
-| 922 | Stanislav Chlebec | 0 | +0 | 0 | - | 17 | pantheon.tech |
-| 923 | Stanislav Marszalek | 0 | +0 | 0 | - | 5 | samsung.com |
-| 924 | Stanislav Vishnevetskiy | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 925 | Starec Vlastimil | 0 | +0 | 0 | - | 4 | orange.com |
-| 926 | Stavros Kanarakis | 0 | +0 | 0 | - | 5 | nokia.com |
-| 927 | Stefan Dierichs | 0 | +0 | 0 | - | 1 | telekom.de |
-| 928 | Stela Stoykova | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 929 | Steve Alphonse Siani | 0 | +0 | 0 | - | 4 | ibm.com |
-| 930 | Steve Siani | 0 | +0 | 0 | - | 2 | bell.ca |
-| 931 | Steve Smokowski | 0 | +0 | 0 | - | 7 | att.com |
-| 932 | Steve Thomas | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 933 | Steven Thomas | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 934 | Steven Wright | 0 | +0 | 0 | - | 3 | att.com |
-| 935 | Steven Wright | 0 | +0 | 0 | - | 2 | att.com |
-| 936 | Stilwell, David (stilwelld) | 0 | +0 | 0 | - | 8 | att.com |
-| 937 | Stone, Avi (as206k) | 0 | +0 | 0 | - | 1 | att.com |
-| 938 | Sudarshan Kumar | 0 | +0 | 0 | - | 4 | ibm.com |
-| 939 | Sudarshan Kumar | 0 | +0 | 0 | - | 3 | att.com |
-| 940 | SudhakarReddy | 0 | +0 | 0 | - | 7 | amdocs.com |
-| 941 | Sumapriya Sarvepalli | 0 | +0 | 0 | - | 2 | techmahindra.com |
-| 942 | Summers, Gregory (gs2953) | 0 | +0 | 0 | - | 1 | att.com |
-| 943 | SunilB | 0 | +0 | 0 | - | 4 | techmahindra.com |
-| 944 | Surendra Reddy Katam | 0 | +0 | 0 | - | 2 | techmahindra.com |
-| 945 | Suresh Charan | 0 | +0 | 0 | - | 11 | bell.ca |
-| 946 | SwapnilPathak | 0 | +0 | 0 | - | 2 | techmahindra.com |
-| 947 | Sylhare | 0 | +0 | 0 | - | 2 | gmail.com |
-| 948 | Sylvain Desbureaux | 0 | +0 | 0 | - | 23 | orange.com |
-| 949 | Sylwia Jakubek | 0 | +0 | 0 | - | 4 | nokia.com |
-| 950 | System Administrator | 0 | +0 | 0 | - | 1 | vmware.com |
-| 951 | Szabolcs Hutvagner | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 952 | Taka Cho | 0 | +0 | 0 | - | 19 | att.com |
-| 953 | Taka Cho | 0 | +0 | 0 | - | 3 | att.com |
-| 954 | Takamune Cho | 0 | +0 | 0 | - | 1 | takamunes-mbp.home |
-| 955 | Tal Gitelman | 0 | +0 | 0 | - | 4 | att.com |
-| 956 | Tal Gitelman | 0 | +0 | 0 | - | 5 | att.com |
-| 957 | Tal Karbachinsky | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 958 | TamasBakai | 0 | +0 | 0 | - | 5 | est.tech |
-| 959 | Tao Shen | 0 | +0 | 0 | - | 7 | chinamobile.com |
-| 960 | Ted Humphrey | 0 | +0 | 0 | - | 2 | att.com |
-| 961 | Tej, Tarun | 0 | +0 | 0 | - | 3 | att.com |
-| 962 | Temoc Rodriguez | 0 | +0 | 0 | - | 5 | att.com |
-| 963 | ThamlurRaju | 0 | +0 | 0 | - | 2 | techmahindra.com |
-| 964 | Thanh Ha | 0 | +0 | 0 | - | 2 | linuxfoundation.org |
-| 965 | Thierry Hardy | 0 | +0 | 0 | - | 2 | orange.com |
-| 966 | Thomas Nelson | 0 | +0 | 0 | - | 3 | att.com |
-| 967 | Thomas Nelson | 0 | +0 | 0 | - | 4 | att.com |
-| 968 | Threefoot, Jane (jt6620) | 0 | +0 | 0 | - | 4 | att.com |
-| 969 | Thugutla sailakshmi | 0 | +0 | 0 | - | 4 | ibm.com |
-| 970 | Tim Johnson | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 971 | Tin Lam | 0 | +0 | 0 | - | 1 | irrational.io |
-| 972 | Toan Nguyen | 0 | +0 | 0 | - | 1 | att.com |
-| 973 | Todd Larchuk | 0 | +0 | 0 | - | 1 | att.com |
-| 974 | Todd Malsbary | 0 | +0 | 0 | - | 1 | intel.com |
-| 975 | Tomasz Golabek | 0 | +0 | 0 | - | 13 | nokia.com |
-| 976 | Tomasz Gwozdecki | 0 | +0 | 0 | - | 2 | nokia.com |
-| 977 | Tomasz Pietruszkiewicz | 0 | +0 | 0 | - | 14 | nokia.com |
-| 978 | Tomasz Switon | 0 | +0 | 0 | - | 1 | nokia.com |
-| 979 | Tomasz Wrobel | 0 | +0 | 0 | - | 17 | nokia.com |
-| 980 | Tomek Kaminski | 0 | +0 | 0 | - | 3 | nokia.com |
-| 981 | Tomek Osinski | 0 | +0 | 0 | - | 1 | orange.com |
-| 982 | Tommy Carpenter | 0 | +0 | 0 | - | 1 | att.com |
-| 983 | Tommy Carpenter | 0 | +0 | 0 | - | 1 | att.com |
-| 984 | Tomáš Levora | 0 | +0 | 0 | - | 4 | samsung.com |
-| 985 | Tony Hansen | 0 | +0 | 0 | - | 16 | att.com |
-| 986 | Toshimichi Fukuda | 0 | +0 | 0 | - | 3 | fujitsu.com |
-| 987 | Trevor Tait | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 988 | Tschaen, Brendan | 0 | +0 | 0 | - | 5 | att.com |
-| 989 | Tschaen, Brendan (bt054f) | 0 | +0 | 0 | - | 2 | att.com |
-| 990 | Tufman, Shay | 0 | +0 | 0 | - | 2 | att.com |
-| 991 | Tufman, Shay | 0 | +0 | 0 | - | 2 | gmail.com |
-| 992 | Tufman, Shay (st198j) | 0 | +0 | 0 | - | 2 | att.com |
-| 993 | Ubuntu | 0 | +0 | 0 | - | 1 | windstream.com |
-| 994 | Ubuntu | 0 | +0 | 0 | - | 2 | example.com |
-| 995 | Ubuntu | 0 | +0 | 0 | - | 1 | nokia.com |
-| 996 | Usaraswat | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 997 | Utkarsh Jauhari | 0 | +0 | 0 | - | 7 | att.com |
-| 998 | Vanessa Valderrama | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 999 | Varma, Vikas (vv8305) | 0 | +0 | 0 | - | 1 | att.com |
-| 1000 | Vasyl Razinkov | 0 | +0 | 0 | - | 2 | sidero.ie |
-| 1001 | Venkata Harish K Kajur | 0 | +0 | 0 | - | 6 | gmail.com |
-| 1002 | Venkata Molluru | 0 | +0 | 0 | - | 2 | techmahindra.com |
-| 1003 | Victor Gao | 0 | +0 | 0 | - | 9 | huawei.com |
-| 1004 | Victor Morales | 0 | +0 | 0 | - | 13 | intel.com |
-| 1005 | Victor Morales | 0 | +0 | 0 | - | 1 | samsung.com |
-| 1006 | Vidisha | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1007 | Vidya Shinde | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 766 | Prema Bhatt | 0 | +0 | 0 | - | 1 | att.com |
+| 767 | Priyadharshini | 0 | +0 | 0 | - | 5 | wipro.com |
+| 768 | Priyanka | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 769 | PriyanshuAgarwal | 0 | +0 | 0 | - | 5 | amdocs.com |
+| 770 | Projit Roy | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
+| 771 | Prudence Au | 0 | +0 | 0 | - | 1 | bell.com |
+| 772 | Prudence Au | 0 | +0 | 0 | - | 8 | amdocs.com |
+| 773 | Przemyslaw Wasala | 0 | +0 | 0 | - | 6 | nokia.com |
+| 774 | Pérez Caparrós David | 0 | +0 | 0 | - | 4 | swisscom.com |
+| 775 | Quoc-Nghia Nguyen | 0 | +0 | 0 | - | 4 | orange.com |
+| 776 | RAJU | 0 | +0 | 0 | - | 2 | att.com |
+| 777 | RPMishra | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
+| 778 | RachelF | 0 | +0 | 0 | - | 1 | att.com |
+| 779 | Rachitha Ramappa | 0 | +0 | 0 | - | 1 | att.com |
+| 780 | Rafal Wrzesniak | 0 | +0 | 0 | - | 1 | samsung.com |
+| 781 | Raghav Kataria | 0 | +0 | 0 | - | 1 | bell.ca |
+| 782 | Rahul Sharma | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 783 | Rahul Sharma (153216) | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 784 | Rahul Yadav | 0 | +0 | 0 | - | 2 | gmail.com |
+| 785 | Rahul_cool | 0 | +0 | 0 | - | 4 | huawei.com |
+| 786 | Rajamohan Raj | 0 | +0 | 0 | - | 3 | intel.com |
+| 787 | Ralph Knag | 0 | +0 | 0 | - | 1 | att.com |
+| 788 | Ralph Straubs | 0 | +0 | 0 | - | 4 | att.com |
+| 789 | Ram Koya | 0 | +0 | 0 | - | 4 | att.com |
+| 790 | Ram Krishna Verma | 0 | +0 | 0 | - | 16 | bell.ca |
+| 791 | RamaPrasad Amaranarayana (ra5425) | 0 | +0 | 0 | - | 1 | att.com |
+| 792 | Ramesh Parthasarathy | 0 | +0 | 0 | - | 5 | att.com |
+| 793 | Ramesh Parthasarathy | 0 | +0 | 0 | - | 3 | att.com |
+| 794 | Rami | 0 | +0 | 0 | - | 1 | orange.com |
+| 795 | Rashmi Pujar | 0 | +0 | 0 | - | 7 | bell.ca |
+| 796 | Rashmi Pujar | 0 | +0 | 0 | - | 12 | bell.ca |
+| 797 | Ravi Pendurty | 0 | +0 | 0 | - | 5 | highstreet-technologies.com |
+| 798 | RaviGeda | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 799 | Raviteja Cherughattu | 0 | +0 | 0 | - | 1 | att.com |
+| 800 | RehanRaza | 0 | +0 | 0 | - | 9 | est.tech |
+| 801 | Remigiusz Janeczek | 0 | +0 | 0 | - | 25 | nokia.com |
+| 802 | Rene Glover | 0 | +0 | 0 | - | 1 | att.com |
+| 803 | Rene Robert | 0 | +0 | 0 | - | 5 | orange.com |
+| 804 | Renu Kumari | 0 | +0 | 0 | - | 5 | bell.ca |
+| 805 | Reo Inoue | 0 | +0 | 0 | - | 2 | fujitsu.com |
+| 806 | Reshmasree | 0 | +0 | 0 | - | 7 | wipro.com |
+| 807 | Rich Bennett | 0 | +0 | 0 | - | 13 | att.com |
+| 808 | Rich Bennett | 0 | +0 | 0 | - | 1 | att.com |
+| 809 | Rich Tabedzki | 0 | +0 | 0 | - | 5 | att.com |
+| 810 | Rina Roi | 0 | +0 | 0 | - | 1 | att.com |
+| 811 | Rishi Chail | 0 | +0 | 0 | - | 2 | est.tech |
+| 812 | Ritu Sood | 0 | +0 | 0 | - | 5 | intel.com |
+| 813 | Rob Daugherty | 0 | +0 | 0 | - | 9 | att.com |
+| 814 | Robby Maharajh | 0 | +0 | 0 | - | 10 | att.com |
+| 815 | Rodrigo Lima | 0 | +0 | 0 | - | 5 | yoppworks.com |
+| 816 | Roger Maitland | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 817 | Roger Maitland | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 818 | Rogers, Reneal(rr267j) | 0 | +0 | 0 | - | 2 | att.com |
+| 819 | Rokhvarg David | 0 | +0 | 0 | - | 2 | att.com |
+| 820 | Rommel Pawar | 0 | +0 | 0 | - | 4 | bell.ca |
+| 821 | Ronan Kenny | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 822 | Ronan Keogh | 0 | +0 | 0 | - | 3 | ericsson.com |
+| 823 | RossC | 0 | +0 | 0 | - | 14 | est.tech |
+| 824 | Rotundo, Al (ar3165) | 0 | +0 | 0 | - | 2 | att.com |
+| 825 | Roy, Amresh | 0 | +0 | 0 | - | 2 | att.com |
+| 826 | Ruoyu | 0 | +0 | 0 | - | 9 | intel.com |
+| 827 | Rupali Shirode | 0 | +0 | 0 | - | 1 | t-systems.com |
+| 828 | Rupinder | 0 | +0 | 0 | - | 5 | ibm.com |
+| 829 | Ruslan Kashapov | 0 | +0 | 0 | - | 2 | pantheon.tech |
+| 830 | Ruslan Kashapov | 0 | +0 | 0 | - | 1 | gmail.com |
+| 831 | Ryan Goulding | 0 | +0 | 0 | - | 2 | gmail.com |
+| 832 | Ryan Young | 0 | +0 | 0 | - | 1 | att.com |
+| 833 | SRINIVAS V | 0 | +0 | 0 | - | 2 | huawei.com |
+| 834 | SRicci | 0 | +0 | 0 | - | 1 | att.com |
+| 835 | SagarS | 0 | +0 | 0 | - | 2 | est.tech |
+| 836 | Sai Gandham | 0 | +0 | 0 | - | 6 | att.com |
+| 837 | Sai Gandham | 0 | +0 | 0 | - | 1 | gmail.com |
+| 838 | Sai Gandham | 0 | +0 | 0 | - | 1 | att.com |
+| 839 | Salichos Michail, INI-INO-ECO-HCT | 0 | +0 | 0 | - | 1 | gmail.com |
+| 840 | Sam Huang | 0 | +0 | 0 | - | 2 | yoppworks.com |
+| 841 | Sam Ollo | 0 | +0 | 0 | - | 1 | att.com |
+| 842 | Sambasiva K | 0 | +0 | 0 | - | 1 | verizon.com |
+| 843 | Samuel Kontris | 0 | +0 | 0 | - | 1 | pantheon.tech |
+| 844 | Samuel Liard | 0 | +0 | 0 | - | 7 | gmail.com |
+| 845 | Samuli Silvius | 0 | +0 | 0 | - | 7 | samsung.com |
+| 846 | Sanchez, Gabriel (gs882h) | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 847 | Sandeep J | 0 | +0 | 0 | - | 8 | ibm.com |
+| 848 | Sandeep Shah | 0 | +0 | 0 | - | 6 | gmail.com |
+| 849 | Sandeep Shah | 0 | +0 | 0 | - | 5 | techmahindra.com |
+| 850 | Sangalang, Felix | 0 | +0 | 0 | - | 2 | att.com |
+| 851 | SantoshB | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 852 | Sara Weiss | 0 | +0 | 0 | - | 1 | att.com |
+| 853 | Sarah Abouzainah | 0 | +0 | 0 | - | 2 | orange.com |
+| 854 | Sarah Abouzainah | 0 | +0 | 0 | - | 1 | sarahs-macbook-pro.local |
+| 855 | Saravanan A | 0 | +0 | 0 | - | 5 | wipro.com |
+| 856 | Saravanan, Madheswaran | 0 | +0 | 0 | - | 2 | ibm.com |
+| 857 | Saryu Shah | 0 | +0 | 0 | - | 2 | att.com |
+| 858 | Sastry Isukapalli | 0 | +0 | 0 | - | 2 | att.com |
+| 859 | Satoshi Fujii | 0 | +0 | 0 | - | 6 | fujitsu.com |
+| 860 | Satyaki Mallick | 0 | +0 | 0 | - | 2 | huawei.com |
+| 861 | Satyaki Mallick | 0 | +0 | 0 | - | 2 | gmail.com |
+| 862 | Schmalzried, Terry (ts862m) | 0 | +0 | 0 | - | 3 | att.com |
+| 863 | Scott Seabolt | 0 | +0 | 0 | - | 1 | att.com |
+| 864 | Sean Hassan | 0 | +0 | 0 | - | 1 | att.com |
+| 865 | Sebastien Premont-Tendland | 0 | +0 | 0 | - | 6 | bell.ca |
+| 866 | Serban Jora | 0 | +0 | 0 | - | 1 | att.com |
+| 867 | Serban Jora | 0 | +0 | 0 | - | 3 | att.com |
+| 868 | Serban Popescu | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 869 | Serban Popescu | 0 | +0 | 0 | - | 1 | att.com |
+| 870 | Serge Simard | 0 | +0 | 0 | - | 3 | agilitae.com |
+| 871 | Serhii Siabruk | 0 | +0 | 0 | - | 1 | jabil.com |
+| 872 | Seshu Kumar Mudiganti | 0 | +0 | 0 | - | 1 | windriver.com |
+| 873 | Seshu-Kumar-M | 0 | +0 | 0 | - | 22 | huawei.com |
+| 874 | Shaaban Ebrahim | 0 | +0 | 0 | - | 1 | gmail.com |
+| 875 | Shabanov, Marina (ms656r) | 0 | +0 | 0 | - | 2 | att.com |
+| 876 | Shailendra Borale | 0 | +0 | 0 | - | 5 | att.com |
+| 877 | Shankar Narayanan | 0 | +0 | 0 | - | 6 | att.com |
+| 878 | Shantaram Sawant | 0 | +0 | 0 | - | 2 | accenture.com |
+| 879 | Shashank Kumar Shankar | 0 | +0 | 0 | - | 8 | intel.com |
+| 880 | Shawn Severin | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 881 | Shay Weizman | 0 | +0 | 0 | - | 1 | att.com |
+| 882 | Sheshukov, Natalia (ns019t) | 0 | +0 | 0 | - | 2 | att.com |
+| 883 | ShivendraSaxena | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 884 | Shiwei Tian | 0 | +0 | 0 | - | 2 | zte.com.cn |
+| 885 | Shnaider, Marina (ms7589) | 0 | +0 | 0 | - | 2 | att.com |
+| 886 | Shobana Jothi | 0 | +0 | 0 | - | 2 | verizon.com |
+| 887 | Shubhada Ramkrishna Vaze | 0 | +0 | 0 | - | 4 | techmahindra.com |
+| 888 | ShuhaoCai | 0 | +0 | 0 | - | 1 | huawei.com |
+| 889 | Shwetank Dave | 0 | +0 | 0 | - | 6 | amdocs.com |
+| 890 | Shwetha_R | 0 | +0 | 0 | - | 1 | wipro.com |
+| 891 | Simon Hrabos | 0 | +0 | 0 | - | 4 | tieto.com |
+| 892 | Simon Hrabos | 0 | +0 | 0 | - | 1 | samsung.com |
+| 893 | Sindhuri.A | 0 | +0 | 0 | - | 4 | huawei.com |
+| 894 | Singh, Ajay (as396y) | 0 | +0 | 0 | - | 2 | att.com |
+| 895 | Singh, Rupinderjeet (rs830d) | 0 | +0 | 0 | - | 1 | att.com |
+| 896 | Singhsumalee, Pete (ps2418) | 0 | +0 | 0 | - | 2 | att.com |
+| 897 | Singla, Rajiv (rs153v) | 0 | +0 | 0 | - | 2 | att.com |
+| 898 | Sirisha Gopigiri | 0 | +0 | 0 | - | 1 | verizon.com |
+| 899 | Sirisha_Manchikanti | 0 | +0 | 0 | - | 10 | est.tech |
+| 900 | Sithara Nambiar | 0 | +0 | 0 | - | 3 | huawei.com |
+| 901 | Siva.ye | 0 | +0 | 0 | - | 3 | huawei.com |
+| 902 | Skip Wonnell | 0 | +0 | 0 | - | 2 | att.com |
+| 903 | Smokowski, Kevin (ks6305) | 0 | +0 | 0 | - | 8 | att.com |
+| 904 | Smokowski, Kevin (ks6305) | 0 | +0 | 0 | - | 2 | att.com |
+| 905 | Smokowski, Kevin (ks6305) | 0 | +0 | 0 | - | 4 | att.com |
+| 906 | Smokowski, Steve (ss835w) | 0 | +0 | 0 | - | 6 | att.com |
+| 907 | Smokowski, Steven | 0 | +0 | 0 | - | 2 | att.com |
+| 908 | Sneha Dantkale | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 909 | Snigdha Sucharita Patra | 0 | +0 | 0 | - | 1 | techmahindra.com |
+| 910 | Sofia Wallin | 0 | +0 | 0 | - | 1 | est.tech |
+| 911 | Sonali Das | 0 | +0 | 0 | - | 1 | att.com |
+| 912 | Sooriyaa | 0 | +0 | 0 | - | 2 | ibm.com |
+| 913 | Sotiropoulos, Ioannis (is948x) | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 914 | Sowmya_Narayanasetty | 0 | +0 | 0 | - | 2 | ltts.com |
+| 915 | Sreeja Gattagouni | 0 | +0 | 0 | - | 3 | techmahindra.com |
+| 916 | Sreenivasa Reddy Chinnannagari | 0 | +0 | 0 | - | 3 | techmahindra.com |
+| 917 | SrikanthNaidu | 0 | +0 | 0 | - | 2 | att.com |
+| 918 | Srinivasan Ramanathan | 0 | +0 | 0 | - | 4 | fujitsu.com |
+| 919 | Srinivasan Selvam | 0 | +0 | 0 | - | 2 | huawei.com |
+| 920 | Sripad | 0 | +0 | 0 | - | 2 | att.com |
+| 921 | Srivahni Chivukula | 0 | +0 | 0 | - | 4 | intel.com |
+| 922 | Stan Bonev | 0 | +0 | 0 | - | 5 | att.com |
+| 923 | Stanislav Chlebec | 0 | +0 | 0 | - | 17 | pantheon.tech |
+| 924 | Stanislav Marszalek | 0 | +0 | 0 | - | 5 | samsung.com |
+| 925 | Stanislav Vishnevetskiy | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 926 | Starec Vlastimil | 0 | +0 | 0 | - | 4 | orange.com |
+| 927 | Stavros Kanarakis | 0 | +0 | 0 | - | 5 | nokia.com |
+| 928 | Stefan Dierichs | 0 | +0 | 0 | - | 1 | telekom.de |
+| 929 | Stela Stoykova | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 930 | Steve Alphonse Siani | 0 | +0 | 0 | - | 4 | ibm.com |
+| 931 | Steve Siani | 0 | +0 | 0 | - | 2 | bell.ca |
+| 932 | Steve Smokowski | 0 | +0 | 0 | - | 7 | att.com |
+| 933 | Steve Thomas | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 934 | Steven Thomas | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 935 | Steven Wright | 0 | +0 | 0 | - | 3 | att.com |
+| 936 | Steven Wright | 0 | +0 | 0 | - | 2 | att.com |
+| 937 | Stilwell, David (stilwelld) | 0 | +0 | 0 | - | 8 | att.com |
+| 938 | Stone, Avi (as206k) | 0 | +0 | 0 | - | 1 | att.com |
+| 939 | Sudarshan Kumar | 0 | +0 | 0 | - | 4 | ibm.com |
+| 940 | Sudarshan Kumar | 0 | +0 | 0 | - | 3 | att.com |
+| 941 | SudhakarReddy | 0 | +0 | 0 | - | 7 | amdocs.com |
+| 942 | Sumapriya Sarvepalli | 0 | +0 | 0 | - | 2 | techmahindra.com |
+| 943 | Summers, Gregory (gs2953) | 0 | +0 | 0 | - | 1 | att.com |
+| 944 | SunilB | 0 | +0 | 0 | - | 4 | techmahindra.com |
+| 945 | Surendra Reddy Katam | 0 | +0 | 0 | - | 2 | techmahindra.com |
+| 946 | Suresh Charan | 0 | +0 | 0 | - | 11 | bell.ca |
+| 947 | SwapnilPathak | 0 | +0 | 0 | - | 2 | techmahindra.com |
+| 948 | Sylhare | 0 | +0 | 0 | - | 2 | gmail.com |
+| 949 | Sylvain Desbureaux | 0 | +0 | 0 | - | 23 | orange.com |
+| 950 | Sylwia Jakubek | 0 | +0 | 0 | - | 4 | nokia.com |
+| 951 | System Administrator | 0 | +0 | 0 | - | 1 | vmware.com |
+| 952 | Szabolcs Hutvagner | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 953 | Tait,Trevor(rt0435) | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 954 | Taka Cho | 0 | +0 | 0 | - | 19 | att.com |
+| 955 | Taka Cho | 0 | +0 | 0 | - | 3 | att.com |
+| 956 | Takamune Cho | 0 | +0 | 0 | - | 1 | takamunes-mbp.home |
+| 957 | Tal Gitelman | 0 | +0 | 0 | - | 4 | att.com |
+| 958 | Tal Gitelman | 0 | +0 | 0 | - | 5 | att.com |
+| 959 | Tal Karbachinsky | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 960 | TamasBakai | 0 | +0 | 0 | - | 5 | est.tech |
+| 961 | Tao Shen | 0 | +0 | 0 | - | 7 | chinamobile.com |
+| 962 | Ted Humphrey | 0 | +0 | 0 | - | 2 | att.com |
+| 963 | Tej, Tarun | 0 | +0 | 0 | - | 3 | att.com |
+| 964 | Temoc Rodriguez | 0 | +0 | 0 | - | 5 | att.com |
+| 965 | ThamlurRaju | 0 | +0 | 0 | - | 2 | techmahindra.com |
+| 966 | Thanh Ha | 0 | +0 | 0 | - | 2 | linuxfoundation.org |
+| 967 | Thierry Hardy | 0 | +0 | 0 | - | 2 | orange.com |
+| 968 | Thomas Nelson | 0 | +0 | 0 | - | 3 | att.com |
+| 969 | Thomas Nelson | 0 | +0 | 0 | - | 4 | att.com |
+| 970 | Threefoot, Jane (jt6620) | 0 | +0 | 0 | - | 4 | att.com |
+| 971 | Thugutla sailakshmi | 0 | +0 | 0 | - | 4 | ibm.com |
+| 972 | Tim Johnson | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 973 | Tin Lam | 0 | +0 | 0 | - | 1 | irrational.io |
+| 974 | Toan Nguyen | 0 | +0 | 0 | - | 1 | att.com |
+| 975 | Todd Larchuk | 0 | +0 | 0 | - | 1 | att.com |
+| 976 | Todd Malsbary | 0 | +0 | 0 | - | 1 | intel.com |
+| 977 | Tomasz Golabek | 0 | +0 | 0 | - | 13 | nokia.com |
+| 978 | Tomasz Gwozdecki | 0 | +0 | 0 | - | 2 | nokia.com |
+| 979 | Tomasz Pietruszkiewicz | 0 | +0 | 0 | - | 14 | nokia.com |
+| 980 | Tomasz Switon | 0 | +0 | 0 | - | 1 | nokia.com |
+| 981 | Tomasz Wrobel | 0 | +0 | 0 | - | 17 | nokia.com |
+| 982 | Tomek Kaminski | 0 | +0 | 0 | - | 3 | nokia.com |
+| 983 | Tomek Osinski | 0 | +0 | 0 | - | 1 | orange.com |
+| 984 | Tommy Carpenter | 0 | +0 | 0 | - | 1 | att.com |
+| 985 | Tommy Carpenter | 0 | +0 | 0 | - | 1 | att.com |
+| 986 | Tomáš Levora | 0 | +0 | 0 | - | 4 | samsung.com |
+| 987 | Tony Hansen | 0 | +0 | 0 | - | 16 | att.com |
+| 988 | Toshimichi Fukuda | 0 | +0 | 0 | - | 3 | fujitsu.com |
+| 989 | Tschaen, Brendan | 0 | +0 | 0 | - | 5 | att.com |
+| 990 | Tschaen, Brendan (bt054f) | 0 | +0 | 0 | - | 2 | att.com |
+| 991 | Tufman, Shay | 0 | +0 | 0 | - | 2 | att.com |
+| 992 | Tufman, Shay | 0 | +0 | 0 | - | 2 | gmail.com |
+| 993 | Tufman, Shay (st198j) | 0 | +0 | 0 | - | 2 | att.com |
+| 994 | Ubuntu | 0 | +0 | 0 | - | 1 | windstream.com |
+| 995 | Ubuntu | 0 | +0 | 0 | - | 2 | example.com |
+| 996 | Ubuntu | 0 | +0 | 0 | - | 1 | nokia.com |
+| 997 | Usaraswat | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 998 | Utkarsh Jauhari | 0 | +0 | 0 | - | 7 | att.com |
+| 999 | Vanessa Valderrama | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 1000 | Varma, Vikas (vv8305) | 0 | +0 | 0 | - | 1 | att.com |
+| 1001 | Vasyl Razinkov | 0 | +0 | 0 | - | 2 | sidero.ie |
+| 1002 | Venkata Harish K Kajur | 0 | +0 | 0 | - | 6 | gmail.com |
+| 1003 | Venkata Molluru | 0 | +0 | 0 | - | 2 | techmahindra.com |
+| 1004 | Victor Gao | 0 | +0 | 0 | - | 9 | huawei.com |
+| 1005 | Victor Morales | 0 | +0 | 0 | - | 13 | intel.com |
+| 1006 | Victor Morales | 0 | +0 | 0 | - | 1 | samsung.com |
+| 1007 | Vidisha | 0 | +0 | 0 | - | 1 | amdocs.com |
 | 1008 | Vidya Shinde | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1009 | Vidyashree Rama | 0 | +0 | 0 | - | 9 | huawei.com |
-| 1010 | Vijay Venkatesh Kumar | 0 | +0 | 0 | - | 24 | att.com |
-| 1011 | Vikram Potturi(apotturi) | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1012 | Vincent Colas | 0 | +0 | 0 | - | 2 | orange.com |
-| 1013 | Virginie | 0 | +0 | 0 | - | 2 | orange.com |
-| 1014 | Vishal Varvate | 0 | +0 | 0 | - | 1 | capgemini.com |
-| 1015 | Viswanath Kumar Skand Priya | 0 | +0 | 0 | - | 1 | verizon.com |
-| 1016 | Vitaly Lavrusevich | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1017 | Vladislav Sheshalevich | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1018 | Vodafone | 0 | +0 | 0 | - | 7 | vodafone.com |
-| 1019 | Wang,Frank(gw1218) | 0 | +0 | 0 | - | 1 | att.com |
-| 1020 | WeberLaurent | 0 | +0 | 0 | - | 2 | gmail.com |
-| 1021 | Wiktor Garbarek | 0 | +0 | 0 | - | 5 | nokia.com |
-| 1022 | William Reehil | 0 | +0 | 0 | - | 11 | att.com |
-| 1023 | Witold Ficio Kopel | 0 | +0 | 0 | - | 2 | samsung.com |
-| 1024 | Wong, Ben | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 1025 | Wonnell, Skip (kw5258) | 0 | +0 | 0 | - | 1 | att.com |
-| 1026 | Xiaohua Zhang | 0 | +0 | 0 | - | 5 | windriver.com |
-| 1027 | Xin Miao | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1028 | Xin Miao | 0 | +0 | 0 | - | 2 | fujitsu.com |
-| 1029 | XingXiaocheng | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1030 | Yang Xu | 0 | +0 | 0 | - | 12 | huawei.com |
-| 1031 | Yang Xu | 0 | +0 | 0 | - | 5 | futurewei.com |
-| 1032 | Yang Xu | 0 | +0 | 0 | - | 4 | gmail.com |
-| 1033 | Yang Xu | 0 | +0 | 0 | - | 4 | futurewei.com |
-| 1034 | Yao Le | 0 | +0 | 0 | - | 1 | intel.com |
-| 1035 | Yarin Dekel | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1036 | Yashwanth | 0 | +0 | 0 | - | 4 | wipro.com |
-| 1037 | Yatian XU | 0 | +0 | 0 | - | 1 | nokia-sbell.com |
-| 1038 | YiLi | 0 | +0 | 0 | - | 1 | zte.com.cn |
-| 1039 | Yoav Schneiderman | 0 | +0 | 0 | - | 1 | att.com |
-| 1040 | YongchaoWu | 0 | +0 | 0 | - | 4 | est.tech |
-| 1041 | Yoo, Brian (by703c) | 0 | +0 | 0 | - | 3 | att.com |
-| 1042 | YuanHu | 0 | +0 | 0 | - | 5 | zte.com.cn |
-| 1043 | Yuli | 0 | +0 | 0 | - | 3 | gmail.com |
-| 1044 | Yuli Shlosberg | 0 | +0 | 0 | - | 8 | att.com |
-| 1045 | Yulian Han | 0 | +0 | 0 | - | 5 | huawei.com |
-| 1046 | Yun Huang | 0 | +0 | 0 | - | 3 | windriver.com |
-| 1047 | ZhangZihao | 0 | +0 | 0 | - | 2 | chinamobile.com |
-| 1048 | Zhaoxing Meng | 0 | +0 | 0 | - | 8 | zte.com.cn |
-| 1049 | Zhuangyang | 0 | +0 | 0 | - | 1 | qq.com |
-| 1050 | Zhuoyao Huang | 0 | +0 | 0 | - | 6 | zte.com.cn |
-| 1051 | Zihmin Hoover | 0 | +0 | 0 | - | 1 | att.com |
-| 1052 | Zlatko Murgoski | 0 | +0 | 0 | - | 5 | nokia.com |
-| 1053 | a.sreekumar | 0 | +0 | 0 | - | 16 | bell.ca |
-| 1054 | a.sreekumar | 0 | +0 | 0 | - | 14 | est.tech |
-| 1055 | a.sreekumar | 0 | +0 | 0 | - | 1 | ericsson.com |
-| 1056 | abatos | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1057 | abbas | 0 | +0 | 0 | - | 1 | wipro.com |
-| 1058 | abhishek.c92 | 0 | +0 | 0 | - | 1 | samsung.com |
-| 1059 | aditya | 0 | +0 | 0 | - | 4 | att.com |
-| 1060 | aditya.puthuparambil | 0 | +0 | 0 | - | 7 | est.tech |
-| 1061 | afenner | 0 | +0 | 0 | - | 3 | est.tech |
-| 1062 | afenner | 0 | +0 | 0 | - | 4 | ericsson.com |
-| 1063 | aishkashyap | 0 | +0 | 0 | - | 3 | techmahindra.com |
-| 1064 | ajay priyadarshi | 0 | +0 | 0 | - | 1 | ril.com |
-| 1065 | ajay_dp001 | 0 | +0 | 0 | - | 13 | est.tech |
-| 1066 | akhilakishore | 0 | +0 | 0 | - | 3 | intel.com |
-| 1067 | akhosla | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1068 | aleem.raja@t-systems.com | 0 | +0 | 0 | - | 7 | t-systems.com |
-| 1069 | aleemraja | 0 | +0 | 0 | - | 4 | techmahindra.com |
-| 1070 | alex.stancu | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
-| 1071 | alkac | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1072 | amatthews | 0 | +0 | 0 | - | 1 | est.tech |
-| 1073 | ambrishest | 0 | +0 | 0 | - | 1 | est.tech |
-| 1074 | amine ezziati | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1075 | amitjai | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1076 | amohamad | 0 | +0 | 0 | - | 1 | queensu.ca |
-| 1077 | amshegokar | 0 | +0 | 0 | - | 4 | techmahindra.com |
-| 1078 | andre.schmid | 0 | +0 | 0 | - | 5 | est.tech |
-| 1079 | andrzejszukuc | 0 | +0 | 0 | - | 5 | nokia.com |
-| 1080 | anjali.walsatwar | 0 | +0 | 0 | - | 6 | huawei.com |
-| 1081 | ankitbhatt | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1082 | ankitg@aarnanetworks.com | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
-| 1083 | antonys | 0 | +0 | 0 | - | 1 | est.tech |
-| 1084 | anujkap | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1085 | anupmarathe | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1086 | anushadasari | 0 | +0 | 0 | - | 4 | ibm.com |
-| 1087 | aosull01 | 0 | +0 | 0 | - | 4 | huawei.com |
-| 1088 | aribeiro | 0 | +0 | 0 | - | 2 | est.tech |
-| 1089 | arkadiusz.adamski | 0 | +0 | 0 | - | 4 | est.tech |
-| 1090 | arun chapagain | 0 | +0 | 0 | - | 2 | huawei.com |
-| 1091 | as005h | 0 | +0 | 0 | - | 1 | att.com |
-| 1092 | asgar | 0 | +0 | 0 | - | 2 | ibm.com |
-| 1093 | atulan | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1094 | atulpurohit | 0 | +0 | 0 | - | 2 | vodafone.com |
-| 1095 | avigaffa | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1096 | avinash.akkera | 0 | +0 | 0 | - | 1 | accenture.com |
-| 1097 | ayalaben | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1098 | barak | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1099 | bb3476 | 0 | +0 | 0 | - | 2 | att.com |
-| 1100 | bdfreeman1421 | 0 | +0 | 0 | - | 1 | att.com |
-| 1101 | beili.zhou | 0 | +0 | 0 | - | 3 | amdocs.com |
-| 1102 | bencheung | 0 | +0 | 0 | - | 3 | nokia.com |
-| 1103 | bharath | 0 | +0 | 0 | - | 3 | hotmail.com |
-| 1104 | bhedstrom | 0 | +0 | 0 | - | 2 | oamtechnologies.com |
-| 1105 | biancunkang | 0 | +0 | 0 | - | 2 | zte.com.cn |
-| 1106 | bilal.iqbal | 0 | +0 | 0 | - | 3 | est.tech |
-| 1107 | biniek | 0 | +0 | 0 | - | 6 | nokia.com |
-| 1108 | biswajit.deswali | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1109 | bmiklos | 0 | +0 | 0 | - | 1 | est.tech |
-| 1110 | bobbymander | 0 | +0 | 0 | - | 1 | att.com |
-| 1111 | bran-wang | 0 | +0 | 0 | - | 1 | vmware.com |
-| 1112 | brucetcisco | 0 | +0 | 0 | - | 2 | cisco.com |
-| 1113 | brunomilitzer | 0 | +0 | 0 | - | 3 | est.tech |
-| 1114 | bt2983 | 0 | +0 | 0 | - | 4 | att.com |
-| 1115 | burdziak | 0 | +0 | 0 | - | 10 | nokia.com |
-| 1116 | cb478c | 0 | +0 | 0 | - | 1 | att.com |
-| 1117 | chandana.g.n | 0 | +0 | 0 | - | 1 | accenture.com |
-| 1118 | chenjie1 | 0 | +0 | 0 | - | 2 | intel.com |
-| 1119 | chenkai | 0 | +0 | 0 | - | 1 | fiberhome.com |
-| 1120 | chenying83 | 0 | +0 | 0 | - | 2 | huawei.com |
-| 1121 | chrisreece | 0 | +0 | 0 | - | 1 | awardsolutions.com |
-| 1122 | chsailakshmi | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
-| 1123 | cluckenbaugh | 0 | +0 | 0 | - | 1 | att.com |
-| 1124 | cmrizhangzhen | 0 | +0 | 0 | - | 4 | qq.com |
-| 1125 | colvert | 0 | +0 | 0 | - | 2 | gmail.com |
-| 1126 | cyuamber | 0 | +0 | 0 | - | 5 | chinamobile.com |
-| 1127 | dasarathi528024 | 0 | +0 | 0 | - | 1 | techmahindra.com |
-| 1128 | dave.adams (da490c) | 0 | +0 | 0 | - | 6 | amdocs.com |
-| 1129 | david.mcweeney | 0 | +0 | 0 | - | 12 | est.tech |
-| 1130 | davsad | 0 | +0 | 0 | - | 1 | est.tech |
-| 1131 | decheng zhang | 0 | +0 | 0 | - | 8 | huawei.com |
-| 1132 | deen1985 | 0 | +0 | 0 | - | 13 | nokia.com |
-| 1133 | deepikasatheesh | 0 | +0 | 0 | - | 8 | wipro.com |
-| 1134 | dekstroza | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 1135 | demskeq8 | 0 | +0 | 0 | - | 2 | highstreet-technologies.com |
-| 1136 | demx8as6 | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
-| 1137 | denghui (L) | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1138 | denglingli | 0 | +0 | 0 | - | 2 | chinamobile.com |
-| 1139 | denilson.l65 | 0 | +0 | 0 | - | 6 | wipro.com |
-| 1140 | dermot123 | 0 | +0 | 0 | - | 2 | est.tech |
-| 1141 | dfarrelly | 0 | +0 | 0 | - | 9 | est.tech |
-| 1142 | dfilppi | 0 | +0 | 0 | - | 3 | cloudify.co |
-| 1143 | dfilppi | 0 | +0 | 0 | - | 1 | gigaspaces.com |
-| 1144 | dfx1971 | 0 | +0 | 0 | - | 4 | amdocs.com |
-| 1145 | dg5762 | 0 | +0 | 0 | - | 2 | att.com |
-| 1146 | dgermain | 0 | +0 | 0 | - | 1 | cgi.com |
-| 1147 | dglFromAtt | 0 | +0 | 0 | - | 9 | att.com |
-| 1148 | dharani | 0 | +0 | 0 | - | 1 | wipro.com |
-| 1149 | dhebeha | 0 | +0 | 0 | - | 4 | wipro.com |
-| 1150 | dinesha | 0 | +0 | 0 | - | 2 | ibm.com |
-| 1151 | dkamdocs | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1152 | drveerendra | 0 | +0 | 0 | - | 2 | att.com |
-| 1153 | dsingh.278 | 0 | +0 | 0 | - | 1 | gmail.com |
-| 1154 | dyh | 0 | +0 | 0 | - | 7 | chinamobile.com |
-| 1155 | eHanan | 0 | +0 | 0 | - | 5 | est.tech |
-| 1156 | earthmant | 0 | +0 | 0 | - | 1 | cloudify.co |
-| 1157 | ebo | 0 | +0 | 0 | - | 5 | est.tech |
-| 1158 | ecaiyanlinux | 0 | +0 | 0 | - | 8 | est.tech |
-| 1159 | econwar | 0 | +0 | 0 | - | 6 | est.tech |
-| 1160 | ed852m | 0 | +0 | 0 | - | 1 | amdocs.com |
-| 1161 | edepaul | 0 | +0 | 0 | - | 2 | est.tech |
-| 1162 | eeginux | 0 | +0 | 0 | - | 4 | est.tech |
-| 1163 | efiacor | 0 | +0 | 0 | - | 29 | est.tech |
-| 1164 | eh552t | 0 | +0 | 0 | - | 9 | att.com |
-| 1165 | eh552t | 0 | +0 | 0 | - | 1 | att.com |
-| 1166 | eikrwaq | 0 | +0 | 0 | - | 9 | ericsson.com |
-| 1167 | ejamcud | 0 | +0 | 0 | - | 2 | est.tech |
-| 1168 | eleonorali | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1169 | emartin | 0 | +0 | 0 | - | 5 | est.tech |
-| 1170 | enyinna1234 | 0 | +0 | 0 | - | 3 | intel.com |
-| 1171 | erlei | 0 | +0 | 0 | - | 1 | zte.com.cn |
-| 1172 | eronkeo | 0 | +0 | 0 | - | 4 | est.tech |
-| 1173 | eschcam | 0 | +0 | 0 | - | 2 | est.tech |
-| 1174 | esobmar | 0 | +0 | 0 | - | 3 | est.tech |
-| 1175 | esobmar | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 1176 | eyalholz | 0 | +0 | 0 | - | 2 | amdocs.com |
-| 1177 | ezhil | 0 | +0 | 0 | - | 7 | ibm.com |
-| 1178 | farida azmy | 0 | +0 | 0 | - | 2 | orange.com |
-| 1179 | fengyuanxing | 0 | +0 | 0 | - | 4 | zte.com.cn |
-| 1180 | fpaquett | 0 | +0 | 0 | - | 7 | amdocs.com |
-| 1181 | franciscovila | 0 | +0 | 0 | - | 1 | est.tech |
-| 1182 | frederic desnoes | 0 | +0 | 0 | - | 1 | orange.com |
-| 1183 | fujinhua | 0 | +0 | 0 | - | 8 | zte.com.cn |
-| 1184 | fzhang | 0 | +0 | 0 | - | 2 | ericsson.com |
-| 1185 | gabe.maurer | 0 | +0 | 0 | - | 1 | att.com |
-| 1186 | gaurav | 0 | +0 | 0 | - | 7 | huawei.com |
-| 1187 | gautamk189 | 0 | +0 | 0 | - | 1 | hcl.com |
-| 1188 | git config --global user.name | 0 | +0 | 0 | - | 3 | samsung.com |
-| 1189 | gjaibm1314 | 0 | +0 | 0 | - | 1 | qq.com |
-| 1190 | gongjief | 0 | +0 | 0 | - | 1 | isoftstone.com |
-| 1191 | grabinsk | 0 | +0 | 0 | - | 3 | nokia.com |
-| 1192 | gregory.hayes | 0 | +0 | 0 | - | 3 | est.tech |
-| 1193 | guanwenyao | 0 | +0 | 0 | - | 4 | chinamobile.com |
-| 1194 | gummar | 0 | +0 | 0 | - | 5 | est.tech |
-| 1195 | guochong | 0 | +0 | 0 | - | 3 | chinamobile.com |
-| 1196 | h00397475 | 0 | +0 | 0 | - | 1 | huawei.com |
-| 1197 | hanybaki | 0 | +0 | 0 | - | 4 | orange.com |
-| 1198 | hariharan97 | 0 | +0 | 0 | - | 4 | wipro.com |
-| 1199 | hb123f | 0 | +0 | 0 | - | 1 | att.com |
-| 1200 | hb123f | 0 | +0 | 0 | - | 2 | att.com |
-| 1201 | hetengjiao | 0 | +0 | 0 | - | 3 | chinamobile.com |
-| 1202 | hewei-cmss | 0 | +0 | 0 | - | 1 | chinamobile.com |
-| 1203 | hongyu zhao | 0 | +0 | 0 | - | 2 | zte.com.cn |
-| 1204 | hp1256 | 0 | +0 | 0 | - | 3 | att.com |
+| 1009 | Vidya Shinde | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1010 | Vidyashree Rama | 0 | +0 | 0 | - | 9 | huawei.com |
+| 1011 | Vijay Venkatesh Kumar | 0 | +0 | 0 | - | 24 | att.com |
+| 1012 | Vikram Potturi(apotturi) | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1013 | Vincent Colas | 0 | +0 | 0 | - | 2 | orange.com |
+| 1014 | Virginie | 0 | +0 | 0 | - | 2 | orange.com |
+| 1015 | Vishal Varvate | 0 | +0 | 0 | - | 1 | capgemini.com |
+| 1016 | Viswanath Kumar Skand Priya | 0 | +0 | 0 | - | 1 | verizon.com |
+| 1017 | Vitaly Lavrusevich | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1018 | Vladislav Sheshalevich | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1019 | Vodafone | 0 | +0 | 0 | - | 7 | vodafone.com |
+| 1020 | Wang,Frank(gw1218) | 0 | +0 | 0 | - | 1 | att.com |
+| 1021 | WeberLaurent | 0 | +0 | 0 | - | 2 | gmail.com |
+| 1022 | Wiktor Garbarek | 0 | +0 | 0 | - | 5 | nokia.com |
+| 1023 | William Reehil | 0 | +0 | 0 | - | 11 | att.com |
+| 1024 | Witold Ficio Kopel | 0 | +0 | 0 | - | 2 | samsung.com |
+| 1025 | Wong, Ben | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 1026 | Wonnell, Skip (kw5258) | 0 | +0 | 0 | - | 1 | att.com |
+| 1027 | Xiaohua Zhang | 0 | +0 | 0 | - | 5 | windriver.com |
+| 1028 | Xin Miao | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1029 | Xin Miao | 0 | +0 | 0 | - | 2 | fujitsu.com |
+| 1030 | XingXiaocheng | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1031 | Yang Xu | 0 | +0 | 0 | - | 12 | huawei.com |
+| 1032 | Yang Xu | 0 | +0 | 0 | - | 5 | futurewei.com |
+| 1033 | Yang Xu | 0 | +0 | 0 | - | 4 | gmail.com |
+| 1034 | Yang Xu | 0 | +0 | 0 | - | 4 | futurewei.com |
+| 1035 | Yao Le | 0 | +0 | 0 | - | 1 | intel.com |
+| 1036 | Yaoguang Wang | 0 | +0 | 0 | - | 4 | huawei.com |
+| 1037 | Yarin Dekel | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1038 | Yashwanth | 0 | +0 | 0 | - | 4 | wipro.com |
+| 1039 | Yatian XU | 0 | +0 | 0 | - | 1 | nokia-sbell.com |
+| 1040 | YiLi | 0 | +0 | 0 | - | 1 | zte.com.cn |
+| 1041 | Yoav Schneiderman | 0 | +0 | 0 | - | 1 | att.com |
+| 1042 | YongchaoWu | 0 | +0 | 0 | - | 4 | est.tech |
+| 1043 | Yoo, Brian (by703c) | 0 | +0 | 0 | - | 3 | att.com |
+| 1044 | YuanHu | 0 | +0 | 0 | - | 5 | zte.com.cn |
+| 1045 | Yuli | 0 | +0 | 0 | - | 3 | gmail.com |
+| 1046 | Yuli Shlosberg | 0 | +0 | 0 | - | 8 | att.com |
+| 1047 | Yulian Han | 0 | +0 | 0 | - | 5 | huawei.com |
+| 1048 | Yun Huang | 0 | +0 | 0 | - | 3 | windriver.com |
+| 1049 | ZhangZihao | 0 | +0 | 0 | - | 2 | chinamobile.com |
+| 1050 | Zhaoxing Meng | 0 | +0 | 0 | - | 8 | zte.com.cn |
+| 1051 | Zhuangyang | 0 | +0 | 0 | - | 1 | qq.com |
+| 1052 | Zhuoyao Huang | 0 | +0 | 0 | - | 6 | zte.com.cn |
+| 1053 | Zihmin Hoover | 0 | +0 | 0 | - | 1 | att.com |
+| 1054 | Zlatko Murgoski | 0 | +0 | 0 | - | 5 | nokia.com |
+| 1055 | a.sreekumar | 0 | +0 | 0 | - | 16 | bell.ca |
+| 1056 | a.sreekumar | 0 | +0 | 0 | - | 14 | est.tech |
+| 1057 | a.sreekumar | 0 | +0 | 0 | - | 1 | ericsson.com |
+| 1058 | abatos | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1059 | abbas | 0 | +0 | 0 | - | 1 | wipro.com |
+| 1060 | abhishek.c92 | 0 | +0 | 0 | - | 1 | samsung.com |
+| 1061 | aditya | 0 | +0 | 0 | - | 4 | att.com |
+| 1062 | aditya.puthuparambil | 0 | +0 | 0 | - | 7 | est.tech |
+| 1063 | afenner | 0 | +0 | 0 | - | 3 | est.tech |
+| 1064 | afenner | 0 | +0 | 0 | - | 4 | ericsson.com |
+| 1065 | aishkashyap | 0 | +0 | 0 | - | 3 | techmahindra.com |
+| 1066 | ajay priyadarshi | 0 | +0 | 0 | - | 1 | ril.com |
+| 1067 | ajay_dp001 | 0 | +0 | 0 | - | 13 | est.tech |
+| 1068 | akhilakishore | 0 | +0 | 0 | - | 3 | intel.com |
+| 1069 | akhosla | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1070 | aleem.raja@t-systems.com | 0 | +0 | 0 | - | 7 | t-systems.com |
+| 1071 | aleemraja | 0 | +0 | 0 | - | 4 | techmahindra.com |
+| 1072 | alex.stancu | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
+| 1073 | alkac | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1074 | amatthews | 0 | +0 | 0 | - | 1 | est.tech |
+| 1075 | ambrishest | 0 | +0 | 0 | - | 1 | est.tech |
+| 1076 | amine ezziati | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1077 | amitjai | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1078 | amohamad | 0 | +0 | 0 | - | 1 | queensu.ca |
+| 1079 | amshegokar | 0 | +0 | 0 | - | 4 | techmahindra.com |
+| 1080 | andre.schmid | 0 | +0 | 0 | - | 5 | est.tech |
+| 1081 | andrzejszukuc | 0 | +0 | 0 | - | 5 | nokia.com |
+| 1082 | anjali.walsatwar | 0 | +0 | 0 | - | 6 | huawei.com |
+| 1083 | ankitbhatt | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1084 | ankitg@aarnanetworks.com | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
+| 1085 | antonys | 0 | +0 | 0 | - | 1 | est.tech |
+| 1086 | anujkap | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1087 | anupmarathe | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1088 | anushadasari | 0 | +0 | 0 | - | 4 | ibm.com |
+| 1089 | aosull01 | 0 | +0 | 0 | - | 4 | huawei.com |
+| 1090 | aribeiro | 0 | +0 | 0 | - | 2 | est.tech |
+| 1091 | arkadiusz.adamski | 0 | +0 | 0 | - | 4 | est.tech |
+| 1092 | arun chapagain | 0 | +0 | 0 | - | 2 | huawei.com |
+| 1093 | as005h | 0 | +0 | 0 | - | 1 | att.com |
+| 1094 | asgar | 0 | +0 | 0 | - | 2 | ibm.com |
+| 1095 | atulan | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1096 | atulpurohit | 0 | +0 | 0 | - | 2 | vodafone.com |
+| 1097 | avigaffa | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1098 | avinash.akkera | 0 | +0 | 0 | - | 1 | accenture.com |
+| 1099 | ayalaben | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1100 | barak | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1101 | bb3476 | 0 | +0 | 0 | - | 2 | att.com |
+| 1102 | bdfreeman1421 | 0 | +0 | 0 | - | 1 | att.com |
+| 1103 | beili.zhou | 0 | +0 | 0 | - | 3 | amdocs.com |
+| 1104 | bencheung | 0 | +0 | 0 | - | 3 | nokia.com |
+| 1105 | bharath | 0 | +0 | 0 | - | 3 | hotmail.com |
+| 1106 | bhedstrom | 0 | +0 | 0 | - | 2 | oamtechnologies.com |
+| 1107 | biancunkang | 0 | +0 | 0 | - | 2 | zte.com.cn |
+| 1108 | bilal.iqbal | 0 | +0 | 0 | - | 3 | est.tech |
+| 1109 | biniek | 0 | +0 | 0 | - | 6 | nokia.com |
+| 1110 | biswajit.deswali | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1111 | bmiklos | 0 | +0 | 0 | - | 1 | est.tech |
+| 1112 | bobbymander | 0 | +0 | 0 | - | 1 | att.com |
+| 1113 | bran-wang | 0 | +0 | 0 | - | 1 | vmware.com |
+| 1114 | brucetcisco | 0 | +0 | 0 | - | 2 | cisco.com |
+| 1115 | brunomilitzer | 0 | +0 | 0 | - | 3 | est.tech |
+| 1116 | bt2983 | 0 | +0 | 0 | - | 4 | att.com |
+| 1117 | burdziak | 0 | +0 | 0 | - | 10 | nokia.com |
+| 1118 | cb478c | 0 | +0 | 0 | - | 1 | att.com |
+| 1119 | chandana.g.n | 0 | +0 | 0 | - | 1 | accenture.com |
+| 1120 | chenjie1 | 0 | +0 | 0 | - | 2 | intel.com |
+| 1121 | chenkai | 0 | +0 | 0 | - | 1 | fiberhome.com |
+| 1122 | chenying83 | 0 | +0 | 0 | - | 2 | huawei.com |
+| 1123 | chrisreece | 0 | +0 | 0 | - | 1 | awardsolutions.com |
+| 1124 | chsailakshmi | 0 | +0 | 0 | - | 1 | aarnanetworks.com |
+| 1125 | cluckenbaugh | 0 | +0 | 0 | - | 1 | att.com |
+| 1126 | cmrizhangzhen | 0 | +0 | 0 | - | 4 | qq.com |
+| 1127 | colvert | 0 | +0 | 0 | - | 2 | gmail.com |
+| 1128 | cyuamber | 0 | +0 | 0 | - | 5 | chinamobile.com |
+| 1129 | dasarathi528024 | 0 | +0 | 0 | - | 1 | techmahindra.com |
+| 1130 | dave.adams (da490c) | 0 | +0 | 0 | - | 6 | amdocs.com |
+| 1131 | david.mcweeney | 0 | +0 | 0 | - | 12 | est.tech |
+| 1132 | davsad | 0 | +0 | 0 | - | 1 | est.tech |
+| 1133 | decheng zhang | 0 | +0 | 0 | - | 8 | huawei.com |
+| 1134 | deen1985 | 0 | +0 | 0 | - | 13 | nokia.com |
+| 1135 | deepikasatheesh | 0 | +0 | 0 | - | 8 | wipro.com |
+| 1136 | dekstroza | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 1137 | demskeq8 | 0 | +0 | 0 | - | 2 | highstreet-technologies.com |
+| 1138 | demx8as6 | 0 | +0 | 0 | - | 1 | highstreet-technologies.com |
+| 1139 | denghui (L) | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1140 | denglingli | 0 | +0 | 0 | - | 2 | chinamobile.com |
+| 1141 | denilson.l65 | 0 | +0 | 0 | - | 6 | wipro.com |
+| 1142 | dermot123 | 0 | +0 | 0 | - | 2 | est.tech |
+| 1143 | dfarrelly | 0 | +0 | 0 | - | 9 | est.tech |
+| 1144 | dfilppi | 0 | +0 | 0 | - | 3 | cloudify.co |
+| 1145 | dfilppi | 0 | +0 | 0 | - | 1 | gigaspaces.com |
+| 1146 | dfx1971 | 0 | +0 | 0 | - | 4 | amdocs.com |
+| 1147 | dg5762 | 0 | +0 | 0 | - | 2 | att.com |
+| 1148 | dgermain | 0 | +0 | 0 | - | 1 | cgi.com |
+| 1149 | dglFromAtt | 0 | +0 | 0 | - | 9 | att.com |
+| 1150 | dharani | 0 | +0 | 0 | - | 1 | wipro.com |
+| 1151 | dhebeha | 0 | +0 | 0 | - | 4 | wipro.com |
+| 1152 | dinesha | 0 | +0 | 0 | - | 2 | ibm.com |
+| 1153 | dkamdocs | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1154 | drveerendra | 0 | +0 | 0 | - | 2 | att.com |
+| 1155 | dsingh.278 | 0 | +0 | 0 | - | 1 | gmail.com |
+| 1156 | dyh | 0 | +0 | 0 | - | 7 | chinamobile.com |
+| 1157 | eHanan | 0 | +0 | 0 | - | 5 | est.tech |
+| 1158 | earthmant | 0 | +0 | 0 | - | 1 | cloudify.co |
+| 1159 | ebo | 0 | +0 | 0 | - | 5 | est.tech |
+| 1160 | ecaiyanlinux | 0 | +0 | 0 | - | 8 | est.tech |
+| 1161 | econwar | 0 | +0 | 0 | - | 6 | est.tech |
+| 1162 | ed852m | 0 | +0 | 0 | - | 1 | amdocs.com |
+| 1163 | edepaul | 0 | +0 | 0 | - | 2 | est.tech |
+| 1164 | eeginux | 0 | +0 | 0 | - | 4 | est.tech |
+| 1165 | efiacor | 0 | +0 | 0 | - | 29 | est.tech |
+| 1166 | eh552t | 0 | +0 | 0 | - | 9 | att.com |
+| 1167 | eh552t | 0 | +0 | 0 | - | 1 | att.com |
+| 1168 | eikrwaq | 0 | +0 | 0 | - | 9 | ericsson.com |
+| 1169 | ejamcud | 0 | +0 | 0 | - | 2 | est.tech |
+| 1170 | eleonorali | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1171 | emartin | 0 | +0 | 0 | - | 5 | est.tech |
+| 1172 | enyinna1234 | 0 | +0 | 0 | - | 3 | intel.com |
+| 1173 | erlei | 0 | +0 | 0 | - | 1 | zte.com.cn |
+| 1174 | eronkeo | 0 | +0 | 0 | - | 4 | est.tech |
+| 1175 | eschcam | 0 | +0 | 0 | - | 2 | est.tech |
+| 1176 | esobmar | 0 | +0 | 0 | - | 3 | est.tech |
+| 1177 | esobmar | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 1178 | eyalholz | 0 | +0 | 0 | - | 2 | amdocs.com |
+| 1179 | ezhil | 0 | +0 | 0 | - | 7 | ibm.com |
+| 1180 | farida azmy | 0 | +0 | 0 | - | 2 | orange.com |
+| 1181 | fengyuanxing | 0 | +0 | 0 | - | 4 | zte.com.cn |
+| 1182 | fpaquett | 0 | +0 | 0 | - | 7 | amdocs.com |
+| 1183 | franciscovila | 0 | +0 | 0 | - | 1 | est.tech |
+| 1184 | frederic desnoes | 0 | +0 | 0 | - | 1 | orange.com |
+| 1185 | fujinhua | 0 | +0 | 0 | - | 8 | zte.com.cn |
+| 1186 | fzhang | 0 | +0 | 0 | - | 2 | ericsson.com |
+| 1187 | gabe.maurer | 0 | +0 | 0 | - | 1 | att.com |
+| 1188 | gaurav | 0 | +0 | 0 | - | 7 | huawei.com |
+| 1189 | gautamk189 | 0 | +0 | 0 | - | 1 | hcl.com |
+| 1190 | git config --global user.name | 0 | +0 | 0 | - | 3 | samsung.com |
+| 1191 | gjaibm1314 | 0 | +0 | 0 | - | 1 | qq.com |
+| 1192 | gongjief | 0 | +0 | 0 | - | 1 | isoftstone.com |
+| 1193 | grabinsk | 0 | +0 | 0 | - | 3 | nokia.com |
+| 1194 | gregory.hayes | 0 | +0 | 0 | - | 3 | est.tech |
+| 1195 | gummar | 0 | +0 | 0 | - | 5 | est.tech |
+| 1196 | guochong | 0 | +0 | 0 | - | 3 | chinamobile.com |
+| 1197 | h00397475 | 0 | +0 | 0 | - | 1 | huawei.com |
+| 1198 | hanybaki | 0 | +0 | 0 | - | 4 | orange.com |
+| 1199 | hariharan97 | 0 | +0 | 0 | - | 4 | wipro.com |
+| 1200 | hb123f | 0 | +0 | 0 | - | 1 | att.com |
+| 1201 | hb123f | 0 | +0 | 0 | - | 2 | att.com |
+| 1202 | hetengjiao | 0 | +0 | 0 | - | 3 | chinamobile.com |
+| 1203 | hewei-cmss | 0 | +0 | 0 | - | 1 | chinamobile.com |
+| 1204 | hongyu zhao | 0 | +0 | 0 | - | 2 | zte.com.cn |
 | 1205 | hthieu | 0 | +0 | 0 | - | 1 | nokia-bell-labs.com |
 | 1206 | huangsam | 0 | +0 | 0 | - | 3 | 163.com |
 | 1207 | huaxing | 0 | +0 | 0 | - | 5 | est.tech |
@@ -1521,9 +1521,9 @@
 | 1373 | root | 0 | +0 | 0 | - | 1 | nsn-intra.net |
 | 1374 | root | 0 | +0 | 0 | - | 1 | kosmos-ranczer.novalocal |
 | 1375 | root | 0 | +0 | 0 | - | 3 | fujitsu.com |
-| 1376 | root | 0 | +0 | 0 | - | 1 | att.com |
-| 1377 | root | 0 | +0 | 0 | - | 1 | cloudapp.net |
-| 1378 | root | 0 | +0 | 0 | - | 1 | intel.com |
+| 1376 | root | 0 | +0 | 0 | - | 1 | cloudapp.net |
+| 1377 | root | 0 | +0 | 0 | - | 1 | intel.com |
+| 1378 | root | 0 | +0 | 0 | - | 1 | att.com |
 | 1379 | root@nfs | 0 | +0 | 0 | - | 1 | nfs |
 | 1380 | root@rancher | 0 | +0 | 0 | - | 2 | rancher |
 | 1381 | rope252 | 0 | +0 | 0 | - | 7 | est.tech |
@@ -1640,9 +1640,9 @@
 | 1492 | vvarvate | 0 | +0 | 0 | - | 2 | techmahindra.com |
 | 1493 | wangxinyuan10113332 | 0 | +0 | 0 | - | 1 | zte.com.cn |
 | 1494 | wangy122 | 0 | +0 | 0 | - | 1 | chinatelecom.cn |
-| 1495 | wangyaoguang | 0 | +0 | 0 | - | 4 | huawei.com |
-| 1496 | wangyuerg | 0 | +0 | 0 | - | 1 | chinamobile.com |
-| 1497 | waqas.ikram | 0 | +0 | 0 | - | 12 | est.tech |
+| 1495 | wangyuerg | 0 | +0 | 0 | - | 1 | chinamobile.com |
+| 1496 | waqas.ikram | 0 | +0 | 0 | - | 12 | est.tech |
+| 1497 | wenyao guan | 0 | +0 | 0 | - | 4 | chinamobile.com |
 | 1498 | wr148d | 0 | +0 | 0 | - | 18 | att.com |
 | 1499 | wsliwka | 0 | +0 | 0 | - | 8 | nokia.com |
 | 1500 | wsx25289 | 0 | +0 | 0 | - | 2 | zte.com.cn |
@@ -1691,7 +1691,7 @@
 | so | 85 | +705 | 5 | 28 | 2025-10-24 | ✅ |
 | policy/opa-pdp | 74 | +24028 | 11 | 16 | 2025-11-05 | ✅ |
 | cps/ncmp-dmi-plugin | 69 | +711 | 9 | 10 | 2025-11-11 | ✅ |
-| ccsdk/oran | 65 | +17436 | 9 | 1 | 2025-11-20 | ✅ |
+| ccsdk/oran | 63 | +17434 | 8 | 1 | 2025-11-20 | ✅ |
 | aai/schema-service | 61 | +95544 | 14 | 1 | 2025-11-20 | ✅ |
 | aai/aai-common | 49 | -1116 | 8 | 4 | 2025-11-17 | ✅ |
 | policy/models | 40 | -2569 | 6 | 16 | 2025-11-05 | ✅ |
@@ -1812,7 +1812,7 @@
 | dmaap | 0 | +0 | 0 | 3,069 | 2017-06-27 | 🛑 |
 | dmaap/buscontroller | 0 | +0 | 0 | 633 | 2024-02-27 | ☑️ |
 | dmaap/datarouter | 0 | +0 | 0 | 633 | 2024-02-27 | ☑️ |
-| dmaap/kafka11aaf | 0 | +0 | 0 | 967 | 2023-03-30 | ☑️ |
+| dmaap/kafka11aaf | 0 | +0 | 0 | 968 | 2023-03-29 | ☑️ |
 | holmes | 0 | +0 | 0 | 3,067 | 2017-06-29 | 🛑 |
 | integration/docker/onap-java11 | 0 | +0 | 0 | 952 | 2023-04-14 | ☑️ |
 | integration/docker/onap-python | 0 | +0 | 0 | 952 | 2023-04-14 | ☑️ |
@@ -1830,7 +1830,7 @@
 | multicloud | 0 | +0 | 0 | 1,535 | 2021-09-08 | 🛑 |
 | multicloud/openstack/vmware | 0 | +0 | 0 | 1,530 | 2021-09-13 | 🛑 |
 | oom/consul | 0 | +0 | 0 | 1,288 | 2022-05-13 | 🛑 |
-| oom/offline-installer | 0 | +0 | 0 | 1,123 | 2022-10-25 | 🛑 |
+| oom/offline-installer | 0 | +0 | 0 | 1,124 | 2022-10-24 | 🛑 |
 | oom/platform/cert-manager | 0 | +0 | 0 | 1,949 | 2020-07-21 | 🛑 |
 | oom/platform/cert-service | 0 | +0 | 0 | 871 | 2023-07-04 | ☑️ |
 | oom/utils | 0 | +0 | 0 | 1,288 | 2022-05-13 | 🛑 |
@@ -1940,8 +1940,8 @@
 | .github | None | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | doc/doc-best-practice | None | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | testsuite/cds-mock-odl | None | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
-| logging-analytics | maven | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | sdnc/apps | maven | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| logging-analytics | maven | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | portal-ng | None | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | integration | None | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | dcaegen2/analytics/tca-gen2 | maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
@@ -1972,8 +1972,8 @@
 | integration/onap-component-simulators | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | oom/registrator | maven | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | portal-ng/e2e | gradle | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| sdc/onap-ui-common | maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | sdc/onap-ui-angular | maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| sdc/onap-ui-common | maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | so/chef-repo | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | so/docker-config | docker | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | so/so-config | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
@@ -1984,30 +1984,30 @@
 | demo | maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | oparent | maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | relman | None | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| integration/simulators/nf-simulator/pm-https-server | docker | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | integration/simulators/nf-simulator/avcn-manager | maven | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| integration/simulators/nf-simulator/pm-https-server | docker | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | dcaegen2/collectors/snmptrap | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | dcaegen2/services/heartbeat | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | dcaegen2/collectors/ves | maven | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| integration/docker/onap-java11 | docker | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| dcaegen2/services/sdk | maven | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | dcaegen2/services/pm-mapper | maven | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| dcaegen2/services/sdk | maven | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| integration/docker/onap-java11 | docker | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/docker/onap-python | docker | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | dcaegen2/services/son-handler | maven | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/pipelines/chained-ci | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/pipelines/oom-automatic-installation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | integration/pipelines/xtesting-onap | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| integration/simulators/ran-app | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/simulators/nf-simulator | maven | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| integration/simulators/ran-app | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/simulators/ran-simulator | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| oom/platform/cert-manager | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | multicloud/openstack/vmware | maven | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| oom/platform/cert-manager | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | oom/platform/cert-service | maven | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | aai/oom | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | dcaegen2/deployments | maven | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | dmaap/buscontroller | maven | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| dmaap/kafka11aaf | maven | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | dmaap/datarouter | maven | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| dmaap/kafka11aaf | maven | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/seccom | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | msb/service-mesh | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | oom/offline-installer | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
@@ -2020,16 +2020,16 @@
 | so/libs | maven | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | testsuite/cds-mock-server | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | testsuite/cds-mock-ssh | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| testsuite/cds | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | testsuite/oom | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| testsuite/cds | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | vnfrqts/epics | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| vnfrqts/requirements | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | vnfrqts/guidelines | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | vnfrqts/testcases | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| vnfrqts/requirements | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | vnfsdk/lctest | maven | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | vnfrqts/usecases | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| vnfsdk/model | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | vnfsdk/pkgtools | python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| vnfsdk/model | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | aai | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | dmaap | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ccsdk | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
@@ -2038,8 +2038,8 @@
 | osa | None | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | policy | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | msb | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| sandbox-2 | maven | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | sandbox-3 | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| sandbox-2 | maven | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | sdnc | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | university | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | vfc | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
