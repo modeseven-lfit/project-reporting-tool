@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: Linux Foundation
 
-**Generated:** November 21, 2025 at 17:08 UTC
+**Generated:** November 21, 2025 at 18:07 UTC
 **Schema Version:** 1.0.0
 
 ## 📈 Global Summary
@@ -21,7 +21,7 @@
 
 ## 🏢 Top Organizations
 
-The data presented in the table below covers the past twelve month period.
+The data presented in the table below covers the past 365 days.
 
 **Organizations Found:** 37
 
@@ -69,7 +69,7 @@ The data presented in the table below covers the past twelve month period.
 
 
 
-The data presented in the table below covers the past twelve month period.
+The data presented in the table below covers the past 365 days.
 
 
 
@@ -241,15 +241,15 @@ The data presented in the table below covers the past twelve month period.
 | ansible/roles/lf-recommended-tools | None | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/system-update | None | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/python-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| ansible/roles/packer-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
 | ansible/roles/protobuf-install | None | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| ansible/roles/lf-dev-libs | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
-| ansible/roles/mono-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
 | ansible/roles/docker-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/lf-dev-libs | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/packer-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
 | ansible/roles/haveged-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/mono-install | None | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
 | puppet/modules/gce | ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| puppet/modules/mailman3 | ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ansible/roles | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| puppet/modules/mailman3 | ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | clav2test/icla-and-ccla-project | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | lfn/process | None | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | clav2test/ccla-only-project | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
@@ -261,9 +261,9 @@ The data presented in the table below covers the past twelve month period.
 | releng/pipelines | gradle | ❌ | ✅ | ✅ | ✅ | ❌ | 🛑 |
 | releng | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | sandbox-info-master | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| releng/nexus-upload | None | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | releng/sigul-docker | docker | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | releng/python-one-password | python | ❌ | ✅ | ✅ | ✅ | ❌ | ☑️ |
+| releng/nexus-upload | None | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 
 ## 🏁 Deployed CI/CD Jobs
 
