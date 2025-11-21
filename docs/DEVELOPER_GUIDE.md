@@ -327,9 +327,16 @@ activity_thresholds:
   active_days: 365
 
 time_windows:
-  last_30_days: 30
-  last_90_days: 90
-  last_365_days: 365
+  last_30:
+    days: 30
+  last_90:
+    days: 90
+  last_365:
+    days: 365
+
+# Primary reporting window for rankings and leaderboards
+# Must reference a time window defined above
+primary_reporting_window: last_365
 
 features:
   enabled:
@@ -517,12 +524,33 @@ gerrit-reporting-tool generate ... --no-zip
 ```yaml
 # configuration/project.config
 time_windows:
-  last_7_days: 7
-  last_14_days: 14
-  last_30_days: 30
-  last_quarter: 90
-  last_year: 365
-```text
+  last_7:
+    days: 7
+  last_14:
+    days: 14
+  last_30:
+    days: 30
+  last_quarter:
+    days: 90
+  last_year:
+    days: 365
+
+# Specify which time window to use for rankings and reports
+# This affects:
+# - Top Contributors table ("covers the past X days")
+# - Top Organizations table ("covers the past X days")
+# - All leaderboard rankings
+primary_reporting_window: last_365  # Default: last_365
+```
+
+**Note:** The `primary_reporting_window` must reference a window defined in `time_windows`.
+The report text will automatically reflect the configured number of days.
+
+Examples:
+
+- `primary_reporting_window: last_365` → "covers the past 365 days"
+- `primary_reporting_window: last_90` → "covers the past 90 days"
+- `primary_reporting_window: last_quarter` → "covers the past 90 days"
 
 ### Debugging Git Issues
 

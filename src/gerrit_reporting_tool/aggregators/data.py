@@ -51,8 +51,25 @@ class DataAggregator:
             "active_days", 1095
         )
 
-        # Primary time window for rankings (usually last_365)
-        primary_window = "last_365"
+        # Primary time window for rankings (configurable, defaults to last_365)
+        primary_window = self.config.get("primary_reporting_window", "last_365")
+
+        # Get the number of days for this window
+        time_windows = self.config.get("time_windows", {})
+        window_config = time_windows.get(primary_window, {})
+
+        # Extract days from the window configuration
+        if isinstance(window_config, dict) and "days" in window_config:
+            primary_window_days = window_config["days"]
+        elif isinstance(window_config, int):
+            primary_window_days = window_config
+        else:
+            # Fallback to 365 if window not found
+            self.logger.warning(
+                f"Primary reporting window '{primary_window}' not found in time_windows, "
+                "defaulting to 365 days"
+            )
+            primary_window_days = 365
 
         # Classify repositories by unified activity status
         current_repos = []
@@ -142,6 +159,10 @@ class DataAggregator:
 
         # Build comprehensive summaries
         summaries = {
+            "reporting_period": {
+                "window_name": primary_window,
+                "days": primary_window_days,
+            },
             "counts": {
                 "total_repositories": len(repo_metrics),
                 "current_repositories": len(current_repos),

@@ -931,9 +931,13 @@ class ReportRenderer:
             data.get("summaries", {}).get("counts", {}).get("total_authors", 0)
         )
 
+        # Get the reporting period from summaries
+        reporting_period = data.get("summaries", {}).get("reporting_period", {})
+        period_days = reporting_period.get("days", 365)
+
         sections = ["## 👥 Top Contributors"]
         sections.append("")
-        sections.append("The data presented in the table below covers the past twelve month period.")
+        sections.append(f"The data presented in the table below covers the past {period_days:,} days.")
         sections.append("")
         sections.append(f"**Contributors Found:** {total_authors:,}")
 
@@ -1108,9 +1112,13 @@ class ReportRenderer:
             data.get("summaries", {}).get("counts", {}).get("total_organizations", 0)
         )
 
+        # Get the reporting period from summaries
+        reporting_period = data.get("summaries", {}).get("reporting_period", {})
+        period_days = reporting_period.get("days", 365)
+
         lines = ["## 🏢 Top Organizations"]
         lines.append("")
-        lines.append("The data presented in the table below covers the past twelve month period.")
+        lines.append(f"The data presented in the table below covers the past {period_days:,} days.")
         lines.append("")
         lines.append(f"**Organizations Found:** {total_orgs:,}")
         lines.append("")
