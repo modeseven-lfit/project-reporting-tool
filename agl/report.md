@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: AGL
 
-**Generated:** November 21, 2025 at 14:34 UTC
+**Generated:** November 21, 2025 at 16:19 UTC
 **Schema Version:** 1.0.0
 
 ## 📈 Global Summary
@@ -19,7 +19,10 @@
 | Total Commits | 335 | - |
 | Total Lines of Code | 27.2K | - |
 
-## 🏢 Top Organizations (Last Year)
+## 🏢 Top Organizations
+
+The data presented in the table below covers the past twelve month period.
+
 **Organizations Found:** 109
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
@@ -134,7 +137,13 @@
 | 108 | xevo.com | 3 | 0 | +0 | 0 | - | 6 |
 | 109 | yahoo.com | 1 | 0 | +0 | 0 | - | 1 |
 
-## 👥 Top Contributors (Last Year)
+## 👥 Top Contributors
+
+
+
+The data presented in the table below covers the past twelve month period.
+
+
 
 **Contributors Found:** 325
 
@@ -492,12 +501,12 @@
 | AGL/documentation | 1 | +0 | 1 | 338 | 2024-12-18 | ✅ |
 | apps/agl-cluster-demo-dashboard | 1 | +341 | 1 | 196 | 2025-05-09 | ✅ |
 | apps/agl-cluster-demo-receiver | 1 | +46 | 1 | 345 | 2024-12-11 | ✅ |
-| apps/agl-qt-cluster-demo-receiver | 1 | +0 | 1 | 195 | 2025-05-10 | ✅ |
+| apps/agl-qt-cluster-demo-receiver | 1 | +0 | 1 | 196 | 2025-05-09 | ✅ |
 | apps/agl-service-radio | 1 | -2 | 1 | 210 | 2025-04-25 | ✅ |
 | apps/flutter-instrument-cluster | 1 | +51 | 1 | 31 | 2025-10-21 | ✅ |
 | apps/settings | 1 | -1 | 1 | 363 | 2024-11-23 | ✅ |
 | src/agl-demo-control-panel | 1 | +0 | 1 | 191 | 2025-05-14 | ✅ |
-| src/agl-vss-proxy | 1 | +6 | 1 | 260 | 2025-03-06 | ✅ |
+| src/agl-vss-proxy | 1 | +6 | 1 | 261 | 2025-03-05 | ✅ |
 | AGL | 0 | +0 | 0 | 754 | 2023-10-29 | ☑️ |
 | AGL/lava-docker | 0 | +0 | 0 | 1,732 | 2021-02-23 | 🛑 |
 | AGL/meta-agl-cluster-demo | 0 | +0 | 0 | 646 | 2024-02-14 | ☑️ |
@@ -567,7 +576,7 @@
 | apps/flutter-hvac | 0 | +0 | 0 | 646 | 2024-02-14 | ☑️ |
 | apps/flutter-mediaplayer | 0 | +0 | 0 | 646 | 2024-02-14 | ☑️ |
 | apps/flutter-navigation | 0 | +0 | 0 | 646 | 2024-02-14 | ☑️ |
-| apps/flutter-speechrecognition-demo | 0 | +0 | 0 | 407 | 2024-10-10 | ☑️ |
+| apps/flutter-speechrecognition-demo | 0 | +0 | 0 | 408 | 2024-10-09 | ☑️ |
 | apps/homescreen | 0 | +0 | 0 | 367 | 2024-11-19 | ☑️ |
 | apps/homescreen-demo-ci | 0 | +0 | 0 | 646 | 2024-02-14 | ☑️ |
 | apps/html5-background | 0 | +0 | 0 | 646 | 2024-02-14 | ☑️ |
@@ -583,7 +592,7 @@
 | apps/mediaplayer | 0 | +0 | 0 | 367 | 2024-11-19 | ☑️ |
 | apps/messaging | 0 | +0 | 0 | 367 | 2024-11-19 | ☑️ |
 | apps/mixer | 0 | +0 | 0 | 646 | 2024-02-14 | ☑️ |
-| apps/mominavi | 0 | +0 | 0 | 407 | 2024-10-10 | ☑️ |
+| apps/mominavi | 0 | +0 | 0 | 408 | 2024-10-09 | ☑️ |
 | apps/momiplayer | 0 | +0 | 0 | 405 | 2024-10-12 | ☑️ |
 | apps/momiscreen | 0 | +0 | 0 | 405 | 2024-10-12 | ☑️ |
 | apps/momiweather | 0 | +0 | 0 | 404 | 2024-10-13 | ☑️ |
@@ -677,7 +686,7 @@
 | staging/toyota | 0 | +0 | 0 | 646 | 2024-02-14 | ☑️ |
 | staging/vehicle2cloud-communication | 0 | +0 | 0 | 791 | 2023-09-22 | ☑️ |
 | staging/xdg-launcher | 0 | +0 | 0 | 646 | 2024-02-14 | ☑️ |
-| z_sandbox | 0 | +0 | 0 | 3,719 | 2015-09-16 | 🛑 |
+| z_sandbox | 0 | +0 | 0 | 3,720 | 2015-09-15 | 🛑 |
 | zzz_acl/src_acl | 0 | +0 | 0 | 754 | 2023-10-29 | ☑️ |
 | zzz_acl/staging_acl | 0 | +0 | 0 | 3,531 | 2016-03-22 | 🛑 |
 
@@ -727,18 +736,18 @@
 | apps/settings | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/agl-vss-proxy | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/agl-demo-control-panel | python | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| src/xds/xds-cli | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/xds/xds-common | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/virtio/adapter_app | c_cpp | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| src/virtio/virtio_driver | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| src/xds/xds-docs | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| AGL/meta-agl-cluster-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/xds/xds-cli | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/xds/xds-gdb | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/virtio/virtio_driver | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| AGL/meta-agl-cluster-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/xds/xds-docs | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/lava-docker | python | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| AGL/meta-agl-refhw | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/xds/xds-server | go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/meta-agl-extra | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/meta-agl-telematics-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| AGL/meta-agl-refhw | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-cluster-demo-gauges | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-bluetooth-map | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-bluetooth-pbap | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -746,87 +755,87 @@
 | apps/agl-service-cloudproxy | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-bluetooth | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-geoclue | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-data-persistence | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-geofence | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-data-persistence | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-gps | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-harvester | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-helloworld | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-identity-agent | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-inputmethod | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | apps/agl-service-iiodevices | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-inputmethod | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | apps/agl-service-homescreen | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-navigation | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-mediaplayer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-mediascanner | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-nfc | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-mediascanner | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-navigation | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-network | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-poi | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-platform-info | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-network | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-taskmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-steering-wheel | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-telephony | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-taskmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-unicens-controller | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-telephony | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-voice-high-capabilities | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-voiceagent | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-voice-high | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-weather | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-soundmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/alexa-viewer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-voiceagent | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-weather | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-voice-high | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-telematics-demo-recorder | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-xds-monitoring | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/alexa-viewer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/als-meter-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-afb-helpers-submodule | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-windowmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-afb-test | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/aroundview | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/app-controller-submodule | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/chromium | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/controls | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/camera-gstreamer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/demo3-camera | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/chromium | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-windowmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/controls | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-templates | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/demo3-dashboard | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/demo3-hvac | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/app-controller-submodule | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/demo3-camera | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-homescreen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/dashboard | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/demo3-dashboard | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-launcher | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/demo3-warehouse | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/demo3-hvac | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-settings | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/demo3-tachometer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/flutter-hvac | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/flutter-dashboard | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-unicens | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/flutter-mediaplayer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/flutter-dashboard | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/demo3-tachometer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/demo3-warehouse | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-homescreen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/flutter-navigation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/flutter-mediaplayer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/flutter-hvac | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/homescreen-demo-ci | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/flutter-navigation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-speechrecognition-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-background | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-dashboard | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-homescreen | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/html5-mediaplayer | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/homescreen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/html5-launcher | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-hvac | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/homescreen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/html5-mediaplayer | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/html5-launcher | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/hvac | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/launcher | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/messaging | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/mixer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-mixer | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/mominavi | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/mixer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-settings | node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/mominavi | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/momiscreen | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/momiweather | c_cpp | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | apps/navigation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/mediaplayer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/momiplayer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/onscreenapp | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/ondemandnavi | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/momiplayer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/poi-yelp | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/restriction-screen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/ondemandnavi | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/radio | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/settings-log-utils | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/restriction-screen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/phone | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/settings-log-utils | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/videoplayer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/voiceagent-demo | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | apps/taskmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -834,81 +843,81 @@
 | apps/waltham-receiver | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/agl-js-api | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/agl-shell-activator | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/agl-yocto-kernel-meta | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/agl-test-framework | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/app-framework-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/agl-yocto-kernel-meta | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/applaunchd | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/bluez-glib | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/app-framework-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/connman-glib | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/cynagoauth | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/cynagora | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/app-framework-main | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | src/demo3-qtquickcontrols | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/cmake-apps-module | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/app-framework-main | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| apps/agl-service-can-low-level | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/hvac-demo-microcontroller | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| src/homescreen-demo-ci | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| src/drm-lease-manager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/demo3-warehouse-server | maven | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/drm-lease-manager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/homescreen-demo-ci | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| src/cynagora | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/hvac-demo-microcontroller | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| src/inputeventmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libagl-compositor | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/libaglnavigation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/libafb-helpers | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/inputeventmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libcloudproxy | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/libqthomescreen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/libafb-helpers | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libhomescreen | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/libqthomescreen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libqtsoundmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/librefop | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libsoundmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/log-utils | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/native-shell-client | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/most | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/low-level-can-generator | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libappcontroller | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/qa-test-misc | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/low-level-can-generator | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/most | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/native-shell-client | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/nss-localuser | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/pyagl | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/app-framework-binder | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| src/qtaglextras | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/qa-test-misc | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/pipewire-ic-ipc | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/qtaglextras | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/pyagl | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/qtquickcontrols2-agl | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/snips-inference-agl | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/qtquickcontrols2-agl-style | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/steering-wheel-microcontroller | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| src/rasa-model-agl | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/app-framework-binder | c_cpp | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | apps/agl-service-signal-composer | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/rasa-model-agl | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/snips-inference-agl | python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/steering-wheel-microcontroller | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/vod-server | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/xds | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/window-management-client-grpc | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/snips-model-agl | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/xds | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| src/windowmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/weston-ivi-plugins | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/waltham-transmitter-plugin | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/agl-inputmethod-qt-plugin | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| staging/incar-wireless-monitor | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/windowmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/snips-model-agl | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/libsoundmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| staging/persistent-storage-api | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| staging/incar-wireless-monitor | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/qlibhomescreen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| staging/persistent-storage-api | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | staging/qlibsoundmanager | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/release-upload | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | staging/toyota | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/rba | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| staging/xdg-launcher | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | zzz_acl/AGL_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | zzz_acl/noreplication | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| staging/xdg-launcher | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| zzz_acl/src_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | zzz_acl/staging_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | staging/new-apps | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| zzz_acl/src_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | AGL | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | apps | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | staging/soundmanager | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| docs-webtemplate | c_cpp | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | staging | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | z_sandbox | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | zzz_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| docs-webtemplate | c_cpp | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| staging/basesystem | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | docs-sources | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| staging/basesystem | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-can-low-level | c_cpp | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/rba-tool | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/vehicle2cloud-communication | gradle | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | src/virtio/qemu | c_cpp | ❌ | ❌ | ✅ | ❌ | ❌ | ☑️ |
@@ -924,5 +933,294 @@
 | src/virtio/qemu | <a href="https://github.com/automotive-grade-linux/src-virtio-qemu/actions/workflows/lockdown.yml" target="_blank"><span class="status-unknown workflow-status">lockdown.yml</span></a> | 1 |  | 0 |
 
 **Total:** 2 repositories with CI/CD jobs
+
+### ⏭️ Unallocated Jenkins jobs
+
+The Jenkins jobs below could not be directly attributed to a specific Gerrit project. The list/content of this table may change over time, as improvements are made to the matching heuristics.
+
+**Total unallocated Jenkins jobs:** 280
+
+| Jenkins job |
+|-------------|
+| build-machines-sstate-mirror |
+| build-master-community-boards-weekly |
+| build-master-iceg-drmlease-weekly |
+| build-next-branch-nightly |
+| ci-platform-AGL-repo-remove-artifacts |
+| ci-platform-AGL-repo-verify |
+| ci-platform-AGL-repo-verify-CIB-bbe |
+| ci-platform-AGL-repo-verify-CIB-finish-success |
+| ci-platform-AGL-repo-verify-CIB-flutter-qemux86-64 |
+| ci-platform-AGL-repo-verify-CIB-h3ulcb-nogfx |
+| ci-platform-AGL-repo-verify-CIB-html5-qemux86-64 |
+| ci-platform-AGL-repo-verify-CIB-ic-multicontainer-qemux86-64 |
+| ci-platform-AGL-repo-verify-CIB-qemuarm |
+| ci-platform-AGL-repo-verify-CIB-qemuarm64 |
+| ci-platform-AGL-repo-verify-CIB-qemuriscv |
+| ci-platform-AGL-repo-verify-CIB-qemux86-64 |
+| ci-platform-AGL-repo-verify-CIB-raspberrypi4 |
+| ci-platform-AGL-repo-verify-CIB-raspberrypi5 |
+| ci-platform-AGL-repo-verify-CIBT-bbe |
+| ci-platform-AGL-repo-verify-CIBT-complete |
+| ci-platform-AGL-repo-verify-CIBT-finish-success |
+| ci-platform-AGL-repo-verify-CIBT-h3ulcb-nogfx |
+| ci-platform-AGL-repo-verify-CIBT-qemuarm |
+| ci-platform-AGL-repo-verify-CIBT-qemuarm64 |
+| ci-platform-AGL-repo-verify-CIBT-qemux86-64 |
+| ci-platform-AGL-repo-verify-CIBT-r8a7795-agl-refhw |
+| ci-platform-AGL-repo-verify-CIBT-raspberrypi4 |
+| ci-platform-AGL-repo-verify-CIBT-raspberrypi5 |
+| ci-platform-AGL-repo-verify-CIBT-upsquare |
+| ci-platform-AGL-repo-verify-YCL-qemux86-64 |
+| ci-platform-AGL-repo-verify-failure |
+| ci-platform-meta-agl-demo-remove-artifacts |
+| ci-platform-meta-agl-demo-verify |
+| ci-platform-meta-agl-demo-verify-CIB-bbe |
+| ci-platform-meta-agl-demo-verify-CIB-finish-success |
+| ci-platform-meta-agl-demo-verify-CIB-flutter-qemux86-64 |
+| ci-platform-meta-agl-demo-verify-CIB-h3ulcb-nogfx |
+| ci-platform-meta-agl-demo-verify-CIB-html5-qemux86-64 |
+| ci-platform-meta-agl-demo-verify-CIB-ic-multicontainer-qemux86-64 |
+| ci-platform-meta-agl-demo-verify-CIB-qemuarm |
+| ci-platform-meta-agl-demo-verify-CIB-qemuarm64 |
+| ci-platform-meta-agl-demo-verify-CIB-qemuriscv |
+| ci-platform-meta-agl-demo-verify-CIB-qemux86-64 |
+| ci-platform-meta-agl-demo-verify-CIB-raspberrypi4 |
+| ci-platform-meta-agl-demo-verify-CIB-raspberrypi5 |
+| ci-platform-meta-agl-demo-verify-CIBT-bbe |
+| ci-platform-meta-agl-demo-verify-CIBT-complete |
+| ci-platform-meta-agl-demo-verify-CIBT-finish-success |
+| ci-platform-meta-agl-demo-verify-CIBT-h3ulcb-nogfx |
+| ci-platform-meta-agl-demo-verify-CIBT-qemuarm |
+| ci-platform-meta-agl-demo-verify-CIBT-qemuarm64 |
+| ci-platform-meta-agl-demo-verify-CIBT-qemux86-64 |
+| ci-platform-meta-agl-demo-verify-CIBT-r8a7795-agl-refhw |
+| ci-platform-meta-agl-demo-verify-CIBT-raspberrypi4 |
+| ci-platform-meta-agl-demo-verify-CIBT-raspberrypi5 |
+| ci-platform-meta-agl-demo-verify-CIBT-upsquare |
+| ci-platform-meta-agl-demo-verify-YCL-qemux86-64 |
+| ci-platform-meta-agl-demo-verify-failure |
+| ci-platform-meta-agl-devel-remove-artifacts |
+| ci-platform-meta-agl-devel-verify |
+| ci-platform-meta-agl-devel-verify-CIB-bbe |
+| ci-platform-meta-agl-devel-verify-CIB-finish-success |
+| ci-platform-meta-agl-devel-verify-CIB-flutter-qemux86-64 |
+| ci-platform-meta-agl-devel-verify-CIB-h3ulcb-nogfx |
+| ci-platform-meta-agl-devel-verify-CIB-html5-qemux86-64 |
+| ci-platform-meta-agl-devel-verify-CIB-ic-multicontainer-qemux86-64 |
+| ci-platform-meta-agl-devel-verify-CIB-qemuarm |
+| ci-platform-meta-agl-devel-verify-CIB-qemuarm64 |
+| ci-platform-meta-agl-devel-verify-CIB-qemuriscv |
+| ci-platform-meta-agl-devel-verify-CIB-qemux86-64 |
+| ci-platform-meta-agl-devel-verify-CIB-raspberrypi4 |
+| ci-platform-meta-agl-devel-verify-CIB-raspberrypi5 |
+| ci-platform-meta-agl-devel-verify-CIBT-bbe |
+| ci-platform-meta-agl-devel-verify-CIBT-complete |
+| ci-platform-meta-agl-devel-verify-CIBT-finish-success |
+| ci-platform-meta-agl-devel-verify-CIBT-h3ulcb-nogfx |
+| ci-platform-meta-agl-devel-verify-CIBT-qemuarm |
+| ci-platform-meta-agl-devel-verify-CIBT-qemuarm64 |
+| ci-platform-meta-agl-devel-verify-CIBT-qemux86-64 |
+| ci-platform-meta-agl-devel-verify-CIBT-r8a7795-agl-refhw |
+| ci-platform-meta-agl-devel-verify-CIBT-raspberrypi4 |
+| ci-platform-meta-agl-devel-verify-CIBT-raspberrypi5 |
+| ci-platform-meta-agl-devel-verify-CIBT-upsquare |
+| ci-platform-meta-agl-devel-verify-YCL-qemux86-64 |
+| ci-platform-meta-agl-devel-verify-failure |
+| ci-platform-meta-agl-extra-remove-artifacts |
+| ci-platform-meta-agl-extra-verify |
+| ci-platform-meta-agl-extra-verify-CIB-bbe |
+| ci-platform-meta-agl-extra-verify-CIB-finish-success |
+| ci-platform-meta-agl-extra-verify-CIB-flutter-qemux86-64 |
+| ci-platform-meta-agl-extra-verify-CIB-h3ulcb-nogfx |
+| ci-platform-meta-agl-extra-verify-CIB-html5-qemux86-64 |
+| ci-platform-meta-agl-extra-verify-CIB-ic-multicontainer-qemux86-64 |
+| ci-platform-meta-agl-extra-verify-CIB-qemuarm |
+| ci-platform-meta-agl-extra-verify-CIB-qemuarm64 |
+| ci-platform-meta-agl-extra-verify-CIB-qemux86-64 |
+| ci-platform-meta-agl-extra-verify-CIB-raspberrypi4 |
+| ci-platform-meta-agl-extra-verify-CIBT-bbe |
+| ci-platform-meta-agl-extra-verify-CIBT-complete |
+| ci-platform-meta-agl-extra-verify-CIBT-finish-success |
+| ci-platform-meta-agl-extra-verify-CIBT-h3ulcb-nogfx |
+| ci-platform-meta-agl-extra-verify-CIBT-qemuarm |
+| ci-platform-meta-agl-extra-verify-CIBT-qemuarm64 |
+| ci-platform-meta-agl-extra-verify-CIBT-qemux86-64 |
+| ci-platform-meta-agl-extra-verify-CIBT-r8a7795-agl-refhw |
+| ci-platform-meta-agl-extra-verify-CIBT-raspberrypi4 |
+| ci-platform-meta-agl-extra-verify-CIBT-upsquare |
+| ci-platform-meta-agl-extra-verify-YCL-qemux86-64 |
+| ci-platform-meta-agl-extra-verify-failure |
+| ci-platform-meta-agl-remove-artifacts |
+| ci-platform-meta-agl-verify |
+| ci-platform-meta-agl-verify-CIB-bbe |
+| ci-platform-meta-agl-verify-CIB-finish-success |
+| ci-platform-meta-agl-verify-CIB-flutter-qemux86-64 |
+| ci-platform-meta-agl-verify-CIB-h3ulcb-nogfx |
+| ci-platform-meta-agl-verify-CIB-html5-qemux86-64 |
+| ci-platform-meta-agl-verify-CIB-ic-multicontainer-qemux86-64 |
+| ci-platform-meta-agl-verify-CIB-qemuarm |
+| ci-platform-meta-agl-verify-CIB-qemuarm64 |
+| ci-platform-meta-agl-verify-CIB-qemuriscv |
+| ci-platform-meta-agl-verify-CIB-qemux86-64 |
+| ci-platform-meta-agl-verify-CIB-raspberrypi4 |
+| ci-platform-meta-agl-verify-CIB-raspberrypi5 |
+| ci-platform-meta-agl-verify-CIBT-bbe |
+| ci-platform-meta-agl-verify-CIBT-complete |
+| ci-platform-meta-agl-verify-CIBT-finish-success |
+| ci-platform-meta-agl-verify-CIBT-h3ulcb-nogfx |
+| ci-platform-meta-agl-verify-CIBT-qemuarm |
+| ci-platform-meta-agl-verify-CIBT-qemuarm64 |
+| ci-platform-meta-agl-verify-CIBT-qemux86-64 |
+| ci-platform-meta-agl-verify-CIBT-r8a7795-agl-refhw |
+| ci-platform-meta-agl-verify-CIBT-raspberrypi4 |
+| ci-platform-meta-agl-verify-CIBT-raspberrypi5 |
+| ci-platform-meta-agl-verify-CIBT-upsquare |
+| ci-platform-meta-agl-verify-YCL-qemux86-64 |
+| ci-platform-meta-agl-verify-failure |
+| ci-platform-meta-renesas-rcar-gen3-remove-artifacts |
+| ci-platform-meta-renesas-rcar-gen3-verify |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIB-bbe |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIB-finish-success |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIB-h3ulcb-nogfx |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIB-html5-qemux86-64 |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIB-qemuarm |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIB-qemuarm64 |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIB-qemux86-64 |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIB-raspberrypi4 |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIBT-bbe |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIBT-complete |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIBT-finish-success |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIBT-h3ulcb-nogfx |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIBT-qemuarm |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIBT-qemuarm64 |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIBT-qemux86-64 |
+| ci-platform-meta-renesas-rcar-gen3-verify-CIBT-raspberrypi4 |
+| ci-platform-meta-renesas-rcar-gen3-verify-failure |
+| ci-platform-meta-renesas-remove-artifacts |
+| ci-platform-meta-renesas-verify |
+| ci-platform-meta-renesas-verify-CIB-bbe |
+| ci-platform-meta-renesas-verify-CIB-finish-success |
+| ci-platform-meta-renesas-verify-CIB-h3ulcb-nogfx |
+| ci-platform-meta-renesas-verify-CIB-html5-qemux86-64 |
+| ci-platform-meta-renesas-verify-CIB-qemuarm |
+| ci-platform-meta-renesas-verify-CIB-qemuarm64 |
+| ci-platform-meta-renesas-verify-CIB-qemux86-64 |
+| ci-platform-meta-renesas-verify-CIB-raspberrypi4 |
+| ci-platform-meta-renesas-verify-CIBT-bbe |
+| ci-platform-meta-renesas-verify-CIBT-complete |
+| ci-platform-meta-renesas-verify-CIBT-finish-success |
+| ci-platform-meta-renesas-verify-CIBT-h3ulcb-nogfx |
+| ci-platform-meta-renesas-verify-CIBT-qemuarm |
+| ci-platform-meta-renesas-verify-CIBT-qemuarm64 |
+| ci-platform-meta-renesas-verify-CIBT-qemux86-64 |
+| ci-platform-meta-renesas-verify-CIBT-raspberrypi4 |
+| ci-platform-meta-renesas-verify-failure |
+| ci-platform-refhw-meta-agl-refhw-remove-artifacts |
+| ci-platform-refhw-meta-agl-refhw-verify |
+| ci-platform-refhw-meta-agl-refhw-verify-CIB-finish-success |
+| ci-platform-refhw-meta-agl-refhw-verify-CIB-h3ulcb-nogfx |
+| ci-platform-refhw-meta-agl-refhw-verify-CIBT-complete |
+| ci-platform-refhw-meta-agl-refhw-verify-CIBT-finish-success |
+| ci-platform-refhw-meta-agl-refhw-verify-CIBT-r8a7795-agl-refhw |
+| ci-platform-refhw-meta-agl-refhw-verify-failure |
+| ci-xds-xds-agent-merge |
+| ci-xds-xds-agent-merge-finish-success |
+| ci-xds-xds-agent-remove-artifacts |
+| ci-xds-xds-agent-verify-master |
+| ci-xds-xds-agent-verify-master-CIB |
+| ci-xds-xds-agent-verify-master-CIB-finish-success |
+| ci-xds-xds-cli-merge |
+| ci-xds-xds-cli-merge-finish-success |
+| ci-xds-xds-cli-remove-artifacts |
+| ci-xds-xds-cli-verify-master |
+| ci-xds-xds-cli-verify-master-CIB |
+| ci-xds-xds-cli-verify-master-CIB-finish-success |
+| ci-xds-xds-gdb-merge |
+| ci-xds-xds-gdb-merge-finish-success |
+| ci-xds-xds-gdb-remove-artifacts |
+| ci-xds-xds-gdb-verify-master |
+| ci-xds-xds-gdb-verify-master-CIB |
+| ci-xds-xds-gdb-verify-master-CIB-finish-success |
+| ci-xds-xds-server-merge |
+| ci-xds-xds-server-merge-finish-success |
+| ci-xds-xds-server-remove-artifacts |
+| ci-xds-xds-server-verify-master |
+| ci-xds-xds-server-verify-master-CIB |
+| ci-xds-xds-server-verify-master-CIB-finish-success |
+| daily-jjb-doc-update |
+| pre-fetch-mirror-weekly |
+| release-jjb-blowfish-snapshot |
+| release-jjb-chinook-release-from-snapshot |
+| release-jjb-chinook-snapshot |
+| release-jjb-chinook-sources |
+| release-jjb-dab-release-from-snapshot |
+| release-jjb-dab-snapshot |
+| release-jjb-dab-sources |
+| release-jjb-eel-release-from-snapshot |
+| release-jjb-eel-snapshot |
+| release-jjb-eel-sources |
+| release-jjb-flounder-release-from-snapshot |
+| release-jjb-flounder-snapshot |
+| release-jjb-flounder-sources |
+| release-jjb-guppy-release-from-snapshot |
+| release-jjb-guppy-snapshot |
+| release-jjb-guppy-sources |
+| release-jjb-halibut-release-from-snapshot |
+| release-jjb-halibut-snapshot |
+| release-jjb-halibut-sources |
+| release-jjb-icefish-release-from-snapshot |
+| release-jjb-icefish-snapshot |
+| release-jjb-icefish-sources |
+| release-jjb-jellyfish-release-from-snapshot |
+| release-jjb-jellyfish-snapshot |
+| release-jjb-jellyfish-sources |
+| release-jjb-koi-release-from-snapshot |
+| release-jjb-koi-snapshot |
+| release-jjb-koi-sources |
+| release-jjb-lamprey-release-from-snapshot |
+| release-jjb-lamprey-snapshot |
+| release-jjb-lamprey-sources |
+| release-jjb-marlin-release-from-snapshot |
+| release-jjb-marlin-snapshot |
+| release-jjb-marlin-sources |
+| release-jjb-needlefish-release-from-snapshot |
+| release-jjb-needlefish-snapshot |
+| release-jjb-needlefish-sources |
+| release-jjb-octopus-release-from-snapshot |
+| release-jjb-octopus-snapshot |
+| release-jjb-octopus-sources |
+| release-jjb-pike-release-from-snapshot |
+| release-jjb-pike-snapshot |
+| release-jjb-pike-sources |
+| release-jjb-quillback-release-from-snapshot |
+| release-jjb-quillback-snapshot |
+| release-jjb-quillback-sources |
+| release-jjb-ricefish-release-from-snapshot |
+| release-jjb-ricefish-snapshot |
+| release-jjb-ricefish-sources |
+| release-jjb-salmon-release-from-snapshot |
+| release-jjb-salmon-snapshot |
+| release-jjb-salmon-sources |
+| release-jjb-trout-release-from-snapshot |
+| release-jjb-trout-snapshot |
+| release-jjb-trout-sources |
+| release-pike-icdemo-snapshot |
+| rm-snapshots-master-old |
+| sandbox-df-download |
+| sandbox-find-file-sstate-mirror |
+| sandbox-find-file-sstate-mirror-rm |
+| sandbox-ls-df-nfs |
+| sandbox-rm-apps |
+| sandbox-rm-snapshots |
+| sandbox-rm-sstate-mirror |
+| sandbox-rm-upload-ci |
+| sandbox-sstate-management |
+| snapshot-jjb-container-weekly |
+| test-lava |
+| test-lavacli |
+| test-lxc |
+| test-new-doc2 |
+| test-single-uninative |
 
 Generated with ❤️ by Release Engineering
