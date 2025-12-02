@@ -1,0 +1,16 @@
+{
+  "project": "O-RAN-SC",
+  "slug": "oran",
+  "gerrit_server": "gerrit.o-ran-sc.org",
+  "jenkins_server": "jenkins.o-ran-sc.org",
+  "github_org": "",
+  "generated_at": "2025-12-02T00:38:52Z",
+  "workflow_run_id": "19842487300",
+  "workflow_run_number": "16",
+  "workflow_run_attempt": "1",
+  "git_sha": "a139d83ada578252ac21dba168875fb4e48a31f7",
+  "git_ref": "g2g-wf-configurable",
+  "pr_number": 27,
+  "pr_author": "ModeSevenIndustrialSolutions",
+  "environment": "previews"
+}
