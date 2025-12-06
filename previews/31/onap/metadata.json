@@ -1,0 +1,16 @@
+{
+  "project": "ONAP",
+  "slug": "onap",
+  "gerrit_server": "gerrit.onap.org",
+  "jenkins_server": "jenkins.onap.org",
+  "github_org": "",
+  "generated_at": "2025-12-06T13:29:43Z",
+  "workflow_run_id": "19989166565",
+  "workflow_run_number": "20",
+  "workflow_run_attempt": "1",
+  "git_sha": "d9fd8147f9529a1e6ff0a5e2a19d47c060eae21f",
+  "git_ref": "toc-implementation",
+  "pr_number": 31,
+  "pr_author": "ModeSevenIndustrialSolutions",
+  "environment": "previews"
+}
