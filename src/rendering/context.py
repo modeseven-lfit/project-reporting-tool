@@ -11,6 +11,7 @@ extraction, formatting, and organization.
 Phase: 8 - Renderer Modernization
 """
 
+import logging
 from typing import Any, Dict, List, Optional
 from datetime import datetime
 from .formatters import (
@@ -20,6 +21,8 @@ from .formatters import (
     format_date,
     get_template_filters,
 )
+
+logger = logging.getLogger(__name__)
 
 
 class RenderContext:
@@ -330,9 +333,12 @@ class RenderContext:
         output_config = self.config.get("output", {})
         include_sections = output_config.get("include_sections", {})
 
+        toc_enabled = self.config.get("render", {}).get("table_of_contents", True)
+        logger.info(f"Building config context: table_of_contents={toc_enabled}")
+
         return {
             "theme": self.config.get("render", {}).get("theme", "default"),
-            "table_of_contents": self.config.get("render", {}).get("table_of_contents", True),
+            "table_of_contents": toc_enabled,
             "include_sections": {
                 "title": include_sections.get("title", True),
                 "summary": include_sections.get("summary", True),
@@ -361,6 +367,9 @@ class RenderContext:
         # Get configuration
         output_config = self.config.get("output", {})
         include_sections = output_config.get("include_sections", {})
+
+        logger.info("Building TOC context...")
+        logger.info(f"include_sections config: {include_sections}")
 
         # Get data contexts (we'll check these for visibility)
         summaries = self.data.get("summaries", {})
@@ -448,10 +457,16 @@ class RenderContext:
                 "anchor": "time-windows"
             })
 
-        return {
+        toc_result = {
             "sections": sections,
             "has_sections": len(sections) > 0,
         }
+        logger.info(f"TOC context built: {len(sections)} sections, has_sections={toc_result['has_sections']}")
+        if sections:
+            logger.info(f"TOC sections: {[s['title'] for s in sections]}")
+        else:
+            logger.warning("No TOC sections generated - TOC will not be displayed")
+        return toc_result
 
     def _get_status_color_from_github(self, github_color: str) -> str:
         """
