@@ -50,6 +50,8 @@ output:
     all_repositories: true
     contributor_leaderboards: true
     organization_leaderboard: true
+    workflows: true
+    orphaned_jobs: true
 
 # =============================================================================
 # Time Windows

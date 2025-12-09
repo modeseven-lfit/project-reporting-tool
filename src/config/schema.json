@@ -52,6 +52,14 @@
             },
             "organization_leaderboard": {
               "type": "boolean"
+            },
+            "workflows": {
+              "type": "boolean",
+              "description": "Include CI/CD workflows section"
+            },
+            "orphaned_jobs": {
+              "type": "boolean",
+              "description": "Include orphaned Jenkins jobs section"
             }
           },
           "additionalProperties": false

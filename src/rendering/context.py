@@ -65,6 +65,9 @@ class RenderContext:
         Returns:
             Dictionary with all context data for templates
         """
+        # Build config context first so mapped sections are available for TOC
+        config_context = self._build_config_context()
+
         return {
             "project": self._build_project_context(),
             "summary": self._build_summary_context(),
@@ -76,7 +79,7 @@ class RenderContext:
             "orphaned_jobs": self._build_orphaned_jobs_context(),
             "time_windows": self._build_time_windows_context(),
             "toc": self._build_toc_context(),
-            "config": self._build_config_context(),
+            "config": config_context,
             "filters": get_template_filters(),
         }
 
@@ -334,21 +337,27 @@ class RenderContext:
         include_sections = output_config.get("include_sections", {})
 
         toc_enabled = self.config.get("render", {}).get("table_of_contents", True)
-        logger.info(f"Building config context: table_of_contents={toc_enabled}")
+        logger.debug(f"Config context: table_of_contents={toc_enabled}")
+
+        # Map configuration keys to internal template keys
+        mapped_sections = {
+            "title": include_sections.get("title", True),
+            "summary": include_sections.get("global_summary", True),
+            "repositories": include_sections.get("all_repositories", True),
+            "contributors": include_sections.get("contributors", True),
+            "organizations": include_sections.get("organizations", True),
+            "features": include_sections.get("repo_feature_matrix", True),
+            "workflows": include_sections.get("workflows", True),
+            "orphaned_jobs": include_sections.get("orphaned_jobs", True),
+        }
+
+        # Store mapped sections for use by TOC builder
+        self._mapped_sections = mapped_sections
 
         return {
             "theme": self.config.get("render", {}).get("theme", "default"),
             "table_of_contents": toc_enabled,
-            "include_sections": {
-                "title": include_sections.get("title", True),
-                "summary": include_sections.get("summary", True),
-                "repositories": include_sections.get("repositories", True),
-                "contributors": include_sections.get("contributors", True),
-                "organizations": include_sections.get("organizations", True),
-                "features": include_sections.get("features", True),
-                "workflows": include_sections.get("workflows", True),
-                "orphaned_jobs": include_sections.get("orphaned_jobs", True),
-            },
+            "include_sections": mapped_sections,
             "project_name": self.config.get("project", {}).get("name", "Repository Analysis"),
         }
 
@@ -364,12 +373,28 @@ class RenderContext:
         """
         sections = []
 
-        # Get configuration
-        output_config = self.config.get("output", {})
-        include_sections = output_config.get("include_sections", {})
+        # Use mapped sections from config context (if available)
+        # This ensures consistency with template section visibility
+        if hasattr(self, '_mapped_sections'):
+            include_sections = self._mapped_sections
+        else:
+            # Fallback to building mapped sections if called before _build_config_context
+            output_config = self.config.get("output", {})
+            raw_sections = output_config.get("include_sections", {})
+            include_sections = {
+                "summary": raw_sections.get("global_summary", True),
+                "repositories": raw_sections.get("all_repositories", True),
+                "contributors": raw_sections.get("contributors", True),
+                "organizations": raw_sections.get("organizations", True),
+                "features": raw_sections.get("repo_feature_matrix", True),
+                "workflows": raw_sections.get("workflows", True),
+                "orphaned_jobs": raw_sections.get("orphaned_jobs", True),
+            }
 
-        logger.info("Building TOC context...")
-        logger.info(f"include_sections config: {include_sections}")
+        # Track section inclusion/exclusion for debugging
+        section_diagnostics = []
+
+        logger.debug(f"TOC generation: mapped include_sections={include_sections}")
 
         # Get data contexts (we'll check these for visibility)
         summaries = self.data.get("summaries", {})
@@ -382,6 +407,9 @@ class RenderContext:
                 "title": "Global Summary",
                 "anchor": "summary"
             })
+            logger.debug("TOC: Added 'Global Summary' section")
+        else:
+            section_diagnostics.append("summary: disabled in config")
 
         # Repositories section
         all_repos = summaries.get("all_repositories", [])
@@ -390,6 +418,12 @@ class RenderContext:
                 "title": "Gerrit Projects",
                 "anchor": "repositories"
             })
+            logger.debug(f"TOC: Added 'Gerrit Projects' section ({len(all_repos)} repos)")
+        else:
+            if not include_sections.get("repositories", True):
+                section_diagnostics.append("repositories: disabled in config")
+            else:
+                section_diagnostics.append(f"repositories: no data (all_repositories={len(all_repos)})")
 
         # Contributors section
         top_commits = summaries.get("top_contributors_commits", [])
@@ -400,6 +434,12 @@ class RenderContext:
                 "title": "Top Contributors",
                 "anchor": "contributors"
             })
+            logger.debug(f"TOC: Added 'Top Contributors' section ({len(top_commits)} by commits, {len(top_loc)} by LOC)")
+        else:
+            if not include_sections.get("contributors", True):
+                section_diagnostics.append("contributors: disabled in config")
+            else:
+                section_diagnostics.append(f"contributors: no data (commits={len(top_commits)}, loc={len(top_loc)})")
 
         # Organizations section
         top_orgs = summaries.get("top_organizations", [])
@@ -408,6 +448,12 @@ class RenderContext:
                 "title": "Top Organizations",
                 "anchor": "organizations"
             })
+            logger.debug(f"TOC: Added 'Top Organizations' section ({len(top_orgs)} orgs)")
+        else:
+            if not include_sections.get("organizations", True):
+                section_diagnostics.append("organizations: disabled in config")
+            else:
+                section_diagnostics.append(f"organizations: no data (top_organizations={len(top_orgs)})")
 
         # Features section
         all_features = set()
@@ -420,16 +466,26 @@ class RenderContext:
                 "title": "Repository Feature Matrix",
                 "anchor": "features"
             })
+            logger.debug(f"TOC: Added 'Repository Feature Matrix' section ({len(all_features)} features)")
+        else:
+            if not include_sections.get("features", True):
+                section_diagnostics.append("features: disabled in config")
+            else:
+                section_diagnostics.append(f"features: no data (detected features={len(all_features)})")
 
         # Workflows section
         has_workflows = False
+        jenkins_count = 0
+        github_count = 0
         for repo in repositories:
             jenkins_jobs = repo.get("jenkins_jobs", [])
+            jenkins_count += len(jenkins_jobs)
             features = repo.get("features", {})
             workflows_data = features.get("workflows", {})
             github_api_data = workflows_data.get("github_api_data", {})
             github_workflows = github_api_data.get("workflows", [])
             active_gh_workflows = [w for w in github_workflows if w.get("state") == "active"]
+            github_count += len(active_gh_workflows)
             if len(jenkins_jobs) > 0 or len(active_gh_workflows) > 0:
                 has_workflows = True
                 break
@@ -438,6 +494,12 @@ class RenderContext:
                 "title": "Deployed CI/CD Jobs",
                 "anchor": "workflows"
             })
+            logger.debug(f"TOC: Added 'Deployed CI/CD Jobs' section (Jenkins: {jenkins_count}, GitHub: {github_count})")
+        else:
+            if not include_sections.get("workflows", True):
+                section_diagnostics.append("workflows: disabled in config")
+            else:
+                section_diagnostics.append(f"workflows: no data (jenkins={jenkins_count}, github={github_count})")
 
         # Orphaned jobs section
         orphaned_data = self.data.get("orphaned_jenkins_jobs", {})
@@ -448,6 +510,12 @@ class RenderContext:
                 "title": "Orphaned Jenkins Jobs",
                 "anchor": "orphaned-jobs"
             })
+            logger.debug(f"TOC: Added 'Orphaned Jenkins Jobs' section ({len(jobs)} jobs)")
+        else:
+            if not include_sections.get("orphaned_jobs", True):
+                section_diagnostics.append("orphaned_jobs: disabled in config")
+            else:
+                section_diagnostics.append(f"orphaned_jobs: no data (jobs={len(jobs)})")
 
         # Time windows section (always check for data)
         time_windows = self.data.get("time_windows", [])
@@ -456,16 +524,27 @@ class RenderContext:
                 "title": "Time Windows",
                 "anchor": "time-windows"
             })
+            logger.debug(f"TOC: Added 'Time Windows' section ({len(time_windows)} windows)")
+        else:
+            section_diagnostics.append(f"time_windows: no data (time_windows={len(time_windows)})")
 
         toc_result = {
             "sections": sections,
             "has_sections": len(sections) > 0,
         }
-        logger.info(f"TOC context built: {len(sections)} sections, has_sections={toc_result['has_sections']}")
+
+        # Report TOC generation results
         if sections:
-            logger.info(f"TOC sections: {[s['title'] for s in sections]}")
+            logger.info(f"✅ Table of Contents: {len(sections)} sections")
+            logger.debug(f"TOC sections: {[s['title'] for s in sections]}")
         else:
-            logger.warning("No TOC sections generated - TOC will not be displayed")
+            # CRITICAL: TOC enabled but no sections - this is an error condition
+            logger.error("❌ Table of Contents: FAILED - No sections matched!")
+            logger.error("TOC enabled but no sections were generated. Reasons:")
+            for diagnostic in section_diagnostics:
+                logger.error(f"  - {diagnostic}")
+            logger.error("Check configuration (output.include_sections) and data availability.")
+
         return toc_result
 
     def _get_status_color_from_github(self, github_color: str) -> str:
