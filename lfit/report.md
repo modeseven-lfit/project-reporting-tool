@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: Linux Foundation
 
-**Generated:** December 08, 2025 at 07:24 UTC
+**Generated:** December 09, 2025 at 07:22 UTC
 **Schema Version:** 1.2.0
 
 ## 📈 Global Summary
@@ -152,8 +152,8 @@ The data presented in the table below covers the past 365 days.
 | 73 | Suresh Channamallu | 0 | +0 | 0 | - | 3 | linuxfoundation.org |
 | 74 | Sylvain Desbureaux | 0 | +0 | 0 | - | 1 | orange.com |
 | 75 | Thanh Ha | 0 | +0 | 0 | - | 18 | gmail.com |
-| 76 | Thanh Ha | 0 | +0 | 0 | - | 22 | linuxfoundation.org |
-| 77 | Thanh Ha | 0 | +0 | 0 | - | 9 | linux.com |
+| 76 | Thanh Ha | 0 | +0 | 0 | - | 9 | linux.com |
+| 77 | Thanh Ha | 0 | +0 | 0 | - | 22 | linuxfoundation.org |
 | 78 | Tim Johnson | 0 | +0 | 0 | - | 5 | linuxfoundation.org |
 | 79 | ToineSiebelink | 0 | +0 | 0 | - | 1 | est.tech |
 | 80 | Tomasz Wrobel | 0 | +0 | 0 | - | 1 | nokia.com |
@@ -187,41 +187,41 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| releng/info-master | 112 | +482 | 5 | 17 | 2025-11-21 | ✅ |
-| sandbox | 68 | +212128 | 2 | 0 | 2025-12-08 | ✅ |
-| releng/global-jjb | 24 | +564 | 6 | 4 | 2025-12-04 | ✅ |
-| releng/lftools | 21 | +624 | 4 | 3 | 2025-12-05 | ✅ |
-| releng/gerrit_to_platform | 20 | +700 | 5 | 6 | 2025-12-02 | ✅ |
-| releng/common-packer | 13 | +1515 | 4 | 6 | 2025-12-02 | ✅ |
-| releng/docs | 6 | +27 | 3 | 111 | 2025-08-19 | ✅ |
-| ansible/roles/java-install | 2 | +6 | 1 | 184 | 2025-06-07 | ✅ |
-| ansible/roles/puppet-install | 2 | -1 | 2 | 216 | 2025-05-06 | ✅ |
-| ansible/roles | 1 | +0 | 1 | 0 | 2025-12-08 | ✅ |
-| ansible/roles/lf-recommended-tools | 1 | +11 | 1 | 187 | 2025-06-04 | ✅ |
-| ansible/roles/python-install | 1 | -19 | 1 | 184 | 2025-06-07 | ✅ |
-| ansible/roles/system-update | 1 | +1 | 1 | 23 | 2025-11-15 | ✅ |
-| ansible/roles/docker-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
-| ansible/roles/haveged-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
-| ansible/roles/lf-dev-libs | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
-| ansible/roles/mono-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
-| ansible/roles/packer-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
-| ansible/roles/protobuf-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
-| ansible/roles/shellcheck-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
-| ansible/roles/sysstat-install | 0 | +0 | 0 | 410 | 2024-10-24 | ☑️ |
-| clav2test/ccla-only-project | 0 | +0 | 0 | 2,530 | 2019-01-04 | 🛑 |
-| clav2test/icla-and-ccla-project | 0 | +0 | 0 | 1,727 | 2021-03-17 | 🛑 |
-| lfn/process | 0 | +0 | 0 | 2,739 | 2018-06-09 | 🛑 |
-| puppet/modules/gce | 0 | +0 | 0 | 3,230 | 2017-02-03 | 🛑 |
-| puppet/modules/mailman3 | 0 | +0 | 0 | 3,448 | 2016-06-30 | 🛑 |
-| releng | 0 | +0 | 0 | 642 | 2024-03-06 | ☑️ |
-| releng/ci-workshop | 0 | +0 | 0 | 1,191 | 2022-09-04 | 🛑 |
-| releng/docs-conf | 0 | +0 | 0 | 551 | 2024-06-05 | ☑️ |
-| releng/license-checker | 0 | +0 | 0 | 2,746 | 2018-06-02 | 🛑 |
-| releng/nexus-upload | 0 | +0 | 0 | 556 | 2024-05-31 | ☑️ |
-| releng/pipelines | 0 | +0 | 0 | 1,218 | 2022-08-08 | 🛑 |
-| releng/python-one-password | 0 | +0 | 0 | 810 | 2023-09-20 | ☑️ |
-| releng/sigul-docker | 0 | +0 | 0 | 752 | 2023-11-17 | ☑️ |
-| sandbox-info-master | 0 | +0 | 0 | 1,901 | 2020-09-24 | 🛑 |
+| releng/info-master | 112 | +482 | 5 | 18 | 2025-11-21 | ✅ |
+| sandbox | 68 | +212128 | 2 | 1 | 2025-12-08 | ✅ |
+| releng/global-jjb | 24 | +564 | 6 | 5 | 2025-12-04 | ✅ |
+| releng/lftools | 21 | +624 | 4 | 4 | 2025-12-05 | ✅ |
+| releng/gerrit_to_platform | 20 | +700 | 5 | 7 | 2025-12-02 | ✅ |
+| releng/common-packer | 13 | +1515 | 4 | 7 | 2025-12-02 | ✅ |
+| releng/docs | 6 | +27 | 3 | 112 | 2025-08-19 | ✅ |
+| ansible/roles/java-install | 2 | +6 | 1 | 185 | 2025-06-07 | ✅ |
+| ansible/roles/puppet-install | 2 | -1 | 2 | 217 | 2025-05-06 | ✅ |
+| ansible/roles | 1 | +0 | 1 | 1 | 2025-12-08 | ✅ |
+| ansible/roles/lf-recommended-tools | 1 | +11 | 1 | 188 | 2025-06-04 | ✅ |
+| ansible/roles/python-install | 1 | -19 | 1 | 185 | 2025-06-07 | ✅ |
+| ansible/roles/system-update | 1 | +1 | 1 | 24 | 2025-11-15 | ✅ |
+| ansible/roles/docker-install | 0 | +0 | 0 | 411 | 2024-10-24 | ☑️ |
+| ansible/roles/haveged-install | 0 | +0 | 0 | 411 | 2024-10-24 | ☑️ |
+| ansible/roles/lf-dev-libs | 0 | +0 | 0 | 411 | 2024-10-24 | ☑️ |
+| ansible/roles/mono-install | 0 | +0 | 0 | 411 | 2024-10-24 | ☑️ |
+| ansible/roles/packer-install | 0 | +0 | 0 | 411 | 2024-10-24 | ☑️ |
+| ansible/roles/protobuf-install | 0 | +0 | 0 | 411 | 2024-10-24 | ☑️ |
+| ansible/roles/shellcheck-install | 0 | +0 | 0 | 411 | 2024-10-24 | ☑️ |
+| ansible/roles/sysstat-install | 0 | +0 | 0 | 411 | 2024-10-24 | ☑️ |
+| clav2test/ccla-only-project | 0 | +0 | 0 | 2,531 | 2019-01-04 | 🛑 |
+| clav2test/icla-and-ccla-project | 0 | +0 | 0 | 1,728 | 2021-03-17 | 🛑 |
+| lfn/process | 0 | +0 | 0 | 2,740 | 2018-06-09 | 🛑 |
+| puppet/modules/gce | 0 | +0 | 0 | 3,231 | 2017-02-03 | 🛑 |
+| puppet/modules/mailman3 | 0 | +0 | 0 | 3,449 | 2016-06-30 | 🛑 |
+| releng | 0 | +0 | 0 | 643 | 2024-03-06 | ☑️ |
+| releng/ci-workshop | 0 | +0 | 0 | 1,192 | 2022-09-04 | 🛑 |
+| releng/docs-conf | 0 | +0 | 0 | 552 | 2024-06-05 | ☑️ |
+| releng/license-checker | 0 | +0 | 0 | 2,747 | 2018-06-02 | 🛑 |
+| releng/nexus-upload | 0 | +0 | 0 | 557 | 2024-05-31 | ☑️ |
+| releng/pipelines | 0 | +0 | 0 | 1,219 | 2022-08-08 | 🛑 |
+| releng/python-one-password | 0 | +0 | 0 | 811 | 2023-09-20 | ☑️ |
+| releng/sigul-docker | 0 | +0 | 0 | 753 | 2023-11-17 | ☑️ |
+| sandbox-info-master | 0 | +0 | 0 | 1,902 | 2020-09-24 | 🛑 |
 
 **Total:** 35 repositories
 
@@ -239,28 +239,28 @@ The data presented in the table below covers the past 365 days.
 | ansible/roles/java-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/puppet-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/lf-recommended-tools | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| ansible/roles/system-update | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/python-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/system-update | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
-| ansible/roles/docker-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
 | ansible/roles/packer-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
 | ansible/roles/haveged-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
-| ansible/roles/mono-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
-| ansible/roles/protobuf-install | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | ansible/roles/lf-dev-libs | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/docker-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
+| ansible/roles/protobuf-install | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
+| ansible/roles/mono-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
 | puppet/modules/gce | Ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | puppet/modules/mailman3 | Ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| clav2test/ccla-only-project | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/roles/shellcheck-install | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ☑️ |
 | ansible/roles/sysstat-install | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| clav2test/ccla-only-project | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | clav2test/icla-and-ccla-project | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | lfn/process | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | releng/ci-workshop | Groovy | ❌ | ✅ | ❌ | ✅ | ❌ | 🛑 |
 | releng/docs-conf | Python | ❌ | ✅ | ✅ | ✅ | ❌ | ☑️ |
 | releng/license-checker | Go | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | releng/nexus-upload | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| releng/python-one-password | Python | ❌ | ✅ | ✅ | ✅ | ❌ | ☑️ |
 | releng/pipelines | Groovy | ❌ | ✅ | ✅ | ✅ | ❌ | 🛑 |
+| releng/python-one-password | Python | ❌ | ✅ | ✅ | ✅ | ❌ | ☑️ |
 | releng/sigul-docker | Dockerfile | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | sandbox-info-master | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | releng | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
