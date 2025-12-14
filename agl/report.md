@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: AGL
 
-**Generated:** December 12, 2025 at 07:19 UTC
+**Generated:** December 14, 2025 at 07:14 UTC
 **Schema Version:** 1.2.0
 
 ## 📈 Global Summary
@@ -12,12 +12,12 @@
 | Metric | Count | Percentage |
 |--------|-------|------------|
 | Total Gerrit Projects | 215 | 100% |
-| Current Gerrit Projects | 29 | 13.5% |
-| Active Gerrit Projects | 166 | 77.2% |
+| Current Gerrit Projects | 28 | 13.0% |
+| Active Gerrit Projects | 167 | 77.7% |
 | Inactive Gerrit Projects | 17 | 7.9% |
 | No Apparent Commits | 3 | 1.4% |
-| Total Commits | 305 | - |
-| Total Lines of Code | 23.9K | - |
+| Total Commits | 300 | - |
+| Total Lines of Code | 23.8K | - |
 
 ## 🏢 Top Organizations
 
@@ -30,7 +30,7 @@ The data presented in the table below covers the past 365 days.
 | 1 | konsulko.com | 13 | 110 | -9891 | 24511 | -89.9 | 101 |
 | 2 | linuxfoundation.org | 8 | 82 | -7507 | 10809 | -91.5 | 210 |
 | 3 | co.jp | 18 | 54 | +1569 | 16731 | +29.1 | 39 |
-| 4 | collabora.com | 7 | 26 | +2375 | 2579 | +91.3 | 43 |
+| 4 | collabora.com | 7 | 21 | +2286 | 2404 | +108.9 | 43 |
 | 5 | panasonic.com | 5 | 16 | +723 | 2085 | +45.2 | 28 |
 | 6 | gmail.com | 50 | 11 | -25 | 951 | -2.3 | 50 |
 | 7 | virtualopensystems.com | 4 | 6 | +1345 | 1591 | +224.2 | 7 |
@@ -152,88 +152,88 @@ The data presented in the table below covers the past 365 days.
 | 1 | Scott Murray | 110 | -9891 | 24511 | -89.9 | 96 | konsulko.com |
 | 2 | Jan-Simon Moeller | 82 | -7507 | 10809 | -91.5 | 210 | linuxfoundation.org |
 | 3 | Naoto Yamaguchi | 53 | +1538 | 16700 | +29.0 | 14 | co.jp |
-| 4 | Marius Vlad | 25 | +2339 | 2543 | +93.6 | 37 | collabora.com |
+| 4 | Marius Vlad | 21 | +2286 | 2404 | +108.9 | 37 | collabora.com |
 | 5 | Kenta | 16 | +723 | 2085 | +45.2 | 3 | panasonic.com |
 | 6 | Timos Ampelikiotis | 6 | +1345 | 1591 | +224.2 | 5 | virtualopensystems.com |
 | 7 | Saalim Quadri | 5 | +16 | 556 | +3.2 | 4 | gmail.com |
 | 8 | Joel Winarske | 2 | -190 | 202 | -95.0 | 8 | gmail.com |
 | 9 | Amr Elkenawy | 1 | +95 | 99 | +95.0 | 1 | gmail.com |
-| 10 | George Kiagiadakis | 1 | +36 | 36 | +36.0 | 14 | collabora.com |
-| 11 | Jinyuan Si | 1 | +31 | 31 | +31.0 | 1 | co.jp |
-| 12 | Ahmed Adel Wafdy | 1 | +30 | 32 | +30.0 | 1 | gmail.com |
-| 13 | Yudi Fu | 1 | +23 | 43 | +23.0 | 1 | gmail.com |
-| 14 | Anuj Solanki | 1 | +1 | 19 | +1.0 | 10 | gmail.com |
-| 15 | 8000ff | 0 | +0 | 0 | - | 6 | gmail.com |
-| 16 | Adam Parker | 0 | +0 | 0 | - | 1 | gmail.com |
-| 17 | Alice Ferrazzi | 0 | +0 | 0 | - | 1 | miraclelinux.com |
-| 18 | Alice Ferrazzi | 0 | +0 | 0 | - | 1 | co.jp |
-| 19 | Alistair Francis | 0 | +0 | 0 | - | 3 | wdc.com |
-| 20 | Andre Moreira Magalhaes (andrunko) | 0 | +0 | 0 | - | 2 | co.uk |
-| 21 | Andreas Müller | 0 | +0 | 0 | - | 1 | googlemail.com |
-| 22 | Andrew Grimberg | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 23 | Andrew Ruder | 0 | +0 | 0 | - | 1 | elecsyscorp.com |
-| 24 | Andrey Shamanin | 0 | +0 | 0 | - | 4 | orioninc.com |
-| 25 | Andriy Tryshnivskyy | 0 | +0 | 0 | - | 3 | opensynergy.com |
-| 26 | Angelos Mouzakitis | 0 | +0 | 0 | - | 5 | virtualopensystems.com |
-| 27 | Anh Nguyen | 0 | +0 | 0 | - | 1 | renesas.com |
-| 28 | Anil Belur | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
-| 29 | Anmol Anmol | 0 | +0 | 0 | - | 1 | gmail.com |
-| 30 | Antia Puentes | 0 | +0 | 0 | - | 12 | igalia.com |
-| 31 | Anton Gerasimov | 0 | +0 | 0 | - | 4 | advancedtelematic.com |
-| 32 | Anton Gerasimov | 0 | +0 | 0 | - | 1 | gmail.com |
-| 33 | Anton Gerasimov | 0 | +0 | 0 | - | 1 | here.com |
-| 34 | Anusha Gugale | 0 | +0 | 0 | - | 6 | adit-jv.com |
-| 35 | Arnaud Ferraris | 0 | +0 | 0 | - | 6 | collabora.com |
-| 36 | Arthur Guyader | 0 | +0 | 0 | - | 3 | iot.bzh |
-| 37 | Ashok Sidipotu | 0 | +0 | 0 | - | 5 | collabora.com |
-| 38 | Bechir Mghirbi | 0 | +0 | 0 | - | 2 | grammer.com |
-| 39 | Benjamin Kamath | 0 | +0 | 0 | - | 1 | synapse.com |
-| 40 | Bocklage, Jens | 0 | +0 | 0 | - | 7 | mentor.com |
-| 41 | Builder | 0 | +0 | 0 | - | 2 | 6b3797ab1e90 |
-| 42 | Carlos Alberto Lopez Perez | 0 | +0 | 0 | - | 1 | igalia.com |
-| 43 | Changhyeok Bae | 0 | +0 | 0 | - | 7 | gmail.com |
-| 44 | Changhyeok Bae | 0 | +0 | 0 | - | 1 | daimler.com |
-| 45 | Christian Gromm | 0 | +0 | 0 | - | 6 | microchip.com |
-| 46 | Christoph Rahn | 0 | +0 | 0 | - | 1 | rosen-group.com |
-| 47 | Christopher Peplin | 0 | +0 | 0 | - | 1 | rhubarbtech.com |
-| 48 | Christopher Peplin | 0 | +0 | 0 | - | 1 | uberatc.com |
-| 49 | Christopher Peplin | 0 | +0 | 0 | - | 1 | rhubarbtech.com |
-| 50 | Clément Bénier | 0 | +0 | 0 | - | 19 | iot.bzh |
-| 51 | Constantine Grantcharov | 0 | +0 | 0 | - | 1 | trustpointinnovation.com |
-| 52 | Corentin LABBE | 0 | +0 | 0 | - | 6 | baylibre.com |
-| 53 | Corentin Le Gall | 0 | +0 | 0 | - | 1 | iot.bzh |
-| 54 | Corentin Le Gall | 0 | +0 | 0 | - | 1 | lorient.iot |
-| 55 | CorentinLGS | 0 | +0 | 0 | - | 8 | gmail.com |
-| 56 | CorentinLGS | 0 | +0 | 0 | - | 2 | github.com |
-| 57 | Damian Hobson-Garcia | 0 | +0 | 0 | - | 5 | co.jp |
-| 58 | Daniel Stone | 0 | +0 | 0 | - | 2 | collabora.com |
-| 59 | David Lewin | 0 | +0 | 0 | - | 1 | baylibre.com |
-| 60 | Dennis Field | 0 | +0 | 0 | - | 2 | radiosound.com |
-| 61 | Denys Dmytriyenko | 0 | +0 | 0 | - | 9 | konsulko.com |
-| 62 | Dmitry Yudenich | 0 | +0 | 0 | - | 1 | orioninc.com |
-| 63 | Dominig ar Foll | 0 | +0 | 0 | - | 1 | fridu.net |
-| 64 | Dominig ar Foll Intel Open Source | 0 | +0 | 0 | - | 5 | fridu.net |
-| 65 | Dominik Wawrzonek | 0 | +0 | 0 | - | 1 | ics.com |
-| 66 | Duy Dang | 0 | +0 | 0 | - | 1 | renesas.com |
-| 67 | Edi Feschiyan | 0 | +0 | 0 | - | 9 | konsulko.com |
-| 68 | Edi Feschiyan | 0 | +0 | 0 | - | 1 | pm.me |
-| 69 | Edi Feschiyan | 0 | +0 | 0 | - | 1 | github.com |
-| 70 | Ehsan Takalloo | 0 | +0 | 0 | - | 1 | gmail.com |
-| 71 | Eric | 0 | +0 | 0 | - | 1 | github.com |
-| 72 | Eric Marsman | 0 | +0 | 0 | - | 1 | gmail.com |
-| 73 | Erik Wilde | 0 | +0 | 0 | - | 1 | berkeley.edu |
-| 74 | Evgeniy Didin | 0 | +0 | 0 | - | 2 | synopsys.com |
-| 75 | Fabian Scheler | 0 | +0 | 0 | - | 1 | siemens.com |
-| 76 | Farshid Monhaseri | 0 | +0 | 0 | - | 2 | gmail.com |
-| 77 | Felipe Erias | 0 | +0 | 0 | - | 1 | igalia.com |
-| 78 | Forlot Romain [IoT.bzh] | 0 | +0 | 0 | - | 9 | iot.bzh |
-| 79 | Frederic Marec | 0 | +0 | 0 | - | 51 | iot.bzh |
-| 80 | Frode Isaksen | 0 | +0 | 0 | - | 2 | baylibre.com |
-| 81 | Fulup Ar Foll | 0 | +0 | 0 | - | 10 | iot.bzh |
-| 82 | Fulup Ar Foll | 0 | +0 | 0 | - | 1 | breizhme.net |
-| 83 | Fumiya Kohzu | 0 | +0 | 0 | - | 2 | panasonic.com |
-| 84 | Gaykawadpk | 0 | +0 | 0 | - | 1 | kpit.com |
-| 85 | Geoffroy Van Cutsem | 0 | +0 | 0 | - | 1 | intel.com |
+| 10 | Jinyuan Si | 1 | +31 | 31 | +31.0 | 1 | co.jp |
+| 11 | Ahmed Adel Wafdy | 1 | +30 | 32 | +30.0 | 1 | gmail.com |
+| 12 | Yudi Fu | 1 | +23 | 43 | +23.0 | 1 | gmail.com |
+| 13 | Anuj Solanki | 1 | +1 | 19 | +1.0 | 10 | gmail.com |
+| 14 | 8000ff | 0 | +0 | 0 | - | 6 | gmail.com |
+| 15 | Adam Parker | 0 | +0 | 0 | - | 1 | gmail.com |
+| 16 | Alice Ferrazzi | 0 | +0 | 0 | - | 1 | miraclelinux.com |
+| 17 | Alice Ferrazzi | 0 | +0 | 0 | - | 1 | co.jp |
+| 18 | Alistair Francis | 0 | +0 | 0 | - | 3 | wdc.com |
+| 19 | Andre Moreira Magalhaes (andrunko) | 0 | +0 | 0 | - | 2 | co.uk |
+| 20 | Andreas Müller | 0 | +0 | 0 | - | 1 | googlemail.com |
+| 21 | Andrew Grimberg | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 22 | Andrew Ruder | 0 | +0 | 0 | - | 1 | elecsyscorp.com |
+| 23 | Andrey Shamanin | 0 | +0 | 0 | - | 4 | orioninc.com |
+| 24 | Andriy Tryshnivskyy | 0 | +0 | 0 | - | 3 | opensynergy.com |
+| 25 | Angelos Mouzakitis | 0 | +0 | 0 | - | 5 | virtualopensystems.com |
+| 26 | Anh Nguyen | 0 | +0 | 0 | - | 1 | renesas.com |
+| 27 | Anil Belur | 0 | +0 | 0 | - | 1 | linuxfoundation.org |
+| 28 | Anmol Anmol | 0 | +0 | 0 | - | 1 | gmail.com |
+| 29 | Antia Puentes | 0 | +0 | 0 | - | 12 | igalia.com |
+| 30 | Anton Gerasimov | 0 | +0 | 0 | - | 4 | advancedtelematic.com |
+| 31 | Anton Gerasimov | 0 | +0 | 0 | - | 1 | gmail.com |
+| 32 | Anton Gerasimov | 0 | +0 | 0 | - | 1 | here.com |
+| 33 | Anusha Gugale | 0 | +0 | 0 | - | 6 | adit-jv.com |
+| 34 | Arnaud Ferraris | 0 | +0 | 0 | - | 6 | collabora.com |
+| 35 | Arthur Guyader | 0 | +0 | 0 | - | 3 | iot.bzh |
+| 36 | Ashok Sidipotu | 0 | +0 | 0 | - | 5 | collabora.com |
+| 37 | Bechir Mghirbi | 0 | +0 | 0 | - | 2 | grammer.com |
+| 38 | Benjamin Kamath | 0 | +0 | 0 | - | 1 | synapse.com |
+| 39 | Bocklage, Jens | 0 | +0 | 0 | - | 7 | mentor.com |
+| 40 | Builder | 0 | +0 | 0 | - | 2 | 6b3797ab1e90 |
+| 41 | Carlos Alberto Lopez Perez | 0 | +0 | 0 | - | 1 | igalia.com |
+| 42 | Changhyeok Bae | 0 | +0 | 0 | - | 7 | gmail.com |
+| 43 | Changhyeok Bae | 0 | +0 | 0 | - | 1 | daimler.com |
+| 44 | Christian Gromm | 0 | +0 | 0 | - | 6 | microchip.com |
+| 45 | Christoph Rahn | 0 | +0 | 0 | - | 1 | rosen-group.com |
+| 46 | Christopher Peplin | 0 | +0 | 0 | - | 1 | rhubarbtech.com |
+| 47 | Christopher Peplin | 0 | +0 | 0 | - | 1 | uberatc.com |
+| 48 | Christopher Peplin | 0 | +0 | 0 | - | 1 | rhubarbtech.com |
+| 49 | Clément Bénier | 0 | +0 | 0 | - | 19 | iot.bzh |
+| 50 | Constantine Grantcharov | 0 | +0 | 0 | - | 1 | trustpointinnovation.com |
+| 51 | Corentin LABBE | 0 | +0 | 0 | - | 6 | baylibre.com |
+| 52 | Corentin Le Gall | 0 | +0 | 0 | - | 1 | iot.bzh |
+| 53 | Corentin Le Gall | 0 | +0 | 0 | - | 1 | lorient.iot |
+| 54 | CorentinLGS | 0 | +0 | 0 | - | 8 | gmail.com |
+| 55 | CorentinLGS | 0 | +0 | 0 | - | 2 | github.com |
+| 56 | Damian Hobson-Garcia | 0 | +0 | 0 | - | 5 | co.jp |
+| 57 | Daniel Stone | 0 | +0 | 0 | - | 2 | collabora.com |
+| 58 | David Lewin | 0 | +0 | 0 | - | 1 | baylibre.com |
+| 59 | Dennis Field | 0 | +0 | 0 | - | 2 | radiosound.com |
+| 60 | Denys Dmytriyenko | 0 | +0 | 0 | - | 9 | konsulko.com |
+| 61 | Dmitry Yudenich | 0 | +0 | 0 | - | 1 | orioninc.com |
+| 62 | Dominig ar Foll | 0 | +0 | 0 | - | 1 | fridu.net |
+| 63 | Dominig ar Foll Intel Open Source | 0 | +0 | 0 | - | 5 | fridu.net |
+| 64 | Dominik Wawrzonek | 0 | +0 | 0 | - | 1 | ics.com |
+| 65 | Duy Dang | 0 | +0 | 0 | - | 1 | renesas.com |
+| 66 | Edi Feschiyan | 0 | +0 | 0 | - | 9 | konsulko.com |
+| 67 | Edi Feschiyan | 0 | +0 | 0 | - | 1 | pm.me |
+| 68 | Edi Feschiyan | 0 | +0 | 0 | - | 1 | github.com |
+| 69 | Ehsan Takalloo | 0 | +0 | 0 | - | 1 | gmail.com |
+| 70 | Eric | 0 | +0 | 0 | - | 1 | github.com |
+| 71 | Eric Marsman | 0 | +0 | 0 | - | 1 | gmail.com |
+| 72 | Erik Wilde | 0 | +0 | 0 | - | 1 | berkeley.edu |
+| 73 | Evgeniy Didin | 0 | +0 | 0 | - | 2 | synopsys.com |
+| 74 | Fabian Scheler | 0 | +0 | 0 | - | 1 | siemens.com |
+| 75 | Farshid Monhaseri | 0 | +0 | 0 | - | 2 | gmail.com |
+| 76 | Felipe Erias | 0 | +0 | 0 | - | 1 | igalia.com |
+| 77 | Forlot Romain [IoT.bzh] | 0 | +0 | 0 | - | 9 | iot.bzh |
+| 78 | Frederic Marec | 0 | +0 | 0 | - | 51 | iot.bzh |
+| 79 | Frode Isaksen | 0 | +0 | 0 | - | 2 | baylibre.com |
+| 80 | Fulup Ar Foll | 0 | +0 | 0 | - | 10 | iot.bzh |
+| 81 | Fulup Ar Foll | 0 | +0 | 0 | - | 1 | breizhme.net |
+| 82 | Fumiya Kohzu | 0 | +0 | 0 | - | 2 | panasonic.com |
+| 83 | Gaykawadpk | 0 | +0 | 0 | - | 1 | kpit.com |
+| 84 | Geoffroy Van Cutsem | 0 | +0 | 0 | - | 1 | intel.com |
+| 85 | George Kiagiadakis | 0 | +0 | 0 | - | 14 | collabora.com |
 | 86 | Gerrit Code Review | 0 | +0 | 0 | - | 4 | automotivelinux.org |
 | 87 | Guillaume Lager | 0 | +0 | 0 | - | 1 | innoseis.com |
 | 88 | Guy Lunardi | 0 | +0 | 0 | - | 1 | co.uk |
@@ -480,218 +480,218 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| AGL/meta-agl | 85 | +6823 | 8 | 1 | 2025-12-11 | ✅ |
-| AGL/meta-agl-devel | 50 | -6482 | 7 | 11 | 2025-12-01 | ✅ |
-| AGL/meta-agl-demo | 49 | -9139 | 6 | 10 | 2025-12-02 | ✅ |
-| AGL/AGL-repo | 31 | -8355 | 5 | 4 | 2025-12-08 | ✅ |
-| ci-management | 27 | +433 | 1 | 149 | 2025-07-16 | ✅ |
-| src/agl-compositor | 9 | -13 | 1 | 202 | 2025-05-24 | ✅ |
-| apps/flutter-ics-homescreen | 7 | +76 | 4 | 19 | 2025-11-23 | ✅ |
-| apps/agl-service-hvac | 6 | +11 | 2 | 52 | 2025-10-21 | ✅ |
-| src/uhmi-agl-wm | 6 | +2699 | 3 | 275 | 2025-03-12 | ✅ |
-| AGL/documentation | 5 | +117 | 2 | 17 | 2025-11-25 | ✅ |
-| apps/agl-service-audiomixer | 4 | +31 | 1 | 52 | 2025-10-21 | ✅ |
-| src/cluster-refgui | 3 | +20 | 1 | 201 | 2025-05-25 | ✅ |
-| AGL/releng-scripts | 2 | +84 | 1 | 37 | 2025-11-05 | ✅ |
-| apps/flutter-ros-demo | 2 | +5 | 2 | 32 | 2025-11-10 | ✅ |
-| src/agl-dbc | 2 | +437 | 1 | 217 | 2025-05-09 | ✅ |
-| src/libqtappfw | 2 | +99 | 1 | 52 | 2025-10-21 | ✅ |
-| src/qa-testdefinitions | 2 | +3 | 1 | 358 | 2024-12-19 | ✅ |
-| src/virtio/virtio-loopback-adapter | 2 | +404 | 1 | 330 | 2025-01-16 | ✅ |
-| src/virtio/virtio-loopback-driver | 2 | +939 | 1 | 330 | 2025-01-16 | ✅ |
-| apps/agl-cluster-demo-dashboard | 1 | +341 | 1 | 217 | 2025-05-09 | ✅ |
-| apps/agl-qt-cluster-demo-receiver | 1 | +0 | 1 | 216 | 2025-05-10 | ✅ |
-| apps/agl-service-radio | 1 | -2 | 1 | 231 | 2025-04-25 | ✅ |
-| apps/flutter-instrument-cluster | 1 | +51 | 1 | 52 | 2025-10-21 | ✅ |
-| apps/tbtnavi | 1 | +1 | 1 | 335 | 2025-01-11 | ✅ |
-| src/agl-demo-control-panel | 1 | +0 | 1 | 211 | 2025-05-15 | ✅ |
-| src/agl-vss-proxy | 1 | +6 | 1 | 281 | 2025-03-06 | ✅ |
-| src/ekuiper | 1 | +0 | 1 | 1 | 2025-12-11 | ✅ |
-| src/nanomq | 1 | +0 | 1 | 1 | 2025-12-11 | ✅ |
-| AGL | 0 | +0 | 0 | 775 | 2023-10-29 | ☑️ |
-| AGL/lava-docker | 0 | +0 | 0 | 1,752 | 2021-02-24 | 🛑 |
-| AGL/meta-agl-cluster-demo | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| AGL/meta-agl-extra | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| AGL/meta-agl-refhw | 0 | +0 | 0 | 471 | 2024-08-28 | ☑️ |
-| AGL/meta-agl-telematics-demo | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps | 0 | +0 | 0 | 775 | 2023-10-29 | ☑️ |
-| apps/agl-cluster-demo-gauges | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-cluster-demo-receiver | 0 | +0 | 0 | 365 | 2024-12-12 | ✅ |
-| apps/agl-service-bluetooth | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-bluetooth-map | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-bluetooth-pbap | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-can-high-level-viwi | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-can-low-level | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-cloudproxy | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-data-persistence | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-geoclue | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-geofence | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-gps | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-harvester | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-helloworld | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-homescreen | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-identity-agent | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-iiodevices | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-inputmethod | 0 | +0 | 0 | 1,848 | 2020-11-20 | 🛑 |
-| apps/agl-service-mediaplayer | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-mediascanner | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-navigation | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-network | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-nfc | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-platform-info | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-poi | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-signal-composer | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-soundmanager | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-steering-wheel | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-taskmanager | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-telephony | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-unicens | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-unicens-controller | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-voice-high | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-voice-high-capabilities | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-voiceagent | 0 | +0 | 0 | 437 | 2024-10-01 | ☑️ |
-| apps/agl-service-weather | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-windowmanager | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-service-xds-monitoring | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/agl-telematics-demo-recorder | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/alexa-viewer | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/als-meter-demo | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/app-afb-helpers-submodule | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/app-afb-test | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/app-controller-submodule | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/app-templates | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/aroundview | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/camera-gstreamer | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/chromium | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/controls | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/dashboard | 0 | +0 | 0 | 387 | 2024-11-20 | ☑️ |
-| apps/demo3-camera | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/demo3-dashboard | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/demo3-homescreen | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/demo3-hvac | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/demo3-launcher | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/demo3-settings | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/demo3-tachometer | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/demo3-warehouse | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/flutter-dashboard | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/flutter-homescreen | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/flutter-hvac | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/flutter-mediaplayer | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/flutter-navigation | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/flutter-speechrecognition-demo | 0 | +0 | 0 | 428 | 2024-10-10 | ☑️ |
-| apps/homescreen | 0 | +0 | 0 | 387 | 2024-11-20 | ☑️ |
-| apps/homescreen-demo-ci | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/html5-background | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/html5-dashboard | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/html5-homescreen | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/html5-hvac | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/html5-launcher | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/html5-mediaplayer | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/html5-mixer | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/html5-settings | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/hvac | 0 | +0 | 0 | 387 | 2024-11-20 | ☑️ |
-| apps/launcher | 0 | +0 | 0 | 387 | 2024-11-20 | ☑️ |
-| apps/mediaplayer | 0 | +0 | 0 | 387 | 2024-11-20 | ☑️ |
-| apps/messaging | 0 | +0 | 0 | 387 | 2024-11-20 | ☑️ |
-| apps/mixer | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/mominavi | 0 | +0 | 0 | 428 | 2024-10-10 | ☑️ |
-| apps/momiplayer | 0 | +0 | 0 | 425 | 2024-10-13 | ☑️ |
-| apps/momiscreen | 0 | +0 | 0 | 425 | 2024-10-13 | ☑️ |
-| apps/momiweather | 0 | +0 | 0 | 425 | 2024-10-13 | ☑️ |
-| apps/navigation | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/ondemandnavi | 0 | +0 | 0 | 387 | 2024-11-20 | ☑️ |
-| apps/onscreenapp | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/phone | 0 | +0 | 0 | 387 | 2024-11-20 | ☑️ |
-| apps/poi-yelp | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/radio | 0 | +0 | 0 | 387 | 2024-11-20 | ☑️ |
-| apps/restriction-screen | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/settings | 0 | +0 | 0 | 384 | 2024-11-23 | ☑️ |
-| apps/settings-log-utils | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/taskmanager | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/videoplayer | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/voiceagent-demo | 0 | +0 | 0 | 1,205 | 2022-08-25 | 🛑 |
-| apps/waltham-receiver | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| apps/webapp-samples | 0 | +0 | 0 | 1,261 | 2022-06-30 | 🛑 |
-| docs-sources | 0 | +0 | 0 | 2,003 | 2020-06-18 | 🛑 |
-| docs-webtemplate | 0 | +0 | 0 | 2,106 | 2020-03-07 | 🛑 |
-| src | 0 | +0 | 0 | 1,883 | 2020-10-16 | 🛑 |
-| src/agl-js-api | 0 | +0 | 0 | 1,856 | 2020-11-12 | 🛑 |
-| src/agl-shell-activator | 0 | +0 | 0 | 686 | 2024-01-26 | ☑️ |
-| src/agl-test-framework | 0 | +0 | 0 | 639 | 2024-03-13 | ☑️ |
-| src/agl-yocto-kernel-meta | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/app-framework-binder | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/app-framework-demo | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/app-framework-main | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/applaunchd | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/bluez-glib | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/cmake-apps-module | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/connman-glib | 0 | +0 | 0 | 429 | 2024-10-09 | ☑️ |
-| src/cynagoauth | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/cynagora | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/demo3-qtquickcontrols | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/demo3-warehouse-server | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/drm-lease-manager | 0 | +0 | 0 | 480 | 2024-08-19 | ☑️ |
-| src/homescreen-demo-ci | 0 | +0 | 0 | 1,907 | 2020-09-22 | 🛑 |
-| src/hvac-demo-microcontroller | 0 | +0 | 0 | 616 | 2024-04-05 | ☑️ |
-| src/inputeventmanager | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/libafb-helpers | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/libagl-compositor | 0 | +0 | 0 | 1,977 | 2020-07-14 | 🛑 |
-| src/libaglnavigation | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/libappcontroller | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/libcloudproxy | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/libhomescreen | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/libqthomescreen | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/libqtsoundmanager | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/librefop | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/libsoundmanager | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/log-utils | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/low-level-can-generator | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/most | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/native-shell-client | 0 | +0 | 0 | 616 | 2024-04-05 | ☑️ |
-| src/nss-localuser | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/pipewire-ic-ipc | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/pyagl | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/qa-test-misc | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/qtaglextras | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/qtquickcontrols2-agl | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/qtquickcontrols2-agl-style | 0 | +0 | 0 | 387 | 2024-11-20 | ☑️ |
-| src/rasa-model-agl | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/snips-inference-agl | 0 | +0 | 0 | 431 | 2024-10-07 | ☑️ |
-| src/snips-model-agl | 0 | +0 | 0 | 480 | 2024-08-19 | ☑️ |
-| src/steering-wheel-microcontroller | 0 | +0 | 0 | 1,197 | 2022-09-02 | 🛑 |
-| src/virtio/adapter_app | 0 | +0 | 0 | 765 | 2023-11-08 | ☑️ |
-| src/virtio/qemu | 0 | +0 | 0 | 793 | 2023-10-11 | ☑️ |
-| src/virtio/virtio_driver | 0 | +0 | 0 | 813 | 2023-09-21 | ☑️ |
-| src/vod-server | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/waltham-transmitter-plugin | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/weston-ivi-plugins | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/window-management-client-grpc | 0 | +0 | 0 | 387 | 2024-11-20 | ☑️ |
-| src/windowmanager | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/xds | 0 | +0 | 0 | 1,911 | 2020-09-18 | 🛑 |
-| src/xds/xds-cli | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/xds/xds-common | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/xds/xds-docs | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/xds/xds-gdb | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| src/xds/xds-server | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| staging | 0 | +0 | 0 | 1,906 | 2020-09-23 | 🛑 |
-| staging/agl-inputmethod-qt-plugin | 0 | +0 | 0 | 1,848 | 2020-11-20 | 🛑 |
-| staging/basesystem | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| staging/incar-wireless-monitor | 0 | +0 | 0 | 661 | 2024-02-20 | ☑️ |
-| staging/libsoundmanager | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| staging/new-apps | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| staging/persistent-storage-api | 0 | +0 | 0 | 598 | 2024-04-23 | ☑️ |
-| staging/qlibhomescreen | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| staging/qlibsoundmanager | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| staging/rba | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| staging/rba-tool | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| staging/release-upload | 0 | +0 | 0 | 2,130 | 2020-02-12 | 🛑 |
-| staging/soundmanager | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| staging/toyota | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| staging/vehicle2cloud-communication | 0 | +0 | 0 | 811 | 2023-09-23 | ☑️ |
-| staging/xdg-launcher | 0 | +0 | 0 | 667 | 2024-02-14 | ☑️ |
-| z_sandbox | 0 | +0 | 0 | 3,740 | 2015-09-16 | 🛑 |
-| zzz_acl/src_acl | 0 | +0 | 0 | 775 | 2023-10-29 | ☑️ |
-| zzz_acl/staging_acl | 0 | +0 | 0 | 3,552 | 2016-03-22 | 🛑 |
+| AGL/meta-agl | 83 | +6707 | 7 | 3 | 2025-12-11 | ✅ |
+| AGL/meta-agl-devel | 50 | -6482 | 7 | 13 | 2025-12-01 | ✅ |
+| AGL/meta-agl-demo | 48 | -9139 | 6 | 12 | 2025-12-02 | ✅ |
+| AGL/AGL-repo | 31 | -8355 | 5 | 6 | 2025-12-08 | ✅ |
+| ci-management | 27 | +433 | 1 | 151 | 2025-07-16 | ✅ |
+| apps/flutter-ics-homescreen | 7 | +76 | 4 | 21 | 2025-11-23 | ✅ |
+| src/agl-compositor | 7 | +14 | 1 | 204 | 2025-05-24 | ✅ |
+| apps/agl-service-hvac | 6 | +11 | 2 | 54 | 2025-10-21 | ✅ |
+| src/uhmi-agl-wm | 6 | +2699 | 3 | 277 | 2025-03-12 | ✅ |
+| AGL/documentation | 5 | +117 | 2 | 19 | 2025-11-25 | ✅ |
+| apps/agl-service-audiomixer | 4 | +31 | 1 | 54 | 2025-10-21 | ✅ |
+| src/cluster-refgui | 3 | +20 | 1 | 203 | 2025-05-25 | ✅ |
+| AGL/releng-scripts | 2 | +84 | 1 | 39 | 2025-11-05 | ✅ |
+| apps/flutter-ros-demo | 2 | +5 | 2 | 34 | 2025-11-10 | ✅ |
+| src/agl-dbc | 2 | +437 | 1 | 219 | 2025-05-09 | ✅ |
+| src/libqtappfw | 2 | +99 | 1 | 54 | 2025-10-21 | ✅ |
+| src/qa-testdefinitions | 2 | +3 | 1 | 360 | 2024-12-19 | ✅ |
+| src/virtio/virtio-loopback-adapter | 2 | +404 | 1 | 332 | 2025-01-16 | ✅ |
+| src/virtio/virtio-loopback-driver | 2 | +939 | 1 | 332 | 2025-01-16 | ✅ |
+| apps/agl-cluster-demo-dashboard | 1 | +341 | 1 | 219 | 2025-05-09 | ✅ |
+| apps/agl-qt-cluster-demo-receiver | 1 | +0 | 1 | 218 | 2025-05-10 | ✅ |
+| apps/agl-service-radio | 1 | -2 | 1 | 233 | 2025-04-25 | ✅ |
+| apps/flutter-instrument-cluster | 1 | +51 | 1 | 54 | 2025-10-21 | ✅ |
+| apps/tbtnavi | 1 | +1 | 1 | 337 | 2025-01-11 | ✅ |
+| src/agl-demo-control-panel | 1 | +0 | 1 | 213 | 2025-05-15 | ✅ |
+| src/agl-vss-proxy | 1 | +6 | 1 | 283 | 2025-03-06 | ✅ |
+| src/ekuiper | 1 | +0 | 1 | 3 | 2025-12-11 | ✅ |
+| src/nanomq | 1 | +0 | 1 | 3 | 2025-12-11 | ✅ |
+| AGL | 0 | +0 | 0 | 777 | 2023-10-29 | ☑️ |
+| AGL/lava-docker | 0 | +0 | 0 | 1,754 | 2021-02-24 | 🛑 |
+| AGL/meta-agl-cluster-demo | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| AGL/meta-agl-extra | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| AGL/meta-agl-refhw | 0 | +0 | 0 | 473 | 2024-08-28 | ☑️ |
+| AGL/meta-agl-telematics-demo | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps | 0 | +0 | 0 | 777 | 2023-10-29 | ☑️ |
+| apps/agl-cluster-demo-gauges | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-cluster-demo-receiver | 0 | +0 | 0 | 367 | 2024-12-12 | ☑️ |
+| apps/agl-service-bluetooth | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-bluetooth-map | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-bluetooth-pbap | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-can-high-level-viwi | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-can-low-level | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-cloudproxy | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-data-persistence | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-geoclue | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-geofence | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-gps | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-harvester | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-helloworld | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-homescreen | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-identity-agent | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-iiodevices | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-inputmethod | 0 | +0 | 0 | 1,850 | 2020-11-20 | 🛑 |
+| apps/agl-service-mediaplayer | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-mediascanner | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-navigation | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-network | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-nfc | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-platform-info | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-poi | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-signal-composer | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-soundmanager | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-steering-wheel | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-taskmanager | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-telephony | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-unicens | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-unicens-controller | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-voice-high | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-voice-high-capabilities | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-voiceagent | 0 | +0 | 0 | 439 | 2024-10-01 | ☑️ |
+| apps/agl-service-weather | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-windowmanager | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-service-xds-monitoring | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/agl-telematics-demo-recorder | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/alexa-viewer | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/als-meter-demo | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/app-afb-helpers-submodule | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/app-afb-test | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/app-controller-submodule | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/app-templates | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/aroundview | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/camera-gstreamer | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/chromium | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/controls | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/dashboard | 0 | +0 | 0 | 389 | 2024-11-20 | ☑️ |
+| apps/demo3-camera | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/demo3-dashboard | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/demo3-homescreen | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/demo3-hvac | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/demo3-launcher | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/demo3-settings | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/demo3-tachometer | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/demo3-warehouse | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/flutter-dashboard | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/flutter-homescreen | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/flutter-hvac | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/flutter-mediaplayer | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/flutter-navigation | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/flutter-speechrecognition-demo | 0 | +0 | 0 | 430 | 2024-10-10 | ☑️ |
+| apps/homescreen | 0 | +0 | 0 | 389 | 2024-11-20 | ☑️ |
+| apps/homescreen-demo-ci | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/html5-background | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/html5-dashboard | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/html5-homescreen | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/html5-hvac | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/html5-launcher | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/html5-mediaplayer | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/html5-mixer | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/html5-settings | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/hvac | 0 | +0 | 0 | 389 | 2024-11-20 | ☑️ |
+| apps/launcher | 0 | +0 | 0 | 389 | 2024-11-20 | ☑️ |
+| apps/mediaplayer | 0 | +0 | 0 | 389 | 2024-11-20 | ☑️ |
+| apps/messaging | 0 | +0 | 0 | 389 | 2024-11-20 | ☑️ |
+| apps/mixer | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/mominavi | 0 | +0 | 0 | 430 | 2024-10-10 | ☑️ |
+| apps/momiplayer | 0 | +0 | 0 | 427 | 2024-10-13 | ☑️ |
+| apps/momiscreen | 0 | +0 | 0 | 427 | 2024-10-13 | ☑️ |
+| apps/momiweather | 0 | +0 | 0 | 427 | 2024-10-13 | ☑️ |
+| apps/navigation | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/ondemandnavi | 0 | +0 | 0 | 389 | 2024-11-20 | ☑️ |
+| apps/onscreenapp | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/phone | 0 | +0 | 0 | 389 | 2024-11-20 | ☑️ |
+| apps/poi-yelp | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/radio | 0 | +0 | 0 | 389 | 2024-11-20 | ☑️ |
+| apps/restriction-screen | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/settings | 0 | +0 | 0 | 386 | 2024-11-23 | ☑️ |
+| apps/settings-log-utils | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/taskmanager | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/videoplayer | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/voiceagent-demo | 0 | +0 | 0 | 1,207 | 2022-08-25 | 🛑 |
+| apps/waltham-receiver | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| apps/webapp-samples | 0 | +0 | 0 | 1,263 | 2022-06-30 | 🛑 |
+| docs-sources | 0 | +0 | 0 | 2,005 | 2020-06-18 | 🛑 |
+| docs-webtemplate | 0 | +0 | 0 | 2,108 | 2020-03-07 | 🛑 |
+| src | 0 | +0 | 0 | 1,885 | 2020-10-16 | 🛑 |
+| src/agl-js-api | 0 | +0 | 0 | 1,858 | 2020-11-12 | 🛑 |
+| src/agl-shell-activator | 0 | +0 | 0 | 688 | 2024-01-26 | ☑️ |
+| src/agl-test-framework | 0 | +0 | 0 | 641 | 2024-03-13 | ☑️ |
+| src/agl-yocto-kernel-meta | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/app-framework-binder | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/app-framework-demo | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/app-framework-main | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/applaunchd | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/bluez-glib | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/cmake-apps-module | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/connman-glib | 0 | +0 | 0 | 431 | 2024-10-09 | ☑️ |
+| src/cynagoauth | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/cynagora | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/demo3-qtquickcontrols | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/demo3-warehouse-server | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/drm-lease-manager | 0 | +0 | 0 | 482 | 2024-08-19 | ☑️ |
+| src/homescreen-demo-ci | 0 | +0 | 0 | 1,909 | 2020-09-22 | 🛑 |
+| src/hvac-demo-microcontroller | 0 | +0 | 0 | 618 | 2024-04-05 | ☑️ |
+| src/inputeventmanager | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/libafb-helpers | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/libagl-compositor | 0 | +0 | 0 | 1,979 | 2020-07-14 | 🛑 |
+| src/libaglnavigation | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/libappcontroller | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/libcloudproxy | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/libhomescreen | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/libqthomescreen | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/libqtsoundmanager | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/librefop | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/libsoundmanager | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/log-utils | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/low-level-can-generator | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/most | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/native-shell-client | 0 | +0 | 0 | 618 | 2024-04-05 | ☑️ |
+| src/nss-localuser | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/pipewire-ic-ipc | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/pyagl | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/qa-test-misc | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/qtaglextras | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/qtquickcontrols2-agl | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/qtquickcontrols2-agl-style | 0 | +0 | 0 | 389 | 2024-11-20 | ☑️ |
+| src/rasa-model-agl | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/snips-inference-agl | 0 | +0 | 0 | 433 | 2024-10-07 | ☑️ |
+| src/snips-model-agl | 0 | +0 | 0 | 482 | 2024-08-19 | ☑️ |
+| src/steering-wheel-microcontroller | 0 | +0 | 0 | 1,199 | 2022-09-02 | 🛑 |
+| src/virtio/adapter_app | 0 | +0 | 0 | 767 | 2023-11-08 | ☑️ |
+| src/virtio/qemu | 0 | +0 | 0 | 795 | 2023-10-11 | ☑️ |
+| src/virtio/virtio_driver | 0 | +0 | 0 | 815 | 2023-09-21 | ☑️ |
+| src/vod-server | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/waltham-transmitter-plugin | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/weston-ivi-plugins | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/window-management-client-grpc | 0 | +0 | 0 | 389 | 2024-11-20 | ☑️ |
+| src/windowmanager | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/xds | 0 | +0 | 0 | 1,913 | 2020-09-18 | 🛑 |
+| src/xds/xds-cli | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/xds/xds-common | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/xds/xds-docs | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/xds/xds-gdb | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| src/xds/xds-server | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| staging | 0 | +0 | 0 | 1,908 | 2020-09-23 | 🛑 |
+| staging/agl-inputmethod-qt-plugin | 0 | +0 | 0 | 1,850 | 2020-11-20 | 🛑 |
+| staging/basesystem | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| staging/incar-wireless-monitor | 0 | +0 | 0 | 663 | 2024-02-20 | ☑️ |
+| staging/libsoundmanager | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| staging/new-apps | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| staging/persistent-storage-api | 0 | +0 | 0 | 600 | 2024-04-23 | ☑️ |
+| staging/qlibhomescreen | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| staging/qlibsoundmanager | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| staging/rba | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| staging/rba-tool | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| staging/release-upload | 0 | +0 | 0 | 2,132 | 2020-02-12 | 🛑 |
+| staging/soundmanager | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| staging/toyota | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| staging/vehicle2cloud-communication | 0 | +0 | 0 | 813 | 2023-09-23 | ☑️ |
+| staging/xdg-launcher | 0 | +0 | 0 | 669 | 2024-02-14 | ☑️ |
+| z_sandbox | 0 | +0 | 0 | 3,742 | 2015-09-16 | 🛑 |
+| zzz_acl/src_acl | 0 | +0 | 0 | 777 | 2023-10-29 | ☑️ |
+| zzz_acl/staging_acl | 0 | +0 | 0 | 3,554 | 2016-03-22 | 🛑 |
 
 **Total:** 212 repositories
 
@@ -716,8 +716,8 @@ The data presented in the table below covers the past 365 days.
 | AGL/meta-agl-demo | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | AGL/AGL-repo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | ci-management | jjb | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| src/agl-compositor | C | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | apps/flutter-ics-homescreen | Swift | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| src/agl-compositor | C | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | apps/agl-service-hvac | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/uhmi-agl-wm | C | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | AGL/documentation | HTML | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
@@ -742,19 +742,19 @@ The data presented in the table below covers the past 365 days.
 | src/virtio/virtio_driver | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | src/virtio/adapter_app | C | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | src/xds/xds-common | Go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/xds/xds-cli | Go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/xds/xds-docs | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/xds/xds-cli | Go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/xds/xds-gdb | Go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/lava-docker | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| AGL/meta-agl-cluster-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/xds/xds-server | Go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| AGL/meta-agl-cluster-demo | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/meta-agl-extra | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/meta-agl-refhw | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/meta-agl-telematics-demo | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-cluster-demo-receiver | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-cluster-demo-gauges | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-cluster-demo-receiver | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| apps/agl-service-bluetooth | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-bluetooth-map | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-bluetooth | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-bluetooth-pbap | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-can-high-level-viwi | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-cloudproxy | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -764,12 +764,12 @@ The data presented in the table below covers the past 365 days.
 | apps/agl-service-gps | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-harvester | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-helloworld | Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-identity-agent | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-inputmethod | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| apps/agl-service-identity-agent | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-iiodevices | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-mediaplayer | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-navigation | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-mediascanner | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-navigation | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-network | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-homescreen | HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-nfc | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -778,28 +778,28 @@ The data presented in the table below covers the past 365 days.
 | apps/agl-service-can-low-level | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-steering-wheel | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-taskmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-telephony | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-soundmanager | HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-telephony | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-signal-composer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-unicens | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-unicens-controller | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-unicens | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-voiceagent | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-weather | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-voice-high | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-telematics-demo-recorder | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/alexa-viewer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-xds-monitoring | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-telematics-demo-recorder | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-voice-high-capabilities | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-afb-helpers-submodule | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-windowmanager | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/alexa-viewer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/als-meter-demo | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-controller-submodule | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/app-afb-test | Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/camera-gstreamer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/aroundview | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-templates | D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/chromium | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/controls | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/app-afb-test | Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/dashboard | TypeScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-camera | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-dashboard | TypeScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -810,49 +810,49 @@ The data presented in the table below covers the past 365 days.
 | apps/demo3-tachometer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-warehouse | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-dashboard | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/flutter-hvac | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-mediaplayer | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/flutter-hvac | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-navigation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-speechrecognition-demo | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-background | SCSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/homescreen | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/homescreen-demo-ci | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-homescreen | Groovy | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/homescreen-demo-ci | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-dashboard | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/homescreen | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-homescreen | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/html5-mediaplayer | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-hvac | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-launcher | SCSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/html5-mediaplayer | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-settings | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-mixer | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/hvac | TypeScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/messaging | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/mediaplayer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/mominavi | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/launcher | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/mominavi | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/mediaplayer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/messaging | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/mixer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/momiscreen | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/momiplayer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/momiscreen | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/momiweather | C++ | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | apps/ondemandnavi | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/navigation | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/onscreenapp | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/restriction-screen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/phone | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/restriction-screen | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/radio | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/poi-yelp | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/voiceagent-demo | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | apps/settings | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/taskmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/settings-log-utils | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/videoplayer | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/settings-log-utils | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/webapp-samples | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/agl-js-api | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | apps/waltham-receiver | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/agl-shell-activator | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/agl-yocto-kernel-meta | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/applaunchd | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/bluez-glib | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/applaunchd | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/app-framework-main | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | src/agl-test-framework | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/connman-glib | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -864,25 +864,25 @@ The data presented in the table below covers the past 365 days.
 | src/homescreen-demo-ci | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/drm-lease-manager | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/hvac-demo-microcontroller | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| src/libafb-helpers | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/inputeventmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libagl-compositor | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| src/inputeventmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/libafb-helpers | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libaglnavigation | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libappcontroller | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libqthomescreen | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libhomescreen | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libqtsoundmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/libcloudproxy | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/libsoundmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/log-utils | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/librefop | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/libsoundmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/low-level-can-generator | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/most | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/nss-localuser | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/native-shell-client | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/pipewire-ic-ipc | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/qa-test-misc | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/pyagl | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/qa-test-misc | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/qtaglextras | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/qtquickcontrols2-agl | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/rasa-model-agl | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -892,29 +892,29 @@ The data presented in the table below covers the past 365 days.
 | src/snips-inference-agl | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/vod-server | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/waltham-transmitter-plugin | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/weston-ivi-plugins | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/snips-model-agl | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/weston-ivi-plugins | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/window-management-client-grpc | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/windowmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/agl-inputmethod-qt-plugin | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| src/app-framework-demo | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/windowmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/libsoundmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| staging/persistent-storage-api | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| src/app-framework-demo | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/incar-wireless-monitor | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| staging/persistent-storage-api | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | staging/qlibhomescreen | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/qlibsoundmanager | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/release-upload | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | staging/toyota | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/rba | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/xdg-launcher | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| staging/soundmanager | HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | zzz_acl/AGL_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | zzz_acl/noreplication | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| staging/soundmanager | HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | zzz_acl/src_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | zzz_acl/staging_acl | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/xds | Go | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| docs-sources | CSS | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | staging/new-apps | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| docs-sources | CSS | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | docs-webtemplate | SCSS | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | staging/vehicle2cloud-communication | C++ | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | z_sandbox | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
