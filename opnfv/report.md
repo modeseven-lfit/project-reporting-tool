@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: OPNFV
 
-**Generated:** January 06, 2026 at 07:23 UTC
+**Generated:** January 07, 2026 at 07:23 UTC
 **Schema Version:** 1.2.0
 
 ## 📈 Global Summary
@@ -13,8 +13,8 @@
 |--------|-------|------------|
 | Total Gerrit Projects | 69 | 100% |
 | Current Gerrit Projects | 4 | 5.8% |
-| Active Gerrit Projects | 7 | 10.1% |
-| Inactive Gerrit Projects | 57 | 82.6% |
+| Active Gerrit Projects | 6 | 8.7% |
+| Inactive Gerrit Projects | 58 | 84.1% |
 | No Apparent Commits | 1 | 1.4% |
 | Total Commits | 153 | - |
 | Total Lines of Code | 1.5K | - |
@@ -975,74 +975,74 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| releng | 87 | -2316 | 1 | 82 | 2025-10-16 | ✅ |
-| functest | 32 | -2582 | 1 | 83 | 2025-10-15 | ✅ |
-| functest-kubernetes | 31 | +111 | 1 | 90 | 2025-10-08 | ✅ |
-| functest-xtesting | 3 | +0 | 1 | 270 | 2025-04-11 | ✅ |
-| .github | 0 | +0 | 0 | 846 | 2023-09-13 | ☑️ |
-| airship | 0 | +0 | 0 | 1,644 | 2021-07-07 | 🛑 |
-| apex | 0 | +0 | 0 | 2,442 | 2019-05-01 | 🛑 |
-| apex-os-net-config | 0 | +0 | 0 | 3,016 | 2017-10-04 | 🛑 |
-| apex-puppet-tripleo | 0 | +0 | 0 | 2,823 | 2018-04-15 | 🛑 |
-| apex-tripleo-heat-templates | 0 | +0 | 0 | 2,824 | 2018-04-14 | 🛑 |
-| barometer | 0 | +0 | 0 | 1,250 | 2022-08-05 | 🛑 |
-| bottlenecks | 0 | +0 | 0 | 2,258 | 2019-11-01 | 🛑 |
-| calipso | 0 | +0 | 0 | 2,617 | 2018-11-07 | 🛑 |
-| cirv | 0 | +0 | 0 | 1,607 | 2021-08-13 | 🛑 |
-| cirv-hdv | 0 | +0 | 0 | 1,875 | 2020-11-18 | 🛑 |
-| cirv-rapid | 0 | +0 | 0 | 2,099 | 2020-04-08 | 🛑 |
-| cirv-sdv | 0 | +0 | 0 | 1,485 | 2021-12-13 | 🛑 |
-| cirv-spirent | 0 | +0 | 0 | 2,209 | 2019-12-20 | 🛑 |
-| clover | 0 | +0 | 0 | 2,282 | 2019-10-08 | 🛑 |
-| conductor | 0 | +0 | 0 | 3,653 | 2016-01-06 | 🛑 |
-| container4nfv | 0 | +0 | 0 | 2,211 | 2019-12-18 | 🛑 |
-| cran | 0 | +0 | 0 | 2,435 | 2019-05-08 | 🛑 |
-| doctor | 0 | +0 | 0 | 1,910 | 2020-10-14 | 🛑 |
-| domino | 0 | +0 | 0 | 2,894 | 2018-02-03 | 🛑 |
-| dovetail | 0 | +0 | 0 | 2,162 | 2020-02-05 | 🛑 |
-| dovetail-webportal | 0 | +0 | 0 | 1,904 | 2020-10-20 | 🛑 |
-| edgecloud | 0 | +0 | 0 | 2,229 | 2019-11-30 | 🛑 |
-| enfv | 0 | +0 | 0 | 3,560 | 2016-04-08 | 🛑 |
-| fds | 0 | +0 | 0 | 2,666 | 2018-09-19 | 🛑 |
-| fuel | 0 | +0 | 0 | 2,027 | 2020-06-19 | 🛑 |
-| functest-requirements | 0 | +0 | 0 | 2,940 | 2017-12-19 | 🛑 |
-| infra | 0 | +0 | 0 | 2,957 | 2017-12-02 | 🛑 |
-| ipv6 | 0 | +0 | 0 | 2,383 | 2019-06-29 | 🛑 |
-| kuberef | 0 | +0 | 0 | 1,057 | 2023-02-14 | ☑️ |
-| laas | 0 | +0 | 0 | 802 | 2023-10-27 | ☑️ |
-| laas-reflab | 0 | +0 | 0 | 2,279 | 2019-10-11 | 🛑 |
-| models | 0 | +0 | 0 | 2,716 | 2018-07-31 | 🛑 |
-| moon | 0 | +0 | 0 | 2,042 | 2020-06-04 | 🛑 |
-| nfvbench | 0 | +0 | 0 | 1,095 | 2023-01-07 | ☑️ |
-| opera | 0 | +0 | 0 | 2,894 | 2018-02-03 | 🛑 |
-| opnfvdocs | 0 | +0 | 0 | 557 | 2024-06-28 | ☑️ |
-| opnfvtsc | 0 | +0 | 0 | 2,811 | 2018-04-27 | 🛑 |
-| orchestra | 0 | +0 | 0 | 2,666 | 2018-09-19 | 🛑 |
-| ovsnfv | 0 | +0 | 0 | 3,052 | 2017-08-29 | 🛑 |
-| parser | 0 | +0 | 0 | 2,370 | 2019-07-12 | 🛑 |
-| pharos | 0 | +0 | 0 | 2,176 | 2020-01-22 | 🛑 |
-| policytest | 0 | +0 | 0 | 3,763 | 2015-09-18 | 🛑 |
-| puppet-barometer | 0 | +0 | 0 | 2,716 | 2018-07-31 | 🛑 |
-| qtip | 0 | +0 | 0 | 2,779 | 2018-05-29 | 🛑 |
-| releng-anteater | 0 | +0 | 0 | 2,677 | 2018-09-08 | 🛑 |
-| releng-testresults | 0 | +0 | 0 | 1,742 | 2021-03-31 | 🛑 |
-| releng-utils | 0 | +0 | 0 | 2,933 | 2017-12-26 | 🛑 |
-| releng-xci | 0 | +0 | 0 | 2,316 | 2019-09-04 | 🛑 |
-| releng-xci-scenarios | 0 | +0 | 0 | 2,319 | 2019-09-01 | 🛑 |
-| rocket | 0 | +0 | 0 | 2,215 | 2019-12-14 | 🛑 |
-| samplevnf | 0 | +0 | 0 | 406 | 2024-11-26 | ☑️ |
-| sandbox | 0 | +0 | 0 | 2,922 | 2018-01-06 | 🛑 |
-| sandbox-zuul-config | 0 | +0 | 0 | 2,813 | 2018-04-25 | 🛑 |
-| sandbox-zuul-untrusted | 0 | +0 | 0 | 2,813 | 2018-04-25 | 🛑 |
-| securityscanning | 0 | +0 | 0 | 3,112 | 2017-06-30 | 🛑 |
-| spark-model-runner | 0 | +0 | 0 | 2,349 | 2019-08-02 | 🛑 |
-| stor4nfv | 0 | +0 | 0 | 2,436 | 2019-05-07 | 🛑 |
-| storperf | 0 | +0 | 0 | 2,162 | 2020-02-05 | 🛑 |
-| test | 0 | +0 | 0 | 2,428 | 2019-05-15 | 🛑 |
-| test/test1 | 0 | +0 | 0 | 2,230 | 2019-11-29 | 🛑 |
-| test2 | 0 | +0 | 0 | 2,537 | 2019-01-26 | 🛑 |
-| thoth | 0 | +0 | 0 | 957 | 2023-05-25 | ☑️ |
-| vineperf | 0 | +0 | 0 | 1,098 | 2023-01-04 | 🛑 |
+| releng | 87 | -2316 | 1 | 83 | 2025-10-16 | ✅ |
+| functest | 32 | -2582 | 1 | 84 | 2025-10-15 | ✅ |
+| functest-kubernetes | 31 | +111 | 1 | 91 | 2025-10-08 | ✅ |
+| functest-xtesting | 3 | +0 | 1 | 271 | 2025-04-11 | ✅ |
+| .github | 0 | +0 | 0 | 847 | 2023-09-13 | ☑️ |
+| airship | 0 | +0 | 0 | 1,645 | 2021-07-07 | 🛑 |
+| apex | 0 | +0 | 0 | 2,443 | 2019-05-01 | 🛑 |
+| apex-os-net-config | 0 | +0 | 0 | 3,017 | 2017-10-04 | 🛑 |
+| apex-puppet-tripleo | 0 | +0 | 0 | 2,824 | 2018-04-15 | 🛑 |
+| apex-tripleo-heat-templates | 0 | +0 | 0 | 2,825 | 2018-04-14 | 🛑 |
+| barometer | 0 | +0 | 0 | 1,251 | 2022-08-05 | 🛑 |
+| bottlenecks | 0 | +0 | 0 | 2,259 | 2019-11-01 | 🛑 |
+| calipso | 0 | +0 | 0 | 2,618 | 2018-11-07 | 🛑 |
+| cirv | 0 | +0 | 0 | 1,608 | 2021-08-13 | 🛑 |
+| cirv-hdv | 0 | +0 | 0 | 1,876 | 2020-11-18 | 🛑 |
+| cirv-rapid | 0 | +0 | 0 | 2,100 | 2020-04-08 | 🛑 |
+| cirv-sdv | 0 | +0 | 0 | 1,486 | 2021-12-13 | 🛑 |
+| cirv-spirent | 0 | +0 | 0 | 2,210 | 2019-12-20 | 🛑 |
+| clover | 0 | +0 | 0 | 2,283 | 2019-10-08 | 🛑 |
+| conductor | 0 | +0 | 0 | 3,654 | 2016-01-06 | 🛑 |
+| container4nfv | 0 | +0 | 0 | 2,212 | 2019-12-18 | 🛑 |
+| cran | 0 | +0 | 0 | 2,436 | 2019-05-08 | 🛑 |
+| doctor | 0 | +0 | 0 | 1,911 | 2020-10-14 | 🛑 |
+| domino | 0 | +0 | 0 | 2,895 | 2018-02-03 | 🛑 |
+| dovetail | 0 | +0 | 0 | 2,163 | 2020-02-05 | 🛑 |
+| dovetail-webportal | 0 | +0 | 0 | 1,905 | 2020-10-20 | 🛑 |
+| edgecloud | 0 | +0 | 0 | 2,230 | 2019-11-30 | 🛑 |
+| enfv | 0 | +0 | 0 | 3,561 | 2016-04-08 | 🛑 |
+| fds | 0 | +0 | 0 | 2,667 | 2018-09-19 | 🛑 |
+| fuel | 0 | +0 | 0 | 2,028 | 2020-06-19 | 🛑 |
+| functest-requirements | 0 | +0 | 0 | 2,941 | 2017-12-19 | 🛑 |
+| infra | 0 | +0 | 0 | 2,958 | 2017-12-02 | 🛑 |
+| ipv6 | 0 | +0 | 0 | 2,384 | 2019-06-29 | 🛑 |
+| kuberef | 0 | +0 | 0 | 1,058 | 2023-02-14 | ☑️ |
+| laas | 0 | +0 | 0 | 803 | 2023-10-27 | ☑️ |
+| laas-reflab | 0 | +0 | 0 | 2,280 | 2019-10-11 | 🛑 |
+| models | 0 | +0 | 0 | 2,717 | 2018-07-31 | 🛑 |
+| moon | 0 | +0 | 0 | 2,043 | 2020-06-04 | 🛑 |
+| nfvbench | 0 | +0 | 0 | 1,096 | 2023-01-07 | 🛑 |
+| opera | 0 | +0 | 0 | 2,895 | 2018-02-03 | 🛑 |
+| opnfvdocs | 0 | +0 | 0 | 558 | 2024-06-28 | ☑️ |
+| opnfvtsc | 0 | +0 | 0 | 2,812 | 2018-04-27 | 🛑 |
+| orchestra | 0 | +0 | 0 | 2,667 | 2018-09-19 | 🛑 |
+| ovsnfv | 0 | +0 | 0 | 3,053 | 2017-08-29 | 🛑 |
+| parser | 0 | +0 | 0 | 2,371 | 2019-07-12 | 🛑 |
+| pharos | 0 | +0 | 0 | 2,177 | 2020-01-22 | 🛑 |
+| policytest | 0 | +0 | 0 | 3,764 | 2015-09-18 | 🛑 |
+| puppet-barometer | 0 | +0 | 0 | 2,717 | 2018-07-31 | 🛑 |
+| qtip | 0 | +0 | 0 | 2,780 | 2018-05-29 | 🛑 |
+| releng-anteater | 0 | +0 | 0 | 2,678 | 2018-09-08 | 🛑 |
+| releng-testresults | 0 | +0 | 0 | 1,743 | 2021-03-31 | 🛑 |
+| releng-utils | 0 | +0 | 0 | 2,934 | 2017-12-26 | 🛑 |
+| releng-xci | 0 | +0 | 0 | 2,317 | 2019-09-04 | 🛑 |
+| releng-xci-scenarios | 0 | +0 | 0 | 2,320 | 2019-09-01 | 🛑 |
+| rocket | 0 | +0 | 0 | 2,216 | 2019-12-14 | 🛑 |
+| samplevnf | 0 | +0 | 0 | 407 | 2024-11-26 | ☑️ |
+| sandbox | 0 | +0 | 0 | 2,923 | 2018-01-06 | 🛑 |
+| sandbox-zuul-config | 0 | +0 | 0 | 2,814 | 2018-04-25 | 🛑 |
+| sandbox-zuul-untrusted | 0 | +0 | 0 | 2,814 | 2018-04-25 | 🛑 |
+| securityscanning | 0 | +0 | 0 | 3,113 | 2017-06-30 | 🛑 |
+| spark-model-runner | 0 | +0 | 0 | 2,350 | 2019-08-02 | 🛑 |
+| stor4nfv | 0 | +0 | 0 | 2,437 | 2019-05-07 | 🛑 |
+| storperf | 0 | +0 | 0 | 2,163 | 2020-02-05 | 🛑 |
+| test | 0 | +0 | 0 | 2,429 | 2019-05-15 | 🛑 |
+| test/test1 | 0 | +0 | 0 | 2,231 | 2019-11-29 | 🛑 |
+| test2 | 0 | +0 | 0 | 2,538 | 2019-01-26 | 🛑 |
+| thoth | 0 | +0 | 0 | 958 | 2023-05-25 | ☑️ |
+| vineperf | 0 | +0 | 0 | 1,099 | 2023-01-04 | 🛑 |
 
 **Total:** 68 repositories
 
@@ -1073,12 +1073,12 @@ The data presented in the table below covers the past 365 days.
 | cirv-rapid | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | cirv-hdv | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | cirv-spirent | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| apex-puppet-tripleo | Ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | calipso | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| apex-puppet-tripleo | Ruby | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | conductor | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| apex-tripleo-heat-templates | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | bottlenecks | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | airship | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| apex-tripleo-heat-templates | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | cirv-sdv | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | domino | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | doctor | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
@@ -1092,15 +1092,15 @@ The data presented in the table below covers the past 365 days.
 | clover | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | dovetail-webportal | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | fds | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| infra | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ipv6 | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | laas | None | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| infra | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | laas-reflab | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | kuberef | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| opera | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | opnfvtsc | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | models | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| opera | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| nfvbench | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| nfvbench | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | orchestra | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | fuel | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | policytest | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
@@ -1112,22 +1112,22 @@ The data presented in the table below covers the past 365 days.
 | pharos | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | rocket | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | releng-xci-scenarios | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| releng-xci | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | sandbox-zuul-config | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | sandbox | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| releng-xci | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | sandbox-zuul-untrusted | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| spark-model-runner | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | securityscanning | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| spark-model-runner | None | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | test | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| parser | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| samplevnf | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| test2 | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | qtip | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| test2 | None | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| samplevnf | C | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| parser | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | storperf | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | releng-testresults | JavaScript | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | stor4nfv | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| moon | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | thoth | Python | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| moon | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vineperf | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 
 ## 🏁 Deployed CI/CD Jobs
@@ -1155,7 +1155,7 @@ This report shows project information from INFO.yaml files, including lifecycle 
 | <a href="https://jira.anuket.io/projects/CIRV" target="_blank">Common Infrastructure Realization & Validation (CIRV)</a> | 2019-09-17 | Incubation | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Parth Yadav</span> | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Trevor Cooper</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Sridhar Rao</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Lincoln Lavoie</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Fu Qiao</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Chen Liang</span> |
 | <a href="https://jira.opnfv.org/projects/[container4nfv]" target="_blank">Container4NFV</a> | Dec 13, 2016 | Incubation | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Xuan Jia</span> | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Jack Chan</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Gergely Csatari</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Jun Li</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Ruijing Guo</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Zijin Tao</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Lu Bin</span> |
 | <a href="https://jira.opnfv.org/projects/DOCTOR" target="_blank">Fault Management project (doctor)</a> | December 2, 2014 | Mature | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Tomi Juvonen</span> | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">wenjuan dong</span> |
-| <span style="color: red;" title="⚠️ Broken project issue-tracker link: Connection failed (after 3 attempts)">L2/L3 forwarding performance toolkit for NFVi (NFVbench)</span> | May 2nd 2017 |  | <span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Alec Hothan</span> | <span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Yichen Wang</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Francois-Regis Menguy</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Gwenael Lambrouin</span> |
+| <span style="color: red;" title="⚠️ Broken project issue-tracker link: Connection failed (after 3 attempts)">L2/L3 forwarding performance toolkit for NFVi (NFVbench)</span> | May 2nd 2017 |  | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Alec Hothan</span> | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Yichen Wang</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Francois-Regis Menguy</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Gwenael Lambrouin</span> |
 | <a href="https://jira.opnfv.org/projects/laas" target="_blank">Lab as a Service</a> | 2019.06.25 | Incubation | <span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Sawyer Bergeron</span> | <span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Trevor Bramwell</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Nikos Karandreas</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Panagiotis Karalis</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Jeremy Plsek</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Eric Ball</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Lincoln Lavoie</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Mark Beierl</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">latha P</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Justin Choquette</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Raven Hodgdon</span> |
 | <a href="https://jira.opnfv.org/projects/DOCS" target="_blank">OPNFV documentation project (opnfvdocs)</a> | March 31, 2015 | Incubation | <span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Beth Cohen</span> | <span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Scot Steele</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Gergely Csatari</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Al Morton</span><br><span style="color: orange;" title="☑️ Active - commits between 365-1095 days">Georg Kunz</span> |
 | <a href="https://jira.opnfv.org/projects/dovetail" target="_blank">OPNFV qualification testing (dovetail)</a> | September 1st, 2015 | Incubation | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Kanagaraj Manickam</span> | <span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Trevor Cooper</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Qiao Fu</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Lincoln Lavoie</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Panagiotis Karalis</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Georg Kunz</span><br><span style="color: red;" title="🛑 Inactive - no commits in 1095+ days">Dan Xu</span> |
