@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: FDio
 
-**Generated:** January 17, 2026 at 07:18 UTC
+**Generated:** January 18, 2026 at 07:19 UTC
 **Schema Version:** 1.2.0
 
 ## 📈 Global Summary
@@ -16,8 +16,8 @@
 | Active Gerrit Projects | 0 | 0.0% |
 | Inactive Gerrit Projects | 3 | 42.9% |
 | No Apparent Commits | 0 | 0.0% |
-| Total Commits | 1.5K | - |
-| Total Lines of Code | 230.3K | - |
+| Total Commits | 1.4K | - |
+| Total Lines of Code | 229.1K | - |
 
 ## 🏢 Top Organizations
 
@@ -27,8 +27,8 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 |------|--------------|--------------|---------|-----|-------|----------------|---------------------|
-| 1 | cisco.com | 157 | 958 | +5827 | 237787 | +6.1 | 5 |
-| 2 | gmail.com | 113 | 209 | +13324 | 30726 | +63.8 | 5 |
+| 1 | cisco.com | 157 | 953 | +5154 | 236410 | +5.4 | 5 |
+| 2 | gmail.com | 113 | 207 | +13303 | 30703 | +64.3 | 5 |
 | 3 | icloud.com | 1 | 164 | +4318 | 90996 | +26.3 | 4 |
 | 4 | marvell.com | 14 | 22 | +1074 | 1416 | +48.8 | 3 |
 | 5 | hawari.fr | 1 | 13 | +14651 | 17015 | +1127.0 | 1 |
@@ -37,9 +37,9 @@ The data presented in the table below covers the past 365 days.
 | 8 | netgate.com | 14 | 8 | +376 | 568 | +47.0 | 1 |
 | 9 | travelping.com | 4 | 7 | +73 | 175 | +10.4 | 1 |
 | 10 | barachs.net | 2 | 5 | +21 | 37 | +4.2 | 2 |
-| 11 | mts.ru | 2 | 5 | +199 | 419 | +39.8 | 1 |
-| 12 | employees.org | 1 | 4 | +14028 | 14172 | +3507.0 | 1 |
-| 13 | ipng.nl | 1 | 4 | +896 | 1636 | +224.0 | 1 |
+| 11 | employees.org | 1 | 4 | +14028 | 14172 | +3507.0 | 1 |
+| 12 | ipng.nl | 1 | 4 | +896 | 1636 | +224.0 | 1 |
+| 13 | mts.ru | 2 | 4 | +189 | 409 | +47.2 | 1 |
 | 14 | 46labs.com | 2 | 3 | +55 | 57 | +18.3 | 1 |
 | 15 | googlemail.com | 1 | 3 | +196 | 196 | +65.3 | 1 |
 | 16 | arm.com | 17 | 2 | +41 | 47 | +20.5 | 2 |
@@ -47,12 +47,12 @@ The data presented in the table below covers the past 365 days.
 | 18 | hotmail.se | 1 | 2 | +609 | 1293 | +304.5 | 1 |
 | 19 | inmon.com | 1 | 2 | +1624 | 3384 | +812.0 | 1 |
 | 20 | labn.net | 4 | 2 | +54 | 66 | +27.0 | 1 |
-| 21 | protonmail.ch | 1 | 2 | -886 | 1042 | -443.0 | 2 |
-| 22 | 163.com | 8 | 1 | +0 | 16 | +0.0 | 1 |
-| 23 | amd.com | 1 | 1 | +0 | 4 | +0.0 | 1 |
-| 24 | baicells.com | 1 | 1 | +2 | 8 | +2.0 | 1 |
-| 25 | ideco.ru | 1 | 1 | +0 | 2 | +0.0 | 1 |
-| 26 | insidepacket.com | 1 | 1 | +5 | 5 | +5.0 | 1 |
+| 21 | 163.com | 8 | 1 | +0 | 16 | +0.0 | 1 |
+| 22 | amd.com | 1 | 1 | +0 | 4 | +0.0 | 1 |
+| 23 | baicells.com | 1 | 1 | +2 | 8 | +2.0 | 1 |
+| 24 | ideco.ru | 1 | 1 | +0 | 2 | +0.0 | 1 |
+| 25 | insidepacket.com | 1 | 1 | +5 | 5 | +5.0 | 1 |
+| 26 | protonmail.ch | 1 | 1 | -564 | 570 | -564.0 | 2 |
 | 27 | sina.com | 1 | 1 | -4 | 16 | -4.0 | 1 |
 | 28 | skbuff.ru | 1 | 1 | -1 | 1 | -1.0 | 1 |
 | 29 | x-ion.de | 1 | 1 | +516 | 858 | +516.0 | 1 |
@@ -192,20 +192,20 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Contributor | Commits | LOC | Δ LOC | Avg LOC/Commit | Repositories | Organization |
 |------|-------------|---------|-----|-------|----------------|--------------|--------------|
-| 1 | Florin Coras | 209 | +5780 | 15036 | +27.7 | 3 | cisco.com |
-| 2 | Matus Fabian | 200 | +24220 | 39632 | +121.1 | 2 | cisco.com |
-| 3 | Dave Wallace | 171 | +10263 | 26907 | +60.0 | 5 | gmail.com |
+| 1 | Florin Coras | 208 | +5774 | 15030 | +27.8 | 3 | cisco.com |
+| 2 | Matus Fabian | 199 | +23950 | 39272 | +120.4 | 2 | cisco.com |
+| 3 | Dave Wallace | 170 | +10263 | 26905 | +60.4 | 5 | gmail.com |
 | 4 | Peter Mikus | 164 | +4318 | 90996 | +26.3 | 4 | icloud.com |
-| 5 | Tibor Frank | 122 | -604 | 17738 | -5.0 | 3 | cisco.com |
-| 6 | Damjan Marion | 119 | -38084 | 89254 | -320.0 | 2 | cisco.com |
-| 7 | Adrian Villin | 91 | +6990 | 22786 | +76.8 | 1 | cisco.com |
+| 5 | Damjan Marion | 122 | -38079 | 89271 | -312.1 | 2 | cisco.com |
+| 6 | Tibor Frank | 120 | -839 | 17111 | -7.0 | 3 | cisco.com |
+| 7 | Adrian Villin | 90 | +6989 | 22785 | +77.7 | 1 | cisco.com |
 | 8 | Vratko Polak | 60 | +684 | 36882 | +11.4 | 4 | cisco.com |
-| 9 | Semir Sionek | 49 | +1683 | 2823 | +34.3 | 2 | cisco.com |
+| 9 | Semir Sionek | 47 | +1488 | 2504 | +31.7 | 2 | cisco.com |
 | 10 | Mohsin KAZMI | 30 | +2088 | 2970 | +69.6 | 2 | cisco.com |
 | 11 | Naveen Joy | 17 | -389 | 3611 | -22.9 | 3 | cisco.com |
-| 12 | Benoît Ganne | 15 | -131 | 349 | -8.7 | 1 | cisco.com |
-| 13 | Andrew Yourtchenko | 14 | +2073 | 2103 | +148.1 | 2 | gmail.com |
-| 14 | Mohammed Hawari | 13 | +14651 | 17015 | +1127.0 | 1 | hawari.fr |
+| 12 | Benoît Ganne | 14 | -102 | 268 | -7.3 | 1 | cisco.com |
+| 13 | Mohammed Hawari | 13 | +14651 | 17015 | +1127.0 | 1 | hawari.fr |
+| 14 | Andrew Yourtchenko | 13 | +2052 | 2082 | +157.8 | 2 | gmail.com |
 | 15 | Steven | 13 | +119 | 1671 | +9.2 | 3 | cisco.com |
 | 16 | Ivan Ivanets | 12 | +1542 | 2962 | +128.5 | 2 | cisco.com |
 | 17 | Vanessa Rene Valderrama | 12 | -51 | 461 | -4.2 | 6 | linuxfoundation.org |
@@ -219,12 +219,12 @@ The data presented in the table below covers the past 365 days.
 | 25 | Ole Troan | 4 | +14028 | 14172 | +3507.0 | 1 | employees.org |
 | 26 | Pim van Pelt | 4 | +896 | 1636 | +224.0 | 1 | ipng.nl |
 | 27 | Varun Rapelly | 4 | +288 | 478 | +72.0 | 1 | marvell.com |
-| 28 | Артем Глазычев | 4 | +199 | 417 | +49.8 | 1 | mts.ru |
-| 29 | Nicolas PLANEL | 4 | +154 | 164 | +38.5 | 1 | cisco.com |
-| 30 | Maxime Peim | 4 | +64 | 98 | +16.0 | 1 | cisco.com |
-| 31 | Matthew Smith | 4 | -17 | 61 | -4.2 | 1 | netgate.com |
-| 32 | Ivan Shvedunov | 3 | +393 | 489 | +131.0 | 1 | netgate.com |
-| 33 | nucleo | 3 | +196 | 196 | +65.3 | 1 | googlemail.com |
+| 28 | Nicolas PLANEL | 4 | +154 | 164 | +38.5 | 1 | cisco.com |
+| 29 | Maxime Peim | 4 | +64 | 98 | +16.0 | 1 | cisco.com |
+| 30 | Matthew Smith | 4 | -17 | 61 | -4.2 | 1 | netgate.com |
+| 31 | Ivan Shvedunov | 3 | +393 | 489 | +131.0 | 1 | netgate.com |
+| 32 | nucleo | 3 | +196 | 196 | +65.3 | 1 | googlemail.com |
+| 33 | Артем Глазычев | 3 | +189 | 407 | +63.0 | 1 | mts.ru |
 | 34 | Damjan Marion | 3 | +117 | 321 | +39.0 | 1 | gmail.com |
 | 35 | Alexander Maltsev | 3 | +17 | 29 | +5.7 | 1 | gmail.com |
 | 36 | Neil McKee | 2 | +1624 | 3384 | +812.0 | 1 | inmon.com |
@@ -241,36 +241,36 @@ The data presented in the table below covers the past 365 days.
 | 47 | Stanislav Zaikin | 2 | +12 | 14 | +6.0 | 1 | 46labs.com |
 | 48 | Rob Shearman | 2 | +4 | 10 | +2.0 | 1 | gmail.com |
 | 49 | wanghb14 | 2 | +4 | 32 | +2.0 | 1 | chinatelecom.cn |
-| 50 | Peter Mikus | 2 | -886 | 1042 | -443.0 | 2 | protonmail.ch |
-| 51 | Masih Nilforoush | 1 | +516 | 858 | +516.0 | 1 | x-ion.de |
-| 52 | Darrel Tan | 1 | +431 | 561 | +431.0 | 1 | gmail.com |
-| 53 | Changbin Park | 1 | +224 | 238 | +224.0 | 1 | gmail.com |
-| 54 | Mihut Aronovici | 1 | +122 | 130 | +122.0 | 1 | cisco.com |
-| 55 | Satha Rao | 1 | +100 | 112 | +100.0 | 1 | marvell.com |
-| 56 | Kirill A. Khalitov | 1 | +43 | 43 | +43.0 | 1 | 46labs.com |
-| 57 | Bartlomiej Leszak | 1 | +31 | 31 | +31.0 | 1 | gmail.com |
-| 58 | Konstantin Kogdenko | 1 | +24 | 46 | +24.0 | 1 | gmail.com |
-| 59 | Yoann Desmouceaux | 1 | +21 | 37 | +21.0 | 1 | cisco.com |
-| 60 | m.nemati | 1 | +21 | 73 | +21.0 | 1 | gmail.com |
-| 61 | Vladislav Grishenko | 1 | +9 | 9 | +9.0 | 1 | yandex-team.ru |
-| 62 | Brian Morris | 1 | +7 | 13 | +7.0 | 1 | cisco.com |
-| 63 | Anna Neiman | 1 | +5 | 5 | +5.0 | 1 | insidepacket.com |
-| 64 | Paul Ponchon | 1 | +4 | 4 | +4.0 | 1 | cisco.com |
-| 65 | guangming.zhang | 1 | +2 | 8 | +2.0 | 1 | baicells.com |
-| 66 | kejan | 1 | +2 | 2 | +2.0 | 1 | gmail.com |
-| 67 | Klement Sekera | 1 | +1 | 3 | +1.0 | 1 | gmail.com |
-| 68 | Alexander Chernavin | 1 | +0 | 2 | +0.0 | 1 | mts.ru |
-| 69 | Alexander Skorichenko | 1 | +0 | 18 | +0.0 | 1 | netgate.com |
-| 70 | Alexey Stratulat | 1 | +0 | 2 | +0.0 | 1 | ideco.ru |
-| 71 | Anil Belur | 1 | +0 | 2 | +0.0 | 1 | linuxfoundation.org |
-| 72 | Kirill A. Khalitov | 1 | +0 | 2 | +0.0 | 1 | gmail.com |
-| 73 | Shubing Guo | 1 | +0 | 4 | +0.0 | 1 | zte.com.cn |
-| 74 | Sivaprasad Tummala | 1 | +0 | 4 | +0.0 | 1 | amd.com |
-| 75 | jinshaohui | 1 | +0 | 16 | +0.0 | 1 | 163.com |
-| 76 | Arthur de Kerhor | 1 | -1 | 53 | -1.0 | 1 | gmail.com |
-| 77 | Maxim Uvarov | 1 | -1 | 1 | -1.0 | 1 | skbuff.ru |
-| 78 | Maxime Peim | 1 | -4 | 8 | -4.0 | 1 | gmail.com |
-| 79 | PengXu | 1 | -4 | 16 | -4.0 | 1 | sina.com |
+| 50 | Masih Nilforoush | 1 | +516 | 858 | +516.0 | 1 | x-ion.de |
+| 51 | Darrel Tan | 1 | +431 | 561 | +431.0 | 1 | gmail.com |
+| 52 | Changbin Park | 1 | +224 | 238 | +224.0 | 1 | gmail.com |
+| 53 | Mihut Aronovici | 1 | +122 | 130 | +122.0 | 1 | cisco.com |
+| 54 | Satha Rao | 1 | +100 | 112 | +100.0 | 1 | marvell.com |
+| 55 | Kirill A. Khalitov | 1 | +43 | 43 | +43.0 | 1 | 46labs.com |
+| 56 | Bartlomiej Leszak | 1 | +31 | 31 | +31.0 | 1 | gmail.com |
+| 57 | Konstantin Kogdenko | 1 | +24 | 46 | +24.0 | 1 | gmail.com |
+| 58 | Yoann Desmouceaux | 1 | +21 | 37 | +21.0 | 1 | cisco.com |
+| 59 | m.nemati | 1 | +21 | 73 | +21.0 | 1 | gmail.com |
+| 60 | Vladislav Grishenko | 1 | +9 | 9 | +9.0 | 1 | yandex-team.ru |
+| 61 | Brian Morris | 1 | +7 | 13 | +7.0 | 1 | cisco.com |
+| 62 | Anna Neiman | 1 | +5 | 5 | +5.0 | 1 | insidepacket.com |
+| 63 | Paul Ponchon | 1 | +4 | 4 | +4.0 | 1 | cisco.com |
+| 64 | guangming.zhang | 1 | +2 | 8 | +2.0 | 1 | baicells.com |
+| 65 | kejan | 1 | +2 | 2 | +2.0 | 1 | gmail.com |
+| 66 | Klement Sekera | 1 | +1 | 3 | +1.0 | 1 | gmail.com |
+| 67 | Alexander Chernavin | 1 | +0 | 2 | +0.0 | 1 | mts.ru |
+| 68 | Alexander Skorichenko | 1 | +0 | 18 | +0.0 | 1 | netgate.com |
+| 69 | Alexey Stratulat | 1 | +0 | 2 | +0.0 | 1 | ideco.ru |
+| 70 | Anil Belur | 1 | +0 | 2 | +0.0 | 1 | linuxfoundation.org |
+| 71 | Kirill A. Khalitov | 1 | +0 | 2 | +0.0 | 1 | gmail.com |
+| 72 | Shubing Guo | 1 | +0 | 4 | +0.0 | 1 | zte.com.cn |
+| 73 | Sivaprasad Tummala | 1 | +0 | 4 | +0.0 | 1 | amd.com |
+| 74 | jinshaohui | 1 | +0 | 16 | +0.0 | 1 | 163.com |
+| 75 | Arthur de Kerhor | 1 | -1 | 53 | -1.0 | 1 | gmail.com |
+| 76 | Maxim Uvarov | 1 | -1 | 1 | -1.0 | 1 | skbuff.ru |
+| 77 | Maxime Peim | 1 | -4 | 8 | -4.0 | 1 | gmail.com |
+| 78 | PengXu | 1 | -4 | 16 | -4.0 | 1 | sina.com |
+| 79 | Peter Mikus | 1 | -564 | 570 | -564.0 | 2 | protonmail.ch |
 | 80 | Abdel Baig | 0 | +0 | 0 | - | 1 | cisco.com |
 | 81 | Adrian Oanca | 0 | +0 | 0 | - | 1 | enea.com |
 | 82 | Adrian Pistol | 0 | +0 | 0 | - | 1 | posteo.net |
@@ -849,13 +849,13 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 |----------------|---------|---------|--------------|---------------|------------------|--------|
-| vpp | 1048 | +51465 | 75 | 1 | 2026-01-16 | ✅ |
-| csit | 322 | +5248 | 7 | 0 | 2026-01-17 | ✅ |
-| ci-management | 73 | -3101 | 11 | 25 | 2025-12-23 | ✅ |
-| .github | 10 | +3707 | 2 | 17 | 2025-12-31 | ✅ |
-| main_test | 0 | +0 | 0 | 1,904 | 2020-10-31 | 🛑 |
-| test_injector | 0 | +0 | 0 | 3,426 | 2016-08-31 | 🛑 |
-| vppsb | 0 | +0 | 0 | 2,429 | 2019-05-25 | 🛑 |
+| vpp | 1044 | +51017 | 75 | 0 | 2026-01-18 | ✅ |
+| csit | 319 | +5335 | 6 | 1 | 2026-01-17 | ✅ |
+| ci-management | 71 | -3122 | 11 | 26 | 2025-12-23 | ✅ |
+| .github | 10 | +3707 | 2 | 18 | 2025-12-31 | ✅ |
+| main_test | 0 | +0 | 0 | 1,905 | 2020-10-31 | 🛑 |
+| test_injector | 0 | +0 | 0 | 3,427 | 2016-08-31 | 🛑 |
+| vppsb | 0 | +0 | 0 | 2,430 | 2019-05-25 | 🛑 |
 
 **Total:** 7 repositories
 
@@ -880,8 +880,8 @@ The data presented in the table below covers the past 365 days.
 |----------------|-------------------|----------------|--------------|-----------|
 | .github | <a href="https://github.com/fdio/.github/actions/workflows/gerrit-required-verify-non-voting.yaml" target="_blank"><span class="status-success workflow-status">gerrit-required-verify-non-voting.yaml</span></a><br><a href="https://github.com/fdio/.github/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a> | 2 |  | 0 |
 | ci-management | <a href="https://github.com/fdio/ci-management/actions/workflows/gerrit-verify.yaml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yaml</span></a> | 1 | <a href="https://jenkins.fd.io/job/ci-management-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-info-yaml-verify</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jenkins-cfg-merge/" target="_blank"><span class="status-success jenkins-status">ci-management-jenkins-cfg-merge</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jenkins-cfg-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-jenkins-cfg-verify</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jenkins-sandbox-cleanup/" target="_blank"><span class="status-failure jenkins-status">ci-management-jenkins-sandbox-cleanup</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jjb-deploy-job/" target="_blank"><span class="status-unknown jenkins-status">ci-management-jjb-deploy-job</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jjb-merge/" target="_blank"><span class="status-success jenkins-status">ci-management-jjb-merge</span></a><br><a href="https://jenkins.fd.io/job/ci-management-jjb-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-jjb-verify</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-merge-centos-7-builder/" target="_blank"><span class="status-failure jenkins-status">ci-management-packer-merge-centos-7-builder</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-merge-centos-8-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-merge-centos-8-builder</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-verify/" target="_blank"><span class="status-success jenkins-status">ci-management-packer-verify</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-verify-build-centos-7-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-7-builder</span></a><br><a href="https://jenkins.fd.io/job/ci-management-packer-verify-build-centos-8-builder/" target="_blank"><span class="status-unknown jenkins-status">ci-management-packer-verify-build-centos-8-builder</span></a> | 12 |
-| csit | <a href="https://github.com/fdio/csit/actions/workflows/csit-cdash-version.yml" target="_blank"><span class="status-no-runs workflow-status">csit-cdash-version.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-dpdk-perf-mrr-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-dpdk-perf-mrr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-perf-report.yml" target="_blank"><span class="status-no-runs workflow-status">csit-perf-report.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-trex-perf-ndrpdr-weekly.yml" target="_blank"><span class="status-success workflow-status">csit-trex-perf-ndrpdr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-verify-tox.yaml" target="_blank"><span class="status-no-runs workflow-status">csit-verify-tox.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-hoststack-daily.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-hoststack-daily.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-mrr-daily.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-mrr-daily.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-mrr-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-mrr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-ndrpdr-weekly.yml" target="_blank"><span class="status-in-progress workflow-status">csit-vpp-perf-ndrpdr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-soak-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-soak-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/gerrit-comment-handler.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-comment-handler.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">github2gerrit.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/vpp-csit-bisect.yml" target="_blank"><span class="status-success workflow-status">vpp-csit-bisect.yml</span></a> | 13 | <a href="https://jenkins.fd.io/job/csit-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">csit-info-yaml-verify</span></a><br><a href="https://jenkins.fd.io/job/csit-sonar/" target="_blank"><span class="status-failure jenkins-status">csit-sonar</span></a><br><a href="https://jenkins.fd.io/job/csit-verify-tox-master-ubuntu2404-x86_64/" target="_blank"><span class="status-failure jenkins-status">csit-verify-tox-master-ubuntu2404-x86_64</span></a> | 3 |
-| vpp | <a href="https://github.com/fdio/vpp/actions/workflows/gerrit-comment-handler.yml" target="_blank"><span class="status-failure workflow-status">gerrit-comment-handler.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/gerrit-merge.yml" target="_blank"><span class="status-failure workflow-status">gerrit-merge.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/gerrit-verify.yml" target="_blank"><span class="status-success workflow-status">gerrit-verify.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">github2gerrit.yaml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/periodic-vpp-verify-cov.yml" target="_blank"><span class="status-success workflow-status">periodic-vpp-verify-cov.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/periodic-vpp-verify-dpdk-rdma-ver.yml" target="_blank"><span class="status-success workflow-status">periodic-vpp-verify-dpdk-rdma-ver.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/periodic-vpp-verify-hst.yml" target="_blank"><span class="status-success workflow-status">periodic-vpp-verify-hst.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-csit-verify-api.yml" target="_blank"><span class="status-success workflow-status">vpp-csit-verify-api.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-merge-docs.yml" target="_blank"><span class="status-failure workflow-status">vpp-merge-docs.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-merge-maketest.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-merge-maketest.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-arm-drivers.yml" target="_blank"><span class="status-success workflow-status">vpp-verify-arm-drivers.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-checkstyle.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-verify-checkstyle.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-docs.yml" target="_blank"><span class="status-success workflow-status">vpp-verify-docs.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-gcc.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-verify-gcc.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-hst.yml" target="_blank"><span class="status-failure workflow-status">vpp-verify-hst.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-maketest.yml" target="_blank"><span class="status-failure workflow-status">vpp-verify-maketest.yml</span></a> | 16 | <a href="https://jenkins.fd.io/job/vpp-cov-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-warning jenkins-status">vpp-cov-verify-master-ubuntu2404-x86_64</span></a> | 1 |
+| csit | <a href="https://github.com/fdio/csit/actions/workflows/csit-cdash-version.yml" target="_blank"><span class="status-no-runs workflow-status">csit-cdash-version.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-dpdk-perf-mrr-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-dpdk-perf-mrr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-perf-report.yml" target="_blank"><span class="status-no-runs workflow-status">csit-perf-report.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-trex-perf-ndrpdr-weekly.yml" target="_blank"><span class="status-success workflow-status">csit-trex-perf-ndrpdr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-verify-tox.yaml" target="_blank"><span class="status-no-runs workflow-status">csit-verify-tox.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-hoststack-daily.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-hoststack-daily.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-mrr-daily.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-mrr-daily.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-mrr-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-mrr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-ndrpdr-weekly.yml" target="_blank"><span class="status-failure workflow-status">csit-vpp-perf-ndrpdr-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/csit-vpp-perf-soak-weekly.yml" target="_blank"><span class="status-in-progress workflow-status">csit-vpp-perf-soak-weekly.yml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/gerrit-comment-handler.yaml" target="_blank"><span class="status-failure workflow-status">gerrit-comment-handler.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">github2gerrit.yaml</span></a><br><a href="https://github.com/fdio/csit/actions/workflows/vpp-csit-bisect.yml" target="_blank"><span class="status-success workflow-status">vpp-csit-bisect.yml</span></a> | 13 | <a href="https://jenkins.fd.io/job/csit-info-yaml-verify/" target="_blank"><span class="status-success jenkins-status">csit-info-yaml-verify</span></a><br><a href="https://jenkins.fd.io/job/csit-sonar/" target="_blank"><span class="status-failure jenkins-status">csit-sonar</span></a><br><a href="https://jenkins.fd.io/job/csit-verify-tox-master-ubuntu2404-x86_64/" target="_blank"><span class="status-failure jenkins-status">csit-verify-tox-master-ubuntu2404-x86_64</span></a> | 3 |
+| vpp | <a href="https://github.com/fdio/vpp/actions/workflows/gerrit-comment-handler.yml" target="_blank"><span class="status-failure workflow-status">gerrit-comment-handler.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/gerrit-merge.yml" target="_blank"><span class="status-success workflow-status">gerrit-merge.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/gerrit-verify.yml" target="_blank"><span class="status-failure workflow-status">gerrit-verify.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/github2gerrit.yaml" target="_blank"><span class="status-failure workflow-status">github2gerrit.yaml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/periodic-vpp-verify-cov.yml" target="_blank"><span class="status-success workflow-status">periodic-vpp-verify-cov.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/periodic-vpp-verify-dpdk-rdma-ver.yml" target="_blank"><span class="status-success workflow-status">periodic-vpp-verify-dpdk-rdma-ver.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/periodic-vpp-verify-hst.yml" target="_blank"><span class="status-success workflow-status">periodic-vpp-verify-hst.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-csit-verify-api.yml" target="_blank"><span class="status-success workflow-status">vpp-csit-verify-api.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-merge-docs.yml" target="_blank"><span class="status-failure workflow-status">vpp-merge-docs.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-merge-maketest.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-merge-maketest.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-arm-drivers.yml" target="_blank"><span class="status-success workflow-status">vpp-verify-arm-drivers.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-checkstyle.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-verify-checkstyle.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-docs.yml" target="_blank"><span class="status-success workflow-status">vpp-verify-docs.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-gcc.yml" target="_blank"><span class="status-no-runs workflow-status">vpp-verify-gcc.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-hst.yml" target="_blank"><span class="status-failure workflow-status">vpp-verify-hst.yml</span></a><br><a href="https://github.com/fdio/vpp/actions/workflows/vpp-verify-maketest.yml" target="_blank"><span class="status-failure workflow-status">vpp-verify-maketest.yml</span></a> | 16 | <a href="https://jenkins.fd.io/job/vpp-cov-verify-master-ubuntu2404-x86_64/" target="_blank"><span class="status-warning jenkins-status">vpp-cov-verify-master-ubuntu2404-x86_64</span></a> | 1 |
 
 **Total:** 4 repositories with CI/CD jobs
 
