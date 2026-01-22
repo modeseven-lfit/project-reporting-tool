@@ -206,7 +206,7 @@ jobs:
 
       - name: "Set up Python"
         # yamllint disable-line rule:line-length
-        uses: actions/setup-python@83679a892e2d95755f2dac6acb0bfd1e9ac5d548 # v6.1.0
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405  # v6.2.0
         with:
           python-version: "3.11"
 
@@ -718,7 +718,7 @@ jobs:
 
       - name: "Comment on pull request with links"
         # yamllint disable-line rule:line-length
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd  # v8.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
