@@ -1,6 +1,6 @@
 # 📊 GitHub Project Analysis Report: AGL
 
-**Generated:** 2026-01-24 10:08:25 UTC
+**Generated:** 2026-01-24 10:32:58 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -339,79 +339,79 @@ The data presented in the table below covers the past 365 days.
 | Gerrit Project | Primary Type | Other Types | Dependabot | Pre-commit | ReadTheDocs | .gitreview | G2G | Status |
 |----------------|--------------|-------------|------------|------------|-------------|------------|-----|--------|
 | src/virtio/virtio_driver | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| src/virtio/adapter_app | C |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | src/virtio/virtio-loopback-driver | C |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/virtio/adapter_app | C |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | src/xds/xds-common | Go |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/xds/xds-cli | Go | Shell, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/virtio/virtio-loopback-adapter | C |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/xds/xds-docs | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/virtio/virtio-loopback-adapter | C |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/xds/xds-cli | Go | Shell, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/AGL-repo | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | src/xds/xds-gdb | Go | Shell, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/xds/xds-server | Go | Shell, C, D, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/meta-agl-cluster-demo | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/xds/xds-server | Go | Shell, C, D, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/lava-docker | Shell | Python, D | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | AGL/meta-agl-extra | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/meta-agl-refhw | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/meta-agl-telematics-demo | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/releng-scripts | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| apps/agl-cluster-demo-gauges | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-cluster-demo-dashboard | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| apps/agl-cluster-demo-receiver | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/documentation | HTML | JavaScript, TypeScript, Python, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| apps/agl-cluster-demo-dashboard | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| apps/agl-cluster-demo-gauges | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-cluster-demo-receiver | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-qt-cluster-demo-receiver | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | apps/agl-service-audiomixer | C | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| apps/agl-service-bluetooth | C | C++, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-bluetooth-map | C | C++, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-bluetooth | C | C++, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-bluetooth-pbap | C | Shell, C++, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-can-high-level-viwi | C++ | D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-cloudproxy | C | C++, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-data-persistence | JavaScript | C++, C, D, HTML, CSS, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-geofence | C++ | C, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-geoclue | C++ | C, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-geofence | C++ | C, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-gps | Shell | C++, C, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-harvester | C | C++, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-helloworld | Lua | JavaScript, C++, C, D, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-harvester | C | C++, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/meta-agl-demo | Shell | Python, C | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | apps/agl-service-hvac | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | apps/agl-service-identity-agent | C | JavaScript, C++, D, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-inputmethod | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | apps/agl-service-iiodevices | C | Shell, C++, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-inputmethod | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | apps/agl-service-mediaplayer | C | C++, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-navigation | C | C++, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-mediascanner | C | Shell, C++, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-network | C | C++, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-homescreen | HTML | JavaScript, C++, C, D, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-network | C | C++, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-nfc | C | C++, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-platform-info | C | JavaScript, Shell, C++, D, HTML, CSS, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-poi | C++ | C, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-radio | C | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | AGL/meta-agl-devel | Rust | Shell, C | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| apps/agl-service-steering-wheel | C | C++, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-taskmanager | C++ | C, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-steering-wheel | C | C++, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-soundmanager | HTML | JavaScript, Shell, C++, C, D, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-telephony | C | Shell, C++, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-signal-composer | C++ | C, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-unicens-controller | C | JavaScript, C++, D, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-unicens | C | JavaScript, C++, D, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | AGL/meta-agl | Shell | Python, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| apps/agl-service-voiceagent | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-can-low-level | C | Python, Shell, Java, C++, D, CSS, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-voice-high | C | JavaScript, Shell, C++, D, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-voiceagent | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-weather | C++ | C, D, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-voice-high-capabilities | C | JavaScript, Shell, C++, D, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-voice-high | C | JavaScript, Shell, C++, D, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-telematics-demo-recorder | C++ | C, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/alexa-viewer | C++ | C, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/agl-service-xds-monitoring | C | JavaScript, C++, D, HTML, CSS, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/agl-service-windowmanager | C | C++, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/alexa-viewer | C++ | C, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-afb-helpers-submodule | C | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-windowmanager | C | C++, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/agl-service-voice-high-capabilities | C | JavaScript, Shell, C++, D, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/als-meter-demo | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-controller-submodule | C | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/camera-gstreamer | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/chromium | Shell | C++, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/aroundview | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-afb-test | Lua | Shell, C++, C, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/camera-gstreamer | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/app-templates | D |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/aroundview | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/controls | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/chromium | Shell | C++, D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/dashboard | TypeScript | C++, C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-camera | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-dashboard | TypeScript | C++, C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -422,8 +422,8 @@ The data presented in the table below covers the past 365 days.
 | apps/demo3-tachometer | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/demo3-warehouse | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-dashboard | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/flutter-hvac | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-mediaplayer | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/flutter-hvac | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-navigation | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/flutter-instrument-cluster | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | apps/flutter-ros-demo | Python | C++, C | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
@@ -434,15 +434,15 @@ The data presented in the table below covers the past 365 days.
 | apps/homescreen-demo-ci | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-dashboard | JavaScript | Node, SCSS, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-homescreen | JavaScript | Node, SCSS, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/html5-mediaplayer | JavaScript | Node, SCSS, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-hvac | JavaScript | Node, SCSS, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-launcher | SCSS | JavaScript, Node, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/html5-mediaplayer | JavaScript | Node, SCSS, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-mixer | JavaScript | Node, SCSS, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/html5-settings | JavaScript | Node, SCSS, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/hvac | TypeScript | C++, C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/launcher | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/mediaplayer | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/messaging | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/mediaplayer | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/mixer | C++ | D | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/mominavi | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | apps/momiplayer | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -452,11 +452,11 @@ The data presented in the table below covers the past 365 days.
 | apps/navigation | JavaScript | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/onscreenapp | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/phone | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/poi-yelp | C | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/radio | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| apps/poi-yelp | C | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/restriction-screen | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| apps/settings | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/voiceagent-demo | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| apps/settings | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/taskmanager | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/videoplayer | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | apps/settings-log-utils | C | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
@@ -478,8 +478,8 @@ The data presented in the table below covers the past 365 days.
 | src/connman-glib | C |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/cynagoauth | C | Shell, C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/cmake-apps-module | D | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/demo3-qtquickcontrols | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/app-framework-binder | C | JavaScript, Shell, C++, D, HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| src/demo3-qtquickcontrols | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/cynagora | C | Shell, C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/homescreen-demo-ci | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | src/hvac-demo-microcontroller | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
@@ -516,16 +516,16 @@ The data presented in the table below covers the past 365 days.
 | src/uhmi-agl-wm | C | C++ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | src/veloflux | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | src/velort | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
-| src/snips-model-agl | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/vod-server | C | Shell, C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/snips-model-agl | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/window-management-client-grpc | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/waltham-transmitter-plugin | C |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| src/windowmanager | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | src/weston-ivi-plugins | C | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| src/windowmanager | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/agl-inputmethod-qt-plugin | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| src/app-framework-demo | JavaScript | SCSS, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/libsoundmanager | C++ |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/persistent-storage-api | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| src/app-framework-demo | JavaScript | SCSS, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/incar-wireless-monitor | C | Shell, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/qlibhomescreen | C | C++ | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | staging/qlibsoundmanager | C++ | C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |

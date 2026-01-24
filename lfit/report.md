@@ -1,6 +1,6 @@
 # 📊 GitHub Project Analysis Report: Linux Foundation
 
-**Generated:** 2026-01-24 10:13:01 UTC
+**Generated:** 2026-01-24 10:37:12 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -160,41 +160,41 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Primary Type | Other Types | Dependabot | Pre-commit | ReadTheDocs | .gitreview | G2G | Status |
 |----------------|--------------|-------------|------------|------------|-------------|------------|-----|--------|
+| ansible/roles/mono-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/java-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/lf-recommended-tools | Python | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/packer-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/protobuf-install | Shell |  | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| ansible/roles/java-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| ansible/roles/mono-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| ansible/roles/haveged-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| ansible/roles/lf-dev-libs | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/docker-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/lf-dev-libs | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/haveged-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | puppet/modules/gce | Ruby | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | puppet/modules/mailman3 | Ruby | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ansible/roles/sysstat-install | Python | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | ansible/roles/puppet-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| ansible/roles/system-update | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| ansible/roles/python-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| clav2test/ccla-only-project | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/roles/shellcheck-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/sysstat-install | Python | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
+| ansible/roles/python-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/system-update | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| clav2test/ccla-only-project | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | clav2test/icla-and-ccla-project | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | lfn/process | Python |  | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | releng/ci-workshop | Groovy | Dockerfile, Shell | ❌ | ✅ | ❌ | ✅ | ❌ | 🛑 |
-| releng/gerrit_to_platform | Python |  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| releng/common-packer | HCL | Python, Shell | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
 | releng/docs-conf | Python |  | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
+| releng/common-packer | HCL | Python, Shell | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
+| releng/gerrit_to_platform | Python |  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | releng/docs | Python | Shell, HTML, CSS | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
 | releng/license-checker | Go |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | releng/nexus-upload | Shell |  | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| releng/python-one-password | Python |  | ❌ | ✅ | ✅ | ✅ | ❌ | ☑️ |
 | releng/pipelines | Groovy | Java/Gradle, Python, Shell, HTML | ❌ | ✅ | ✅ | ✅ | ❌ | 🛑 |
+| releng/python-one-password | Python |  | ❌ | ✅ | ✅ | ✅ | ❌ | ☑️ |
 | releng/sigul-docker | Dockerfile |  | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| releng/global-jjb | Shell | Python, Groovy, HTML | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
 | sandbox-info-master | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| releng/global-jjb | Shell | Python, Groovy, HTML | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
 | releng/lftools | Python | HTML | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
 | ansible/roles | Shell |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | releng/info-master | N/A |  | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
-| sandbox | Java/Maven | JavaScript, TypeScript, Python, Shell, Groovy, HTML, CSS | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | releng | Shell | Python, Go, Groovy, HTML, CSS, HCL | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| sandbox | Java/Maven | JavaScript, TypeScript, Python, Shell, Groovy, HTML, CSS | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 
 ---
 ## 🏁 Deployed CI/CD Jobs

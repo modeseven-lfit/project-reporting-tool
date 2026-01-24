@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: Opendaylight
 
-**Generated:** 2026-01-24 10:08:27 UTC
+**Generated:** 2026-01-24 10:32:48 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -211,8 +211,8 @@ The data presented in the table below covers the past 365 days.
 | transportpce/models | Python | Java/Maven | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | ansible | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | archetypes | Java/Maven | CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| releng/builder | Shell | Python, HCL | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | capwap | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| releng/builder | Shell | Python, HCL | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | alt-datastores | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | cardinal | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | coe | Go | Python, Shell, Java/Maven | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
@@ -225,9 +225,9 @@ The data presented in the table below covers the past 365 days.
 | didm | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | docs | Shell | Python, HTML, CSS | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | eman | Java/Maven | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| federation | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | coretutorials | Java/Maven | Python, Shell, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | fpc | Java/Maven | Python, Shell, CSS | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| federation | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | detnet | Java/Maven | CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ieft | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | gnt | Java/Maven |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
@@ -242,8 +242,8 @@ The data presented in the table below covers the past 365 days.
 | groupbasedpolicy | Java/Maven | Python, Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | jsonrpc | Java/Maven | Python | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | natapp | Java/Maven | CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| netide | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | lispflowmapping | Java/Maven | Python, Shell, HTML, CSS | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| netide | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | nemo | Java/Maven | Python, Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | neutron | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | next | JavaScript | Java/Maven, Node, Smarty, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
@@ -257,15 +257,15 @@ The data presented in the table below covers the past 365 days.
 | mdsal | Java/Maven | Python | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | sdninterfaceapp | Java/Maven | JavaScript, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | packetcable | Java/Maven | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| odlparent | Java/Maven | Python, Shell | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | opflex | C++ | Python, Shell, Java, C | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| odlparent | Java/Maven | Python, Shell | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | snmp | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| snbi | C | Python, Java/Maven | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | snmp4sdn | Java/Maven | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| snbi | C | Python, Java/Maven | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | systemmetrics | JavaScript | HTML, CSS, Java/Maven | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | serviceutils | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ✅ | ☑️ |
-| sxp | Java/Maven | Python, Lua | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | telemetry | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| sxp | Java/Maven | Python, Lua | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | ttp | Java/Maven | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ovsdb | Java/Maven | Python, Dockerfile, Shell | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | usc | Java/Maven | JavaScript, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
@@ -332,24 +332,24 @@ These Jenkins jobs are matched to archived or read-only Gerrit projects:
 
 | Job Name | Matched Project | State | Match Score |
 |----------|----------------|-------|-------------|
+| integration-sanity-test-chromium | integration | READ_ONLY | 575% |
+| integration-update-csit-tests-scandium | integration | READ_ONLY | 575% |
+| integration-multipatch-test-scandium | integration | READ_ONLY | 575% |
 | integration-sanity-test-titanium | integration | READ_ONLY | 575% |
 | integration-update-csit-tests-vanadium | integration | READ_ONLY | 575% |
-| integration-patch-test-vanadium | integration | READ_ONLY | 575% |
-| integration-merge-dashboard | integration | READ_ONLY | 575% |
-| integration-multipatch-test-titanium | integration | READ_ONLY | 575% |
-| integration-update-csit-tests-scandium | integration | READ_ONLY | 575% |
-| integration-update-csit-tests-chromium | integration | READ_ONLY | 575% |
 | integration-sanity-test-scandium | integration | READ_ONLY | 575% |
-| integration-patch-test-scandium | integration | READ_ONLY | 575% |
-| integration-update-csit-tests-titanium | integration | READ_ONLY | 575% |
-| integration-multipatch-test-scandium | integration | READ_ONLY | 575% |
 | integration-patch-test-titanium | integration | READ_ONLY | 575% |
-| integration-sanity-test-vanadium | integration | READ_ONLY | 575% |
 | integration-info-yaml-verify | integration | READ_ONLY | 575% |
-| integration-multipatch-test-vanadium | integration | READ_ONLY | 575% |
-| integration-sanity-test-chromium | integration | READ_ONLY | 575% |
-| integration-patch-test-chromium | integration | READ_ONLY | 575% |
+| integration-update-csit-tests-titanium | integration | READ_ONLY | 575% |
+| integration-update-csit-tests-chromium | integration | READ_ONLY | 575% |
 | integration-multipatch-test-chromium | integration | READ_ONLY | 575% |
+| integration-multipatch-test-vanadium | integration | READ_ONLY | 575% |
+| integration-multipatch-test-titanium | integration | READ_ONLY | 575% |
+| integration-patch-test-chromium | integration | READ_ONLY | 575% |
+| integration-patch-test-scandium | integration | READ_ONLY | 575% |
+| integration-sanity-test-vanadium | integration | READ_ONLY | 575% |
+| integration-merge-dashboard | integration | READ_ONLY | 575% |
+| integration-patch-test-vanadium | integration | READ_ONLY | 575% |
 
 **Total Orphaned Jobs:** 18
 

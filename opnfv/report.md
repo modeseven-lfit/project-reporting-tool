@@ -1,6 +1,6 @@
 # 📊 GitHub Project Analysis Report: OPNFV
 
-**Generated:** 2026-01-24 10:10:17 UTC
+**Generated:** 2026-01-24 10:34:13 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -139,7 +139,7 @@ The data presented in the table below covers the past 365 days.
 | [doctor](https://github.com/gerrit.opnfv.org/doctor) | 447 | 0 | 0 | 1928 | 2020-10-13 | 🛑 |
 | [functest-kubernetes](https://github.com/gerrit.opnfv.org/functest-kubernetes) | 418 | +184 | 1 | 109 | 2025-10-07 | ✅ |
 | [nfvbench](https://github.com/gerrit.opnfv.org/nfvbench) | 328 | 0 | 0 | 1113 | 2023-01-06 | 🛑 |
-| [storperf](https://github.com/gerrit.opnfv.org/storperf) | 313 | 0 | 0 | 2180 | 2020-02-04 | 🛑 |
+| [storperf](https://github.com/gerrit.opnfv.org/storperf) | 313 | 0 | 0 | 2181 | 2020-02-04 | 🛑 |
 | [parser](https://github.com/gerrit.opnfv.org/parser) | 308 | 0 | 0 | 2388 | 2019-07-11 | 🛑 |
 | [ipv6](https://github.com/gerrit.opnfv.org/ipv6) | 235 | 0 | 0 | 2401 | 2019-06-28 | 🛑 |
 | [models](https://github.com/gerrit.opnfv.org/models) | 227 | 0 | 0 | 2734 | 2018-07-30 | 🛑 |
@@ -202,12 +202,12 @@ The data presented in the table below covers the past 365 days.
 | cirv-rapid | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | cirv-hdv | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | cirv-spirent | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| calipso | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | apex-puppet-tripleo | Ruby | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| calipso | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | conductor | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| apex-tripleo-heat-templates | Shell | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | bottlenecks | Python | JavaScript, Shell, HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | airship | Shell | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| apex-tripleo-heat-templates | Shell | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | cirv-sdv | Python | JavaScript, Shell, HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | domino | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | doctor | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
@@ -219,8 +219,8 @@ The data presented in the table below covers the past 365 days.
 | functest-requirements | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | cran | Python | Shell, C | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | dovetail-webportal | Python | JavaScript, Shell, D, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| functest-kubernetes | Python | JavaScript, Shell, D, HTML | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | clover | Python | JavaScript, Shell, Go, C, Scala, HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| functest-kubernetes | Python | JavaScript, Shell, D, HTML | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | fds | Python | Shell, Robot Framework | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | laas | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | ipv6 | Python |  | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
@@ -229,15 +229,15 @@ The data presented in the table below covers the past 365 days.
 | laas-reflab | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | kuberef | Shell | Python, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | opera | Shell | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| models | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | opnfvtsc | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| nfvbench | Python | Shell, D | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| models | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | functest | Python | JavaScript, Shell, D, HTML, CSS | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
+| nfvbench | Python | Shell, D | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | orchestra | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | fuel | Shell | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | policytest | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ovsnfv | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | opnfvdocs | HTML | Python, Shell, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| ovsnfv | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | puppet-barometer | Ruby | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | releng-anteater | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | releng-utils | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
@@ -249,17 +249,17 @@ The data presented in the table below covers the past 365 days.
 | sandbox | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | sandbox-zuul-config | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | sandbox-zuul-untrusted | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| securityscanning | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | spark-model-runner | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| securityscanning | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | test | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| parser | Python | Shell, Java | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | test2 | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| qtip | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| parser | Python | Shell, Java | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | samplevnf | C | JavaScript, Python, Shell, C++, D, CSS, Lua | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | storperf | Python | JavaScript, Shell, D, HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| moon | Python | JavaScript, Shell, Groovy, D, SCSS, HTML, CSS, PLpgSQL | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| stor4nfv | Shell | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| qtip | Python | Shell | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | releng-testresults | JavaScript | TypeScript, Python, Shell, SCSS, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| stor4nfv | Shell | Python | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
+| moon | Python | JavaScript, Shell, Groovy, D, SCSS, HTML, CSS, PLpgSQL | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | thoth | Python |  | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | vineperf | Python | Shell, C, Lua | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 

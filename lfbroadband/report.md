@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: LF Broadband
 
-**Generated:** 2026-01-24 10:13:14 UTC
+**Generated:** 2026-01-24 10:37:51 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -172,7 +172,7 @@ The data presented in the table below covers the past 365 days.
 | [fpcagent](https://gerrit.lfbroadband.org/admin/repos/fpcagent,general) | 75 | 0 | 0 | 2863 | 2018-03-23 | 🛑 |
 | [sdfabric-docs](https://gerrit.lfbroadband.org/admin/repos/sdfabric-docs,general) | 74 | 0 | 0 | 1257 | 2022-08-15 | 🛑 |
 | [device-management-interface](https://gerrit.lfbroadband.org/admin/repos/device-management-interface,general) | 73 | +14717 | 1 | 113 | 2025-10-03 | ✅ |
-| [asfvolt16-driver](https://gerrit.lfbroadband.org/admin/repos/asfvolt16-driver,general) | 73 | 0 | 0 | 2676 | 2018-09-26 | 🛑 |
+| [asfvolt16-driver](https://gerrit.lfbroadband.org/admin/repos/asfvolt16-driver,general) | 73 | 0 | 0 | 2677 | 2018-09-26 | 🛑 |
 | [vsg](https://gerrit.lfbroadband.org/admin/repos/vsg,general) | 71 | 0 | 0 | 2254 | 2019-11-22 | 🛑 |
 | [exampleservice](https://gerrit.lfbroadband.org/admin/repos/exampleservice,general) | 67 | 0 | 0 | 2254 | 2019-11-22 | 🛑 |
 | [att-workflow-driver](https://gerrit.lfbroadband.org/admin/repos/att-workflow-driver,general) | 65 | 0 | 0 | 2067 | 2020-05-27 | 🛑 |
@@ -382,37 +382,37 @@ The data presented in the table below covers the past 365 days.
 |----------------|--------------|-------------|------------|------------|-------------|------------|-----|--------|
 | ansible/role/389ds | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/apt_source | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| ansible/role/acme | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/devtools | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| ansible/role/dhcpd | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| ansible/role/acme | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/chrony | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/dkms | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ansible/role/bird | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| ansible/role/dhcpd | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ansible/role/ds389 | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/docker | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ansible/role/golang | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/enodebd | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/gerrit | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/edgemonagent | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ansible/role/jenkins | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ansible/role/keycloak | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| ansible/role/jenkins | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ansible/role/lbackup | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ansible/role/lua | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| ansible/role/netprep | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ansible/role/netbox | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/mariadb | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| ansible/role/node_exporter | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| ansible/role/netbox | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| ansible/role/netprep | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ansible/role/nginx | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| ansible/role/node_exporter | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/nodejs | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/onieboot | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/nsd | Python |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/qat | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/rbackup | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ansible/role/openvpn | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| ansible/role/pxeboot | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/php | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| ansible/role/openvpn | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/postgresql | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ansible/role/proxmox | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| ansible/role/pxeboot | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/redis | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/rke2 | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ansible/role/sriov | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
@@ -422,13 +422,13 @@ The data presented in the table below covers the past 365 days.
 | ansible/role/unbound | Python |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/users | Python |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ansible/role/usrp | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| .github | N/A |  | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | CORD-Projects | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | Aether-Projects | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | Infra-Projects | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| .github | N/A |  | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | Ignite | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| PublicTest | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | MME2 | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| PublicTest | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | ONOS-App-projects | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | SDCore-Projects | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | SDFabric-Projects | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
@@ -445,12 +445,12 @@ The data presented in the table below covers the past 365 days.
 | att-workflow-driver | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | aaa | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | cbrstools | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| bng | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | cggs | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| ci-management | jjb |  | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| bng | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | certification | Python | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| chameleon | JavaScript | Python, Dockerfile, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | comac-helm-charts | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| chameleon | JavaScript | Python, Dockerfile, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| ci-management | jjb |  | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | automation-tools | Shell | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | composer | JavaScript | Node | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | cord-omec | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
@@ -472,52 +472,52 @@ The data presented in the table below covers the past 365 days.
 | docs | Ruby | JavaScript, Node, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | ecord | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | epc-service | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| enodebd | Python | Dockerfile | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | exampleservice | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | fabric | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| enodebd | Python | Dockerfile | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | fabric-crossconnect | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | foo-app | Java/Maven |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| cordctl | Go | JavaScript, Shell, C | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | fpcagent | Java | Python, Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| cordctl | Go | JavaScript, Shell, C | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | fabric-oftest | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | fwaas | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | globalxos | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | go-manifest | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | goloxi | Go |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| grpc-robot | Python | Robot Framework, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | helm-repo-tools | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| hss_db | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| grpc-robot | Python | Robot Framework, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | hippie-oss | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| hss_db | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | igmp | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| bbsim | Go | Python, Shell, C, Groovy | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
+| freeDiameter-old | C | Shell, C++, PHP, PLpgSQL | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | hypercache | Python | Shell, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | igmpca | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| freeDiameter-old | C | Shell, C++, PHP, PLpgSQL | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| bbsim | Go | Python, Shell, C, Groovy | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | infra-manifest | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | infra-containers | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | internetemulator | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ipxe-build | Dockerfile |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | fabric-tofino | Java/Maven | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | igmpproxy | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| ipxe-build | Dockerfile |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | k8sepcservice | Python |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | kafka-robot | Python | Robot Framework, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| kafka-onos | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | kafkaloghandler | Python |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| kafka-onos | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | kolla | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| bbsim-sadis-server | Go | Shell, C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | kolla-ansible | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | lbaas | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| bbsim-sadis-server | Go | Shell, C | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | kubernetes-service | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | manifest | Shell | Groovy | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | mcord-configs | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | mcord | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| helm-charts | Smarty | Python, Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | mac-learning | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | mcast | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| helm-charts | Smarty | Python, Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | mgmt-gateway-vm | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| metro-net | Python | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | mn-stratum-siab | Dockerfile |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | metronet-local | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| metro-net | Python | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | multifabric | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | multistructlog | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | network-diag-app | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
@@ -526,27 +526,27 @@ The data presented in the table below covers the past 365 days.
 | monitoring | Python | Shell, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | olt-service | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | olt | Java/Maven | Python | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| olttopology | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | omec-cni | Dockerfile |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | device-management | Go | Dockerfile, Shell, C, Robot Framework | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| olttopology | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | omec-pod-init | Dockerfile |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| onf-docs | Python | CSS | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | omci-lib-go | Go | Python, Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| onf-docs | Python | CSS | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | onos-classic-helm-utils | Dockerfile | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | onfca | Shell |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | onf-scripts | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | onos-robot | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | openairinterface | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | onos-service | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| maas | Go | Python, Shell, Smarty | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | opencloud | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| onf-make | Python | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| opendm-agent | C++ | Shell, C | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| maas | Go | Python, Shell, Smarty | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | openolt-api | Go |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| opendm-agent | C++ | Shell, C | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| onf-make | Python | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
 | kafka-topic-exporter | Go | Dockerfile, Shell, C | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | nem-ondemand-proxy | Go | Shell, C | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| openomci | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | openolt-test | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| openomci | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | openstack | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | person-detection-app | Python | Shell, HTML | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | plyxproto | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
@@ -563,41 +563,41 @@ The data presented in the table below covers the past 365 days.
 | repo | Python |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | sadis | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | sdcore-docs | Python | HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| roc-helm-charts | Smarty | Go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| quagga | C | Python, Dockerfile, Shell, CSS | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | sadis-server | Go | Dockerfile, Shell, C | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| quagga | C | Python, Dockerfile, Shell, CSS | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| roc-helm-charts | Smarty | Go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | sdn-controller | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | sdfabric-docs | Python | HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | sdcore-helm-charts | Smarty |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | openolt-scale-tester | Go | Shell, C | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | sdfabric-helm-charts | Smarty |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | seba | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| seba-manifest | Shell |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | platform-install | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| seba-manifest | Shell |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | shared-workflows | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| simpleexampleservice | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | osam | Java/Maven | PLpgSQL | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| simpleexampleservice | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | swarm | Python |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | sjsg | Python | JavaScript, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | templateservice | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | opendevice-manager | Go | Shell, C | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | tt-workflow-driver | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| vMM | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vBBU | Python | Shell, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| vHSS | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| vMM | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vEE | JavaScript | TypeScript, Python, Shell, SCSS, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| vMME | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| vHSS | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vEG | Python | Shell, D | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vPGWU | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| vMME | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vPGWC | Python | Shell, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| vSGW | Python | Shell, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vSGWU | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| vSGW | Python | Shell, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vSM | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | service-profile | Shell | JavaScript, Python, Groovy, PLpgSQL | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | venb | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ves-agent | Java/Maven | Python, Dockerfile, Shell, Smarty | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| vnaas | JavaScript | TypeScript, Python, Shell, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | voltha-docker-tools | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| vnaas | JavaScript | TypeScript, Python, Shell, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| ves-agent | Java/Maven | Python, Dockerfile, Shell, Smarty | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | voltha-adtran-adapter | Python | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | voltha-docs | Python | Shell, Ruby, HTML, CSS | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | voltha-helm-charts | Smarty |  | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
@@ -613,16 +613,16 @@ The data presented in the table below covers the past 365 days.
 | voltha-test-manifest | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | voltha-northbound-bbf-adapter | Go | Shell, C | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vrouter | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| vsg | Shell | JavaScript, Python, D, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vsg-hw | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| vsg | Shell | JavaScript, Python, D, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vspgwu | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vspgwc | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| vtn-service | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| voltha-protos | Go | Python, Shell, C | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | voltctl | Go | Python, Shell, C | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
+| voltha-protos | Go | Python, Shell, C | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
+| vtn-service | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | xRAN | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| vtn | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vtr | JavaScript | TypeScript, Python, Shell, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| vtn | Java/Maven |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | xos-manifest | Shell | Groovy | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | xos-rest-gw | JavaScript | Node, Dockerfile, HTML | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | xos-external-app-examples | JavaScript | Python, Shell, SCSS, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
@@ -631,8 +631,8 @@ The data presented in the table below covers the past 365 days.
 | xos-gui | TypeScript | JavaScript, Node, Dockerfile, Groovy, SCSS, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | xran-controller | Java |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | xos | Python | JavaScript, Shell, Ruby, Smarty, HTML, CSS | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| voltha-lib-go | Go | Python, Shell, C | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | voltha-go | Go | Python, Shell, C | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
+| voltha-lib-go | Go | Python, Shell, C | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | voltha-openonu-adapter-go | Go | Python, Shell, C | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | voltha-openolt-adapter | Go | Python, Shell, C | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 
@@ -664,28 +664,28 @@ These Jenkins jobs are matched to archived or read-only Gerrit projects:
 
 | Job Name | Matched Project | State | Match Score |
 |----------|----------------|-------|-------------|
-| voltha-scale-measurements-master-experimental-multi-stack | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-master-1-64-63-dt-subscribers | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-patchset-1-16-32-tt-subscribers | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-master-onu-upgrade-2-16-32-att-onus | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-master-10-stacks-2-16-32-dt-subscribers | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-master-2-16-32-tt-subscribers-maclearner | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-2.14-10-stacks-2-16-32-tt-subscribers | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-patchset-1-16-32-dt-subscribers | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-patchset-1-16-32-att-subscribers | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-master-2-16-32-tt-subscribers | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-master-experimental | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-lwc-dt-256 | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-master-10-stacks-2-16-32-att-subscribers | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-voltha-2.14-2-16-32-tt-subscribers | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-master-10-stacks-2-16-32-tt-subscribers | voltha | READ_ONLY | 575% |
 | voltha-scale-measurements-lwc-dt-512 | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-master-2-16-32-att-subscribers | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-master-2-16-32-dt-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-master-2-16-32-tt-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-master-10-stacks-2-16-32-tt-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-master-onu-upgrade-2-16-32-att-onus | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-voltha-2.14-2-16-32-tt-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-master-10-stacks-2-16-32-att-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-master-2-16-32-tt-subscribers-maclearner | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-patchset-1-16-32-att-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-lwc-dt-256 | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-master-1-64-63-dt-subscribers | voltha | READ_ONLY | 575% |
 | voltha-scale-measurements-master-2-64-32-dt-subscribers | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-voltha-2.14-2-16-32-dt-subscribers | voltha | READ_ONLY | 575% |
-| voltha-scale-measurements-2.14-10-stacks-2-16-32-dt-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-master-experimental | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-patchset-1-16-32-dt-subscribers | voltha | READ_ONLY | 575% |
 | voltha-scale-measurements-master-1-64-63-tt-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-voltha-2.14-2-16-32-dt-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-2.14-10-stacks-2-16-32-tt-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-master-2-16-32-att-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-master-experimental-multi-stack | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-master-10-stacks-2-16-32-dt-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-patchset-1-16-32-tt-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-2.14-10-stacks-2-16-32-dt-subscribers | voltha | READ_ONLY | 575% |
+| voltha-scale-measurements-master-2-16-32-dt-subscribers | voltha | READ_ONLY | 575% |
 
 **Total Orphaned Jobs:** 22
 

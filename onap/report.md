@@ -1,6 +1,6 @@
 # 📊 Gerrit Project Analysis Report: ONAP
 
-**Generated:** 2026-01-24 10:08:28 UTC
+**Generated:** 2026-01-24 10:32:45 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -46,7 +46,7 @@ The data presented in the table below covers the past 365 days.
 | 2 | telekom.de | 11 | 593 | +142680 | 238346 | +79 | 72 |
 | 3 | linuxfoundation.org | 20 | 264 | +8000 | 10718 | +20 | 177 |
 | 4 | att.com | 374 | 127 | +8645 | 16254 | +8 | 101 |
-| 5 | techmahindra.com | 46 | 107 | +26413 | 38244 | +136 | 38 |
+| 5 | techmahindra.com | 46 | 106 | +26342 | 38173 | +136 | 38 |
 | 6 | t-systems.com | 28 | 80 | +64578 | 74885 | +678 | 32 |
 | 7 | t-mobile.pl | 7 | 59 | +2511 | 2697 | +39 | 64 |
 | 8 | chinamobile.com | 24 | 38 | +620 | 848 | +10 | 31 |
@@ -107,7 +107,7 @@ The data presented in the table below covers the past 365 days.
 | 23 | Ben Zelleröhr | 30 | +3346 | 7381 | -22 | 8 | telekom.de |
 | 24 | akshay.khairnar@t-systems.com | 27 | +46421 | 46916 | +1700 | 7 | t-systems.com |
 | 25 | saul.gill | 27 | +35198 | 63955 | +238 | 17 | est.tech |
-| 26 | srinivasyanamadala | 27 | +4940 | 8227 | +61 | 4 | techmahindra.com |
+| 26 | srinivasyanamadala | 26 | +4869 | 8156 | +60 | 4 | techmahindra.com |
 | 27 | thmsdt | 21 | +379 | 648 | +5 | 35 | telekom.de |
 | 28 | leventecsanyi | 18 | +1933 | 2812 | +58 | 2 | est.tech |
 | 29 | Byung-Woo Jun | 15 | 0 | 0 | 0 | 18 | est.tech |
@@ -121,7 +121,7 @@ The data presented in the table below covers the past 365 days.
 | [doc](https://gerrit.onap.org/r/admin/repos/doc,general) | 27796 | +383 | 2 | 163 | 2025-08-13 | ✅ |
 | [oom](https://gerrit.onap.org/r/admin/repos/oom,general) | 7652 | +52527 | 20 | 9 | 2026-01-14 | ✅ |
 | [so](https://gerrit.onap.org/r/admin/repos/so,general) | 7011 | +7058 | 5 | 32 | 2025-12-22 | ✅ |
-| [ci-management](https://gerrit.onap.org/r/admin/repos/ci-management,general) | 6339 | +1461 | 16 | 3 | 2026-01-20 | ✅ |
+| [ci-management](https://gerrit.onap.org/r/admin/repos/ci-management,general) | 6339 | +1390 | 15 | 3 | 2026-01-20 | ✅ |
 | [sdc](https://gerrit.onap.org/r/admin/repos/sdc,general) | 3949 | +3553 | 7 | 14 | 2026-01-09 | ✅ |
 | [cps](https://gerrit.onap.org/r/admin/repos/cps,general) | 3241 | +46355 | 18 | 2 | 2026-01-22 | ✅ |
 | [integration](https://gerrit.onap.org/r/admin/repos/integration,general) | 3022 | +15 | 1 | 164 | 2025-08-12 | ✅ |
@@ -143,8 +143,8 @@ The data presented in the table below covers the past 365 days.
 | [multicloud/openstack](https://gerrit.onap.org/r/admin/repos/multicloud/openstack,general) | 861 | +15 | 1 | 164 | 2025-08-12 | ✅ |
 | [testsuite](https://gerrit.onap.org/r/admin/repos/testsuite,general) | 833 | +285 | 3 | 312 | 2025-03-17 | ✅ |
 | [ccsdk/apps](https://gerrit.onap.org/r/admin/repos/ccsdk/apps,general) | 812 | +571 | 5 | 43 | 2025-12-11 | ✅ |
-| [policy/docker](https://gerrit.onap.org/r/admin/repos/policy/docker,general) | 801 | +8199 | 11 | 4 | 2026-01-19 | ✅ |
-| [policy/common](https://gerrit.onap.org/r/admin/repos/policy/common,general) | 768 | +498 | 5 | 4 | 2026-01-19 | ✅ |
+| [policy/docker](https://gerrit.onap.org/r/admin/repos/policy/docker,general) | 801 | +8199 | 11 | 5 | 2026-01-19 | ✅ |
+| [policy/common](https://gerrit.onap.org/r/admin/repos/policy/common,general) | 768 | +498 | 5 | 5 | 2026-01-19 | ✅ |
 | [ccsdk/features](https://gerrit.onap.org/r/admin/repos/ccsdk/features,general) | 725 | +13943 | 5 | 2 | 2026-01-21 | ✅ |
 | [policy/pap](https://gerrit.onap.org/r/admin/repos/policy/pap,general) | 656 | +482 | 6 | 0 | 2026-01-23 | ✅ |
 | [usecase-ui/server](https://gerrit.onap.org/r/admin/repos/usecase-ui/server,general) | 627 | +2808 | 3 | 205 | 2025-07-03 | ✅ |
@@ -159,7 +159,7 @@ The data presented in the table below covers the past 365 days.
 | [multicloud/framework](https://gerrit.onap.org/r/admin/repos/multicloud/framework,general) | 496 | +160 | 4 | 118 | 2025-09-27 | ✅ |
 | [oom/platform/cert-service](https://gerrit.onap.org/r/admin/repos/oom/platform/cert-service,general) | 495 | 0 | 0 | 935 | 2023-07-03 | ☑️ |
 | [policy/distribution](https://gerrit.onap.org/r/admin/repos/policy/distribution,general) | 472 | +501 | 4 | 0 | 2026-01-23 | ✅ |
-| [aai/resources](https://gerrit.onap.org/r/admin/repos/aai/resources,general) | 454 | +1365 | 6 | 35 | 2025-12-19 | ✅ |
+| [aai/resources](https://gerrit.onap.org/r/admin/repos/aai/resources,general) | 454 | +1365 | 6 | 36 | 2025-12-19 | ✅ |
 | [multicloud/openstack/vmware](https://gerrit.onap.org/r/admin/repos/multicloud/openstack/vmware,general) | 443 | 0 | 0 | 1594 | 2021-09-13 | 🛑 |
 | [aai/oom](https://gerrit.onap.org/r/admin/repos/aai/oom,general) | 441 | 0 | 0 | 1874 | 2020-12-07 | 🛑 |
 | [dcaegen2/collectors/hv-ves](https://gerrit.onap.org/r/admin/repos/dcaegen2/collectors/hv-ves,general) | 436 | +15 | 1 | 164 | 2025-08-12 | ✅ |
@@ -195,7 +195,7 @@ The data presented in the table below covers the past 365 days.
 | [oparent](https://gerrit.onap.org/r/admin/repos/oparent,general) | 154 | +15 | 1 | 164 | 2025-08-12 | ✅ |
 | [integration/xtesting](https://gerrit.onap.org/r/admin/repos/integration/xtesting,general) | 152 | +517 | 5 | 164 | 2025-08-12 | ✅ |
 | [so/adapters/so-cnf-adapter](https://gerrit.onap.org/r/admin/repos/so/adapters/so-cnf-adapter,general) | 143 | +1023 | 4 | 34 | 2025-12-20 | ✅ |
-| [vnfsdk/model](https://gerrit.onap.org/r/admin/repos/vnfsdk/model,general) | 143 | 0 | 0 | 696 | 2024-02-27 | ☑️ |
+| [vnfsdk/model](https://gerrit.onap.org/r/admin/repos/vnfsdk/model,general) | 143 | 0 | 0 | 697 | 2024-02-27 | ☑️ |
 | [sdnc/apps](https://gerrit.onap.org/r/admin/repos/sdnc/apps,general) | 140 | +51 | 2 | 43 | 2025-12-11 | ✅ |
 | [dcaegen2/services/mapper](https://gerrit.onap.org/r/admin/repos/dcaegen2/services/mapper,general) | 138 | +15 | 1 | 164 | 2025-08-12 | ✅ |
 | [testsuite/python-testing-utils](https://gerrit.onap.org/r/admin/repos/testsuite/python-testing-utils,general) | 130 | +15 | 1 | 164 | 2025-08-12 | ✅ |
@@ -230,7 +230,7 @@ The data presented in the table below covers the past 365 days.
 | [integration/simulators/A1-policy-enforcement-simulator](https://gerrit.onap.org/r/admin/repos/integration/simulators/A1-policy-enforcement-simulator,general) | 50 | +48 | 2 | 92 | 2025-10-24 | ✅ |
 | [so/so-admin-cockpit](https://gerrit.onap.org/r/admin/repos/so/so-admin-cockpit,general) | 48 | +126 | 2 | 91 | 2025-10-24 | ✅ |
 | [osa](https://gerrit.onap.org/r/admin/repos/osa,general) | 48 | 0 | 0 | 528 | 2024-08-14 | ☑️ |
-| [integration/simulators/ran-simulator](https://gerrit.onap.org/r/admin/repos/integration/simulators/ran-simulator,general) | 47 | 0 | 0 | 1015 | 2023-04-14 | ☑️ |
+| [integration/simulators/ran-simulator](https://gerrit.onap.org/r/admin/repos/integration/simulators/ran-simulator,general) | 47 | 0 | 0 | 1016 | 2023-04-14 | ☑️ |
 | [so/so-etsi-nfvo](https://gerrit.onap.org/r/admin/repos/so/so-etsi-nfvo,general) | 42 | +69 | 2 | 126 | 2025-09-19 | ✅ |
 | [integration/data-provider](https://gerrit.onap.org/r/admin/repos/integration/data-provider,general) | 42 | +15 | 1 | 164 | 2025-08-12 | ✅ |
 | [so/adapters/so-nssmf-adapter](https://gerrit.onap.org/r/admin/repos/so/adapters/so-nssmf-adapter,general) | 38 | +121 | 3 | 39 | 2025-12-15 | ✅ |
@@ -304,137 +304,137 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Primary Type | Other Types | Dependabot | Pre-commit | ReadTheDocs | .gitreview | G2G | Status |
 |----------------|--------------|-------------|------------|------------|-------------|------------|-----|--------|
-| integration/simulators/nf-simulator/pm-https-server | Dockerfile | Java/Maven, PHP | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| dcaegen2/collectors/restconf | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| integration/simulators/nf-simulator/netconf-server | Python | Java/Maven, Dockerfile, Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/simulators/nf-simulator/avcn-manager | Java/Maven | Dockerfile | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| dcaegen2/collectors/datafile | Java/Maven |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| dcaegen2/analytics/tca-gen2 | Java/Maven |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| integration/simulators/nf-simulator/pm-https-server | Dockerfile | Java/Maven, PHP | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
+| integration/simulators/nf-simulator/netconf-server | Python | Java/Maven, Dockerfile, Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dcaegen2/collectors/snmptrap | Python | Java/Maven, Dockerfile, Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| dcaegen2/collectors/restconf | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| dcaegen2/collectors/datafile | Java/Maven |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/simulators/nf-simulator/ves-client | Java/Maven | JavaScript, Python, Dockerfile | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | dcaegen2/services/heartbeat | Python | Java/Maven, Dockerfile, Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dcaegen2/platform/ves-openapi-manager | Java/Maven | Dockerfile | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dcaegen2/collectors/ves | Java/Maven | Dockerfile, Shell, HTML | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/docker/onap-java11 | Dockerfile |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| dcaegen2/services/mapper | Java/Maven | Shell, HTML | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/docker/onap-python | Dockerfile |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/pipelines/build-integration | Python | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| dcaegen2/analytics/tca-gen2 | Java/Maven |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| dcaegen2/services/son-handler | Java/Maven | PLpgSQL | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | dcaegen2/services/prh | Java/Maven |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| integration/simulators/5G-core-nf-simulator | N/A |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| dcaegen2/services/pm-mapper | Java/Maven | JavaScript, Python, Shell, Robot Framework | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| dcaegen2/services/mapper | Java/Maven | Shell, HTML | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| dcaegen2/services/son-handler | Java/Maven | PLpgSQL | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/pipelines/chained-ci | JavaScript | Python, Shell, HTML, CSS | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| integration/simulators/5G-core-nf-simulator | N/A |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/pipelines/oom-automatic-installation | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| dcaegen2/services/pm-mapper | Java/Maven | JavaScript, Python, Shell, Robot Framework | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/pipelines/xtesting-onap | Shell | Python, HTML | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/simulators/core-nssmf-simulator | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/simulators/ran-nssmf-simulator | N/A |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/simulators/ran-app | Java |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | integration/simulators/A1-policy-enforcement-simulator | Java/Maven |  | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | integration/usecases/A1-policy-enforcement | Shell | Python, Kotlin, Smarty | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
-| dcaegen2/collectors/hv-ves | Kotlin | Java/Maven, Shell, HCL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | multicloud/openstack/windriver | N/A |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| oom/platform/cert-manager | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | integration/usecases/A1-policy-enforcement-r-apps | Java/Maven | Shell, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| dcaegen2/collectors/hv-ves | Kotlin | Java/Maven, Shell, HCL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| oom/platform/cert-manager | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | oom/platform/keycloak | N/A |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | integration/simulators/ran-simulator | Java | JavaScript, Shell, D, HTML, PLpgSQL | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/simulators/pnf-simulator | Java/Maven | JavaScript, Python, Shell, PHP | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | multicloud/openstack/vmware | Python | Shell, Java/Maven | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | integration/simulators/nf-simulator | Java/Maven | JavaScript, Python, Shell, PHP, Smarty | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | dcaegen2/services/sdk | Java/Maven |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| vfc/nfvo/db | Shell | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | oom/platform/cert-service | Java/Maven | Python, Dockerfile, Shell, Go, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| so/adapters/so-cnf-adapter | Java/Maven | Shell, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
-| so/adapters/so-etsi-sol005-adapter | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
-| so/adapters/so-oof-adapter | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
-| so/adapters/so-nssmf-adapter | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
-| so/adapters/so-etsi-sol003-adapter | Java/Maven | Python, Shell, CSS | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| aai/oom | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
+| vfc/nfvo/db | Shell | Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aai/babel | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| aai/graphgraph | Java/Maven | JavaScript, Shell, HTML, CSS | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| so/adapters/so-nssmf-adapter | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| so/adapters/so-oof-adapter | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| so/adapters/so-etsi-sol005-adapter | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| so/adapters/so-etsi-sol003-adapter | Java/Maven | Python, Shell, CSS | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| so/adapters/so-cnf-adapter | Java/Maven | Shell, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| aai/oom | N/A |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | aai/logging-service | Java/Maven |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| aai/resources | Java/Maven | JavaScript, Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| aai/model-loader | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| aai/graphgraph | Java/Maven | JavaScript, Shell, HTML, CSS | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aai/rest-client | Java/Maven |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| aai/model-loader | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| aai/resources | Java/Maven | JavaScript, Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aai/test-config | Robot Framework | Shell, Scala | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aai/graphadmin | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aai/sparky-fe | SCSS | Java/Maven, JavaScript, Node, Shell, HTML, CSS | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aai/traversal | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aai/schema-service | Java/Maven | Python, Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | aai/sparky-be | Java/Maven | Python, Shell, CSS | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| ccsdk/apps | Java/Maven | JavaScript, Python, Shell, Groovy, HTML, CSS, PLpgSQL | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | aai/aai-common | Java/Maven | Python, HTML, CSS | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| ccsdk/apps | Java/Maven | JavaScript, Python, Shell, Groovy, HTML, CSS, PLpgSQL | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | dcaegen2/deployments | Shell | Java/Maven, JavaScript, Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| ccsdk/parent | Shell | Java/Maven, Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | ccsdk/distribution | JavaScript | Python, Shell, Groovy, Robot Framework, HTML, CSS, Java/Maven | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| dcaegen2/utils | Java/Maven | Python, Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| cps/ncmp-dmi-plugin | Java/Maven | Python, Shell, Groovy, Robot Framework, CSS | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| ccsdk/parent | Shell | Java/Maven, Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dmaap/buscontroller | Java/Maven | Python, Shell, Robot Framework, CSS, PLpgSQL | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
-| ccsdk/oran | Java/Maven | Python, Shell, Groovy, Robot Framework, HTML, CSS, PLpgSQL | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
-| doc/doc-best-practice | Python | CSS | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| dcaegen2/utils | Java/Maven | Python, Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | dmaap/kafka11aaf | Java/Maven | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| cps/ncmp-dmi-plugin | Java/Maven | Python, Shell, Groovy, Robot Framework, CSS | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| doc/doc-best-practice | Python | CSS | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| ccsdk/oran | Java/Maven | Python, Shell, Groovy, Robot Framework, HTML, CSS, PLpgSQL | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | dmaap/datarouter | Java/Maven | Python, Shell, Robot Framework, HTML, CSS, PLpgSQL | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | integration/data-provider | Python | Dockerfile, CSS | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | integration/ietf-actn-tools | Java | JavaScript | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| integration/onap-component-simulators | Python | Shell, Go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | integration/seccom | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | integration/python-onapsdk | Python | Dockerfile, Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| integration/onap-component-simulators | Python | Shell, Go | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | msb/service-mesh | Go | JavaScript, Shell, Smarty | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | modeling/modelspec | D | Python, CSS | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | integration/xtesting | Shell | Python | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | multicloud/framework | Java/Maven | Python, Shell, CSS | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | oom/consul | Dockerfile | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | multicloud/openstack | Python | Shell, Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| ccsdk/cds | Kotlin | JavaScript, TypeScript, Python, Shell, Groovy, SCSS, HTML, CSS, PLpgSQL, Java/Maven | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | oom/readiness | Go | Python, Dockerfile | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| integration/csit | Shell | Python, Java, Robot Framework, D, HTML, HCL, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | oom/utils | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | oparent/cia | Python | CSS | ❌ | ❌ | ✅ | ❌ | ❌ | 🛑 |
 | multicloud/k8s | Go | JavaScript, Python, Shell, Smarty, HTML, CSS | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | oom/offline-installer | Python | Shell, Groovy, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| dcaegen2/services | Java/Maven | JavaScript, TypeScript, Python, Shell, Smarty, Robot Framework, HTML, CSS, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| integration/csit | Shell | Python, Java, Robot Framework, D, HTML, HCL, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | oom/registrator | Go | Java/Maven, Python, Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| ccsdk/cds | Kotlin | JavaScript, TypeScript, Python, Shell, Groovy, SCSS, HTML, CSS, PLpgSQL, Java/Maven | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| dcaegen2/services | Java/Maven | JavaScript, TypeScript, Python, Shell, Smarty, Robot Framework, HTML, CSS, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | ccsdk/features | Java/Maven | JavaScript, TypeScript, Python, Shell, HTML, CSS, PLpgSQL | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | ccsdk/sli | Java/Maven | Python, Shell, HTML, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | policy/api | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | policy/common | Java/Maven | HTML | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| policy/docker | PLpgSQL | Python, Shell, Groovy, Smarty, Robot Framework, Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | policy/distribution | Java/Maven | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| policy/apex-pdp | Java/Maven | JavaScript, Shell, HTML, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| policy/docker | PLpgSQL | Python, Shell, Groovy, Smarty, Robot Framework, Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | policy/opa-pdp | Go | Dockerfile, Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | policy/drools-applications | Java/Maven | Python, Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| policy/drools-pdp | Java/Maven | Shell, D | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| policy/pap | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| portal-ng/e2e | Java/Gradle | Groovy | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| policy/parent | Shell | Java/Maven, Python, CSS, PLpgSQL | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | portal-ng/bff | Java/Gradle | Dockerfile, Shell, Groovy, HTML | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
-| portal-ng/history | Java/Gradle | Dockerfile, Shell, Groovy | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| policy/apex-pdp | Java/Maven | JavaScript, Shell, HTML, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| portal-ng/preferences | Java/Gradle | Dockerfile, Shell, Groovy | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| sdc/onap-ui-angular | TypeScript | Java/Maven, JavaScript, Node, SCSS, HTML, CSS | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| portal-ng/e2e | Java/Gradle | Groovy | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| policy/drools-pdp | Java/Maven | Shell, D | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | policy/clamp | Java/Maven | Shell, Smarty, HTML | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| sdc/onap-ui-common | HTML | Java/Maven, JavaScript, Node, SCSS | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| policy/parent | Shell | Java/Maven, Python, CSS, PLpgSQL | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| policy/pap | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| portal-ng/history | Java/Gradle | Dockerfile, Shell, Groovy | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| portal-ng/preferences | Java/Gradle | Dockerfile, Shell, Groovy | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | sdc/sdc-docker-base | Python | Java/Maven, Shell, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
-| sdc/sdc-pubsub | TypeScript | Java/Maven, JavaScript, Node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
+| sdc/onap-ui-angular | TypeScript | Java/Maven, JavaScript, Node, SCSS, HTML, CSS | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| sdc/onap-ui-common | HTML | Java/Maven, JavaScript, Node, SCSS | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | portal-ng/ui | TypeScript | JavaScript, Node, Python, Dockerfile, Shell, HTML, CSS | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| sdc/sdc-helm-validator | Java/Maven | Dockerfile, Shell | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
-| policy/xacml-pdp | Java/Maven | Shell, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| sdc/sdc-be-common | Java/Maven |  | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| sdc/sdc-pubsub | TypeScript | Java/Maven, JavaScript, Node | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | sdc/sdc-distribution-client | Java/Maven | Python, CSS | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| sdc/sdc-be-common | Java/Maven |  | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| sdc/sdc-helm-validator | Java/Maven | Dockerfile, Shell | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | policy/models | Java/Maven | Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| sdc/sdc-tosca | Java/Maven | Python, CSS | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| policy/xacml-pdp | Java/Maven | Shell, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | so/chef-repo | Ruby |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | so/docker-config | Shell | Dockerfile, D, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | so/so-config | Ruby |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| sdc/sdc-tosca | Java/Maven | Python, CSS | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | so/so-admin-cockpit | TypeScript | JavaScript, Shell, SCSS, HTML, CSS, Java/Maven | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| sdc/sdc-workflow-designer | JavaScript | TypeScript, Python, Shell, SCSS, HTML, CSS, Java/Maven | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| sdnc/northbound | Java/Maven | Python, Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | testsuite/cds-mock-odl | Smarty |  | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | testsuite/cds-mock-server | Smarty |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
 | testsuite/cds-mock-ssh | Shell | Smarty | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| sdnc/northbound | Java/Maven | Python, Shell | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| sdc/sdc-workflow-designer | JavaScript | TypeScript, Python, Shell, SCSS, HTML, CSS, Java/Maven | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testsuite/oom | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
-| testsuite/cds | Shell | Python, Kotlin | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
-| testsuite/python-testing-utils | Python |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | sdnc/apps | Java/Maven | JavaScript, Shell, Groovy, HTML, CSS, PLpgSQL | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| testsuite/oom | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ |
+| testsuite/python-testing-utils | Python |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | testsuite/robot-utils | N/A |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| testsuite/cds | Shell | Python, Kotlin | ❌ | ❌ | ❌ | ✅ | ❌ | ☑️ |
 | so/so-etsi-nfvo | Java/Maven | Shell, PLpgSQL | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | testsuite/pythonsdk-tests | Python |  | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | vnfrqts/epics | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
@@ -442,13 +442,13 @@ The data presented in the table below covers the past 365 days.
 | vnfrqts/guidelines | Python | HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | vnfrqts/testcases | Python | HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | usecase-ui/nlp | Python | Java/Maven, Shell | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| vnfrqts/requirements | Python | HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | vnfrqts/usecases | Python | HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | usecase-ui/llm-adaptation | Java/Maven | PLpgSQL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| vnfrqts/requirements | Python | HTML, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | vnfsdk/model | Python | CSS | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
 | vnfsdk/pkgtools | Python | Java/Maven | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| vnfsdk/lctest | Java/Maven | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | .github | N/A |  | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
+| vnfsdk/lctest | Java/Maven | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | usecase-ui/intent-analysis | Java/Maven | PLpgSQL | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | usecase-ui/server | Java/Maven | Shell | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | sdnc/oam | EJS | JavaScript, Python, Shell, Groovy, Robot Framework, HTML, CSS, PLpgSQL, Java/Maven | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
@@ -456,12 +456,12 @@ The data presented in the table below covers the past 365 days.
 | holmes | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | doc | Shell | Python, HTML, CSS | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
 | dmaap | Java | Python, Shell, Robot Framework, HTML, CSS, PLpgSQL | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
-| msb | Go | JavaScript, Shell, Smarty | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | logging-analytics | Java/Maven | Python, Shell, CSS | ❌ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| msb | Go | JavaScript, Shell, Smarty | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | demo | Shell | Python, Go, C++, C, PHP, Kotlin, Groovy, Smarty, Java/Maven | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | cps | Java/Maven | JavaScript, Python, Shell, Groovy, Smarty, Robot Framework, CSS, PLpgSQL | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| oparent | Python | Java/Maven, CSS | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | osa | Python | CSS | ❌ | ❌ | ✅ | ✅ | ❌ | ☑️ |
+| oparent | Python | Java/Maven, CSS | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | portal-ng | Java | JavaScript, TypeScript, Python, Shell, Groovy, HTML, CSS | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | relman | N/A |  | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ |
 | sandbox-2 | Java/Maven |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
@@ -552,8 +552,8 @@ The data presented in the table below covers the past 365 days.
 | integration/simulators/pnf-simulator |  | 0 | integration-pnf-simulator-master-merge-java<br>integration-pnf-simulator-master-verify-java<br>integration-pnf-simulator-maven-docker-stage-master<br>integration-pnf-simulator-maven-stage-master<br>integration-pnf-simulator-release-merge-master<br>integration-pnf-simulator-release-verify-master<br>integration-pnf-simulator-sonar | 7 |
 | integration/simulators/ran-nssmf-simulator |  | 0 | integration-simulators-ran-nssmf-simulator-master-json-lint<br>integration-simulators-ran-nssmf-simulator-master-md-lint<br>integration-simulators-ran-nssmf-simulator-master-python-lint<br>integration-simulators-ran-nssmf-simulator-master-yaml-lint<br>integration-simulators-ran-nssmf-simulator-master-yml-lint | 5 |
 | integration/simulators/ran-simulator |  | 0 | integration-simulators-ran-simulator-master-json-lint<br>integration-simulators-ran-simulator-master-merge-java<br>integration-simulators-ran-simulator-master-verify-java<br>integration-simulators-ran-simulator-master-yaml-lint<br>integration-simulators-ran-simulator-master-yml-lint<br>integration-simulators-ran-simulator-maven-stage-master<br>integration-simulators-ran-simulator-release-merge-master<br>integration-simulators-ran-simulator-release-verify-master | 8 |
-| integration/usecases/A1-policy-enforcement | call-github2gerrit.yaml<br>dependabot-updates | 2 | integration-usecases-A1-policy-enforcement-master-json-lint<br>integration-usecases-A1-policy-enforcement-master-md-lint<br>integration-usecases-A1-policy-enforcement-master-python-lint<br>integration-usecases-A1-policy-enforcement-master-yaml-lint<br>integration-usecases-A1-policy-enforcement-master-yml-lint<br>integration-usecases-A1-policy-enforcement-r-apps-master-json-lint<br>integration-usecases-A1-policy-enforcement-r-apps-master-md-lint<br>integration-usecases-A1-policy-enforcement-r-apps-master-python-lint<br>integration-usecases-A1-policy-enforcement-r-apps-master-yaml-lint<br>integration-usecases-A1-policy-enforcement-r-apps-master-yml-lint | 10 |
-| integration/usecases/A1-policy-enforcement-r-apps | call-github2gerrit.yaml<br>dependabot-updates | 2 |  | 0 |
+| integration/usecases/A1-policy-enforcement | call-github2gerrit.yaml<br>dependabot-updates | 2 | integration-usecases-A1-policy-enforcement-master-json-lint<br>integration-usecases-A1-policy-enforcement-master-md-lint<br>integration-usecases-A1-policy-enforcement-master-python-lint<br>integration-usecases-A1-policy-enforcement-master-yaml-lint<br>integration-usecases-A1-policy-enforcement-master-yml-lint | 5 |
+| integration/usecases/A1-policy-enforcement-r-apps | call-github2gerrit.yaml<br>dependabot-updates | 2 | integration-usecases-A1-policy-enforcement-r-apps-master-json-lint<br>integration-usecases-A1-policy-enforcement-r-apps-master-md-lint<br>integration-usecases-A1-policy-enforcement-r-apps-master-python-lint<br>integration-usecases-A1-policy-enforcement-r-apps-master-yaml-lint<br>integration-usecases-A1-policy-enforcement-r-apps-master-yml-lint | 5 |
 | integration/xtesting |  | 0 | integration-xtesting-healthcheck-docker-merge-master<br>integration-xtesting-healthcheck-docker-verify-master<br>integration-xtesting-infra-healthcheck-docker-merge-master<br>integration-xtesting-infra-healthcheck-docker-verify-master<br>integration-xtesting-master-commit-lint<br>integration-xtesting-master-json-lint<br>integration-xtesting-master-md-lint<br>integration-xtesting-master-yaml-lint<br>integration-xtesting-master-yml-lint<br>integration-xtesting-release-merge-master<br>integration-xtesting-release-verify-master<br>integration-xtesting-security-docker-merge-master<br>integration-xtesting-security-docker-verify-master<br>integration-xtesting-smoke-usecases-pythonsdk-docker-merge-master<br>integration-xtesting-smoke-usecases-pythonsdk-docker-verify-master<br>integration-xtesting-smoke-usecases-robot-docker-merge-master<br>integration-xtesting-smoke-usecases-robot-docker-verify-master<br>integration-xtesting-smoke-usecases-robot-py3-docker-merge-master<br>integration-xtesting-smoke-usecases-robot-py3-docker-verify-master<br>integration-xtesting-testkube-executor-docker-merge-master<br>integration-xtesting-testkube-executor-docker-verify-master | 21 |
 | msb |  | 0 | msb-apigateway-master-merge-java<br>msb-apigateway-master-verify-java<br>msb-apigateway-maven-clm-master<br>msb-apigateway-maven-docker-stage-master<br>msb-apigateway-maven-stage-master<br>msb-apigateway-release-merge-master<br>msb-apigateway-release-verify-master<br>msb-apigateway-sonar<br>msb-discovery-master-merge-java<br>msb-discovery-master-verify-java<br>msb-discovery-maven-clm-master<br>msb-discovery-maven-docker-stage-master<br>msb-discovery-maven-stage-master<br>msb-discovery-release-merge-master<br>msb-discovery-release-verify-master<br>msb-discovery-sonar<br>msb-java-sdk-master-merge-java<br>msb-java-sdk-master-verify-java<br>msb-java-sdk-maven-clm-master<br>msb-java-sdk-maven-stage-master<br>msb-java-sdk-sonar<br>msb-swagger-sdk-master-merge-java<br>msb-swagger-sdk-master-verify-java<br>msb-swagger-sdk-maven-clm-master<br>msb-swagger-sdk-maven-stage-master<br>msb-swagger-sdk-sonar | 26 |
 | multicloud |  | 0 | multicloud-fcaps-master-csit-functionality1<br>multicloud-fcaps-master-verify-csit-functionality1<br>multicloud-master-csit-functionality1<br>multicloud-master-verify-csit-functionality1<br>multicloud-starlingx-master-csit-functionality1<br>multicloud-starlingx-master-verify-csit-functionality1<br>multicloud-vmware-master-csit-functionality1<br>multicloud-vmware-master-verify-csit-functionality1 | 8 |
