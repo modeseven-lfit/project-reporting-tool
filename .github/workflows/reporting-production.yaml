@@ -489,7 +489,7 @@ jobs:
           if [ -n "${{ steps.config.outputs.gerrit }}" ]; then
             repos_path="./${{ steps.config.outputs.gerrit }}"
           elif [ -n "${{ steps.config.outputs.github }}" ]; then
-            repos_path="./${{ steps.config.outputs.github }}"
+            repos_path="./github.com/${{ steps.config.outputs.github }}"
           else
             echo "::error::Cannot determine repos path - no gerrit or github configured"
             exit 1
@@ -588,7 +588,7 @@ jobs:
         with:
           name: clone-manifest-${{ matrix.slug }}
           # yamllint disable-line rule:line-length
-          path: "./${{ steps.config.outputs.gerrit != '' && steps.config.outputs.gerrit || steps.config.outputs.github }}/clone-manifest.json"
+          path: "./${{ steps.config.outputs.gerrit != '' && steps.config.outputs.gerrit || format('github.com/{0}', steps.config.outputs.github) }}/clone-manifest.json"
           retention-days: 90
           if-no-files-found: warn
 
@@ -597,19 +597,17 @@ jobs:
         shell: bash
         run: |
           # Log file location based on gerrit-clone-action v0.1.14 behavior:
-          # - Gerrit: placed in path_prefix dir with hostname as filename
-          # - GitHub: placed at root (path_prefix=".") with sanitized hostname
-          #   (slashes replaced with underscores)
+          # - Gerrit: ./gerrit.example.org/gerrit.example.org.log
+          # - GitHub: ./github.com/orgname/github.com.orgname.log
           if [ -n "${{ steps.config.outputs.gerrit }}" ]; then
             # Gerrit: ./gerrit.example.org/gerrit.example.org.log
             gerrit_host="${{ steps.config.outputs.gerrit }}"
             log_path="./${gerrit_host}/${gerrit_host}.log"
           else
-            # GitHub: ./github.com_orgname.log (slashes -> underscores)
-            # host is "github.com/orgname", sanitized to "github.com_orgname"
+            # GitHub: ./github.com/orgname/github.com.orgname.log
             github_org="${{ steps.config.outputs.github }}"
-            sanitized_host="github.com_${github_org}"
-            log_path="./${sanitized_host}.log"
+            sanitized_host="github.com.${github_org}"
+            log_path="./github.com/${github_org}/${sanitized_host}.log"
           fi
           echo "path=$log_path" >> "$GITHUB_OUTPUT"
           echo "Log file path: $log_path"
