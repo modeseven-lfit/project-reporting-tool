@@ -341,10 +341,10 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: lfreleng-actions/gerrit-clone-action@6734931ae8cf4c6537c1069a7ac35ce8c215f315  # v0.1.14
         id: clone-github
+        env:
+          GITHUB_TOKEN: ${{ secrets.CLASSIC_READ_ONLY_PAT_TOKEN }}
         with:
           host: "github.com/${{ steps.config.outputs.github }}"
-          source-type: "github"
-          github-token: ${{ secrets.CLASSIC_READ_ONLY_PAT_TOKEN }}
           path-prefix: "."
           skip-archived: "true"
           threads: "8"
