@@ -788,7 +788,7 @@ jobs:
           cat > /tmp/commit-msg.txt <<EOF
           chore: update production reports (run ${{ github.run_id }})
 
-          Generated: ${{ needs.verify.outputs.run_timestamp }}
+          Generated: ${{ needs.validate-secrets.outputs.run_timestamp }}
           Reports: ${{ env.REPORT_COUNT }} project(s)
           Run: ${{ github.run_id }}
           EOF
