@@ -112,7 +112,13 @@ For detailed setup instructions, see:
 ### GitHub Variable: PROJECTS_JSON
 
 The workflow requires a GitHub repository variable called `PROJECTS_JSON` that
-contains an array of project configurations:
+contains a **base64-encoded** JSON array of project configurations.
+
+> **⚠️ IMPORTANT:** The JSON must be base64-encoded before storing as a
+> variable/secret. This prevents console log redaction issues caused by raw
+> JSON content appearing in workflow logs.
+
+#### JSON Structure (before encoding)
 
 ```json
 [
@@ -133,6 +139,27 @@ contains an array of project configurations:
 ]
 ```
 
+#### Encoding the JSON
+
+To encode your `projects.json` file:
+
+```bash
+# Encode the JSON file to base64
+cat projects.json | base64
+
+# Or on macOS (to avoid line wrapping):
+cat projects.json | base64 -b 0
+
+# Store the output as your PROJECTS_JSON variable/secret value
+```
+
+To decode and verify:
+
+```bash
+# Decode and pretty-print to verify
+echo "YOUR_BASE64_STRING" | base64 -d | jq .
+```
+
 **Required Fields:**
 
 - `project`: Full project name (can contain spaces and capitals)
@@ -147,12 +174,17 @@ contains an array of project configurations:
 
 #### Setting up the Variable
 
-1. Go to your repository's **Settings** → **Secrets and variables** →
+1. Create your `projects.json` file with the JSON structure above
+2. Encode it: `cat projects.json | base64`
+3. Go to your repository's **Settings** → **Secrets and variables** →
    **Actions**
-2. Click **Variables** tab
-3. Click **New repository variable**
-4. Name: `PROJECTS_JSON`
-5. Value: The JSON array above (customize as needed)
+4. Click **Variables** tab (for previews) or **Secrets** tab (for production)
+5. Click **New repository variable** or **New repository secret**
+6. Name: `PROJECTS_JSON`
+7. Value: Paste the **base64-encoded** string (not the raw JSON)
+
+> **Note:** The production workflow uses `secrets.PROJECTS_JSON` while the
+> preview workflow uses `vars.PROJECTS_JSON`. Both must be base64-encoded.
 
 ## Workflow Structure
 
@@ -281,10 +313,12 @@ The workflow includes comprehensive logging and error handling:
 
 ## Adding New Projects
 
-1. Update the `PROJECTS_JSON` variable with the new project information
-2. The workflow will automatically include the new project in the next run
-3. Verify the project appears in the workflow summary
-4. Check the GitHub Pages site for the new project report
+1. Add the new project to your `projects.json` file
+2. Re-encode the file: `cat projects.json | base64`
+3. Update the `PROJECTS_JSON` variable/secret with the new base64-encoded value
+4. The workflow will automatically include the new project in the next run
+5. Verify the project appears in the workflow summary
+6. Check the GitHub Pages site for the new project report
 
 ## Migration from Legacy System
 
@@ -321,14 +355,16 @@ schedule:
 
 ### Common Issues
 
-1. **Missing PROJECTS_JSON**: Ensure the repository variable exists properly
-2. **Invalid JSON**: Check JSON syntax using online tools
-3. **Gerrit connectivity**: Check that Gerrit servers are accessible
-4. **Permission errors**: Verify repository permissions and secrets
-5. **Grey workflow status in reports**: Check your GitHub token environment variable
+1. **Missing PROJECTS_JSON**: Ensure the repository variable/secret exists properly
+2. **Invalid base64**: Ensure the value is properly base64-encoded
+   - Verify with: `echo "YOUR_VALUE" | base64 -d | jq .`
+3. **Invalid JSON**: Check JSON syntax using online tools after decoding
+4. **Gerrit connectivity**: Check that Gerrit servers are accessible
+5. **Permission errors**: Verify repository permissions and secrets
+6. **Grey workflow status in reports**: Check your GitHub token environment variable
    (`GITHUB_TOKEN` by default, or `CLASSIC_READ_ONLY_PAT_TOKEN` for CI) exists
    and is a Classic PAT with required scopes: `repo` and `actions:read`
-6. **Report publishing failures**: Check `GERRIT_REPORTS_PAT_TOKEN` exists and has
+7. **Report publishing failures**: Check `GERRIT_REPORTS_PAT_TOKEN` exists and has
    Contents: Read and write permissions for `lfit/gerrit-reports`
 
 ### Debugging

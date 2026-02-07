@@ -74,7 +74,14 @@ jobs:
             exit 1
           fi
 
-          echo "✅ PROJECTS_JSON secret exists"
+          # Verify it's valid base64
+          if ! echo "${{ secrets.PROJECTS_JSON }}" \
+            | base64 -d > /dev/null 2>&1; then
+            echo "::error::PROJECTS_JSON is not valid base64 encoded"
+            exit 1
+          fi
+
+          echo "✅ PROJECTS_JSON secret exists (base64 encoded)"
 
       - name: "Validate required secrets"
         shell: bash
@@ -183,11 +190,12 @@ jobs:
         shell: bash
         # yamllint disable rule:line-length
         run: |
-          projects_json='${{ secrets.PROJECTS_JSON }}'
+          # Decode base64-encoded PROJECTS_JSON secret
+          projects_json=$(echo '${{ secrets.PROJECTS_JSON }}' | base64 -d)
 
           # Validate JSON syntax
           if ! echo "$projects_json" | jq . > /dev/null 2>&1; then
-            echo "::error::PROJECTS_JSON contains invalid JSON"
+            echo "::error::PROJECTS_JSON contains invalid JSON after base64 decode"
             exit 1
           fi
 
@@ -274,9 +282,12 @@ jobs:
         id: config
         shell: bash
         env:
-          PROJECTS_JSON: ${{ secrets.PROJECTS_JSON }}
+          PROJECTS_JSON_B64: ${{ secrets.PROJECTS_JSON }}
           SLUG: ${{ matrix.slug }}
         run: |
+          # Decode base64-encoded PROJECTS_JSON secret
+          PROJECTS_JSON=$(echo "$PROJECTS_JSON_B64" | base64 -d)
+
           # Extract this project's configuration from PROJECTS_JSON
           # Validate that this slug exists
           if ! echo "$PROJECTS_JSON" | jq -e --arg slug "$SLUG" \
@@ -980,8 +991,8 @@ jobs:
             esac
           }
 
-          # Parse projects JSON to get slugs
-          projects_json='${{ secrets.PROJECTS_JSON }}'
+          # Parse projects JSON to get slugs (decode from base64)
+          projects_json=$(echo '${{ secrets.PROJECTS_JSON }}' | base64 -d)
 
           {
             echo "## 📊 Production Report Generation Complete"
@@ -1057,8 +1068,8 @@ jobs:
             esac
           }
 
-          # Parse projects JSON to get slugs
-          projects_json='${{ secrets.PROJECTS_JSON }}'
+          # Parse projects JSON to get slugs (decode from base64)
+          projects_json=$(echo '${{ secrets.PROJECTS_JSON }}' | base64 -d)
           owner="${{ github.repository_owner }}"
           repo="${{ github.event.repository.name }}"
           base_url="https://${owner}.github.io/${repo}"

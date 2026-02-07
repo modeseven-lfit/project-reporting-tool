@@ -71,7 +71,15 @@ jobs:
             echo "::error::PROJECTS_JSON variable is not set"
             exit 1
           fi
-          echo "✅ PROJECTS_JSON variable exists"
+
+          # Verify it's valid base64
+          if ! echo "${{ vars.PROJECTS_JSON }}" \
+            | base64 -d > /dev/null 2>&1; then
+            echo "::error::PROJECTS_JSON is not valid base64 encoded"
+            exit 1
+          fi
+
+          echo "✅ PROJECTS_JSON variable exists (base64 encoded)"
 
       - name: "Validate required secrets"
         shell: bash
@@ -109,11 +117,12 @@ jobs:
         id: parse-projects
         shell: bash
         run: |
-          projects_json='${{ vars.PROJECTS_JSON }}'
+          # Decode base64-encoded PROJECTS_JSON variable
+          projects_json=$(echo '${{ vars.PROJECTS_JSON }}' | base64 -d)
 
           # Validate JSON
           if ! echo "$projects_json" | jq . > /dev/null 2>&1; then
-            echo "::error::PROJECTS_JSON contains invalid JSON"
+            echo "::error::Base64 decoded PROJECTS_JSON is invalid"
             exit 1
           fi
 
