@@ -641,9 +641,14 @@ This metadata automatically configures API endpoints for each project.
 
 **IMPORTANT:** The `testing/projects.json` file is `.gitignored` because it may contain sensitive credentials.
 
-- ✅ **Local testing:** Use actual credentials in `testing/projects.json`
-- ✅ **Production:** Credentials are in GitHub Secrets `PROJECTS_JSON`
+- ✅ **Local testing:** Use actual credentials in `testing/projects.json` (raw JSON)
+- ✅ **Production:** Credentials are in GitHub Secrets `PROJECTS_JSON` (**base64-encoded**)
 - ❌ **Never commit** `testing/projects.json` to the repository
+
+> **Note:** The local `testing/projects.json` file uses raw JSON format, but the
+> GitHub `PROJECTS_JSON` secret must be **base64-encoded** to prevent console log
+> redaction issues. See the [Production Setup](#production-setup-github-actions)
+> section below.
 
 ### Schema
 
@@ -719,14 +724,30 @@ The `projects.json` file defines project configurations. See `projects.json.exam
 
 ### Production Setup (GitHub Actions)
 
-In production, the `PROJECTS_JSON` secret contains the same structure,
-containing authentication credentials:
+In production, the `PROJECTS_JSON` secret contains the same JSON structure,
+but **must be base64-encoded** to prevent console log redaction issues.
 
-1. Go to repository secrets: <https://github.com/modeseven-lfit/test-gerrit-reporting-tool/settings/secrets/actions>
-2. Update `PROJECTS_JSON` secret with the JSON array
-3. Add the credential fields, `jenkins_user` and `jenkins_token`
+**Encoding your projects.json for production:**
 
-**Example production PROJECTS_JSON value:**
+```bash
+# Encode your local projects.json to base64
+cat testing/projects.json | base64
+
+# On macOS (to avoid line wrapping):
+cat testing/projects.json | base64 -b 0
+
+# Verify the encoding:
+echo "YOUR_BASE64_STRING" | base64 -d | jq .
+```
+
+**Setup steps:**
+
+1. Create your `projects.json` file with credentials (locally)
+2. Encode it to base64: `cat testing/projects.json | base64`
+3. Go to repository secrets: <https://github.com/modeseven-lfit/test-gerrit-reporting-tool/settings/secrets/actions>
+4. Update `PROJECTS_JSON` secret with the **base64-encoded** value (not raw JSON)
+
+**Example raw JSON (before encoding):**
 
 ```json
 [
