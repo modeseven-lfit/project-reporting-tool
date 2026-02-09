@@ -130,7 +130,13 @@ def validate_ci_management_config(config: dict) -> bool:
         print("To enable CI-Management, add to your config:")
         print("  ci_management:")
         print("    enabled: true")
-        print("    url: 'https://gerrit.example.org/r/ci-management'")
+        print("    url: 'https://gerrit.example.org/ci-management'")
+        print()
+        print("NOTE: URL patterns vary by Gerrit server:")
+        print("  - Some use /r/ prefix: https://gerrit.onap.org/r/ci-management")
+        print("  - Some have no prefix: https://gerrit.lfbroadband.org/ci-management")
+        print("  - Some use /gerrit/: https://git.opendaylight.org/gerrit/ci-management")
+        print("If not specified, the URL will be auto-discovered from the Gerrit host.")
         print()
         return False
 
@@ -149,7 +155,10 @@ def validate_ci_management_config(config: dict) -> bool:
         print()
         print("Add the ci-management repository URL:")
         print("  ci_management:")
-        print("    url: 'https://gerrit.example.org/r/ci-management'")
+        print("    url: 'https://gerrit.example.org/ci-management'")
+        print()
+        print("NOTE: If URL is omitted but Gerrit host is configured,")
+        print("the correct URL pattern will be auto-discovered.")
         print()
         return False
 

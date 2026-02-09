@@ -18,6 +18,7 @@ from typing import Any
 import httpx
 
 from .base_client import BaseAPIClient
+from .gerrit_client import GerritAPIError, GerritURLBuilder
 
 
 # Optional JJB Attribution integration
@@ -141,11 +142,20 @@ class JenkinsAPIClient(BaseAPIClient):
             ci_mgmt_url = config.get("url")
             if not ci_mgmt_url:
                 if gerrit_host:
-                    # Auto-derive: ci-management is standard on all Gerrit servers
-                    ci_mgmt_url = f"https://{gerrit_host}/r/ci-management"
-                    self.logger.debug(
-                        f"Auto-derived ci-management URL from Gerrit host: {ci_mgmt_url}"
-                    )
+                    # Use centralized GerritURLBuilder to discover correct URL pattern
+                    # This handles different Gerrit configurations (with/without /r/ prefix)
+                    try:
+                        url_builder = GerritURLBuilder.discover(gerrit_host)
+                        ci_mgmt_url = url_builder.get_repo_url("ci-management")
+                        self.logger.debug(
+                            f"Auto-derived ci-management URL using GerritURLBuilder: {ci_mgmt_url}"
+                        )
+                    except GerritAPIError as e:
+                        self.logger.debug(
+                            f"Could not discover Gerrit URL pattern for {gerrit_host}: {e}. "
+                            "Falling back to fuzzy matching."
+                        )
+                        return
                 else:
                     self.logger.debug(
                         "ci-management URL not provided and Gerrit host unknown. "
@@ -174,6 +184,8 @@ class JenkinsAPIClient(BaseAPIClient):
             )
             self.jjb_attribution = None
             self.jjb_attribution_enabled = False
+
+
 
     def __enter__(self):
         """Enter context manager."""
