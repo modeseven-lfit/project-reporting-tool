@@ -36,6 +36,7 @@ if HTTPX_AVAILABLE:
         GerritAPIDiscovery,
         GerritAPIError,
         GerritConnectionError,
+        GerritURLBuilder,
     )
 
 
@@ -47,6 +48,150 @@ pytestmark = pytest.mark.skipif(not HTTPX_AVAILABLE, reason="httpx not available
 def mock_stats():
     """Create a mock statistics tracker."""
     return MagicMock()
+
+
+# ============================================================================
+# Tests for GerritURLBuilder
+# ============================================================================
+
+
+class TestGerritURLBuilder:
+    """Tests for the centralized GerritURLBuilder class."""
+
+    def test_init_with_path_prefix(self):
+        """Test initialization with a path prefix."""
+        builder = GerritURLBuilder("gerrit.onap.org", "/r")
+        assert builder.host == "gerrit.onap.org"
+        assert builder.path_prefix == "/r"
+
+    def test_init_without_path_prefix(self):
+        """Test initialization without a path prefix."""
+        builder = GerritURLBuilder("gerrit.lfbroadband.org", "")
+        assert builder.host == "gerrit.lfbroadband.org"
+        assert builder.path_prefix == ""
+
+    def test_init_strips_trailing_slash_from_prefix(self):
+        """Test that trailing slashes are stripped from path prefix."""
+        builder = GerritURLBuilder("gerrit.example.org", "/r/")
+        assert builder.path_prefix == "/r"
+
+    def test_get_repo_url_with_prefix(self):
+        """Test getting repo URL with path prefix (ONAP style)."""
+        builder = GerritURLBuilder("gerrit.onap.org", "/r")
+        url = builder.get_repo_url("ci-management")
+        assert url == "https://gerrit.onap.org/r/ci-management"
+
+    def test_get_repo_url_without_prefix(self):
+        """Test getting repo URL without path prefix (LF Broadband style)."""
+        builder = GerritURLBuilder("gerrit.lfbroadband.org", "")
+        url = builder.get_repo_url("ci-management")
+        assert url == "https://gerrit.lfbroadband.org/ci-management"
+
+    def test_get_repo_url_with_nested_project(self):
+        """Test getting repo URL for nested project (e.g., aai/babel)."""
+        builder = GerritURLBuilder("gerrit.onap.org", "/r")
+        url = builder.get_repo_url("aai/babel")
+        assert url == "https://gerrit.onap.org/r/aai/babel"
+
+    def test_get_repo_url_with_custom_scheme(self):
+        """Test getting repo URL with custom scheme."""
+        builder = GerritURLBuilder("gerrit.example.org", "/r")
+        url = builder.get_repo_url("test-repo", scheme="http")
+        assert url == "http://gerrit.example.org/r/test-repo"
+
+    def test_get_browse_url(self):
+        """Test getting browse URL (same as repo URL for Gerrit)."""
+        builder = GerritURLBuilder("gerrit.onap.org", "/r")
+        url = builder.get_browse_url("ci-management")
+        assert url == "https://gerrit.onap.org/r/ci-management"
+
+    def test_base_url_property_with_prefix(self):
+        """Test base_url property with path prefix."""
+        builder = GerritURLBuilder("gerrit.onap.org", "/r")
+        assert builder.base_url == "https://gerrit.onap.org/r"
+
+    def test_base_url_property_without_prefix(self):
+        """Test base_url property without path prefix."""
+        builder = GerritURLBuilder("gerrit.lfbroadband.org", "")
+        assert builder.base_url == "https://gerrit.lfbroadband.org"
+
+    def test_repr(self):
+        """Test string representation."""
+        builder = GerritURLBuilder("gerrit.onap.org", "/r")
+        repr_str = repr(builder)
+        assert "gerrit.onap.org" in repr_str
+        assert "/r" in repr_str
+
+    def test_from_base_url_with_prefix(self):
+        """Test creating builder from base URL with prefix."""
+        builder = GerritURLBuilder.from_base_url("https://gerrit.onap.org/r")
+        assert builder.host == "gerrit.onap.org"
+        assert builder.path_prefix == "/r"
+
+    def test_from_base_url_without_prefix(self):
+        """Test creating builder from base URL without prefix."""
+        builder = GerritURLBuilder.from_base_url("https://gerrit.lfbroadband.org")
+        assert builder.host == "gerrit.lfbroadband.org"
+        assert builder.path_prefix == ""
+
+    def test_from_base_url_with_gerrit_prefix(self):
+        """Test creating builder from base URL with /gerrit prefix (ODL style)."""
+        builder = GerritURLBuilder.from_base_url("https://git.opendaylight.org/gerrit")
+        assert builder.host == "git.opendaylight.org"
+        assert builder.path_prefix == "/gerrit"
+
+    def test_from_base_url_with_infra_prefix(self):
+        """Test creating builder from base URL with /infra prefix (LF style)."""
+        builder = GerritURLBuilder.from_base_url("https://gerrit.linuxfoundation.org/infra")
+        assert builder.host == "gerrit.linuxfoundation.org"
+        assert builder.path_prefix == "/infra"
+
+    def test_from_client(self):
+        """Test creating builder from GerritAPIClient."""
+        # Create a mock client
+        mock_client = MagicMock()
+        mock_client.host = "gerrit.onap.org"
+        mock_client.base_url = "https://gerrit.onap.org/r"
+
+        builder = GerritURLBuilder.from_client(mock_client)
+        assert builder.host == "gerrit.onap.org"
+        assert builder.path_prefix == "/r"
+
+    def test_from_client_without_prefix(self):
+        """Test creating builder from GerritAPIClient without prefix."""
+        mock_client = MagicMock()
+        mock_client.host = "gerrit.lfbroadband.org"
+        mock_client.base_url = "https://gerrit.lfbroadband.org"
+
+        builder = GerritURLBuilder.from_client(mock_client)
+        assert builder.host == "gerrit.lfbroadband.org"
+        assert builder.path_prefix == ""
+
+
+class TestGerritURLBuilderDiscovery:
+    """Tests for GerritURLBuilder.discover() method."""
+
+    def test_discover_uses_gerrit_api_discovery(self):
+        """Test that discover() uses GerritAPIDiscovery internally."""
+        with patch("api.gerrit_client.GerritAPIDiscovery") as MockDiscovery:
+            mock_instance = MagicMock()
+            mock_instance.discover_base_url.return_value = "https://gerrit.example.org/r"
+            MockDiscovery.return_value.__enter__.return_value = mock_instance
+
+            builder = GerritURLBuilder.discover("gerrit.example.org")
+
+            assert builder.host == "gerrit.example.org"
+            assert builder.path_prefix == "/r"
+
+    def test_discover_propagates_error(self):
+        """Test that discover() propagates GerritAPIError."""
+        with patch("api.gerrit_client.GerritAPIDiscovery") as MockDiscovery:
+            mock_instance = MagicMock()
+            mock_instance.discover_base_url.side_effect = GerritAPIError("Discovery failed")
+            MockDiscovery.return_value.__enter__.return_value = mock_instance
+
+            with pytest.raises(GerritAPIError):
+                GerritURLBuilder.discover("invalid.host.example")
 
 
 def create_mock_response(

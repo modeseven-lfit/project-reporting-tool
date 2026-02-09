@@ -16,21 +16,20 @@ Extracted from generate_reports.py as part of Phase 2 refactoring.
 """
 
 from .base_client import (
-    APIResponse,
     APIError,
+    APIResponse,
     BaseAPIClient,
 )
-
-from .github_client import GitHubAPIClient
-
 from .gerrit_client import (
     GerritAPIClient,
     GerritAPIDiscovery,
     GerritAPIError,
     GerritConnectionError,
+    GerritURLBuilder,
 )
-
+from .github_client import GitHubAPIClient
 from .jenkins_client import JenkinsAPIClient
+
 
 __all__ = [
     # Base classes and types
@@ -46,6 +45,7 @@ __all__ = [
     'GerritAPIDiscovery',
     'GerritAPIError',
     'GerritConnectionError',
+    'GerritURLBuilder',
 
     # Jenkins API
     'JenkinsAPIClient',

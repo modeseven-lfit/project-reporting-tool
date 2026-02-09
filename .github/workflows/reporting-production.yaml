@@ -348,6 +348,7 @@ jobs:
           retry-max-delay: "60.0"
           use-https: "true"
           move-conflicting: "true"
+          mirror: "false"
 
       - name: "Clone GitHub repositories"
         if: |
@@ -368,6 +369,7 @@ jobs:
           retry-base-delay: "3.0"
           retry-max-delay: "60.0"
           use-https: "true"
+          mirror: "false"
 
       - name: "Check clone status"
         shell: bash
