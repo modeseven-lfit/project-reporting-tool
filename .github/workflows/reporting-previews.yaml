@@ -64,16 +64,14 @@ jobs:
             echo ""
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: "Verify PROJECTS_JSON variable"
+      - name: "Verify PROJECTS_JSON secret"
         shell: bash
         env:
-          PROJECTS_JSON_B64: ${{ vars.PROJECTS_JSON }}
+          PROJECTS_JSON_B64: ${{ secrets.PROJECTS_JSON }}
         run: |
-          # Check if variable is set and non-empty
+          # Check if secret is set and non-empty
           if [ -z "$PROJECTS_JSON_B64" ]; then
-            echo "::error::PROJECTS_JSON variable is not set or not available"
-            echo "Note: Variables may not be available for" \
-              "pull_request events from forks"
+            echo "::error::PROJECTS_JSON secret is not set or not available"
             exit 1
           fi
 
@@ -83,7 +81,7 @@ jobs:
             exit 1
           fi
 
-          echo "✅ PROJECTS_JSON variable exists (base64 encoded)"
+          echo "✅ PROJECTS_JSON secret exists (base64 encoded)"
 
       - name: "Validate required secrets"
         shell: bash
@@ -121,9 +119,9 @@ jobs:
         id: parse-projects
         shell: bash
         env:
-          PROJECTS_JSON_B64: ${{ vars.PROJECTS_JSON }}
+          PROJECTS_JSON_B64: ${{ secrets.PROJECTS_JSON }}
         run: |
-          # Decode base64-encoded PROJECTS_JSON variable
+          # Decode base64-encoded PROJECTS_JSON secret
           projects_json=$(echo "$PROJECTS_JSON_B64" | base64 -d)
 
           # Validate JSON
