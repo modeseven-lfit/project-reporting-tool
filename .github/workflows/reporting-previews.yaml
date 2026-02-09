@@ -136,9 +136,14 @@ jobs:
             exit 1
           fi
 
+          # Validate required fields
+          # Each project must have 'project' and 'slug',
+          # plus either 'gerrit' or 'github'
           if ! echo "$projects_json" | \
-            jq -e 'all(.project and .gerrit and .slug)' > /dev/null; then
-            echo "::error::Must have 'project', 'gerrit', and 'slug' fields"
+            jq -e 'all(.project and .slug and (.gerrit or .github))' \
+            > /dev/null; then
+            echo "::error::Each project must have 'project' and" \
+              "'slug' fields, plus at least one of 'gerrit' or 'github' fields"
             exit 1
           fi
 
@@ -157,7 +162,8 @@ jobs:
             echo "**Processing:** $project_count project(s)"
             echo ""
             echo "$projects_json" | \
-              jq -r '.[] | "- **\(.project):** `\(.gerrit)` [\(.slug)]"'
+              jq -r '.[] |
+                "- **\(.project):** `\(.gerrit // .github)` [\(.slug)]"'
             echo ""
             echo "> 💡 **Note:** First 2 projects in Preview reports"
             echo "> Full reports run on production schedule."
@@ -188,9 +194,10 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: "Clone Gerrit repos for ${{ matrix.project }}"
+        if: matrix.gerrit != '' && matrix.gerrit != null
         # yamllint disable-line rule:line-length
         uses: lfreleng-actions/gerrit-clone-action@61649739a768432a7ceac4203a00f61b9be51345  # v1.0.1
-        id: clone
+        id: clone-gerrit
         with:
           host: ${{ matrix.gerrit }}
           output-path: "./${{ matrix.gerrit }}"
@@ -202,6 +209,50 @@ jobs:
           retry-max-delay: "60.0"
           use-https: "true"
           move-conflicting: "true"
+
+      - name: "Clone GitHub repos for ${{ matrix.project }}"
+        if: |
+          (matrix.gerrit == '' || matrix.gerrit == null) &&
+          matrix.github != '' && matrix.github != null
+        # yamllint disable-line rule:line-length
+        uses: lfreleng-actions/gerrit-clone-action@61649739a768432a7ceac4203a00f61b9be51345  # v1.0.1
+        id: clone-github
+        env:
+          GITHUB_TOKEN: ${{ secrets.CLASSIC_READ_ONLY_PAT_TOKEN }}
+        with:
+          host: "github.com/${{ matrix.github }}"
+          output-path: "./github.com/${{ matrix.github }}"
+          skip-archived: "true"
+          threads: "8"
+          clone-timeout: "600"
+          retry-attempts: "3"
+          retry-base-delay: "3.0"
+          retry-max-delay: "60.0"
+          use-https: "true"
+
+      - name: "Check clone status"
+        shell: bash
+        run: |
+          # Determine which clone step ran and check its outcome
+          if [ -n "${{ matrix.gerrit }}" ]; then
+            # Gerrit project
+            clone_path="./${{ matrix.gerrit }}"
+            echo "REPOS_PATH=$clone_path" >> "$GITHUB_ENV"
+          elif [ -n "${{ matrix.github }}" ]; then
+            # GitHub-only project
+            clone_path="./github.com/${{ matrix.github }}"
+            echo "REPOS_PATH=$clone_path" >> "$GITHUB_ENV"
+          else
+            echo "::error::No repository source configured"
+            exit 1
+          fi
+
+          if [ -d "$clone_path" ]; then
+            repo_count=$(find "$clone_path" -maxdepth 1 -type d | wc -l)
+            echo "✅ Clone path exists: $clone_path ($repo_count items)"
+          else
+            echo "::warning::Clone path does not exist: $clone_path"
+          fi
 
       - name: "Clone info-master repository"
         shell: bash
@@ -249,7 +300,7 @@ jobs:
 
           uv run project-reporting-tool generate \
             --project "$project" \
-            --repos-path "./${{ matrix.gerrit }}" \
+            --repos-path "$REPOS_PATH" \
             --output-dir "./reports" \
             --github-token-env CLASSIC_READ_ONLY_PAT_TOKEN \
             --verbose
@@ -270,13 +321,18 @@ jobs:
           fi
 
           # Create metadata with pull request context
+          # Get values, defaulting to empty string if null
+          gerrit_server="${{ matrix.gerrit }}"
+          jenkins_server="${{ matrix.jenkins }}"
+          github_org="${{ matrix.github }}"
+
           cat > "$report_dir/metadata.json" <<EOF
           {
             "project": "$project",
             "slug": "${{ matrix.slug }}",
-            "gerrit_server": "${{ matrix.gerrit }}",
-            "jenkins_server": "${{ matrix.jenkins }}",
-            "github_org": "${{ matrix.github }}",
+            "gerrit_server": "${gerrit_server:-}",
+            "jenkins_server": "${jenkins_server:-}",
+            "github_org": "${github_org:-}",
             "generated_at": "${{ needs.verify.outputs.run_timestamp }}",
             "workflow_run_id": "${{ github.run_id }}",
             "workflow_run_number": "${{ github.run_number }}",
@@ -343,7 +399,8 @@ jobs:
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f  # v6.0.0
         with:
           name: previews-clone-manifest-${{ matrix.slug }}
-          path: "./${{ matrix.gerrit }}/clone-manifest.json"
+          # yamllint disable-line rule:line-length
+          path: "./${{ matrix.gerrit != '' && matrix.gerrit || format('github.com/{0}', matrix.github) }}/clone-manifest.json"
           retention-days: 30
           if-no-files-found: warn
 
