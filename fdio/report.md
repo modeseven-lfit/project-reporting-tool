@@ -1,6 +1,6 @@
 # 📊 GitHub Project Analysis Report: FDio
 
-**Generated:** 2026-02-12 07:45:37 UTC
+**Generated:** 2026-02-13 07:44:45 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -31,7 +31,7 @@
 | Inactive Repositories | 3 | 42.9% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 24.7K | - |
-| Total Lines of Code | 139.5K | - |
+| Total Lines of Code | 140.5K | - |
 
 ---
 ## 🏢 Top Organizations
@@ -42,9 +42,9 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | cisco.com | 157 | 1012 | +120542 | 233930 | +7 | 5 |
+| 1 | cisco.com | 158 | 1017 | +120742 | 234251 | +7 | 5 |
 | 2 | gmail.com | 115 | 240 | +18427 | 24887 | +49 | 5 |
-| 3 | icloud.com | 1 | 158 | +48965 | 91904 | +38 | 4 |
+| 3 | icloud.com | 1 | 160 | +49102 | 92055 | +38 | 4 |
 | 4 | marvell.com | 14 | 23 | +1270 | 1446 | +47 | 3 |
 | 5 | hawari.fr | 1 | 20 | +16355 | 17562 | +757 | 1 |
 | 6 | linuxfoundation.org | 15 | 13 | +206 | 463 | -3 | 7 |
@@ -53,10 +53,10 @@ The data presented in the table below covers the past 365 days.
 | 9 | netgate.com | 14 | 8 | +493 | 635 | +43 | 1 |
 | 10 | travelping.com | 4 | 7 | +124 | 175 | +10 | 1 |
 | 11 | employees.org | 1 | 4 | +14100 | 14172 | +3507 | 1 |
-| 12 | mts.ru | 2 | 4 | +299 | 409 | +47 | 1 |
-| 13 | 46labs.com | 2 | 3 | +56 | 57 | +18 | 1 |
-| 14 | googlemail.com | 1 | 3 | +196 | 196 | +65 | 1 |
-| 15 | ipng.nl | 1 | 3 | +1206 | 1243 | +389 | 1 |
+| 12 | ipng.nl | 1 | 4 | +1345 | 1383 | +326 | 1 |
+| 13 | mts.ru | 2 | 4 | +299 | 409 | +47 | 1 |
+| 14 | 46labs.com | 2 | 3 | +56 | 57 | +18 | 1 |
+| 15 | googlemail.com | 1 | 3 | +196 | 196 | +65 | 1 |
 | 16 | lunn.ch | 1 | 3 | +25 | 39 | +3 | 1 |
 | 17 | arm.com | 17 | 2 | +44 | 47 | +20 | 2 |
 | 18 | chinatelecom.cn | 4 | 2 | +18 | 32 | +2 | 1 |
@@ -78,21 +78,21 @@ The data presented in the table below covers the past 365 days.
 
 The data presented in the table below covers the past 365 days.
 
-**Contributors Found:** 657
+**Contributors Found:** 658
 
 | Rank | Contributor | Commits | LOC | Δ LOC | Avg LOC/Commit | Repositories | Organization |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Florin Coras | 215 | +11051 | 15624 | +30 | 3 | cisco.com |
 | 2 | Matus Fabian | 206 | +29124 | 34829 | +113 | 2 | cisco.com |
 | 3 | Dave Wallace | 193 | +15141 | 21003 | +48 | 5 | gmail.com |
-| 4 | Peter Mikus | 158 | +48965 | 91904 | +38 | 4 | icloud.com |
+| 4 | Peter Mikus | 160 | +49102 | 92055 | +38 | 4 | icloud.com |
 | 5 | Damjan Marion | 124 | +25223 | 88306 | -305 | 2 | cisco.com |
-| 6 | Tibor Frank | 119 | +7950 | 17068 | -9 | 3 | cisco.com |
+| 6 | Tibor Frank | 121 | +7952 | 17185 | -10 | 3 | cisco.com |
 | 7 | Adrian Villin | 94 | +14790 | 22594 | +74 | 1 | cisco.com |
 | 8 | Vratko Polak | 73 | +18734 | 36779 | +9 | 4 | cisco.com |
 | 9 | Semir Sionek | 48 | +2021 | 2525 | +31 | 2 | cisco.com |
 | 10 | Mohsin KAZMI | 27 | +3209 | 3637 | +103 | 2 | cisco.com |
-| 11 | Benoît Ganne | 24 | +376 | 780 | -1 | 1 | cisco.com |
+| 11 | Benoît Ganne | 26 | +384 | 793 | 0 | 1 | cisco.com |
 | 12 | Mohammed Hawari | 20 | +16355 | 17562 | +757 | 1 | hawari.fr |
 | 13 | Naveen Joy | 17 | +1611 | 3611 | -22 | 3 | cisco.com |
 | 14 | Hadi Rayan Al-Sandid | 16 | +1417 | 1565 | +79 | 1 | cisco.com |
@@ -118,13 +118,13 @@ The data presented in the table below covers the past 365 days.
 
 | Repository | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| [vpp](https://github.com/gerrit.fd.io/vpp) | 15350 | +146039 | 77 | 0 | 2026-02-11 | ✅ |
-| [csit](https://github.com/gerrit.fd.io/csit) | 6389 | +74712 | 6 | 2 | 2026-02-09 | ✅ |
-| [ci-management](https://github.com/gerrit.fd.io/ci-management) | 2858 | +2629 | 11 | 51 | 2025-12-22 | ✅ |
-| [vppsb](https://github.com/gerrit.fd.io/vppsb) | 88 | 0 | 0 | 2455 | 2019-05-24 | 🛑 |
-| [.github](https://github.com/gerrit.fd.io/.github) | 19 | +3764 | 2 | 12 | 2026-01-30 | ✅ |
-| [main_test](https://github.com/gerrit.fd.io/main_test) | 8 | 0 | 0 | 1930 | 2020-10-30 | 🛑 |
-| [test_injector](https://github.com/gerrit.fd.io/test_injector) | 1 | 0 | 0 | 3452 | 2016-08-30 | 🛑 |
+| [vpp](https://github.com/gerrit.fd.io/vpp) | 15354 | +146376 | 78 | 2 | 2026-02-10 | ✅ |
+| [csit](https://github.com/gerrit.fd.io/csit) | 6392 | +74850 | 6 | 0 | 2026-02-13 | ✅ |
+| [ci-management](https://github.com/gerrit.fd.io/ci-management) | 2859 | +2630 | 11 | 0 | 2026-02-13 | ✅ |
+| [vppsb](https://github.com/gerrit.fd.io/vppsb) | 88 | 0 | 0 | 2456 | 2019-05-24 | 🛑 |
+| [.github](https://github.com/gerrit.fd.io/.github) | 19 | +3764 | 2 | 13 | 2026-01-30 | ✅ |
+| [main_test](https://github.com/gerrit.fd.io/main_test) | 8 | 0 | 0 | 1931 | 2020-10-30 | 🛑 |
+| [test_injector](https://github.com/gerrit.fd.io/test_injector) | 1 | 0 | 0 | 3453 | 2016-08-30 | 🛑 |
 
 **Total:** 7 repositories
 
@@ -146,13 +146,13 @@ The data presented in the table below covers the past 365 days.
 
 **Total GitHub workflows:** 34
 
-**Total Jenkins jobs:** 16
+**Total Jenkins jobs:** 14
 
 | Gerrit Project | GitHub Workflows | Workflow Count | Jenkins Jobs | Job Count |
 |----------------|-------------------|----------------|--------------|-----------|
 | .github | gerrit-required-verify-non-voting.yaml<br>gerrit-verify.yaml | 2 |  | 0 |
 | ci-management | gerrit-verify.yaml | 1 | ci-management-info-yaml-verify<br>ci-management-jenkins-cfg-merge<br>ci-management-jenkins-cfg-verify<br>ci-management-jenkins-sandbox-cleanup<br>ci-management-jjb-deploy-job<br>ci-management-jjb-merge<br>ci-management-jjb-verify<br>ci-management-packer-merge-centos-7-builder<br>ci-management-packer-merge-centos-8-builder<br>ci-management-packer-verify<br>ci-management-packer-verify-build-centos-7-builder<br>ci-management-packer-verify-build-centos-8-builder | 12 |
-| csit | csit-cdash-version.yml<br>csit-dpdk-perf-mrr-weekly.yml<br>csit-hfr.yaml<br>csit-perf-report.yml<br>csit-trex-perf-ndrpdr-weekly.yml<br>csit-verify-tox.yaml<br>csit-vpp-perf-mrr-weekly.yml<br>csit-vpp-perf-ndrpdr-weekly.yml<br>csit-vpp-perf-soak-weekly.yml<br>dependabot-updates<br>gerrit-comment-handler.yaml<br>github2gerrit.yaml<br>vpp-csit-bisect.yml | 13 | csit-info-yaml-verify<br>csit-sonar<br>csit-verify-tox-master-ubuntu2404-x86_64 | 3 |
+| csit | csit-cdash-version.yml<br>csit-dpdk-perf-mrr-weekly.yml<br>csit-hfr.yaml<br>csit-perf-report.yml<br>csit-trex-perf-ndrpdr-weekly.yml<br>csit-verify-tox.yaml<br>csit-vpp-perf-mrr-weekly.yml<br>csit-vpp-perf-ndrpdr-weekly.yml<br>csit-vpp-perf-soak-weekly.yml<br>dependabot-updates<br>gerrit-comment-handler.yaml<br>github2gerrit.yaml<br>vpp-csit-bisect.yml | 13 | csit-info-yaml-verify | 1 |
 | vpp | dependabot-updates<br>gerrit-comment-handler.yml<br>gerrit-merge.yml<br>gerrit-verify.yml<br>github2gerrit.yaml<br>periodic-vpp-verify-cov.yml<br>periodic-vpp-verify-dpdk-rdma-ver.yml<br>periodic-vpp-verify-hst.yml<br>update-graph<br>vpp-csit-verify-api.yml<br>vpp-merge-docs.yml<br>vpp-merge-maketest.yml<br>vpp-verify-arm-drivers.yml<br>vpp-verify-checkstyle.yml<br>vpp-verify-docs.yml<br>vpp-verify-gcc.yml<br>vpp-verify-hst.yml<br>vpp-verify-maketest.yml | 18 | vpp-cov-verify-master-ubuntu2404-x86_64 | 1 |
 
 **Total:** 4 repositories with CI/CD jobs
