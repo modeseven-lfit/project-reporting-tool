@@ -1,6 +1,6 @@
 # 📊 GitHub Project Analysis Report: Linux Foundation
 
-**Generated:** 2026-02-14 07:29:25 UTC
+**Generated:** 2026-02-15 07:33:20 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -30,7 +30,7 @@
 | Inactive Repositories | 9 | 25.7% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 7.8K | - |
-| Total Lines of Code | 449.6K | - |
+| Total Lines of Code | 449.4K | - |
 
 ---
 ## 🏢 Top Organizations
@@ -117,41 +117,41 @@ The data presented in the table below covers the past 365 days.
 
 | Repository | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| [releng/info-master](https://github.com/gerrit.linuxfoundation.org/releng/info-master) | 3678 | +798 | 7 | 3 | 2026-02-10 | ✅ |
-| [releng/global-jjb](https://github.com/gerrit.linuxfoundation.org/releng/global-jjb) | 1556 | +824 | 4 | 1 | 2026-02-12 | ✅ |
-| [releng/lftools](https://github.com/gerrit.linuxfoundation.org/releng/lftools) | 699 | +1235 | 4 | 29 | 2026-01-16 | ✅ |
-| [releng/docs](https://github.com/gerrit.linuxfoundation.org/releng/docs) | 362 | +43 | 3 | 179 | 2025-08-18 | ✅ |
-| [releng/common-packer](https://github.com/gerrit.linuxfoundation.org/releng/common-packer) | 293 | +1659 | 4 | 37 | 2026-01-07 | ✅ |
-| [sandbox](https://github.com/gerrit.linuxfoundation.org/sandbox) | 200 | +212842 | 2 | 14 | 2026-01-30 | ✅ |
-| [releng/docs-conf](https://github.com/gerrit.linuxfoundation.org/releng/docs-conf) | 141 | +20 | 1 | 29 | 2026-01-16 | ✅ |
-| [releng/gerrit_to_platform](https://github.com/gerrit.linuxfoundation.org/releng/gerrit_to_platform) | 139 | +849 | 5 | 9 | 2026-02-04 | ✅ |
-| [releng](https://github.com/gerrit.linuxfoundation.org/releng) | 109 | 0 | 0 | 710 | 2024-03-05 | ☑️ |
-| [ansible/roles](https://github.com/gerrit.linuxfoundation.org/ansible/roles) | 68 | +24 | 1 | 35 | 2026-01-10 | ✅ |
-| [ansible/roles/lf-recommended-tools](https://github.com/gerrit.linuxfoundation.org/ansible/roles/lf-recommended-tools) | 62 | +158 | 2 | 37 | 2026-01-08 | ✅ |
-| [ansible/roles/java-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/java-install) | 55 | +152 | 2 | 64 | 2025-12-12 | ✅ |
-| [releng/ci-workshop](https://github.com/gerrit.linuxfoundation.org/releng/ci-workshop) | 47 | 0 | 0 | 1259 | 2022-09-03 | 🛑 |
-| [ansible/roles/python-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/python-install) | 46 | +174 | 2 | 55 | 2025-12-21 | ✅ |
-| [ansible/roles/puppet-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/puppet-install) | 34 | +171 | 2 | 36 | 2026-01-09 | ✅ |
-| [ansible/roles/system-update](https://github.com/gerrit.linuxfoundation.org/ansible/roles/system-update) | 33 | +64 | 1 | 47 | 2025-12-29 | ✅ |
-| [ansible/roles/lf-dev-libs](https://github.com/gerrit.linuxfoundation.org/ansible/roles/lf-dev-libs) | 33 | +160 | 1 | 60 | 2025-12-16 | ✅ |
-| [ansible/roles/docker-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/docker-install) | 29 | +87 | 1 | 37 | 2026-01-08 | ✅ |
-| [ansible/roles/haveged-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/haveged-install) | 25 | +94 | 1 | 60 | 2025-12-16 | ✅ |
-| [releng/pipelines](https://github.com/gerrit.linuxfoundation.org/releng/pipelines) | 24 | 0 | 0 | 1286 | 2022-08-08 | 🛑 |
-| [ansible/roles/shellcheck-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/shellcheck-install) | 23 | +98 | 1 | 60 | 2025-12-16 | ✅ |
-| [ansible/roles/packer-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/packer-install) | 21 | +92 | 1 | 60 | 2025-12-16 | ✅ |
-| [puppet/modules/mailman3](https://github.com/gerrit.linuxfoundation.org/puppet/modules/mailman3) | 21 | 0 | 0 | 3516 | 2016-06-29 | 🛑 |
-| [ansible/roles/sysstat-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/sysstat-install) | 16 | +60 | 1 | 60 | 2025-12-15 | ✅ |
-| [ansible/roles/mono-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/mono-install) | 15 | +111 | 1 | 60 | 2025-12-16 | ✅ |
-| [lfn/process](https://github.com/gerrit.linuxfoundation.org/lfn/process) | 13 | 0 | 0 | 2807 | 2018-06-08 | 🛑 |
-| [ansible/roles/protobuf-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/protobuf-install) | 12 | 0 | 0 | 478 | 2024-10-24 | ☑️ |
-| [releng/python-one-password](https://github.com/gerrit.linuxfoundation.org/releng/python-one-password) | 9 | 0 | 0 | 878 | 2023-09-19 | ☑️ |
-| [puppet/modules/gce](https://github.com/gerrit.linuxfoundation.org/puppet/modules/gce) | 5 | 0 | 0 | 3298 | 2017-02-02 | 🛑 |
-| [releng/license-checker](https://github.com/gerrit.linuxfoundation.org/releng/license-checker) | 4 | 0 | 0 | 2814 | 2018-06-01 | 🛑 |
-| [releng/nexus-upload](https://github.com/gerrit.linuxfoundation.org/releng/nexus-upload) | 4 | 0 | 0 | 624 | 2024-05-30 | ☑️ |
-| [releng/sigul-docker](https://github.com/gerrit.linuxfoundation.org/releng/sigul-docker) | 3 | 0 | 0 | 820 | 2023-11-16 | ☑️ |
-| [clav2test/icla-and-ccla-project](https://github.com/gerrit.linuxfoundation.org/clav2test/icla-and-ccla-project) | 2 | 0 | 0 | 1795 | 2021-03-16 | 🛑 |
-| [clav2test/ccla-only-project](https://github.com/gerrit.linuxfoundation.org/clav2test/ccla-only-project) | 1 | 0 | 0 | 2598 | 2019-01-03 | 🛑 |
-| [sandbox-info-master](https://github.com/gerrit.linuxfoundation.org/sandbox-info-master) | 1 | 0 | 0 | 1969 | 2020-09-24 | 🛑 |
+| [releng/info-master](https://github.com/gerrit.linuxfoundation.org/releng/info-master) | 3678 | +798 | 7 | 4 | 2026-02-10 | ✅ |
+| [releng/global-jjb](https://github.com/gerrit.linuxfoundation.org/releng/global-jjb) | 1556 | +824 | 4 | 2 | 2026-02-12 | ✅ |
+| [releng/lftools](https://github.com/gerrit.linuxfoundation.org/releng/lftools) | 699 | +1235 | 4 | 30 | 2026-01-16 | ✅ |
+| [releng/docs](https://github.com/gerrit.linuxfoundation.org/releng/docs) | 362 | +43 | 3 | 180 | 2025-08-18 | ✅ |
+| [releng/common-packer](https://github.com/gerrit.linuxfoundation.org/releng/common-packer) | 293 | +1659 | 4 | 38 | 2026-01-07 | ✅ |
+| [sandbox](https://github.com/gerrit.linuxfoundation.org/sandbox) | 200 | +212842 | 2 | 15 | 2026-01-30 | ✅ |
+| [releng/docs-conf](https://github.com/gerrit.linuxfoundation.org/releng/docs-conf) | 141 | +20 | 1 | 30 | 2026-01-16 | ✅ |
+| [releng/gerrit_to_platform](https://github.com/gerrit.linuxfoundation.org/releng/gerrit_to_platform) | 139 | +849 | 5 | 10 | 2026-02-04 | ✅ |
+| [releng](https://github.com/gerrit.linuxfoundation.org/releng) | 109 | 0 | 0 | 711 | 2024-03-05 | ☑️ |
+| [ansible/roles](https://github.com/gerrit.linuxfoundation.org/ansible/roles) | 68 | +24 | 1 | 36 | 2026-01-10 | ✅ |
+| [ansible/roles/lf-recommended-tools](https://github.com/gerrit.linuxfoundation.org/ansible/roles/lf-recommended-tools) | 62 | +158 | 2 | 38 | 2026-01-08 | ✅ |
+| [ansible/roles/java-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/java-install) | 55 | +152 | 2 | 65 | 2025-12-12 | ✅ |
+| [releng/ci-workshop](https://github.com/gerrit.linuxfoundation.org/releng/ci-workshop) | 47 | 0 | 0 | 1260 | 2022-09-03 | 🛑 |
+| [ansible/roles/python-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/python-install) | 46 | +174 | 2 | 56 | 2025-12-21 | ✅ |
+| [ansible/roles/puppet-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/puppet-install) | 34 | +171 | 2 | 37 | 2026-01-09 | ✅ |
+| [ansible/roles/system-update](https://github.com/gerrit.linuxfoundation.org/ansible/roles/system-update) | 33 | +64 | 1 | 48 | 2025-12-29 | ✅ |
+| [ansible/roles/lf-dev-libs](https://github.com/gerrit.linuxfoundation.org/ansible/roles/lf-dev-libs) | 33 | +160 | 1 | 61 | 2025-12-16 | ✅ |
+| [ansible/roles/docker-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/docker-install) | 29 | +87 | 1 | 38 | 2026-01-08 | ✅ |
+| [ansible/roles/haveged-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/haveged-install) | 25 | +94 | 1 | 61 | 2025-12-16 | ✅ |
+| [releng/pipelines](https://github.com/gerrit.linuxfoundation.org/releng/pipelines) | 24 | 0 | 0 | 1287 | 2022-08-08 | 🛑 |
+| [ansible/roles/shellcheck-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/shellcheck-install) | 23 | +98 | 1 | 61 | 2025-12-16 | ✅ |
+| [ansible/roles/packer-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/packer-install) | 21 | +92 | 1 | 61 | 2025-12-16 | ✅ |
+| [puppet/modules/mailman3](https://github.com/gerrit.linuxfoundation.org/puppet/modules/mailman3) | 21 | 0 | 0 | 3517 | 2016-06-29 | 🛑 |
+| [ansible/roles/sysstat-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/sysstat-install) | 16 | +60 | 1 | 61 | 2025-12-15 | ✅ |
+| [ansible/roles/mono-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/mono-install) | 15 | +111 | 1 | 61 | 2025-12-16 | ✅ |
+| [lfn/process](https://github.com/gerrit.linuxfoundation.org/lfn/process) | 13 | 0 | 0 | 2808 | 2018-06-08 | 🛑 |
+| [ansible/roles/protobuf-install](https://github.com/gerrit.linuxfoundation.org/ansible/roles/protobuf-install) | 12 | 0 | 0 | 479 | 2024-10-24 | ☑️ |
+| [releng/python-one-password](https://github.com/gerrit.linuxfoundation.org/releng/python-one-password) | 9 | 0 | 0 | 879 | 2023-09-19 | ☑️ |
+| [puppet/modules/gce](https://github.com/gerrit.linuxfoundation.org/puppet/modules/gce) | 5 | 0 | 0 | 3299 | 2017-02-02 | 🛑 |
+| [releng/license-checker](https://github.com/gerrit.linuxfoundation.org/releng/license-checker) | 4 | 0 | 0 | 2815 | 2018-06-01 | 🛑 |
+| [releng/nexus-upload](https://github.com/gerrit.linuxfoundation.org/releng/nexus-upload) | 4 | 0 | 0 | 625 | 2024-05-30 | ☑️ |
+| [releng/sigul-docker](https://github.com/gerrit.linuxfoundation.org/releng/sigul-docker) | 3 | 0 | 0 | 821 | 2023-11-16 | ☑️ |
+| [clav2test/icla-and-ccla-project](https://github.com/gerrit.linuxfoundation.org/clav2test/icla-and-ccla-project) | 2 | 0 | 0 | 1796 | 2021-03-16 | 🛑 |
+| [clav2test/ccla-only-project](https://github.com/gerrit.linuxfoundation.org/clav2test/ccla-only-project) | 1 | 0 | 0 | 2599 | 2019-01-03 | 🛑 |
+| [sandbox-info-master](https://github.com/gerrit.linuxfoundation.org/sandbox-info-master) | 1 | 0 | 0 | 1970 | 2020-09-24 | 🛑 |
 
 **Total:** 35 repositories
 
@@ -160,36 +160,36 @@ The data presented in the table below covers the past 365 days.
 
 | Gerrit Project | Primary Type | Other Types | Dependabot | Pre-commit | ReadTheDocs | .gitreview | G2G | Status |
 |----------------|--------------|-------------|------------|------------|-------------|------------|-----|--------|
-| ansible/roles/haveged-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| ansible/roles/lf-dev-libs | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| ansible/roles/java-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/lf-recommended-tools | Python | Shell | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/haveged-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/docker-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/mono-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/packer-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/protobuf-install | Shell |  | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| ansible/roles/docker-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/lf-dev-libs | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/java-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | puppet/modules/gce | Ruby | Shell | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | puppet/modules/mailman3 | Ruby | Python | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
-| ansible/roles/python-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/puppet-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | ansible/roles/system-update | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| ansible/roles/sysstat-install | Python | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | ansible/roles/shellcheck-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| ansible/roles/sysstat-install | Python | Shell | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
+| ansible/roles/python-install | Python | Shell | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | clav2test/ccla-only-project | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | clav2test/icla-and-ccla-project | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | lfn/process | Python |  | ❌ | ❌ | ✅ | ✅ | ❌ | 🛑 |
 | releng/ci-workshop | Groovy | Dockerfile, Shell | ❌ | ✅ | ❌ | ✅ | ❌ | 🛑 |
-| releng/common-packer | HCL | Python, Shell | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
 | releng/docs-conf | Python |  | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
+| releng/common-packer | HCL | Python, Shell | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
 | releng/gerrit_to_platform | Python |  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | releng/docs | Python | Shell, HTML, CSS | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
 | releng/license-checker | Go |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | releng/nexus-upload | Shell |  | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| releng/pipelines | Groovy | Java/Gradle, Python, Shell, HTML | ❌ | ✅ | ✅ | ✅ | ❌ | 🛑 |
 | releng/python-one-password | Python |  | ❌ | ✅ | ✅ | ✅ | ❌ | ☑️ |
+| releng/pipelines | Groovy | Java/Gradle, Python, Shell, HTML | ❌ | ✅ | ✅ | ✅ | ❌ | 🛑 |
 | releng/sigul-docker | Dockerfile |  | ❌ | ✅ | ❌ | ✅ | ❌ | ☑️ |
-| sandbox-info-master | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | releng/global-jjb | Shell | Python, Groovy, HTML | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
+| sandbox-info-master | N/A |  | ❌ | ❌ | ❌ | ❌ | ❌ | 🛑 |
 | releng/lftools | Python | HTML | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
 | ansible/roles | Shell |  | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | releng/info-master | N/A |  | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |

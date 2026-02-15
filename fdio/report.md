@@ -1,6 +1,6 @@
 # 📊 GitHub Project Analysis Report: FDio
 
-**Generated:** 2026-02-14 07:29:31 UTC
+**Generated:** 2026-02-15 07:33:28 UTC
 **Schema Version:** 1.5.0
 
 ---## Table of Contents
@@ -31,7 +31,7 @@
 | Inactive Repositories | 3 | 42.9% |
 | No Apparent Commits | 0 | 0.0% |
 | Total Commits | 24.7K | - |
-| Total Lines of Code | 144.5K | - |
+| Total Lines of Code | 144.4K | - |
 
 ---
 ## 🏢 Top Organizations
@@ -42,9 +42,9 @@ The data presented in the table below covers the past 365 days.
 
 | Rank | Organization | Contributors | Commits | LOC | Δ LOC | Avg LOC/Commit | Unique Repositories |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | cisco.com | 158 | 1010 | +121457 | 234869 | +7 | 5 |
-| 2 | gmail.com | 115 | 241 | +18458 | 24949 | +49 | 5 |
-| 3 | icloud.com | 1 | 158 | +48271 | 89388 | +45 | 4 |
+| 1 | cisco.com | 158 | 1008 | +121433 | 234831 | +7 | 5 |
+| 2 | gmail.com | 115 | 240 | +18446 | 24925 | +49 | 5 |
+| 3 | icloud.com | 1 | 156 | +48245 | 89342 | +45 | 4 |
 | 4 | marvell.com | 14 | 23 | +1270 | 1446 | +47 | 3 |
 | 5 | hawari.fr | 1 | 20 | +16355 | 17562 | +757 | 1 |
 | 6 | linuxfoundation.org | 15 | 14 | +207 | 465 | -3 | 7 |
@@ -84,15 +84,15 @@ The data presented in the table below covers the past 365 days.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Florin Coras | 215 | +11018 | 15573 | +30 | 3 | cisco.com |
 | 2 | Matus Fabian | 207 | +30215 | 36303 | +116 | 2 | cisco.com |
-| 3 | Dave Wallace | 194 | +15172 | 21065 | +47 | 5 | gmail.com |
-| 4 | Peter Mikus | 158 | +48271 | 89388 | +45 | 4 | icloud.com |
+| 3 | Dave Wallace | 193 | +15160 | 21041 | +48 | 5 | gmail.com |
+| 4 | Peter Mikus | 156 | +48245 | 89342 | +45 | 4 | icloud.com |
 | 5 | Tibor Frank | 120 | +7932 | 17145 | -10 | 3 | cisco.com |
 | 6 | Damjan Marion | 118 | +24936 | 87600 | -319 | 2 | cisco.com |
 | 7 | Adrian Villin | 94 | +14790 | 22594 | +74 | 1 | cisco.com |
-| 8 | Vratko Polak | 73 | +18734 | 36779 | +9 | 4 | cisco.com |
+| 8 | Vratko Polak | 72 | +18715 | 36752 | +9 | 4 | cisco.com |
 | 9 | Semir Sionek | 48 | +2021 | 2525 | +31 | 2 | cisco.com |
 | 10 | Mohsin KAZMI | 27 | +3209 | 3637 | +103 | 2 | cisco.com |
-| 11 | Benoît Ganne | 25 | +348 | 734 | -1 | 1 | cisco.com |
+| 11 | Benoît Ganne | 24 | +343 | 723 | -1 | 1 | cisco.com |
 | 12 | Mohammed Hawari | 20 | +16355 | 17562 | +757 | 1 | hawari.fr |
 | 13 | Naveen Joy | 17 | +1611 | 3611 | -22 | 3 | cisco.com |
 | 14 | Hadi Rayan Al-Sandid | 16 | +1417 | 1565 | +79 | 1 | cisco.com |
@@ -118,13 +118,13 @@ The data presented in the table below covers the past 365 days.
 
 | Repository | Commits | LOC | Contributors | Days Inactive | Last Commit Date | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| [vpp](https://github.com/gerrit.fd.io/vpp) | 15360 | +147368 | 78 | 0 | 2026-02-13 | ✅ |
-| [csit](https://github.com/gerrit.fd.io/csit) | 6392 | +74019 | 6 | 1 | 2026-02-13 | ✅ |
-| [ci-management](https://github.com/gerrit.fd.io/ci-management) | 2859 | +2610 | 11 | 1 | 2026-02-13 | ✅ |
-| [vppsb](https://github.com/gerrit.fd.io/vppsb) | 88 | 0 | 0 | 2457 | 2019-05-24 | 🛑 |
-| [.github](https://github.com/gerrit.fd.io/.github) | 19 | +3764 | 2 | 14 | 2026-01-30 | ✅ |
-| [main_test](https://github.com/gerrit.fd.io/main_test) | 8 | 0 | 0 | 1932 | 2020-10-30 | 🛑 |
-| [test_injector](https://github.com/gerrit.fd.io/test_injector) | 1 | 0 | 0 | 3454 | 2016-08-30 | 🛑 |
+| [vpp](https://github.com/gerrit.fd.io/vpp) | 15360 | +147351 | 78 | 1 | 2026-02-13 | ✅ |
+| [csit](https://github.com/gerrit.fd.io/csit) | 6392 | +73974 | 6 | 2 | 2026-02-13 | ✅ |
+| [ci-management](https://github.com/gerrit.fd.io/ci-management) | 2859 | +2610 | 11 | 2 | 2026-02-13 | ✅ |
+| [vppsb](https://github.com/gerrit.fd.io/vppsb) | 88 | 0 | 0 | 2458 | 2019-05-24 | 🛑 |
+| [.github](https://github.com/gerrit.fd.io/.github) | 19 | +3764 | 2 | 15 | 2026-01-30 | ✅ |
+| [main_test](https://github.com/gerrit.fd.io/main_test) | 8 | 0 | 0 | 1933 | 2020-10-30 | 🛑 |
+| [test_injector](https://github.com/gerrit.fd.io/test_injector) | 1 | 0 | 0 | 3455 | 2016-08-30 | 🛑 |
 
 **Total:** 7 repositories
 
@@ -137,9 +137,9 @@ The data presented in the table below covers the past 365 days.
 | main_test | Shell |  | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | vppsb | C | JavaScript, Shell, HTML, CSS, Lua | ❌ | ❌ | ❌ | ✅ | ❌ | 🛑 |
 | .github | Shell | Python | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
-| ci-management | jjb |  | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | csit | Robot Framework | Python, Shell, SCSS, HTML, HCL | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | vpp | C | Python, Shell, Go, C++, HTML, CSS, Lua | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| ci-management | jjb |  | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 
 ---
 ## 🏁 Deployed CI/CD Jobs
